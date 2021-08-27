@@ -25,6 +25,10 @@ const routes: Routes = [
         loadChildren: () => import('./features/shipment-history/shipment-history.module').then(m => m.ShipmentHistoryModule),
       },
       {
+        path: 'scanship',
+        loadChildren: () => import('./features/scan-ship/scan-ship.module').then(m => m.ScanShipModule),
+      },
+      {
         path: '**',
         redirectTo: 'accounts',
         pathMatch: 'full'
