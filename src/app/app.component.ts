@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'SellerChainAppSuit';
 
   public isExpanded = false;
-  isLoggedIn = false;
+  isLoggedIn = true;
 
   public toggleMenu() {
     this.isExpanded = !this.isExpanded;
