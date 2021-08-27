@@ -1,0 +1,637 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/styles/variables.scss";
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*//////Global Styles ///////*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.break-word-custom {
+  word-break: break-word;
+  width: 100px;
+}
+
+.badgeCustom-label {
+  text-transform: uppercase;
+  background-color: #86b1d3;
+  padding: 1px 13px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+  width: 60px;
+  display: block;
+  margin: auto;
+}
+
+.grey-badge {
+  background-color: #86b1d3;
+}
+
+.purple-badge {
+  background-color: #8b2be4;
+}
+
+.green-badge {
+  background-color: #257075;
+}
+
+/*//////Topbar Styles ///////*/
+
+.header-main {
+  padding: 5px 20px;
+  border-bottom: 1px solid #e1dede;
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-btn {
+    display: flex;
+    align-items: center;
+
+    .toggle {
+      padding-right: 20px;
+
+      .mat-icon {
+        cursor: pointer;
+      }
+    }
+
+    .logo {
+      width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .header-menu {
+    display: flex;
+    align-items: center;
+
+    .admin-message {
+      padding-right: 10px;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .top-menu-icons {
+      .mat-icon {
+        padding: 5px;
+        color: #322536;
+      }
+      .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+        width: 15px;
+        height: 15px;
+        line-height: 16px;
+        font-weight: 300;
+        font-size: 12px;
+        bottom: 0px;
+        top: unset !important;
+        right: 0px !important;
+      }
+    }
+  }
+}
+
+/*//////Sidebar Styles ///////*/
+
+mat-sidenav[style] {
+  visibility: visible !important;
+}
+
+.mat-drawer {
+  transform: none !important;
+}
+
+.mat-drawer-container {
+  height: calc(100vh - 57px);
+}
+
+.mat-drawer-content {
+  margin-left: 68px;
+}
+.sidebar {
+  .nav {
+    .active-link {
+      background-color: #fafafa;
+      border-left: solid 3px $primaryColor;
+    }
+
+    .hover {
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-property: transform, border, background-color;
+    }
+
+    mat-list-item,
+    a {
+      border: none;
+      box-sizing: border-box;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        background-color: #fafafa;
+        border-left: solid 3px $primaryColor;
+      }
+    }
+    mat-icon {
+      color: $primaryColor;
+    }
+  }
+  .mat-list-base {
+    border-bottom: 1px solid #e1dede;
+    padding-top: 0;
+  }
+
+  .mat-list-base .mat-list-item.mat-list-item-with-avatar,
+  .mat-list-base .mat-list-option.mat-list-item-with-avatar {
+    height: 45px;
+  }
+
+  .sublist {
+    .mat-list-base {
+      border-bottom: 0;
+    }
+  }
+}
+.sidebar.sidenav {
+  .sublist {
+    padding-left: 30px;
+  }
+}
+
+/*//////Breadcrumbs Styles ///////*/
+
+.breadcrumbs-main {
+  background-color: $primaryColor;
+  color: #fff;
+  padding: 5px 10px;
+  .breadcrumbs-inner {
+    align-items: center;
+    display: flex;
+  }
+}
+
+/*//////Content Wrapper Styles ///////*/
+.content-wrapper {
+  padding: 10px;
+  height: 100%;
+}
+
+.content-view-component {
+  display: flex;
+  .body-side {
+    flex-basis: 80%;
+  }
+  .filters-side {
+    flex-basis: 20%;
+  }
+}
+
+/*//////Shippment Styles ///////*/
+
+.shipping-listing-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    .mat-icon {
+      font-size: 60px;
+      color: $secondarycolor;
+      margin-right: 10px;
+      width: 64px;
+      height: 64px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      color: $secondarycolor;
+      font-weight: 700;
+    }
+  }
+
+  .search-form {
+    input {
+      border: 1px solid #f1eff0;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 4px;
+      margin-right: 20px;
+      width: 400px;
+    }
+
+    button {
+      background-color: $secondarycolor;
+      text-transform: uppercase;
+    }
+  }
+}
+.shipment-table-main {
+  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+    0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+
+  .table {
+    padding: 0 10px;
+  }
+
+  table {
+    width: 100%;
+    box-shadow: none;
+    padding-top: 20px;
+
+    .link {
+      cursor: pointer;
+      color: #fbc893;
+      text-decoration: underline;
+    }
+    .mat-cell {
+      font-size: 13px;
+      border-right: 1px solid #ddd;
+      text-align: center;
+      padding: 5px;
+    }
+    .mat-header-cell {
+      font-size: 13px;
+      border-right: 1px solid #ddd;
+      text-align: center;
+      padding: 5px;
+      font-weight: 700;
+    }
+    .mat-header-cell:last-child {
+      border-right: 0;
+    }
+    .mat-cell:last-child {
+      border-right: 0;
+    }
+  }
+  .mat-paginator {
+    border-radius: 5px;
+  }
+}
+
+.filter-actions-main {
+  height: calc(100vh - 57px);
+  position: fixed;
+  border: 2px solid #ededed;
+
+  border-right: 0;
+
+  .filter-actions-inner {
+    display: flex;
+    height: calc(100vh - 57px);
+
+    .left-side-menu {
+      padding: 10px;
+      border-right: 2px solid #ededed;
+      flex-basis: 61px;
+      box-sizing: border-box;
+
+      .left-uper-icons {
+        .icon-back {
+          margin-bottom: 20px;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          position: relative;
+          cursor: pointer;
+
+          .icon {
+            font-size: 20px;
+            color: #92d5de;
+            position: absolute;
+            transform: translate(-55%, -55%);
+            top: 55%;
+            left: 55%;
+          }
+        }
+
+        .icon-back:hover {
+          background-color: #edf4fa;
+        }
+        .icon-back.active::before {
+          content: "";
+          right: -15px;
+          width: 4px;
+          height: 40px;
+          background-color: #d79342;
+          position: absolute;
+          border-radius: 5px;
+        }
+        .icon-back:hover::before {
+          content: "";
+          right: -15px;
+          width: 4px;
+          height: 40px;
+          background-color: #d79342;
+          position: absolute;
+          border-radius: 5px;
+        }
+      }
+
+      .left-lower-icons {
+        border-top: 2px solid #ededed;
+        .icon-back {
+          margin-bottom: 20px;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          position: relative;
+          cursor: pointer;
+          .icon {
+            font-size: 20px;
+            position: absolute;
+            transform: translate(-55%, -55%);
+            top: 55%;
+            left: 55%;
+            color: #bfbfbf;
+          }
+        }
+      }
+    }
+
+    .rigt-side-actions {
+      flex-basis: calc(100% - 62px);
+      padding: 20px 10px;
+
+      .heading-border {
+        border-bottom: 2px solid #ededed;
+        margin-bottom: 10px;
+
+        h1 {
+          margin-bottom: 3px;
+          font-size: 17px;
+          color: rgba(0, 0, 0, 0.54);
+
+          .sortby {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .right-action-main {
+        .mat-radio-button.mat-accent .mat-radio-inner-circle,
+        .mat-radio-button.mat-accent
+          .mat-radio-ripple
+          .mat-ripple-element:not(.mat-radio-persistent-ripple),
+        .mat-radio-button.mat-accent.mat-radio-checked
+          .mat-radio-persistent-ripple,
+        .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+          background-color: #67b2eb;
+        }
+
+        .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+          border-color: #67b2eb;
+        }
+        .mat-radio-group {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .mat-radio-button {
+          flex-basis: 50%;
+          margin-bottom: 13px;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.54);
+        }
+        .mat-radio-label-content {
+          padding-left: 0;
+        }
+
+        .mat-radio-checked .mat-radio-inner-circle {
+          width: 15px;
+          height: 15px;
+        }
+
+        .mat-radio-outer-circle {
+          width: 15px;
+          height: 15px;
+        }
+
+        .mat-radio-button .mat-radio-ripple {
+          display: none;
+        }
+
+        .mat-radio-container {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .heading-border2 {
+        border-bottom: 2px solid #ededed;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .mat-icon {
+          color: #d5d3d4;
+        }
+
+        h1 {
+          margin-bottom: 0px;
+          font-size: 17px;
+          color: rgba(0, 0, 0, 0.54);
+
+          .sortby {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .select-feld {
+        border-bottom: 1px solid #ededed;
+
+        .mat-form-field {
+          width: 100%;
+        }
+
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+          background-color: transparent;
+          border-radius: 5px;
+          border: 2px solid #ededed;
+          padding: 0px 7px 0px 8px;
+
+          .mat-form-field-infix {
+            width: 100%;
+          }
+        }
+
+        .mat-form-field-underline {
+          display: none;
+        }
+
+        .mat-select-value-text {
+          font-size: 15px;
+          color: rgba(0, 0, 0, 0.54);
+        }
+      }
+    }
+  }
+}
+
+.app-selection {
+  .color-stripe {
+    background-color: $primaryColor;
+    width: 100%;
+    height: 100px;
+  }
+  .descp {
+    padding: 50px 0;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+
+    h1 {
+      color: $secondarycolor;
+    }
+    h2 {
+      color: #616161;
+      max-width: 350px;
+      margin: auto;
+      text-align: center;
+      font-weight: 300;
+      padding-bottom: 40px;
+    }
+
+    p {
+      color: #9c9c9c;
+      font-weight: 300;
+    }
+  }
+  .selecting-app {
+    display: flex;
+    .app-listing {
+      display: flex;
+      flex-basis: 75%;
+      padding: 30px;
+      flex-wrap: wrap;
+      .app1 {
+        flex-basis: 20%;
+        text-align: center;
+        border: 2px solid red;
+        padding: 10px;
+        margin: 1%;
+        border-radius: 10px;
+        position: relative;
+
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .linked {
+          position: absolute;
+          right: 3px;
+          top: 26px;
+          color: $primaryColor;
+        }
+        .image {
+          width: 50px;
+          margin: auto;
+
+          img {
+            width: 100%;
+          }
+        }
+        .name-price {
+          h4 {
+            margin: 0;
+            color: $secondarycolor;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 15px;
+            span {
+              color: #000;
+              font-size: 13px;
+            }
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .pricing {
+      flex-basis: 25%;
+      padding-top: 30px;
+      padding-right: 50px;
+      .sub {
+      }
+      .prices {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-bottom: 30px;
+
+        .heading {
+          padding: 20px;
+          border-bottom: 1px solid #ddd;
+          background-color: #dddddd2b;
+          h3 {
+            margin: 0;
+            font-size: 20px;
+            color: $primaryColor;
+          }
+        }
+        .apps-selected {
+          table {
+            width: 100%;
+            padding: 20px;
+            td {
+              padding-bottom: 30px;
+            }
+            tr:last-child td {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .mat-raised-button {
+        margin: auto;
+        display: table;
+      }
+    }
+  }
+}
+
+/*//////////Responisve styles imported //////////////*/
+@import "assets/styles/responsive-styles.scss";

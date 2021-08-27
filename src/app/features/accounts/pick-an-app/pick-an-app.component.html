@@ -1,0 +1,64 @@
+<div class="app-selection">
+    <div class="color-stripe">
+
+    </div>
+    <div class="descp">
+        <h1 class="title">PICK AN APP</h1>
+        <h2>Please Choose Which apps you'd like to add your first Marketplace to: </h2> 
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sem quis magna dictum gravida a eget risus. Donec
+        ultricies, nisi in vestibulum semper, nunc lorem volutpat lacus, non suscipit ex nunc ac justo. </p>
+         <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. </p>
+         <p> Aliquam
+        libero velit, sagittis nec viverra efficitur, aliquet in sapien. Proin ultricies ultricies sem ac elementum. Proin in
+        dapibus lorem. Maecenas vel augue vel nisi scelerisque imperdiet eget non nulla. </p>
+
+    </div>
+    <div class="selecting-app">
+
+        <div class="app-listing">
+           
+                <div class="app1" *ngFor="let app of apps">
+                        <input (change)="selectApp(app)" type="checkbox" [name]="app.id" [id]="app.id" [value]="app.id" [checked]="app.isSelected">
+                        <a class="linked" *ngIf="app?.linkedId && app.isSelected"><mat-icon>link</mat-icon></a>
+                        <label [for]="app.id">
+                            <div class="image">
+                                <img [src]="app.photo">
+                            </div>
+                            <div class="name-price">
+                                <h4>{{app.name}} <span>App</span></h4>
+                                <p>${{app.price}} / month</p>
+                            </div>
+                        </label>
+                </div>
+        </div>
+        <div class="pricing">
+            <div class="sub">
+                    <div class="prices">
+                        <div class="heading">
+                            <h3>Selected Apps</h3>
+                        </div>
+                        <div class="apps-selected">
+                            <table>
+                                <tr>
+                                    <td> Apps</td>
+                                    <td>{{selectedApps.length}}</td>
+                                </tr>
+                                <tr>
+                                    <td> Total / month</td>
+                                    <td>${{totalPrice}}</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+    <button mat-raised-button color="primary">Buy</button>
+            </div>
+                  
+        </div>
+    </div>
+    <div class="color-stripe">
+    
+    </div>
+</div>

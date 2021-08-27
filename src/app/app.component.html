@@ -1,0 +1,33 @@
+<!-----------Loads when user is logged in----------------->
+
+<div class="sellerchain-wrapper" *ngIf="isLoggedIn">
+    <app-topbar [isLoggedIn]="isLoggedIn" (toggleMenu)="toggleMenu()" [isExpanded]="isExpanded"></app-topbar>
+
+  <mat-sidenav-container class="example-container" autosize>
+   
+    <mat-sidenav #sidenav fixedInViewport="false" mode="side" opened="{{ isExpanded }}">
+      <app-sidebar [isExpanded]="isExpanded"></app-sidebar>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <div class="content-container">
+      
+        
+          <router-outlet></router-outlet>
+
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
+<!-----------Loads when user is not logged in----------------->
+
+<div class="sellerchain-wrapper" *ngIf="!isLoggedIn">
+  <app-topbar (toggleMenu)="toggleMenu()" [isExpanded]="isExpanded"></app-topbar>
+  <div class="accounts-main">
+      <router-outlet></router-outlet>
+  </div>
+ 
+</div>
+

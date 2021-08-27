@@ -1,0 +1,13 @@
+<div class="content-view-component">
+    <div class="body-side">
+        <div class="breadcrumbs">
+            <app-breadcrumbs></app-breadcrumbs>
+        </div>
+        <div class="content-wrapper">
+                <ng-content select="[body]"></ng-content>
+        </div>
+    </div>
+    <div class="filters-side">
+        <ng-content select="[filter]"></ng-content>
+    </div>
+</div>

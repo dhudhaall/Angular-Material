@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1200px) {
+  .app-selection .selecting-app .app-listing .app1 {
+    flex-basis: 27%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .app-selection .selecting-app .app-listing .app1 {
+    flex-basis: 42%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app-selection .selecting-app {
+    flex-wrap: wrap;
+  }
+  .app-selection .selecting-app .app-listing {
+    flex-basis: 100%;
+  }
+  .app-selection .selecting-app .pricing {
+    flex-basis: 100%;
+    padding: 30px;
+  }
+  .app-selection .selecting-app .app-listing .app1 {
+    flex-basis: 42%;
+  }
+  .app-selection .color-stripe {
+    height: 50px;
+  }
+  .app-selection .descp {
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .app-selection .selecting-app .app-listing .app1 {
+    flex-basis: 100%;
+  }
+}
