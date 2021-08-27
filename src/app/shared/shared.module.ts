@@ -18,6 +18,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -31,17 +32,19 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
     CommonModule, FormsModule, ReactiveFormsModule,
     MatTooltipModule,
     MatIconModule,
+    MatTabsModule,
     MatSelectModule,MatMenuModule,
     MatListModule, MatBadgeModule,
     MatButtonModule,MatTableModule,MatRadioModule,
     RouterModule,MatFormFieldModule,MatInputModule,MatPaginatorModule
-    
+
   ],
   exports: [
     TopbarComponent,
     SidebarComponent, FormsModule, ReactiveFormsModule,
     MatSelectModule,
-  
+    MatTabsModule,
+
     MatTooltipModule,MatTableModule,MatBadgeModule,MatRadioModule,MatMenuModule,
     MatIconModule,ContentViewComponent,MatInputModule,MatPaginatorModule,
     MatListModule,MatButtonModule,BreadcrumbsComponent,MatFormFieldModule
