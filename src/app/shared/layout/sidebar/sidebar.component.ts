@@ -14,9 +14,9 @@ export class SidebarComponent implements OnInit {
     { link: "shipmentHistory", name: "Shipment History", icon: "schedule" },
     { link: "#", name: "Scan + Ship", icon: "qr_code",
       children: [
-        { link: "addItem", name: "Add Item", icon: "add" },
-        { link: "bulkUpload", name: "Bulk Uploads", icon: "local_shipping" },
-        { link: "scanShip-appSettings", name: "App Settings", icon: "settings" },
+        { link: "scanship/addItem", name: "Add Item", icon: "add" },
+        { link: "scanship/bulkUpload", name: "Bulk Uploads", icon: "local_shipping" },
+        { link: "scanship/scanShip-appSettings", name: "App Settings", icon: "settings" },
       ]
     },
     { link: "#", name: "Bleed Report", icon: "bloodtype",
@@ -30,7 +30,8 @@ export class SidebarComponent implements OnInit {
         { link: "item", name: "Item cost Tool", icon: "price_change" },
         { link: "sku-link-manager", name: "Sku Link Manager", icon: "link" },
       ]
-    }
+    },
+    
     
    
    ];
