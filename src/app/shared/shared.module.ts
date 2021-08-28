@@ -19,6 +19,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatTabsModule,
     MatSelectModule,MatMenuModule,
     MatListModule, MatBadgeModule,
-    MatButtonModule,MatTableModule,MatRadioModule,
+    MatButtonModule,MatTableModule,MatRadioModule,MatCheckboxModule,
     RouterModule,MatFormFieldModule,MatInputModule,MatPaginatorModule
 
   ],
@@ -43,7 +44,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     TopbarComponent,
     SidebarComponent, FormsModule, ReactiveFormsModule,
     MatSelectModule,
-    MatTabsModule,
+    MatTabsModule,MatCheckboxModule,
 
     MatTooltipModule,MatTableModule,MatBadgeModule,MatRadioModule,MatMenuModule,
     MatIconModule,ContentViewComponent,MatInputModule,MatPaginatorModule,
