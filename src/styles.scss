@@ -783,7 +783,6 @@ mat-sidenav[style] {
 
 ////////////////////////Dashbord//////////////////
 .dashbord {
-    padding: 40px;
     .heading-button {
         display: flex;
         align-items: center;
@@ -794,17 +793,17 @@ mat-sidenav[style] {
             display: flex;
             align-items: center;
             .heading {
-                margin-left: 45px;
+                margin-left: 30px;
                 h1 {
                     margin-bottom: 0;
                     color: #6cd6f4;
-                    font-size: 40px;
+                    font-size: 30px;
                     font-weight: 700;
                 }
             }
             .scan-icon {
                 .mat-icon {
-                    font-size: 60px;
+                    font-size: 50px;
                     color: #00aeef;
                 }
             }
@@ -881,12 +880,13 @@ mat-sidenav[style] {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
         .fields-tabel-main {
             .fields-main {
                 display: flex;
                 align-items: center;
                 border-bottom: 1px solid #e7ebea;
-                padding: 20px;
+                padding: 20px 0px;
                 .radio-text {
                     display: flex;
                     align-items: center;
@@ -913,7 +913,7 @@ mat-sidenav[style] {
                         }
                     }
                     h4 {
-                        font-size: 18px;
+                        font-size: 15px;
                         margin-bottom: 0;
                         display: block;
                         line-height: 1;
@@ -962,14 +962,20 @@ mat-sidenav[style] {
                         display: flex;
                         margin-left: 10px;
                         h3 {
-                            font-size: 18px;
+                            font-size: 15px;
                             margin-bottom: 0;
                             display: block;
                             line-height: 1;
+                            margin-right: 10px;
                         }
                         .mat-icon {
-                            font-size: 40px;
+                            font-size: 30px;
                             color: #afb0b3;
+                            display: block;
+                        }
+                        .download-icon {
+                            font-size: 30px;
+                            color: #39b54a;
                             display: block;
                         }
                     }
@@ -977,9 +983,10 @@ mat-sidenav[style] {
             }
             .table-section {
                 background-color: #ffffff;
-                padding: 30px;
-                border: 1px solid #f9fafa;
+                padding: 20px;
+                border: 1px solid #e3e8e8;
                 border-radius: 5px;
+                margin-top: 20px;
                 .table-heading {
                     display: flex;
                     align-items: center;
@@ -990,14 +997,14 @@ mat-sidenav[style] {
                     .heading {
                         flex-basis: 50%;
                         h1 {
-                            font-size: 27px;
+                            font-size: 22px;
                             font-weight: 400;
                             margin-bottom: 0;
                             color: #ffc58e;
                         }
                         .h1 {
                             color: #9fd89e;
-                            font-size: 24px;
+                            font-size: 20px;
                             font-weight: 400;
                             margin-bottom: 0;
                         }
@@ -1005,12 +1012,14 @@ mat-sidenav[style] {
                     .txt {
                         flex-basis: 25%;
                         p {
-                            font-size: 15px;
+                            font-size: 12px;
                             margin-bottom: 0;
                             input {
                                 display: inline;
                                 width: 10px;
                                 height: 10px;
+                                padding: 4px;
+                                font-size: 15px;
                             }
                         }
                     }
