@@ -5,13 +5,15 @@ import { ScanShipRoutingModule } from './scan-ship-routing.module';
 import { AddItemComponent } from './add-item-main/add-item/add-item.component';
 import { AddItemMainComponent } from './add-item-main/add-item-main.component';
 import { AddItemFiltersComponent } from './add-item-main/add-item-filters/add-item-filters.component';
+import { NewAddItemComponent } from './add-item-main/new-add-item/new-add-item.component';
 
 
 @NgModule({
   declarations: [
     AddItemComponent,
     AddItemMainComponent,
-    AddItemFiltersComponent
+    AddItemFiltersComponent,
+    NewAddItemComponent
   ],
   imports: [
     CommonModule,SharedModule,
