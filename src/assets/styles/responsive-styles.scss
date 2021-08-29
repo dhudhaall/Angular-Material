@@ -1,268 +1,444 @@
-    @media only screen and (max-width: 1200px) {
-        .app-selection .selecting-app .app-listing .app1 {
-            flex-basis: 27%;
-        }
-        .add-item-sec .add-item-main .add-item-headings h1 {
-            font-size: 34px;
-            margin-bottom: 20px;
-        }
-        .add-item-sec .add-item-main .add-item-headings p {
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .add-item-sec .add-item-main .add-item-headings h5 {
-            font-size: 25px;
-            margin-bottom: 20px;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-type h4 {
-            font-size: 15px;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-type h4 .mat-radio-button {
-            padding-left: 12px;
-        }
-        .about-adding-sec .about-adding-main h1 {
-            font-size: 32px;
-            margin-bottom: 40px;
-        }
-        .dashbord .heading-button .heading-main .heading h1 {
-            font-size: 23px;
-        }
-        .custom-button {
-            width: 140px;
-        }
-        .dashbord .heading-button .heading-main .scan-icon .mat-icon {
-            color: #00aeef;
-        }
-        .dashbord .heading-button {
-            padding-bottom: 0px;
-        }
-        .dashbord .scan-ship-details .scan-ship-main .detail-1 .icon-text-notif {
-            padding-bottom: 10px;
-        }
-        .dashbord .scan-ship-details .scan-ship-main .detail-1 .icon-text-notif .text-icon {
-            margin-right: 5px;
-        }
-        .dashbord .scan-ship-details .scan-ship-main .detail-1 .icon-text-notif .text h3 {
-            font-size: 10px;
-        }
-        .dashbord .scan-ship-details .scan-ship-main .detail-1 .detail-text p {
-            font-size: 10px;
-        }
-    }
+@media only screen and (max-width: 1780px) {
+}
 
-    @media only screen and (max-width: 994px) {
-        .custom-button {
-            width: unset;
-        }
-        .dashbord .scan-ship-details .scan-ship-main .detail-1 {
-            flex-basis: 33%;
-            margin-top: 20px;
-        }
-    }
+@media only screen and (max-width: 1200px) {
+  .app-selection .selecting-app .app-listing .app1 {
+    flex-basis: 27%;
+  }
+  .add-item-sec .add-item-main .add-item-headings h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .add-item-sec .add-item-main .add-item-headings p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .add-item-sec .add-item-main .add-item-headings h5 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-type h4 {
+    font-size: 15px;
+  }
+  .add-item-sec
+    .add-item-main
+    .serch-feild-flex
+    .flex-basis-3
+    .search-type
+    h4
+    .mat-radio-button {
+    padding-left: 12px;
+  }
+  .about-adding-sec .about-adding-main h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .dashbord .heading-button .heading-main .heading h1 {
+    font-size: 23px;
+  }
+  .custom-button {
+    width: 140px;
+  }
+  .dashbord .heading-button .heading-main .scan-icon .mat-icon {
+    color: #00aeef;
+  }
+  .dashbord .heading-button {
+    padding-bottom: 0px;
+  }
+  .dashbord .scan-ship-details .scan-ship-main .detail-1 .icon-text-notif {
+    padding-bottom: 10px;
+  }
+  .dashbord
+    .scan-ship-details
+    .scan-ship-main
+    .detail-1
+    .icon-text-notif
+    .text-icon {
+    margin-right: 5px;
+  }
+  .dashbord
+    .scan-ship-details
+    .scan-ship-main
+    .detail-1
+    .icon-text-notif
+    .text
+    h3 {
+    font-size: 10px;
+  }
+  .dashbord .scan-ship-details .scan-ship-main .detail-1 .detail-text p {
+    font-size: 10px;
+  }
+}
 
-    @media only screen and (max-width: 860px) {
-        .app-selection .selecting-app .app-listing .app1 {
-            flex-basis: 42%;
-        }
-        .add-item-sec {
-            padding: 20px;
-        }
-        .about-adding-sec .about-adding-main h1 {
-            font-size: 25px;
-        }
-        .about-adding-sec {
-            margin-top: 50px;
-        }
-    }
+@media only screen and (max-width: 994px) {
+  .custom-button {
+    width: unset;
+  }
+  .dashbord .scan-ship-details .scan-ship-main .detail-1 {
+    flex-basis: 33%;
+    margin-top: 20px;
+  }
+}
 
-    @media only screen and (max-width: 768px) {
-        .app-selection .selecting-app {
-            flex-wrap: wrap;
-        }
-        .app-selection .selecting-app .app-listing {
-            flex-basis: 100%;
-        }
-        .app-selection .selecting-app .pricing {
-            flex-basis: 100%;
-            padding: 30px;
-        }
-        .app-selection .selecting-app .app-listing .app1 {
-            flex-basis: 42%;
-        }
-        .app-selection .color-stripe {
-            height: 50px;
-        }
-        .app-selection .descp {
-            padding: 50px 20px;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex {
-            flex-direction: column;
-            justify-content: center;
-        }
-        .add-item-sec .add-item-main .header-btn {
-            padding-top: 42px;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-felid .search-main .mat-form-field-appearance-fill .mat-form-field-flex {
-            height: 44px;
-        }
-        .mat-button,
-        .mat-icon-button,
-        .mat-stroked-button,
-        .mat-flat-button {
-            padding: 5px 16px;
-        }
-        .add-item-sec .add-item-main .header-btn .header-btn-main {
-            flex-direction: column;
-        }
-        .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-1 .btn-text {
-            margin-bottom: 20px;
-        }
-        .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-2 {
-            border-left: none;
-        }
-        .about-adding-sec .about-adding-main .text-about-product {
-            flex-direction: column;
-            text-align: center;
-            margin-bottom: 0px;
-        }
-        .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-1 .btn-text .mat-button.mat-primary,
-        .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-1 .btn-text .mat-icon-button.mat-primary,
-        .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-1 .btn-text .mat-stroked-button.mat-primary {
-            font-size: 10px;
-        }
-        .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-2 .btn-text .mat-button.mat-primary,
-        .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-2 .btn-text .mat-icon-button.mat-primary,
-        .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-2 .btn-text .mat-stroked-button.mat-primary {
-            font-size: 10px;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 {
-            flex-basis: 100%;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-2 {
-            flex-basis: 100%;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-1 {
-            flex-basis: 100;
-        }
-        .dashbord .heading-button .heading-main .scan-icon .mat-icon {
-            font-size: 30px;
-        }
-        .dashbord .heading-button .heading-main .heading {
-            margin-left: 13px;
-        }
-        .dashbord .heading-button .heading-main .heading h1 {
-            font-size: 16px;
-        }
-        .dashbord .heading-button .button-main .add-item {
-            margin-right: 15px;
-            font-size: 10px;
-        }
-        .dashbord .heading-button .button-main .my-listing {
-            font-size: 10px;
-        }
-        .dashbord .heading-button {
-            padding-bottom: 10px;
-        }
-        .dashbord .scan-search-fields-tabel {
-            margin-top: 20px;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main {
-            flex-direction: column;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .radio-text {
-            margin-bottom: 20px;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn {
-            flex-direction: column;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn .input-main {
-            margin-left: 0px;
-            margin-bottom: 10px;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn .search-btn .mat-button,
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn .search-btn .mat-icon-button,
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn .search-btn .mat-stroked-button {
-            margin-left: 0px;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn .fiter-icon {
-            margin-left: 0px;
-            margin-top: 10px;
-        }
-        .dashbord .scan-ship-details .scan-ship-main .detail-1 {
-            flex-basis: 50%;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-main th.mat-header-cell,
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-main td.mat-cell,
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-main td.mat-footer-cell {
-            font-size: 10px;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-main th.mat-header-cell a,
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-main td.mat-cell a,
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-main td.mat-footer-cell a {
-            font-size: 11px;
-            font-weight: 400;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-main .mat-checkbox {
-            margin-right: 6px;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-heading .heading h1 {
-            font-size: 16px;
-        }
-        .dashbord .scan-search-fields-tabel .fields-tabel-main .table-section .table-heading .heding-btn .view-all {
-            font-size: 10px;
-        }
-        .dashbord .heading-button {
-            justify-content: center;
-            flex-direction: column;
-        }
-    }
+@media only screen and (max-width: 860px) {
+  .app-selection .selecting-app .app-listing .app1 {
+    flex-basis: 42%;
+  }
+  .add-item-sec {
+    padding: 20px;
+  }
+  .about-adding-sec .about-adding-main h1 {
+    font-size: 25px;
+  }
+  .about-adding-sec {
+    margin-top: 50px;
+  }
+}
 
-    @media only screen and (max-width: 530px) {
-        .app-selection .selecting-app .app-listing .app1 {
-            flex-basis: 100%;
-        }
-        .add-item-sec .add-item-main .add-item-headings h5 {
-            font-size: 21px;
-            line-height: 28px;
-            margin-bottom: 12px;
-        }
-        .add-item-sec .add-item-main .add-item-headings h1 {
-            font-size: 27px;
-            margin-bottom: 8px;
-        }
-        .add-item-sec .add-item-main .add-item-headings p {
-            margin-bottom: 8px;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-field {
-            flex-direction: column;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-type {
-            flex-direction: column;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-field .search-main .mat-form-field-appearance-fill .mat-form-field-flex {
-            margin-bottom: 10px;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-field .search-btn {
-            margin-left: 0;
-            flex-basis: 100%;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-field .search-main {
-            flex-basis: 100%;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-type {
-            margin-bottom: 10px;
-        }
-        .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-type .mat-radio-button {
-            padding-left: 15px;
-        }
-        .mat-radio-group {
-            margin-right: 10px;
-        }
-        .dashbord .scan-ship-details .scan-ship-main .detail-1 {
-            flex-basis: 100%;
-        }
-        .dashbord .heading-button {
-            justify-content: center;
-            flex-direction: column;
-        }
-    }
+@media only screen and (max-width: 768px) {
+  .app-selection .selecting-app {
+    flex-wrap: wrap;
+  }
+  .app-selection .selecting-app .app-listing {
+    flex-basis: 100%;
+  }
+  .app-selection .selecting-app .pricing {
+    flex-basis: 100%;
+    padding: 30px;
+  }
+  .app-selection .selecting-app .app-listing .app1 {
+    flex-basis: 42%;
+  }
+  .app-selection .color-stripe {
+    height: 50px;
+  }
+  .app-selection .descp {
+    padding: 50px 20px;
+  }
+  .add-item-sec .add-item-main .serch-feild-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .add-item-sec .add-item-main .header-btn {
+    padding-top: 42px;
+  }
+  .add-item-sec
+    .add-item-main
+    .serch-feild-flex
+    .flex-basis-3
+    .search-felid
+    .search-main
+    .mat-form-field-appearance-fill
+    .mat-form-field-flex {
+    height: 44px;
+  }
+  .mat-button,
+  .mat-icon-button,
+  .mat-stroked-button,
+  .mat-flat-button {
+    padding: 5px 16px;
+  }
+  .add-item-sec .add-item-main .header-btn .header-btn-main {
+    flex-direction: column;
+  }
+  .add-item-sec
+    .add-item-main
+    .header-btn
+    .header-btn-main
+    .btn-flex-1
+    .btn-text {
+    margin-bottom: 20px;
+  }
+  .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-2 {
+    border-left: none;
+  }
+  .about-adding-sec .about-adding-main .text-about-product {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .add-item-sec
+    .add-item-main
+    .header-btn
+    .header-btn-main
+    .btn-flex-1
+    .btn-text
+    .mat-button.mat-primary,
+  .add-item-sec
+    .add-item-main
+    .header-btn
+    .header-btn-main
+    .btn-flex-1
+    .btn-text
+    .mat-icon-button.mat-primary,
+  .add-item-sec
+    .add-item-main
+    .header-btn
+    .header-btn-main
+    .btn-flex-1
+    .btn-text
+    .mat-stroked-button.mat-primary {
+    font-size: 10px;
+  }
+  .add-item-sec
+    .add-item-main
+    .header-btn
+    .header-btn-main
+    .btn-flex-2
+    .btn-text
+    .mat-button.mat-primary,
+  .add-item-sec
+    .add-item-main
+    .header-btn
+    .header-btn-main
+    .btn-flex-2
+    .btn-text
+    .mat-icon-button.mat-primary,
+  .add-item-sec
+    .add-item-main
+    .header-btn
+    .header-btn-main
+    .btn-flex-2
+    .btn-text
+    .mat-stroked-button.mat-primary {
+    font-size: 10px;
+  }
+  .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 {
+    flex-basis: 100%;
+  }
+  .add-item-sec .add-item-main .serch-feild-flex .flex-basis-2 {
+    flex-basis: 100%;
+  }
+  .add-item-sec .add-item-main .serch-feild-flex .flex-basis-1 {
+    flex-basis: 100;
+  }
+  .dashbord .heading-button .heading-main .scan-icon .mat-icon {
+    font-size: 30px;
+  }
+  .dashbord .heading-button .heading-main .heading {
+    margin-left: 13px;
+  }
+  .dashbord .heading-button .heading-main .heading h1 {
+    font-size: 16px;
+  }
+  .dashbord .heading-button .button-main .add-item {
+    margin-right: 15px;
+    font-size: 10px;
+  }
+  .dashbord .heading-button .button-main .my-listing {
+    font-size: 10px;
+  }
+  .dashbord .heading-button {
+    padding-bottom: 10px;
+  }
+  .dashbord .scan-search-fields-tabel {
+    margin-top: 20px;
+  }
+  .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main {
+    flex-direction: column;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .fields-main
+    .radio-text {
+    margin-bottom: 20px;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .fields-main
+    .input-btn {
+    flex-direction: column;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .fields-main
+    .input-btn
+    .input-main {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .fields-main
+    .input-btn
+    .search-btn
+    .mat-button,
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .fields-main
+    .input-btn
+    .search-btn
+    .mat-icon-button,
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .fields-main
+    .input-btn
+    .search-btn
+    .mat-stroked-button {
+    margin-left: 0px;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .fields-main
+    .input-btn
+    .fiter-icon {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .dashbord .scan-ship-details .scan-ship-main .detail-1 {
+    flex-basis: 50%;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-main
+    th.mat-header-cell,
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-main
+    td.mat-cell,
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-main
+    td.mat-footer-cell {
+    font-size: 10px;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-main
+    th.mat-header-cell
+    a,
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-main
+    td.mat-cell
+    a,
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-main
+    td.mat-footer-cell
+    a {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-main
+    .mat-checkbox {
+    margin-right: 6px;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-heading
+    .heading
+    h1 {
+    font-size: 16px;
+  }
+  .dashbord
+    .scan-search-fields-tabel
+    .fields-tabel-main
+    .table-section
+    .table-heading
+    .heding-btn
+    .view-all {
+    font-size: 10px;
+  }
+  .dashbord .heading-button {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .app-selection .selecting-app .app-listing .app1 {
+    flex-basis: 100%;
+  }
+  .add-item-sec .add-item-main .add-item-headings h5 {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+  .add-item-sec .add-item-main .add-item-headings h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+  }
+  .add-item-sec .add-item-main .add-item-headings p {
+    margin-bottom: 8px;
+  }
+  .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-field {
+    flex-direction: column;
+  }
+  .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-type {
+    flex-direction: column;
+  }
+  .add-item-sec
+    .add-item-main
+    .serch-feild-flex
+    .flex-basis-3
+    .search-field
+    .search-main
+    .mat-form-field-appearance-fill
+    .mat-form-field-flex {
+    margin-bottom: 10px;
+  }
+  .add-item-sec
+    .add-item-main
+    .serch-feild-flex
+    .flex-basis-3
+    .search-field
+    .search-btn {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+  .add-item-sec
+    .add-item-main
+    .serch-feild-flex
+    .flex-basis-3
+    .search-field
+    .search-main {
+    flex-basis: 100%;
+  }
+  .add-item-sec .add-item-main .serch-feild-flex .flex-basis-3 .search-type {
+    margin-bottom: 10px;
+  }
+  .add-item-sec
+    .add-item-main
+    .serch-feild-flex
+    .flex-basis-3
+    .search-type
+    .mat-radio-button {
+    padding-left: 15px;
+  }
+  .mat-radio-group {
+    margin-right: 10px;
+  }
+  .dashbord .scan-ship-details .scan-ship-main .detail-1 {
+    flex-basis: 100%;
+  }
+  .dashbord .heading-button {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
