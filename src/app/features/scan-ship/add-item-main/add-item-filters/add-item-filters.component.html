@@ -1,1 +1,142 @@
-<p>add-item-filters works!</p>
+<section class="side-bar add-items-right-bar rigt-side-actions">
+    <div class="side-bar-main add-item-reght-bar filters">
+
+        <div class="heading-border add-right-bar-flex ">
+            <h1>SORT BY:</h1>
+            <mat-icon class="sortby"><span class="material-icons">
+          push_pin
+        </span></mat-icon>
+        </div>
+        <div class="right-action-main">
+            <mat-radio-group aria-label="Select an option" class="radio-main">
+                <mat-radio-button value="1" class="radio">Shipment ID</mat-radio-button>
+                <mat-radio-button value="3" class="radio">MP</mat-radio-button>
+                <mat-radio-button value="4" class="radio">Status</mat-radio-button>
+                <mat-radio-button value="4" class="radio">Shipping Tier</mat-radio-button>
+                <mat-radio-button value="2" class="radio">Shipment Name</mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <div class="heading-text add-right-bar-flex">
+            <h2>
+                SELECTED ITEMS:
+            </h2>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons">
+          push_pin
+        </span></mat-icon>
+        </div>
+        <div class="select-item-ul">
+            <ul>
+                <li><a href="#">click for more o</a></li>
+                <li><a href="#">Add to Pile</a></li>
+                <li><a href="#">Show Item Details</a></li>
+                <li><a href="#">Add to Item Group</a></li>
+                <li><a href="#">Add to Custom Pile</a></li>
+                <li><a href="#">Delete SKUs</a></li>
+            </ul>
+        </div>
+
+        <div class="slide-heading">
+            <h2>CASE PACK MODE
+                <mat-slide-toggle></mat-slide-toggle> OFF
+            </h2>
+            <p>Make sure you are on the correct account when adding items to piles since items cannot be moved from one account’s pile to another</p>
+        </div>
+        <div class="market-dropdown">
+            <div class="dropdown-main">
+                <label>MARKETPLACE:</label>
+                <mat-form-field appearance="fill">
+                    <mat-select>
+                        <mat-option value="option">SHOW ALL</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <p>Experimenting with different Ship From addresses is one way to get better FC locations. It can always be switched right when you are about to finish creating a shipment. Try it out...</p>
+
+        </div>
+        <!-- <div class="market-dropdown">
+            <div class="dropdown-main">
+                <label>SHIP FROM ADDRESS:</label>
+                <mat-form-field appearance="fill">
+                    <mat-select>
+                        <mat-option value="option">SellerChain, 1060 Linwoo...</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <p>Shipment Piles are the heart of Scan+Ship. This is where items are added to and are automatically grouped for shipment
+            </p>
+
+            <p>Adding the paid add-on Custom Pile feature will allow users to save ready piles of items you frequently use to spead up the shipment creation process.</p>
+        </div> -->
+        <div class="plan-sec add-items-plan">
+            <h1>SHIPMENT PILES</h1>
+            <p>Select a pile to view contents.</p>
+            <h3>SELLER/NO LABEL PLANS</h3>
+            <div class="plan-main">
+                <div class="plan">
+                    <div class="flex">
+                        <h4>
+                            <mat-icon aria-hidden="false" aria-label="Example home icon"><span class="material-icons">
+                  lock
+                </span></mat-icon>STANDARD
+                        </h4>
+                    </div>
+                    <div class="flex">
+                        <h4> 3 SKU | 72 UNIT</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan-main pirot-badge">
+                <div class="plan">
+                    <div class="flex">
+                        <h4>HEAVY</h4>
+                    </div>
+                    <div class="flex">
+                        <h4>
+                            3 SKU | 72 UNIT
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-main gry-badge">
+                <div class="plan">
+                    <div class="flex">
+                        <h4>STANDARD</h4>
+                    </div>
+                    <div class="flex">
+                        <h4> 3 SKU | 72 UNIT</h4>
+                    </div>
+                </div>
+            </div>
+
+            <h3>AMAZON LABEL PLANS</h3>
+            <div class="plan-main">
+                <div class="plan">
+                    <div class="flex">
+                        <h4>
+                            STANDARD
+                        </h4>
+                    </div>
+                    <div class="flex">
+                        <h4> 3 SKU | 72 UNIT</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan-main orange-badge">
+                <div class="plan">
+                    <div class="flex">
+                        <h4>HEAVY</h4>
+                    </div>
+                    <div class="flex">
+                        <h4>
+                            3 SKU | 72 UNIT
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
