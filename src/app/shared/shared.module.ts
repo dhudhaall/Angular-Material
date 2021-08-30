@@ -21,7 +21,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -35,6 +35,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatTooltipModule,
     MatIconModule,
     MatTabsModule,
+    MatExpansionModule,
     MatSlideToggleModule,
     MatSelectModule,MatMenuModule,
     MatListModule, MatBadgeModule,
@@ -48,6 +49,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatSelectModule,
     MatTabsModule,MatCheckboxModule,
     MatSlideToggleModule,
+    MatExpansionModule,
     MatTooltipModule,MatTableModule,MatBadgeModule,MatRadioModule,MatMenuModule,
     MatIconModule,ContentViewComponent,MatInputModule,MatPaginatorModule,
     MatListModule,MatButtonModule,BreadcrumbsComponent,MatFormFieldModule

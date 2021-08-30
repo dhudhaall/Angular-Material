@@ -1,4 +1,49 @@
-@media only screen and (max-width: 1780px) {}
+@media only screen and (max-width: 1780px) {
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-date-mfr h3 {
+        font-size: 14px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-date-mfr .rank-main .rank2 p {
+        font-size: 15px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button .button-link a {
+        font-size: 13px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name h3 {
+        font-size: 20px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name p span {
+        font-size: 20px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name .offers .offer-opption h5 {
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .dashbord .scan-ship-details .scan-ship-main .detail-1 .icon-text-notif .text h3 {
+        font-size: 14px;
+    }
+    .side-bar .side-bar-main .plan-sec .plan-main .plan .flex h4 {
+        font-size: 11px;
+    }
+    side-bar .side-bar-main .plan-sec h3 {
+        font-size: 12px;
+    }
+    .side-bar .side-bar-main .plan-sec h1 {
+        font-size: 20px;
+    }
+    .side-bar .side-bar-main .plan-sec p {
+        font-size: 13px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-image {
+        flex-basis: 10%;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button {
+        flex-basis: 14%;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .app-selection .selecting-app .app-listing .app1 {
@@ -216,6 +261,22 @@
     .dashbord .heading-button {
         justify-content: center;
         flex-direction: column;
+    }
+    .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .radio-text h4 {
+        width: unset;
+        margin-bottom: 6px;
+    }
+    .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .radio-text {
+        flex-direction: column;
+    }
+    .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .radio-text .radio-btn .mat-radio-group {
+        flex-direction: row;
+    }
+    .mat-radio-button {
+        margin-left: 10px;
+    }
+    .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .radio-text .radio-btn {
+        margin-left: 0px;
     }
 }
 
