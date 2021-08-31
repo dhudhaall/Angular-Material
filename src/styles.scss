@@ -668,24 +668,38 @@ mat-sidenav[style] {
 }
 
 ////////////////////////////////////////////ADD ITEM PAGE//////////////////////
+.overly-image {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 7%;
+    bottom: 54px;
+    transform: translate(10px, 10px);
+    margin: auto;
+    .left-image {
+        background-image: url(./assets/images/left-plant.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 100%;
+        height: 188px;
+        flex-basis: 50%;
+        left: 50%;
+    }
+    .right-image {
+        background-image: url(./assets/images/right-plant.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 100%;
+        height: 188px;
+        flex-basis: 50%;
+        left: 50%;
+    }
+}
+
 .add-item-sec {
     background-color: #88d3db;
-    .overly-image {
-        display: flex;
-        justify-content: space-between;
-        .left-image {
-            background-image: url(./assets/images/left-plant.png);
-            background-size: 500x 500px;
-            background-repeat: no-repeat;
-            background-position: left;
-        }
-        .right-image {
-            background-image: url(./assets/images/right-plant.png);
-            background-size: 500x 500px;
-            background-repeat: no-repeat;
-            background-position: left;
-        }
-    }
     .add-item-main {
         padding: 40px 0px 40px 0px;
         margin: auto;
