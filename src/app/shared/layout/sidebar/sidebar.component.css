@@ -1,0 +1,20 @@
+.sidenav {
+  width: 250px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px 0;
+}
+
+.toggle:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=sidebar.component.css.map */

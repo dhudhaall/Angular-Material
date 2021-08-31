@@ -43,6 +43,87 @@
     .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button {
         flex-basis: 14%;
     }
+    .item-Head .item-image .img-border img {
+        width: 100%;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name h3 {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name p {
+        font-size: 13px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name .offers .offer-opption h5 span {
+        /* background-color: #444431; */
+        /* color: #ffffff; */
+        /* border-radius: 50%; */
+        padding: 3px 6px;
+        font-size: 11px;
+        /* margin-right: 5px; */
+    }
+    main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name .offers .offer-opption h5 {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-brand h3 {
+        /* font-weight: 600; */
+        font-size: 13px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-brand p {
+        font-size: 13px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-date-mfr h3 {
+        font-size: 13px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-date-mfr .rank-main .rank1 h3 {
+        font-size: 14px;
+        /* margin-bottom: 0px; */
+        /* font-weight: 600; */
+    }
+    .primary,
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button .button-main .mat-raised-button.mat-primary,
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button .button-main .mat-fab.mat-primary,
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button .button-main .mat-mini-fab.mat-primary {
+        background-color: #39b54a;
+        font-size: 13px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button .button-img {
+        margin-bottom: 10px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name .offers .offer-text h5 {
+        font-size: 14px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name .offers .offer-opption h5 {
+        font-size: 11px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-item-detail .new-add-item-main-detail .new-heading-detail .heading-main h1 {
+        font-size: 25px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-item-detail .new-add-item-main-detail .new-heading-detail .offer-status h2 span {
+        font-size: 18px;
+        padding: 3px 9px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name .offers .offer-opption h5 {
+        margin-bottom: 5px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td .mat-flat-button.mat-primary,
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td .mat-raised-button.mat-primary,
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td .mat-fab.mat-primary,
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td .mat-mini-fab.mat-primary {
+        width: 90px;
+        font-size: 14px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 .heading-text h1 {
+        font-size: 24px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-item-detail .new-add-item-main-detail .new-heading-detail .offer-status h2 {
+        font-size: 19px;
+        margin-left: 14px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -95,6 +176,15 @@
     .dashbord .scan-ship-details .scan-ship-main .detail-1 .detail-text p {
         font-size: 10px;
     }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 .bar-img {
+        width: 50px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 .heading-text {
+        margin-left: 7px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 .heading-text h1 {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 994px) {
@@ -104,6 +194,34 @@
     .dashbord .scan-ship-details .scan-ship-main .detail-1 {
         flex-basis: 33%;
         margin-top: 20px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main {
+        flex-direction: column;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 {
+        flex-direction: column-reverse;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 .heading-text {
+        margin-left: 0px;
+    }
+    .shipping-listing-search .title h1 {
+        font-size: 20px;
+    }
+    .shipment-table-main table .mat-header-cell {
+        font-size: 13px;
+        padding: 3px;
+        font-weight: 500;
+    }
+    .shipment-table-main table .mat-cell .badgeCustom-label {
+        padding: 1px 3px;
+        font-size: 10px;
+        width: auto;
+        margin: auto;
+    }
+    .shipping-listing-search .title .mat-icon {
+        font-size: 40px;
+        width: 40px;
+        height: 47px;
     }
 }
 
@@ -119,6 +237,29 @@
     }
     .about-adding-sec {
         margin-top: 50px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .radio-text h4 {
+        width: unset;
+        margin-bottom: 9px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .radio-text {
+        flex-direction: column;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .radio-text .radio-btn {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main {
+        flex-direction: column;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .radio-text .radio-btn .mat-radio-group {
+        flex-direction: row;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .radio-text .radio-btn .mat-radio-button {
+        margin-left: 10px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 .heading-text h1 {
+        font-size: 27px;
     }
 }
 
@@ -327,5 +468,19 @@
     .dashbord .heading-button {
         justify-content: center;
         flex-direction: column;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .input-btn {
+        flex-direction: column;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .input-btn .search-btn .mat-button,
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .input-btn .search-btn .mat-icon-button,
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .input-btn .search-btn .mat-stroked-button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .fields-main .input-btn .fiter-icon {
+        /* display: flex; */
+        margin-left: 0px;
+        /* align-content: flex-start; */
     }
 }

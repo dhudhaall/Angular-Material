@@ -96,8 +96,29 @@ body {
     background-color: #ffb249 !important;
 }
 
+.dark-gray-bdg {
+    background-color: #afb0b3 !important;
+}
+
 .red-badge {
     background-color: #d32d23 !important;
+}
+
+.light-green {
+    background-color: #87c846 !important;
+}
+
+//////////////////MATE ICON + TEXT COLOR/////////////
+.icon-color {
+    color: #ebecec !important;
+}
+
+.orange-light {
+    color: #ffb249 !important;
+}
+
+.gry-color {
+    color: #ebecec !important;
 }
 
 
@@ -510,7 +531,7 @@ mat-sidenav[style] {
                     background-color: transparent;
                     border-radius: 5px;
                     border: 2px solid #ededed;
-                    padding: 0px 7px 0px 8px;
+                    padding: 0px 12px 10px 13px;
                     .mat-form-field-infix {
                         width: 100%;
                     }
@@ -611,7 +632,6 @@ mat-sidenav[style] {
             flex-basis: 25%;
             padding-top: 30px;
             padding-right: 50px;
-            .sub {}
             .prices {
                 border: 1px solid #ddd;
                 border-radius: 10px;
@@ -650,6 +670,22 @@ mat-sidenav[style] {
 ////////////////////////////////////////////ADD ITEM PAGE//////////////////////
 .add-item-sec {
     background-color: #88d3db;
+    .overly-image {
+        display: flex;
+        justify-content: space-between;
+        .left-image {
+            background-image: url(./assets/images/left-plant.png);
+            background-size: 500x 500px;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+        .right-image {
+            background-image: url(./assets/images/right-plant.png);
+            background-size: 500x 500px;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+    }
     .add-item-main {
         padding: 40px 0px 40px 0px;
         margin: auto;
@@ -667,6 +703,12 @@ mat-sidenav[style] {
                 font-size: 20px;
                 color: #000;
                 margin-bottom: 30px;
+                line-height: 1;
+                img {
+                    width: 28px;
+                    display: inline;
+                    vertical-align: middle;
+                }
             }
             h5 {
                 color: #ffffff;
@@ -1335,6 +1377,7 @@ mat-sidenav[style] {
 ////////////////////add-new-item//////////////
 .addnew-item-main {
     display: flex;
+    margin-top: 20px;
     .addnew-content-section {
         flex: 1;
         padding: 0px 20px;
@@ -1521,7 +1564,7 @@ mat-sidenav[style] {
                         height: 100%;
                         .img-border {
                             border: 1px solid #e7e8e8;
-                            width: 50%;
+                            width: 100%;
                             padding: 10px;
                             margin: auto;
                             img {
@@ -1541,12 +1584,13 @@ mat-sidenav[style] {
                         }
                         p {
                             font-size: 15px;
-                            font-weight: 700;
+                            color: #929d9b;
                             margin-bottom: 10px;
                             span {
                                 font-size: 25px;
                                 font-weight: 600;
-                                color: #020101bf;
+                                color: #43454b;
+                                margin-left: 5px;
                             }
                         }
                         .offers {
@@ -1557,13 +1601,14 @@ mat-sidenav[style] {
                                     margin-bottom: 0px;
                                     font-size: 17px;
                                     font-weight: 500;
+                                    color: #929d9b;
                                 }
                             }
                             .offer-opption {
                                 h5 {
                                     margin-bottom: 10px;
                                     font-size: 19px;
-                                    font-weight: 600;
+                                    color: #43454b;
                                     span {
                                         background-color: #444431;
                                         color: #ffffff;
@@ -1602,8 +1647,9 @@ mat-sidenav[style] {
                             font-weight: 500;
                             margin-bottom: 3px;
                             line-height: 1;
+                            color: #929d9b;
                             span {
-                                font-weight: 700;
+                                color: #000;
                             }
                         }
                         .rank-main {
@@ -1614,14 +1660,13 @@ mat-sidenav[style] {
                                 h3 {
                                     font-size: 18px;
                                     margin-bottom: 0px;
-                                    font-weight: 600;
                                 }
                             }
                             .rank2 {
                                 p {
                                     font-size: 20px;
-                                    font-weight: 700;
                                     margin-bottom: 0;
+                                    color: #000;
                                 }
                             }
                         }
@@ -1656,6 +1701,7 @@ mat-sidenav[style] {
                             margin-top: 10px;
                             a {
                                 font-size: 20px;
+                                color: #3ab5e6;
                             }
                         }
                     }
@@ -1685,6 +1731,7 @@ mat-sidenav[style] {
                                     font-size: 24px;
                                     color: #99a2a1;
                                     margin-left: 20px;
+                                    font-weight: 400;
                                     span {
                                         font-size: 24px;
                                         padding: 5px 13px;
@@ -1709,12 +1756,14 @@ mat-sidenav[style] {
                             padding: 10px;
                             border-bottom: 1px solid #97a2a0;
                             border-right: 1px solid #97a2a0;
-                            color: #7e8382;
+                            color: #929d9b;
+                            font-weight: 500;
                         }
                         td {
                             border-right: 1px solid #97a2a0;
                             padding: 10px;
                             border-bottom: 1px solid #97a2a0;
+                            color: #000;
                             .td-us {
                                 border-radius: 3px;
                                 background-color: #f3371a;
@@ -1749,6 +1798,7 @@ mat-sidenav[style] {
     }
     .addnew-sidebar {
         flex-basis: 300px;
+        padding: 0px 20px;
     }
 }
 
@@ -1756,4 +1806,3 @@ mat-sidenav[style] {
 /*//////////Responisve styles imported //////////////*/
 
 @import "assets/styles/responsive-styles.scss";
-

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "shipment-listing.component.scss"
+    ],
+    "names": [],
+    "file": "shipment-listing.component.css"
+}
