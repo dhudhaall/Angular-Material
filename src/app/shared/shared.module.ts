@@ -22,6 +22,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatTooltipModule,
     MatIconModule,
     MatTabsModule,
+    MatDialogModule,
     MatExpansionModule,
     MatSlideToggleModule,
     MatSelectModule,MatMenuModule,
@@ -47,6 +49,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     TopbarComponent,
     SidebarComponent, FormsModule, ReactiveFormsModule,
     MatSelectModule,
+    MatDialogModule,
     MatTabsModule,MatCheckboxModule,
     MatSlideToggleModule,
     MatExpansionModule,
