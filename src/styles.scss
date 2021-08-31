@@ -256,7 +256,7 @@ mat-sidenav[style] {
     flex: 1;
   }
   .filters-side {
-    flex-basis: 350px;
+    flex-basis: 370px;
     transition: all 0.3s ease;
   }
   .filters-side.slideBarInOut {
@@ -1487,6 +1487,8 @@ mat-sidenav[style] {
       .main-item-add-new {
         border: 1px solid #97a2a0;
         border-radius: 5px;
+        background-color: #fff;
+        padding: 10px;
         .mat-expansion-panel:not([class*="mat-elevation-z"]) {
           box-shadow: none;
         }
