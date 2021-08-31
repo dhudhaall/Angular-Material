@@ -127,46 +127,31 @@ body {
         width: 100%;
       }
     }
-    .logo-btn {
-      display: flex;
-      align-items: center;
-      .toggle {
-        padding-right: 20px;
-        .mat-icon {
-          cursor: pointer;
-        }
-      }
-      .logo {
-        width: 200px;
-        img {
-          width: 100%;
-        }
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+    .admin-message {
+      padding-right: 10px;
+      p {
+        margin-bottom: 0;
       }
     }
-    .header-menu {
-      display: flex;
-      align-items: center;
-      .admin-message {
-        padding-right: 10px;
-        p {
-          margin-bottom: 0;
-        }
+    .top-menu-icons {
+      .mat-icon {
+        padding: 5px;
+        color: #322536;
       }
-      .top-menu-icons {
-        .mat-icon {
-          padding: 5px;
-          color: #322536;
-        }
-        .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
-          width: 15px;
-          height: 15px;
-          line-height: 16px;
-          font-weight: 300;
-          font-size: 12px;
-          bottom: 0px;
-          top: unset !important;
-          right: 0px !important;
-        }
+      .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+        width: 15px;
+        height: 15px;
+        line-height: 16px;
+        font-weight: 300;
+        font-size: 12px;
+        bottom: 0px;
+        top: unset !important;
+        right: 0px !important;
       }
     }
   }
@@ -271,7 +256,7 @@ mat-sidenav[style] {
     flex: 1;
   }
   .filters-side {
-    flex-basis: 20%;
+    flex-basis: 350px;
     transition: all 0.3s ease;
   }
   .filters-side.slideBarInOut {
@@ -1095,10 +1080,10 @@ mat-sidenav[style] {
               margin-bottom: 0;
               input {
                 display: inline;
-                width: 10px;
-                height: 10px;
-                padding: 4px;
-                font-size: 15px;
+                width: 20px;
+                height: 20px;
+                padding: 2px;
+                font-size: 14px;
               }
             }
           }
@@ -1532,6 +1517,7 @@ mat-sidenav[style] {
         }
         .mat-expansion-panel-header {
           padding: 0;
+          border-bottom: 1px solid #e7e8e8;
         }
         .item-Head {
           display: flex;
@@ -1541,11 +1527,11 @@ mat-sidenav[style] {
           }
           .item-image {
             flex-basis: 15%;
-            padding: 20 7px;
-            border-right: 1px solid #97a2a0;
+            padding: 20px 7px;
+            border-right: 1px solid #e7e8e8;
             height: 100%;
             .img-border {
-              border: 1px solid #97a2a0;
+              border: 1px solid #e7e8e8;
               width: 50%;
               padding: 10px;
               margin: auto;
@@ -1556,8 +1542,8 @@ mat-sidenav[style] {
           }
           .item-name {
             flex-basis: 20%;
-            padding: 20 7px;
-            border-right: 1px solid #97a2a0;
+            padding: 20px 7px;
+            border-right: 1px solid #e7e8e8;
             h3 {
               font-size: 28px;
               font-weight: 600;
@@ -1603,8 +1589,8 @@ mat-sidenav[style] {
           }
           .item-brand {
             flex-basis: 30%;
-            padding: 20 7px;
-            border-right: 1px solid #97a2a0;
+            padding: 20px 7px;
+            border-right: 1px solid #e7e8e8;
             h3 {
               font-weight: 600;
               font-size: 16px;
@@ -1620,8 +1606,8 @@ mat-sidenav[style] {
           }
           .item-date-mfr {
             flex-basis: 25%;
-            padding: 20 7px;
-            border-right: 1px solid #97a2a0;
+            padding: 20px 7px;
+            border-right: 1px solid #e7e8e8;
             h3 {
               font-size: 19px;
               font-weight: 500;
@@ -1660,6 +1646,9 @@ mat-sidenav[style] {
             align-items: center;
             .button-img {
               margin-bottom: 20px;
+              img {
+                max-width: 40px;
+              }
             }
             .button-main {
               .mat-flat-button.mat-primary,
