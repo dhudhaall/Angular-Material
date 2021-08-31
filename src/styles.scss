@@ -39,9 +39,10 @@
 
 html,
 body {
-    height: 100%;
+    // height: 100%;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    // overflow-y: hidden;
 }
 
 .break-word-custom {
@@ -105,6 +106,12 @@ body {
 .header-main {
     padding: 5px 20px;
     border-bottom: 1px solid #e1dede;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    background-color: #fff;
     .header-inner {
         display: flex;
         align-items: center;
@@ -161,12 +168,21 @@ mat-sidenav[style] {
     visibility: visible !important;
 }
 
+.mat-drawer.mat-drawer-side {
+    z-index: 2;
+    position: fixed;
+    top: 57px;
+    left: 0;
+    height: 100vh;
+}
+
 .mat-drawer {
     transform: none !important;
 }
 
 .mat-drawer-container {
-    min-height: calc(100vh - 63px);
+    min-height: calc(100vh - 57px);
+    margin-top: 57px;
 }
 
 .mat-drawer-content {
@@ -238,7 +254,7 @@ mat-sidenav[style] {
 
 .content-wrapper {
     padding: 10px;
-    height: 100%;
+    // height: 100%;
 }
 
 .content-view-component {
@@ -247,7 +263,7 @@ mat-sidenav[style] {
         flex: 1;
     }
     .filters-side {
-        flex-basis: 20%;
+        flex-basis: 370px;
         transition: all 0.3s ease;
     }
     .filters-side.slideBarInOut {
@@ -1059,10 +1075,10 @@ mat-sidenav[style] {
                             margin-bottom: 0;
                             input {
                                 display: inline;
-                                width: 10px;
-                                height: 10px;
-                                padding: 4px;
-                                font-size: 15px;
+                                width: 20px;
+                                height: 20px;
+                                padding: 2px;
+                                font-size: 14px;
                             }
                         }
                     }
@@ -1310,7 +1326,7 @@ mat-sidenav[style] {
                 text-align: left;
             }
             p {
-                text-align: left
+                text-align: left;
             }
         }
     }
@@ -1461,7 +1477,9 @@ mat-sidenav[style] {
             .main-item-add-new {
                 border: 1px solid #97a2a0;
                 border-radius: 5px;
-                .mat-expansion-panel:not([class*=mat-elevation-z]) {
+                background-color: #fff;
+                padding: 10px;
+                .mat-expansion-panel:not([class*="mat-elevation-z"]) {
                     box-shadow: none;
                 }
                 .mat-expansion-panel-header-title,
@@ -1481,13 +1499,14 @@ mat-sidenav[style] {
                 .mat-expansion-panel-header.mat-expanded {
                     height: auto;
                 }
-                .mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]),
-                .mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]),
-                .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+                .mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled="true"]),
+                .mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled="true"]),
+                .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
                     background-color: #ffffff;
                 }
                 .mat-expansion-panel-header {
                     padding: 0;
+                    border-bottom: 1px solid #e7e8e8;
                 }
                 .item-Head {
                     display: flex;
@@ -1498,10 +1517,10 @@ mat-sidenav[style] {
                     .item-image {
                         flex-basis: 15%;
                         padding: 20px 7px;
-                        border-right: 1px solid #97a2a0;
+                        border-right: 1px solid #e7e8e8;
                         height: 100%;
                         .img-border {
-                            border: 1px solid #97a2a0;
+                            border: 1px solid #e7e8e8;
                             width: 50%;
                             padding: 10px;
                             margin: auto;
@@ -1513,7 +1532,7 @@ mat-sidenav[style] {
                     .item-name {
                         flex-basis: 20%;
                         padding: 20px 7px;
-                        border-right: 1px solid #97a2a0;
+                        border-right: 1px solid #e7e8e8;
                         h3 {
                             font-size: 28px;
                             font-weight: 600;
@@ -1533,7 +1552,7 @@ mat-sidenav[style] {
                         .offers {
                             display: flex;
                             .offer-text {
-                                margin-right: 10PX;
+                                margin-right: 10px;
                                 h5 {
                                     margin-bottom: 0px;
                                     font-size: 17px;
@@ -1560,7 +1579,7 @@ mat-sidenav[style] {
                     .item-brand {
                         flex-basis: 30%;
                         padding: 20px 7px;
-                        border-right: 1px solid #97a2a0;
+                        border-right: 1px solid #e7e8e8;
                         h3 {
                             font-weight: 600;
                             font-size: 16px;
@@ -1568,7 +1587,6 @@ mat-sidenav[style] {
                             line-height: 1;
                             a {
                                 color: #0c70aa;
-                                ;
                             }
                         }
                         p {
@@ -1578,7 +1596,7 @@ mat-sidenav[style] {
                     .item-date-mfr {
                         flex-basis: 25%;
                         padding: 20px 7px;
-                        border-right: 1px solid #97a2a0;
+                        border-right: 1px solid #e7e8e8;
                         h3 {
                             font-size: 19px;
                             font-weight: 500;
@@ -1610,13 +1628,16 @@ mat-sidenav[style] {
                     }
                     .item-button {
                         flex-basis: 10%;
-                        padding: 20px 7px;
+                        padding: 0 7px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         .button-img {
                             margin-bottom: 20px;
+                            img {
+                                max-width: 40px;
+                            }
                         }
                         .button-main {
                             .mat-flat-button.mat-primary,
@@ -1735,4 +1756,4 @@ mat-sidenav[style] {
 /*//////////Responisve styles imported //////////////*/
 
 @import "assets/styles/responsive-styles.scss";
-@import "assets/styles/responsive-styles.scss";
+
