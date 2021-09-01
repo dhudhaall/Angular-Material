@@ -92,6 +92,10 @@ body {
     background-color: #ebecec !important;
 }
 
+.greenish-gry {
+    background-color: #b7bfbe !important;
+}
+
 .orange-badge {
     background-color: #ffb249 !important;
 }
@@ -1816,7 +1820,148 @@ mat-sidenav[style] {
     }
 }
 
+.addpils-item-main {
+    .addnew-content-section {
+        .new-item-heading-sec {
+            .heading-main {
+                .flex-2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    .standard-box {
+                        background-color: #b4e9fa;
+                        padding: 10px 30px;
+                        border: 1px solid #616161;
+                        border-radius: 5px;
+                        h3 {
+                            font-size: 14px;
+                            line-height: 1;
+                            margin-bottom: 0;
+                            color: #707176;
+                        }
+                        p {
+                            margin-bottom: 0;
+                            font-size: 10px;
+                            line-height: 1;
+                            color: #707176;
+                        }
+                    }
+                    .units {
+                        p {
+                            font-size: 10px;
+                            color: #595b61;
+                            margin-bottom: 0;
+                            span {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .errors {
+                        h3 {
+                            // span {
+                            //     border-left: 15px solid transparent;
+                            //     border-right: 15px solid transparent;
+                            //     border-bottom: 30px solid #ffc032;
+                            //     display: inline;
+                            // }
+                            font-size: 15px;
+                            margin-bottom: 0;
+                            color: #595b61;
+                        }
+                    }
+                    .icon {
+                        .mat-icon {
+                            color: #b7bfbe;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .add-new-item-section-main {
+        .main-item-add-new {
+            .mat-expansion-panel-header-title,
+            .mat-expansion-panel-header-description {
+                display: flex;
+                flex-grow: 1;
+                margin-right: 16px;
+                flex-direction: column;
+                .panel-heading {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .panel-flex2 {
+                        .mat-flat-button.mat-primary,
+                        .mat-raised-button.mat-primary,
+                        .mat-fab.mat-primary,
+                        .mat-mini-fab.mat-primary {
+                            font-size: 10px;
+                            margin-left: 10px;
+                        }
+                        .mat-raised-button:not([class*=mat-elevation-z]) {
+                            box-shadow: none;
+                        }
+                    }
+                    .panel-flex1 {
+                        h3 {
+                            margin-bottom: 0;
+                            font-size: 20px;
+                            line-height: 1;
+                            color: #595b61;
+                            span {
+                                background-color: #a6cf45;
+                                padding: 7px 10px;
+                                border: 1px solid #616161;
+                                border-radius: 5px;
+                                font-size: 10px;
+                                color: #ffff;
+                                font-weight: 600;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+            .new-add-item-detail {
+                .new-add-item-main-detail {
+                    .table-lfex-main {
+                        display: flex;
+                        .new-add-table {
+                            table {
+                                width: unset;
+                                td {
+                                    h6 {
+                                        font-size: 15px;
+                                        line-height: 1;
+                                        margin-bottom: 0;
+                                    }
+                                    p {
+                                        font-size: 10px;
+                                        line-height: 1;
+                                        margin-bottom: 0;
+                                    }
+                                    .unit {
+                                        olor: #ffffff;
+                                        border-radius: 50%;
+                                        padding: 3px 7px;
+                                        font-size: 13px;
+                                    }
+                                    .td-fc {
+                                        padding: 2px 4px;
+                                        border-radius: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 /*//////////Responisve styles imported //////////////*/
 
 @import "assets/styles/responsive-styles.scss";
+
