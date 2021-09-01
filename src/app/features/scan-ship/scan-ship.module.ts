@@ -6,6 +6,7 @@ import { AddItemComponent } from './add-item-main/add-item/add-item.component';
 import { AddItemMainComponent } from './add-item-main/add-item-main.component';
 import { AddItemFiltersComponent } from './add-item-main/add-item-filters/add-item-filters.component';
 import { NewAddItemComponent } from './add-item-main/new-add-item/new-add-item.component';
+import { ShipmentPileComponent } from './add-item-main/shipment-pile/shipment-pile.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NewAddItemComponent } from './add-item-main/new-add-item/new-add-item.c
     AddItemComponent,
     AddItemMainComponent,
     AddItemFiltersComponent,
-    NewAddItemComponent
+    NewAddItemComponent,
+    ShipmentPileComponent
   ],
   imports: [
     CommonModule,SharedModule,
