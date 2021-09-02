@@ -7,6 +7,7 @@ import { AddItemMainComponent } from './add-item-main/add-item-main.component';
 import { AddItemFiltersComponent } from './add-item-main/add-item-filters/add-item-filters.component';
 import { NewAddItemComponent } from './add-item-main/new-add-item/new-add-item.component';
 import { ShipmentPileComponent } from './add-item-main/shipment-pile/shipment-pile.component';
+import { CreateNewSellerOfferDialogComponent } from './add-item-main/create-new-seller-offer-dialog/create-new-seller-offer-dialog.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ShipmentPileComponent } from './add-item-main/shipment-pile/shipment-pi
     AddItemMainComponent,
     AddItemFiltersComponent,
     NewAddItemComponent,
-    ShipmentPileComponent
+    ShipmentPileComponent,
+    CreateNewSellerOfferDialogComponent
   ],
   imports: [
     CommonModule,SharedModule,

@@ -99,6 +99,23 @@ body {
   display: block;
   margin: auto;
 }
+.popupMenu.mat-menu-panel {
+  position: relative;
+  border: 1px solid #999;
+}
+.cdk-overlay-pane {
+  // position: relative;
+}
+// .cdk-overlay-pane::before {
+//   position: absolute;
+//   content: "";
+//   top: 7px;
+//   right: -14px;
+//   border-top: 10px solid transparent;
+//   border-bottom: 10px solid transparent;
+//   border-left: 15px solid red;
+//   z-index: 1;
+// }
 
 .grey-badge {
   background-color: $lightBlue-badge;
@@ -1078,8 +1095,10 @@ mat-sidenav[style] {
         .input-btn {
           display: flex;
           align-items: center;
+
           .input-main {
             margin-left: 20px;
+
             .mat-form-field {
               width: 100%;
             }
@@ -1436,6 +1455,7 @@ mat-sidenav[style] {
   .addnew-content-section {
     flex: 1;
     padding: 0px 20px;
+    overflow-x: auto;
     .new-item-heading-sec {
       .heading-main {
         display: flex;
@@ -1513,8 +1533,10 @@ mat-sidenav[style] {
             .input-btn {
               display: flex;
               align-items: center;
+              flex-basis: 70%;
               .input-main {
                 margin-left: 20px;
+                flex: 1;
                 .mat-form-field {
                   width: 100%;
                 }
@@ -1577,6 +1599,7 @@ mat-sidenav[style] {
     }
     .add-new-item-section-main {
       margin-top: 30px;
+      min-width: 1050px;
       .main-item-add-new {
         border: 1px solid #97a2a0;
         border-radius: 5px;
@@ -1817,20 +1840,22 @@ mat-sidenav[style] {
             }
             th {
               padding: 10px;
-              border-bottom: 1px solid #97a2a0;
-              border-right: 1px solid #97a2a0;
+              border-bottom: 1px solid #e7e8e8;
+              border-right: 1px solid #e7e8e8;
               color: #929d9b;
               font-weight: 500;
             }
             td {
-              border-right: 1px solid #97a2a0;
+              border-right: 1px solid #e7e8e8;
               padding: 10px;
-              border-bottom: 1px solid #97a2a0;
+              border-bottom: 1px solid #e7e8e8;
               color: #000;
               .td-us {
                 border-radius: 3px;
                 background-color: #f3371a;
                 padding: 5px;
+                text-transform: uppercase;
+                color: #fff;
               }
               img {
                 width: 20px;
@@ -1839,6 +1864,7 @@ mat-sidenav[style] {
                 border-radius: 3px;
                 background-color: #b4e9fa;
                 padding: 5px 10px;
+                color: #fff;
               }
               .mat-flat-button.mat-primary,
               .mat-raised-button.mat-primary,

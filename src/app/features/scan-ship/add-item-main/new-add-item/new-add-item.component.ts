@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
+import { CreateNewSellerOfferDialogComponent } from '../create-new-seller-offer-dialog/create-new-seller-offer-dialog.component';
 
 @Component({
   selector: 'app-new-add-item',
@@ -8,14 +9,11 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class NewAddItemComponent implements OnInit {
 
-
-
-
   constructor(public dialog: MatDialog ) {
     
   }
   openDialog() {
-    const dialogRef = this.dialog.open(NewAddItemComponent);
+    const dialogRef = this.dialog.open(CreateNewSellerOfferDialogComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
