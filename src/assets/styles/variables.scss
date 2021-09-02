@@ -2,5 +2,36 @@
 
 $primaryColor: #88d3db;
 $secondarycolor: #3eadf2;
+$linkcolorOrange: #ff8f2e;
 
 /* Other Variables */
+$lightBlue-badge: #86b1d3;
+
+$purple-badge: #8b2be4;
+
+$green-badge: #257075;
+
+$pirot-badge: #d8dc40;
+
+$gry-badge: #ebecec;
+$greenish-gry: #b7bfbe;
+
+$orange-badge: #ffb249;
+
+$dark-gray-bdg: #afb0b3;
+
+$red-badge: #d32d23;
+
+$light-green: #87c846;
+
+$icon-color: #ebecec;
+
+@mixin smallBtn {
+  width: 50px;
+}
+@mixin mediumBtn {
+  width: 100px;
+}
+@mixin largeBtn {
+  width: 200px;
+}

@@ -23,6 +23,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDialogModule} from '@angular/material/dialog';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatExpansionModule,
     MatSlideToggleModule,
     MatSelectModule,MatMenuModule,
-    MatListModule, MatBadgeModule,
+    MatListModule, MatBadgeModule,MatCarouselModule.forRoot(),
     MatButtonModule,MatTableModule,MatRadioModule,MatCheckboxModule,
     RouterModule,MatFormFieldModule,MatInputModule,MatPaginatorModule
 
@@ -52,7 +53,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatDialogModule,
     MatTabsModule,MatCheckboxModule,
     MatSlideToggleModule,
-    MatExpansionModule,
+    MatExpansionModule,MatCarouselModule,
     MatTooltipModule,MatTableModule,MatBadgeModule,MatRadioModule,MatMenuModule,
     MatIconModule,ContentViewComponent,MatInputModule,MatPaginatorModule,
     MatListModule,MatButtonModule,BreadcrumbsComponent,MatFormFieldModule

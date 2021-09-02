@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-shipment-pile',
   templateUrl: './shipment-pile.component.html',

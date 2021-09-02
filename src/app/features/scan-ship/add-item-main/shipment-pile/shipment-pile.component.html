@@ -21,40 +21,88 @@
                     </div>
                     <div class="errors">
                         <h3>
-                            <span></span> ERRORS
+                            <span><a>2</a></span> ERRORS
                         </h3>
                     </div>
                     <div class="icon">
-                        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-                        <mat-icon aria-hidden="false" aria-label="Example home icon">settings</mat-icon>
+                        <mat-icon style="margin-right: 5px;" aria-hidden="false" aria-label="Example print icon">print</mat-icon>
+                        <mat-icon aria-hidden="false" aria-label="Example settings icon">settings</mat-icon>
                     </div>
 
                 </div>
             </div>
+
+            
         </section>
 
         <section class="add-new-item-section-main">
             <div class="main-item-add-new">
+                <div class="top-title-info">
+                    <div class="panel-flex1">
+                        <h3> <span>STEP 1</span> CHOOSE YOUR ‘TOP ITEM’ TO SELECT A SHIPPING PLAN</h3>
+                    </div>
+                    <div class="panel-flex2">
+                
+                        <button mat-raised-button color="primary" class="orange-badge">HIDE LOCATIONS</button>
+                        <button mat-raised-button color="primary" class="gry-badge">CHOOSE BY LOCATION</button>
+                    </div>
+                </div>
+                <div class="top-title-info2">
+                    <div class=" flex1 chehkbox">
+                
+                        <mat-checkbox class="example-margin"></mat-checkbox>
+                    </div>
+                    <div class="flex1 all-items">
+                        <h4>ALL ITEMS <span class="smallCircleSpan">1</span></h4>
+                    </div>
+                    <div class="flex1 itemsWithDest">
+                        <h4>ITEMS WITH 1 DESTINATION<span class="smallCircleSpan">1</span></h4>
+                    </div>
+                    <div class="flex1 itemsWithDest">
+                        <h4>ITEMS WITH 2 DESTINATION<span class="smallCircleSpan">2</span></h4>
+                    </div>
+                    <div class="flex1 itemsWithDest">
+                        <h4>ITEMS WITH 3 DESTINATION<span class="smallCircleSpan">3</span></h4>
+                    </div>
+                    <div class="flex1 sortnPagination">
+                        <div class=" sort">
+                            <mat-icon [matMenuTriggerFor]="menu" aria-hidden="false" aria-label="Example settings icon">sort</mat-icon>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>Item 1</button>
+                                <button mat-menu-item>Item 2</button>
+                            </mat-menu>
+                        </div>
+                        <div class=" pagination">
+                            <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+                            </mat-paginator>
+                        </div>
+                    </div>
+                
+                </div>
+               
                 <mat-accordion>
                     <mat-expansion-panel hideToggle>
                         <mat-expansion-panel-header>
-
                             <mat-panel-title>
-
                             </mat-panel-title>
                             <mat-panel-description>
-
-                                <div class="panel-heading">
-                                    <div class="panel-flex1">
-                                        <h3> <span>STEP 1</span> CHOOSE YOUR ‘TOP ITEM’ TO SELECT A SHIPPING PLAN</h3>
-                                    </div>
-                                    <div class="panel-flex2">
-
-                                        <button mat-raised-button color="primary" class="orange-badge">HIDE LOCATIONS</button>
-                                        <button mat-raised-button color="primary" class="gry-badge">CHOOSE BY LOCATION</button>
-                                    </div>
-                                </div>
                                 <div class="item-Head">
+                                    <div class="actions-items">
+                                        <div class="inddex">
+                                            1.
+                                        </div>
+                                        <div class="icons">
+                                            <mat-checkbox class="example-margin"></mat-checkbox>
+                                        </div>
+                                        <div class="icons">
+                                            <img src="/assets/images/fba-icon.png">
+                                        </div>
+                                        <div class="icons">
+                                            <img src="/assets/images/delete-icon.png">
+                                        </div>
+                                        
+                                        
+                                    </div>
                                     <div class="item-image">
                                         <div class="img-border">
                                             <img src="/assets/images/watch.png">
@@ -62,48 +110,48 @@
 
                                     </div>
                                     <div class="item-name">
-                                        <h3>B00RN08585</h3>
-                                        <p>LIST PRICE:<span>$15.99</span></p>
-                                        <div class="offers">
-                                            <div class="offer-text">
-                                                <h5>OFFERS:</h5>
-                                            </div>
-                                            <div class="offer-opption">
-                                                <h5><span class="orange-badge">1</span>NEW</h5>
-                                                <h5><span class="light-green">2</span>OTHER</h5>
-                                            </div>
+                                        <h3 class="link">FBA15FMTX9L3-NEW</h3>
+                                        <p>CONDITION:<span>NEW</span></p>
+                                        <a class="item-id">B00RN08585</a>
+                                        <p>FN SKU:<span>X001RCAUQ5</span></p>
+                                        <div class="labelby">
+                                            <p>Label by:<span>seller</span> <span><mat-icon>edit</mat-icon></span></p>
                                         </div>
+                                        <p class="labels">LABEL | PREP REQUIRED:
+                                        LABEL | POLYBAG | BUBBLE</p>
                                     </div>
                                     <div class="item-brand">
                                         <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
                         Color: Silver (Model: SUP865)</a></h3>
-                                        <p>Brand: Seiko | Part#: ABC-12435 Product Group: Watches | Apparal | Fashion Dimensions: 3.3*3.8*5.1 inches Unit Weight: 0.6 lbs | Total Weight: 15.00 lbs</p>
+                                      <p>  <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product Group: <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1 inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total Weight: <span>15.00 lbs</span></a>
+                                </p>
                                     </div>
-                                    <div class="item-date-mfr">
-                                        <h3>LAST SHIPPED: <span>March 12, 2018</span></h3>
-                                        <h3>LAST SHIP ID: <span> FBA15FMTX9L3</span></h3>
-                                        <h3>LABEL + PREP REQUIRED:<span> None</span></h3>
-                                        <h3>SHIPPING TIER: <span> Standard Size</span></h3>
-                                        <div class="rank-main">
-                                            <div class="rank1">
-                                                <h3>RANK:</h3>
-                                            </div>
-                                            <div class="rank2">
-                                                <P>#14 in Fashion</P>
-                                                <P>#2 in (see Amazon)</P>
-                                                <P>#2 in (see Amazon)</P>
-                                            </div>
+                                    <div class="totalUnits">
+                                        <div class="units-price">
+                                            <label>Total Units:</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="units-price">
+                                            <label>Price:</label>
+                                            <input type="text">
                                         </div>
                                     </div>
-                                    <div class="item-button">
-                                        <div class="button-img">
-                                            <img src="/assets/images/mp-icon.jpg">
-                                        </div>
+                                    <div class="item-buttons">
+                                    <div class="units-price">
+                                        <label>PRINT QTY:</label>
+                                        <input type="text">
+                                    </div>
                                         <div class="button-main">
-                                            <button mat-raised-button color="primary">Primary</button>
+                                           
+                                        <select>
+                                            <option value="" selected>Print Label(s)</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                        </select>
+
                                         </div>
                                         <div class="button-link">
-                                            <a href="#">View Parent</a>
+                                            <button mat-raised-button disabled>SAVE FOR LATER</button>
                                         </div>
                                     </div>
                                 </div>
@@ -111,17 +159,137 @@
                         </mat-expansion-panel-header>
                         <div class="new-add-item-detail">
                             <div class="new-add-item-main-detail">
-                                <div class="new-heading-detail">
-                                    <div class="heading-main">
-                                        <h1>FBA OFFERS</h1>
+                                
+                                <div class="table-lfex-main">
+                                        <div class="new-add-table">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <mat-radio-button value="1"></mat-radio-button>
+                                                    </th>
+                                                    <th>UNITS</th>
+                                                    <th>FC</th>
+                                                    <th>LOCATION</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>A.</td>
+                                                    <td><span class="unit orange-badge">6</span></td>
+                                                    <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                    <td>
+                                                        <h6>Moreno Valley, CA 92551</h6>
+                                                        <p>Last Checked: 5 hours ago</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A.</td>
+                                                    <td><span class="unit orange-badge">6</span></td>
+                                                    <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                    <td>
+                                                        <h6>Moreno Valley, CA 92551</h6>
+                                                        <p>Last Checked: 5 hours ago</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A.</td>
+                                                    <td><span class="unit orange-badge">6</span></td>
+                                                    <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                    <td>
+                                                        <h6>Moreno Valley, CA 92551</h6>
+                                                        <p>Last Checked: 5 hours ago</p>
+                                                    </td>
+                                                </tr>
+                                        
+                                            </table>
+                                        </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            </mat-panel-title>
+                            <mat-panel-description>
+                                <div class="item-Head">
+                                    <div class="actions-items">
+                                        <div class="inddex">
+                                            1.
+                                        </div>
+                                        <div class="icons">
+                                            <mat-checkbox class="example-margin"></mat-checkbox>
+                                        </div>
+                                        <div class="icons">
+                                            <img src="/assets/images/fba-icon.png">
+                                        </div>
+                                        <div class="icons">
+                                            <img src="/assets/images/delete-icon.png">
+                                        </div>
+                    
+                    
                                     </div>
-                                    <div class="offer-status">
-                                        <h2>
-                                            <span class="orange-badge">1</span>AVAILABLE
-                                        </h2>
-                                        <h2><span class="dark-gray-bdg">2</span>OTHER MPs</h2>
+                                    <div class="item-image">
+                                        <div class="img-border">
+                                            <img src="/assets/images/watch.png">
+                                        </div>
+                    
+                                    </div>
+                                    <div class="item-name">
+                                        <h3 class="link">FBA15FMTX9L3-NEW</h3>
+                                        <p>CONDITION:<span>NEW</span></p>
+                                        <a class="item-id">B00RN08585</a>
+                                        <p>FN SKU:<span>X001RCAUQ5</span></p>
+                                        <div class="labelby">
+                                            <p>Label by:<span>seller</span> <span>
+                                                    <mat-icon>edit</mat-icon>
+                                                </span></p>
+                                        </div>
+                                        <p class="labels">LABEL | PREP REQUIRED:
+                                            LABEL | POLYBAG | BUBBLE</p>
+                                    </div>
+                                    <div class="item-brand">
+                                        <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
+                                                Color: Silver (Model: SUP865)</a></h3>
+                                        <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product Group:
+                                                <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1
+                                                    inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total Weight:
+                                                <span>15.00 lbs</span></a>
+                                        </p>
+                                    </div>
+                                    <div class="totalUnits">
+                                        <div class="units-price">
+                                            <label>Total Units:</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="units-price">
+                                            <label>Price:</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="item-buttons">
+                                        <div class="units-price">
+                                            <label>PRINT QTY:</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="button-main">
+                    
+                                            <select>
+                                                <option value="" selected>Print Label(s)</option>
+                                                <option value="option2">Option 2</option>
+                                                <option value="option3">Option 3</option>
+                                            </select>
+                    
+                                        </div>
+                                        <div class="button-link">
+                                            <button mat-raised-button disabled>SAVE FOR LATER</button>
+                                        </div>
                                     </div>
                                 </div>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <div class="new-add-item-detail">
+                            <div class="new-add-item-main-detail">
+                    
                                 <div class="table-lfex-main">
                                     <div class="new-add-table">
                                         <table>
@@ -142,72 +310,108 @@
                                                     <p>Last Checked: 5 hours ago</p>
                                                 </td>
                                             </tr>
-
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                    
                                         </table>
                                     </div>
                                 </div>
-
+                    
                             </div>
                         </div>
                     </mat-expansion-panel>
                     <mat-expansion-panel hideToggle>
                         <mat-expansion-panel-header>
-
                             <mat-panel-title>
-
-
                             </mat-panel-title>
                             <mat-panel-description>
                                 <div class="item-Head">
+                                    <div class="actions-items">
+                                        <div class="inddex">
+                                            1.
+                                        </div>
+                                        <div class="icons">
+                                            <mat-checkbox class="example-margin"></mat-checkbox>
+                                        </div>
+                                        <div class="icons">
+                                            <img src="/assets/images/fba-icon.png">
+                                        </div>
+                                        <div class="icons">
+                                            <img src="/assets/images/delete-icon.png">
+                                        </div>
+                    
+                    
+                                    </div>
                                     <div class="item-image">
                                         <div class="img-border">
                                             <img src="/assets/images/watch.png">
                                         </div>
-
+                    
                                     </div>
                                     <div class="item-name">
-                                        <h3>B00RN08585</h3>
-                                        <p>LIST PRICE:<span>$15.99</span></p>
-                                        <div class="offers">
-                                            <div class="offer-text">
-                                                <h5>OFFERS:</h5>
-                                            </div>
-                                            <div class="offer-opption">
-                                                <h5><span class="orange-badge">1</span>NEW</h5>
-                                                <h5><span class="light-green">2</span>OTHER</h5>
-                                            </div>
+                                        <h3 class="link">FBA15FMTX9L3-NEW</h3>
+                                        <p>CONDITION:<span>NEW</span></p>
+                                        <a class="item-id">B00RN08585</a>
+                                        <p>FN SKU:<span>X001RCAUQ5</span></p>
+                                        <div class="labelby">
+                                            <p>Label by:<span>seller</span> <span>
+                                                    <mat-icon>edit</mat-icon>
+                                                </span></p>
                                         </div>
+                                        <p class="labels">LABEL | PREP REQUIRED:
+                                            LABEL | POLYBAG | BUBBLE</p>
                                     </div>
                                     <div class="item-brand">
                                         <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
-                        Color: Silver (Model: SUP865)</a></h3>
-                                        <p>Brand: Seiko | Part#: ABC-12435 Product Group: Watches | Apparal | Fashion Dimensions: 3.3*3.8*5.1 inches Unit Weight: 0.6 lbs | Total Weight: 15.00 lbs</p>
+                                                Color: Silver (Model: SUP865)</a></h3>
+                                        <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product Group:
+                                                <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1
+                                                    inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total Weight:
+                                                <span>15.00 lbs</span></a>
+                                        </p>
                                     </div>
-                                    <div class="item-date-mfr">
-                                        <h3>LAST SHIPPED: <span>March 12, 2018</span></h3>
-                                        <h3>LAST SHIP ID: <span> FBA15FMTX9L3</span></h3>
-                                        <h3>LABEL + PREP REQUIRED:<span> None</span></h3>
-                                        <h3>SHIPPING TIER: <span> Standard Size</span></h3>
-                                        <div class="rank-main">
-                                            <div class="rank1">
-                                                <h3>RANK:</h3>
-                                            </div>
-                                            <div class="rank2">
-                                                <P>#14 in Fashion</P>
-                                                <P>#2 in (see Amazon)</P>
-                                                <P>#2 in (see Amazon)</P>
-                                            </div>
+                                    <div class="totalUnits">
+                                        <div class="units-price">
+                                            <label>Total Units:</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="units-price">
+                                            <label>Price:</label>
+                                            <input type="text">
                                         </div>
                                     </div>
-                                    <div class="item-button">
-                                        <div class="button-img">
-                                            <img src="/assets/images/mp-icon.jpg">
+                                    <div class="item-buttons">
+                                        <div class="units-price">
+                                            <label>PRINT QTY:</label>
+                                            <input type="text">
                                         </div>
                                         <div class="button-main">
-                                            <button mat-raised-button color="primary">Primary</button>
+                    
+                                            <select>
+                                                <option value="" selected>Print Label(s)</option>
+                                                <option value="option2">Option 2</option>
+                                                <option value="option3">Option 3</option>
+                                            </select>
+                    
                                         </div>
                                         <div class="button-link">
-                                            <a href="#">View Parent</a>
+                                            <button mat-raised-button disabled>SAVE FOR LATER</button>
                                         </div>
                                     </div>
                                 </div>
@@ -215,572 +419,50 @@
                         </mat-expansion-panel-header>
                         <div class="new-add-item-detail">
                             <div class="new-add-item-main-detail">
-                                <div class="new-heading-detail">
-                                    <div class="heading-main">
-                                        <h1>FBA OFFERS</h1>
-                                    </div>
-                                    <div class="offer-status">
-                                        <h2>
-                                            <span class="orange-badge">1</span>AVAILABLE
-                                        </h2>
-                                        <h2><span class="dark-gray-bdg">2</span>OTHER MPs</h2>
-                                    </div>
-                                </div>
-                                <div class="new-add-table">
-                                    <table>
-                                        <tr>
-                                            <th></th>
-                                            <th>Marketplace </th>
-                                            <th>SKU</th>
-                                            <th>FN SKU</th>
-                                            <th>Condition</th>
-                                            <th>Qty</th>
-                                            <th>Price</th>
-                                            <th>Shipped</th>
-                                            <th>Ship ID </th>
-                                            <th>Tier</th>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us orange-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="green-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier range-badge">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="orange-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us orange-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="green-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id ">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier o">4</span>
-                                            </td>
-                                        </tr>
-
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </mat-expansion-panel>
-                    <mat-expansion-panel hideToggle>
-                        <mat-expansion-panel-header>
-
-                            <mat-panel-title>
-
-
-                            </mat-panel-title>
-                            <mat-panel-description>
-                                <div class="item-Head">
-                                    <div class="item-image flex-paddding">
-                                        <div class="img-border">
-                                            <img src="/assets/images/watch.png">
-                                        </div>
-
-                                    </div>
-                                    <div class="item-name flex-paddding">
-                                        <h3>B00RN08585</h3>
-                                        <p>LIST PRICE:<span>$15.99</span></p>
-                                        <div class="offers">
-                                            <div class="offer-text">
-                                                <h5>OFFERS:</h5>
-                                            </div>
-                                            <div class="offer-opption">
-                                                <h5><span class="orange-badge">1</span>NEW</h5>
-                                                <h5><span class="light-green">2</span>OTHER</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-brand flex-paddding">
-                                        <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
-                        Color: Silver (Model: SUP865)</a></h3>
-                                        <p>Brand: Seiko | Part#: ABC-12435 Product Group: Watches | Apparal | Fashion Dimensions: 3.3*3.8*5.1 inches Unit Weight: 0.6 lbs | Total Weight: 15.00 lbs</p>
-                                    </div>
-                                    <div class="item-date-mfr flex-paddding">
-                                        <h3>LAST SHIPPED: <span>March 12, 2018</span></h3>
-                                        <h3>LAST SHIP ID: <span> FBA15FMTX9L3</span></h3>
-                                        <h3>LABEL + PREP REQUIRED:<span> None</span></h3>
-                                        <h3>SHIPPING TIER: <span> Standard Size</span></h3>
-                                        <div class="rank-main">
-                                            <div class="rank1">
-                                                <h3>RANK:</h3>
-                                            </div>
-                                            <div class="rank2">
-                                                <P>#14 in Fashion</P>
-                                                <P>#2 in (see Amazon)</P>
-                                                <P>#2 in (see Amazon)</P>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-button flex-paddding">
-                                        <div class="button-img">
-                                            <img class="" src="/assets/images/mp-icon.jpg">
-                                        </div>
-                                        <div class="button-main">
-                                            <button mat-raised-button color="primary">ADD ITEM</button>
-                                        </div>
-                                        <div class="button-link">
-                                            <a href="#">View Parent</a>
-                                        </div>
+                    
+                                <div class="table-lfex-main">
+                                    <div class="new-add-table">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <mat-radio-button value="1"></mat-radio-button>
+                                                </th>
+                                                <th>UNITS</th>
+                                                <th>FC</th>
+                                                <th>LOCATION</th>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                    
+                                        </table>
                                     </div>
                                 </div>
-                            </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div class="new-add-item-detail">
-                            <div class="new-add-item-main-detail">
-                                <div class="new-heading-detail">
-                                    <div class="heading-main">
-                                        <h1>FBA OFFERS</h1>
-                                    </div>
-                                    <div class="offer-status">
-                                        <h2>
-                                            <span class="orange-badge">1</span>AVAILABLE
-                                        </h2>
-                                        <h2><span class="dark-gray-bdg">2</span>OTHER MPs</h2>
-                                    </div>
-                                </div>
-                                <div class="new-add-table">
-                                    <table>
-                                        <tr>
-                                            <th></th>
-                                            <th>Marketplace </th>
-                                            <th>SKU</th>
-                                            <th>FN SKU</th>
-                                            <th>Condition</th>
-                                            <th>Qty</th>
-                                            <th>Price</th>
-                                            <th>Shipped</th>
-                                            <th>Ship ID </th>
-                                            <th>Tier</th>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier ">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td>
-                                                <a href="#" class="ship-id">FBA15FMTX9L3</a>
-                                            </td>
-                                            <td>
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier orange-badge">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us orange-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="green-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier ">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="orange-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us orange-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="green-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id ">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier orange-badge">4</span>
-                                            </td>
-                                        </tr>
-
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </mat-expansion-panel>
-                    <mat-expansion-panel hideToggle>
-                        <mat-expansion-panel-header>
-
-                            <mat-panel-title>
-
-
-                            </mat-panel-title>
-                            <mat-panel-description>
-                                <div class="item-Head">
-                                    <div class="item-image">
-                                        <div class="img-border">
-                                            <img src="/assets/images/watch.png">
-                                        </div>
-
-                                    </div>
-                                    <div class="item-name">
-                                        <h3>B00RN08585</h3>
-                                        <p>LIST PRICE:<span>$15.99</span></p>
-                                        <div class="offers">
-                                            <div class="offer-text">
-                                                <h5>OFFERS:</h5>
-                                            </div>
-                                            <div class="offer-opption">
-                                                <h5><span class="orange-badge">1</span>NEW</h5>
-                                                <h5><span class="light-green">2</span>OTHER</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-brand">
-                                        <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
-                        Color: Silver (Model: SUP865)</a></h3>
-                                        <p>Brand: Seiko | Part#: ABC-12435 Product Group: Watches | Apparal | Fashion Dimensions: 3.3*3.8*5.1 inches Unit Weight: 0.6 lbs | Total Weight: 15.00 lbs</p>
-                                    </div>
-                                    <div class="item-date-mfr">
-                                        <h3>LAST SHIPPED: <span>March 12, 2018</span></h3>
-                                        <h3>LAST SHIP ID: <span> FBA15FMTX9L3</span></h3>
-                                        <h3>LABEL + PREP REQUIRED:<span> None</span></h3>
-                                        <h3>SHIPPING TIER: <span> Standard Size</span></h3>
-                                        <div class="rank-main">
-                                            <div class="rank1">
-                                                <h3>RANK:</h3>
-                                            </div>
-                                            <div class="rank2">
-                                                <P>#14 in Fashion</P>
-                                                <P>#2 in (see Amazon)</P>
-                                                <P>#2 in (see Amazon)</P>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-button">
-                                        <div class="button-img">
-                                            <img src="/assets/images/mp-icon.jpg">
-                                        </div>
-                                        <div class="button-main">
-                                            <button mat-raised-button color="primary">Primary</button>
-                                        </div>
-                                        <div class="button-link">
-                                            <a href="#">View Parent</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div class="new-add-item-detail">
-                            <div class="new-add-item-main-detail">
-                                <div class="new-heading-detail">
-                                    <div class="heading-main">
-                                        <h1>FBA OFFERS</h1>
-                                    </div>
-                                    <div class="offer-status">
-                                        <h2>
-                                            <span class="orange-badge">1</span>AVAILABLE
-                                        </h2>
-                                        <h2><span class="dark-gray-bdg">2</span>OTHER MPs</h2>
-                                    </div>
-                                </div>
-                                <div class="new-add-table">
-                                    <table>
-                                        <tr>
-                                            <th></th>
-                                            <th>Marketplace </th>
-                                            <th>SKU</th>
-                                            <th>FN SKU</th>
-                                            <th>Condition</th>
-                                            <th>Qty</th>
-                                            <th>Price</th>
-                                            <th>Shipped</th>
-                                            <th>Ship ID </th>
-                                            <th>Tier</th>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="red-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us orange-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="green-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier range-badge">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us red-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="orange-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier">4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/plus.png">
-                                            </td>
-                                            <td>
-                                                <span class="td-us orange-badge">us</span> SellerChain
-                                            </td>
-                                            <td><a class="link" href="#">FBA15FMTX9L3-NEW</a></td>
-                                            <td>X001RCAUQ5</td>
-                                            <td><button mat-raised-button color="primary" class="green-badge">New</button></td>
-                                            <td>5</td>
-                                            <td><b>$15.99</b></td>
-                                            <td>12.31.18</td>
-                                            <td><a href="#" class="ship-id ">FBA15FMTX9L3</a></td>
-                                            <td>
-
-                                                <span class="tier o">4</span>
-                                            </td>
-                                        </tr>
-
-                                    </table>
-                                </div>
+                    
                             </div>
                         </div>
                     </mat-expansion-panel>
@@ -805,13 +487,12 @@
                             </mat-select>
                         </mat-form-field>
                     </div>
-
-
                 </div>
 
                 <div class="plan-sec add-items-plan">
                     <h1>SHIPMENT PILES</h1>
-                    <p>Select a pile to view contents.</p>
+                    <p>Select a pile to view contents.
+                    Right-click for more options.</p>
                     <h3>SELLER/NO LABEL PLANS</h3>
                     <div class="plan-main">
                         <div class="plan">
@@ -879,6 +560,68 @@
                     </div>
 
                 </div>
+
+                <div class="plan-sec add-items-plan">
+                    
+                    <h3>SHIP FROM ADDRESS:</h3>
+                    
+                        
+                            <mat-select class="matSelectCustom" placeholder="Select Address" floatlLabel="never">
+                                <mat-select-trigger>Select Address</mat-select-trigger>
+                                <mat-option value="option">SHOW ALL</mat-option>
+                                <mat-option value="option">SHOW ALL</mat-option>
+                                <mat-option value="option">SHOW ALL</mat-option>
+                                <mat-option value="option">SHOW ALL</mat-option>
+                            </mat-select>
+
+                            <div class="ship-from">
+                                <div class="text">
+                                    <p>SellerChain
+                                    1060 Linwood Street
+                                    Brooklyn, NY 11208</p>
+                                </div>
+                                <div class="btn-side">
+                                    <button mat-raised-button color="primary">Update</button>
+                                </div>
+                            </div>
+                        
+                   
+                </div>
+
+                <div class="plan-sec add-items-plan">
+                    <div class="selected-items">
+                        <h3> <span class="circleBig orange-badge">3</span>SELECTED ITEMS:</h3>
+
+                        <div class="qty-print">
+                            <div class="qty">
+
+                                        <label>QTY:</label>
+                                        <input type="text">
+                            </div>
+                            <div class="print-select">
+                                <select>
+                                    <option value="" selected>Print Label(s)</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="removeItemBtn">REMOVE ITEM(s)</button>
+                        <button class="addexistingBtn">ADD TO EXISTING SHIPMENT</button>
+                        <button class="movetocustomBtn">MOVE TO CUSTOM PILE</button>
+                        <img class="revert-all" src="/assets/images/all-revert.png">
+                    </div>
+                
+                   
+                
+                   
+                
+                
+                </div>
+
+
+                <button mat-raised-button class="orange-badge nextBtn">NEXT STEP</button>
             </div>
         </section>
 
