@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddItemMainComponent } from './add-item-main/add-item-main.component';
-import { AddItemComponent } from './add-item-main/add-item/add-item.component';
-import { NewAddItemComponent } from './add-item-main/new-add-item/new-add-item.component';
-import { ShipmentPileComponent } from './add-item-main/shipment-pile/shipment-pile.component';
+import { NewAddItemMainComponent } from './new-add-item-main/new-add-item-main.component';
+import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-main.component';
+import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
 
 const routes: Routes = [
   {
     path: 'addItem',
     component:AddItemMainComponent
-  }
-  ,
+  },
   {
     path: 'newaddItem',
-    component:NewAddItemComponent
-  }
-  ,{
-    path: 'shipmentpils',
-    component:ShipmentPileComponent
+    component:NewAddItemMainComponent
+  },
+  {
+    path: 'shipmentpile',
+    component:ShipmentPileMainComponent
   }
 ];
 

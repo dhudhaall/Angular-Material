@@ -5,9 +5,15 @@ import { ScanShipRoutingModule } from './scan-ship-routing.module';
 import { AddItemComponent } from './add-item-main/add-item/add-item.component';
 import { AddItemMainComponent } from './add-item-main/add-item-main.component';
 import { AddItemFiltersComponent } from './add-item-main/add-item-filters/add-item-filters.component';
-import { NewAddItemComponent } from './add-item-main/new-add-item/new-add-item.component';
-import { ShipmentPileComponent } from './add-item-main/shipment-pile/shipment-pile.component';
-import { CreateNewSellerOfferDialogComponent } from './add-item-main/create-new-seller-offer-dialog/create-new-seller-offer-dialog.component';
+import { NewAddItemComponent } from './new-add-item-main/new-add-item/new-add-item.component';
+import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
+import { CreateNewSellerOfferDialogComponent } from './new-add-item-main/create-new-seller-offer-dialog/create-new-seller-offer-dialog.component';
+import { Step1Component } from './step1/step1.component';
+import { Step2Component } from './step2/step2.component';
+import { NewAddItemMainComponent } from './new-add-item-main/new-add-item-main.component';
+import { NewAddItemFiltersComponent } from './new-add-item-main/new-add-item-filters/new-add-item-filters.component';
+import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-main.component';
+import { ShipmentPileFiltersComponent } from './shipment-pile-main/shipment-pile-filters/shipment-pile-filters.component';
 
 
 @NgModule({
@@ -17,7 +23,14 @@ import { CreateNewSellerOfferDialogComponent } from './add-item-main/create-new-
     AddItemFiltersComponent,
     NewAddItemComponent,
     ShipmentPileComponent,
-    CreateNewSellerOfferDialogComponent
+    CreateNewSellerOfferDialogComponent,
+    Step1Component,
+    Step2Component,
+    NewAddItemMainComponent,
+    NewAddItemFiltersComponent,
+    ShipmentPileMainComponent,
+    ShipmentPileFiltersComponent,
+    
   ],
   imports: [
     CommonModule,SharedModule,

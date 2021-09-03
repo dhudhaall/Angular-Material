@@ -26,12 +26,86 @@ $light-green: #87c846;
 
 $icon-color: #ebecec;
 
-@mixin smallBtn {
-  width: 50px;
+.smallBtn {
+  padding: 5px 10px !important;
+  height: auto;
+  line-height: 1 !important;
 }
-@mixin mediumBtn {
-  width: 100px;
+
+.matSelectCustom {
+  padding: 10px;
+  border: 1px solid #dad9d9;
+  border-radius: 6px;
+  background-color: #f6f4f4;
 }
-@mixin largeBtn {
-  width: 200px;
+.link {
+  color: $linkcolorOrange;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.grey-badge {
+  background-color: $lightBlue-badge;
+}
+.blue-btn {
+  background-color: $secondarycolor !important;
+}
+
+.purple-badge {
+  background-color: #8b2be4;
+}
+
+.green-badge {
+  background-color: #257075 !important;
+}
+
+.pirot-badge {
+  background-color: #d8dc40 !important;
+}
+
+.gry-badge {
+  background-color: #ebecec !important;
+}
+
+.greenish-gry {
+  background-color: #b7bfbe !important;
+}
+
+.orange-badge {
+  background-color: #ffb249 !important;
+}
+
+.dark-gray-bdg {
+  background-color: #afb0b3 !important;
+}
+
+.red-badge {
+  background-color: #d32d23 !important;
+}
+
+.light-green {
+  background-color: #87c846 !important;
+}
+
+//////////////////MATE ICON + TEXT COLOR/////////////
+.icon-color {
+  color: #ebecec !important;
+}
+
+.orange-light {
+  color: #ffb249 !important;
+}
+
+.gry-color {
+  color: #ebecec !important;
+}
+
+.smallCircleSpan {
+  background-color: $orange-badge;
+  border-radius: 100%;
+  line-height: 1;
+  padding: 2px 4px;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 10px;
 }
