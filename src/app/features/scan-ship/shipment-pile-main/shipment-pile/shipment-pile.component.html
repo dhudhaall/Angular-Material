@@ -52,16 +52,20 @@
         </section>
 
         <div class="create-shipment-pick">
-            <div class="step1">
+            <div class="step1" *ngIf="!showStep2">
                 <app-step1></app-step1>
             </div>
-            <div class="step2">
+            <div class="step2" *ngIf="showStep2">
                 <app-step2></app-step2>
             </div>
            
         </div>
 
-        <button mat-raised-button class="orange-badge nextBtn">NEXT STEP</button>
+        <div class="next-step-btns">
+        <button mat-raised-button *ngIf="!showStep2" class="orange-badge nextBtn" (click)="showStep2 = true">NEXT STEP</button>
+        <button mat-raised-button *ngIf="showStep2" class="orange-badge nextBtn" (click)="showStep2 = true">CREATE SHIPMENT</button>
+
+        </div>
     </div>
  
 </div>

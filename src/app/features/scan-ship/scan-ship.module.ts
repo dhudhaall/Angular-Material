@@ -8,8 +8,8 @@ import { AddItemFiltersComponent } from './add-item-main/add-item-filters/add-it
 import { NewAddItemComponent } from './new-add-item-main/new-add-item/new-add-item.component';
 import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
 import { CreateNewSellerOfferDialogComponent } from './new-add-item-main/create-new-seller-offer-dialog/create-new-seller-offer-dialog.component';
-import { Step1Component } from './step1/step1.component';
-import { Step2Component } from './step2/step2.component';
+import { Step1Component } from './shipment-pile-main/step1/step1.component';
+import { Step2Component } from './shipment-pile-main/step2/step2.component';
 import { NewAddItemMainComponent } from './new-add-item-main/new-add-item-main.component';
 import { NewAddItemFiltersComponent } from './new-add-item-main/new-add-item-filters/new-add-item-filters.component';
 import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-main.component';

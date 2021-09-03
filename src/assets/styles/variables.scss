@@ -42,6 +42,7 @@ $icon-color: #ebecec;
   color: $linkcolorOrange;
   font-size: 13px;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .grey-badge {
@@ -108,4 +109,14 @@ $icon-color: #ebecec;
   color: #fff;
   margin-left: 5px;
   font-size: 10px;
+}
+
+.bigCircleSpan {
+  background-color: #ffb249;
+  border-radius: 100%;
+  line-height: 1;
+  padding: 4px 8px;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 13px;
 }

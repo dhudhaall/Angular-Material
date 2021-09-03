@@ -5,10 +5,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shipment-pile.component.scss']
 })
 export class ShipmentPileComponent implements OnInit {
-
+ showStep2 = false;
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }
