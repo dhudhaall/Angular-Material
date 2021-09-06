@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CreateNewSellerOfferDialogComponent } from '../create-new-seller-offer-dialog/create-new-seller-offer-dialog.component';
 
 @Component({
   selector: 'app-new-add-item-filters',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewAddItemFiltersComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+   openDialog() {
+    const dialogRef = this.dialog.open(CreateNewSellerOfferDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }
