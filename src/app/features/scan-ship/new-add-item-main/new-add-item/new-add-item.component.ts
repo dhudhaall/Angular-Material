@@ -12,13 +12,7 @@ export class NewAddItemComponent implements OnInit {
   constructor(public dialog: MatDialog ) {
     
   }
-  openDialog() {
-    const dialogRef = this.dialog.open(CreateNewSellerOfferDialogComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
   ngOnInit(): void {
   }
 
