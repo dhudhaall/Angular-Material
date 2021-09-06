@@ -5,118 +5,138 @@ $secondarycolor: #3eadf2;
 $linkcolorOrange: #ff8f2e;
 
 /* Other Variables */
+
 $lightBlue-badge: #86b1d3;
-
 $purple-badge: #8b2be4;
-
 $green-badge: #257075;
-
 $pirot-badge: #d8dc40;
-
 $gry-badge: #ebecec;
 $greenish-gry: #b7bfbe;
-
 $orange-badge: #ffb249;
-
 $dark-gray-bdg: #afb0b3;
-
 $red-badge: #d32d23;
-
 $light-green: #87c846;
-
 $icon-color: #ebecec;
-
 .smallBtn {
-  padding: 5px 10px !important;
-  height: auto;
-  line-height: 1 !important;
+    padding: 5px 10px !important;
+    height: auto;
+    line-height: 1 !important;
 }
 
 .matSelectCustom {
-  padding: 10px;
-  border: 1px solid #dad9d9;
-  border-radius: 6px;
-  background-color: #f6f4f4;
+    padding: 10px;
+    border: 1px solid #dad9d9;
+    border-radius: 6px;
+    background-color: #f6f4f4;
 }
+
 .link {
-  color: $linkcolorOrange;
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: underline;
+    color: $linkcolorOrange;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.link2 {
+    color: $secondarycolor;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.link3 {
+    color: $red-badge;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .grey-badge {
-  background-color: $lightBlue-badge;
+    background-color: $lightBlue-badge;
 }
+
 .blue-btn {
-  background-color: $secondarycolor !important;
+    background-color: $secondarycolor !important;
 }
 
 .purple-badge {
-  background-color: #8b2be4;
+    background-color: #8b2be4;
 }
 
 .green-badge {
-  background-color: #257075 !important;
+    background-color: #257075 !important;
 }
 
 .pirot-badge {
-  background-color: #d8dc40 !important;
+    background-color: #d8dc40 !important;
 }
 
 .gry-badge {
-  background-color: #ebecec !important;
+    background-color: #ebecec !important;
 }
 
 .greenish-gry {
-  background-color: #b7bfbe !important;
+    background-color: #b7bfbe !important;
 }
 
 .orange-badge {
-  background-color: #ffb249 !important;
+    background-color: #ffb249 !important;
 }
 
 .dark-gray-bdg {
-  background-color: #afb0b3 !important;
+    background-color: #afb0b3 !important;
 }
 
 .red-badge {
-  background-color: #d32d23 !important;
+    background-color: #d32d23 !important;
 }
 
 .light-green {
-  background-color: #87c846 !important;
+    background-color: #87c846 !important;
 }
 
 //////////////////MATE ICON + TEXT COLOR/////////////
 .icon-color {
-  color: #ebecec !important;
+    color: #ebecec !important;
 }
 
 .orange-light {
-  color: #ffb249 !important;
+    color: #ffb249 !important;
 }
 
 .gry-color {
-  color: #ebecec !important;
+    color: #ebecec !important;
 }
 
 .smallCircleSpan {
-  background-color: $orange-badge;
-  border-radius: 100%;
-  line-height: 1;
-  padding: 2px 4px;
-  color: #fff;
-  margin-left: 5px;
-  font-size: 10px;
+    background-color: $orange-badge;
+    border-radius: 100%;
+    line-height: 1;
+    padding: 2px 4px;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 10px;
 }
 
 .bigCircleSpan {
-  background-color: #ffb249;
-  border-radius: 100%;
-  line-height: 1;
-  padding: 4px 8px;
-  color: #fff;
-  margin-left: 5px;
-  font-size: 13px;
+    background-color: #ffb249;
+    border-radius: 100%;
+    line-height: 1;
+    padding: 4px 8px;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.custom-inputs:focus {
+    outline: none;
+}
+
+.custom-inputs {
+    border: 1px solid $dark-gray-bdg;
+    border-radius: 5px;
+    background-color: #f6f4f4;
+    padding: 10px 10px;
+    color: #000;
+    font-size: 15px;
 }
