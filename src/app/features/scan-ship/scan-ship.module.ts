@@ -14,6 +14,7 @@ import { NewAddItemMainComponent } from './new-add-item-main/new-add-item-main.c
 import { NewAddItemFiltersComponent } from './new-add-item-main/new-add-item-filters/new-add-item-filters.component';
 import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-main.component';
 import { ShipmentPileFiltersComponent } from './shipment-pile-main/shipment-pile-filters/shipment-pile-filters.component';
+import { AddToShipmentComponent } from './add-to-shipment/add-to-shipment.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ShipmentPileFiltersComponent } from './shipment-pile-main/shipment-pile
     NewAddItemFiltersComponent,
     ShipmentPileMainComponent,
     ShipmentPileFiltersComponent,
+    AddToShipmentComponent,
     
   ],
   imports: [
