@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddItemMainComponent } from './add-item-main/add-item-main.component';
+import { AddToShipmentComponent } from './add-to-shipment/add-to-shipment.component';
 import { NewAddItemMainComponent } from './new-add-item-main/new-add-item-main.component';
 import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-main.component';
 import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
@@ -17,6 +18,11 @@ const routes: Routes = [
   {
     path: 'shipmentpile',
     component:ShipmentPileMainComponent
+  }
+  ,
+  {
+    path:'addtoshipment',
+    component:AddToShipmentComponent
   }
 ];
 

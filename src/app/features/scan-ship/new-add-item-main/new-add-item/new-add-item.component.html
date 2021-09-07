@@ -97,7 +97,8 @@
                                             <img src="/assets/images/mp-icon.jpg">
                                         </div>
                                         <div class="button-main">
-                                            <button mat-raised-button color="primary">Add Item</button>
+                                            <button mat-raised-button color="primary">ADD ITEM</button>
+
                                         </div>
                                         <div class="button-link">
                                             <a href="#">View Parent</a>
@@ -519,7 +520,24 @@
                                             <img class="" src="/assets/images/mp-icon.jpg">
                                         </div>
                                         <div class="button-main">
-                                            <button mat-raised-button color="primary">ADD ITEM</button>
+                                            <button mat-raised-button color="primary" [matMenuTriggerFor]="warningMenu" class="red-badge">RESTRICTED</button>
+                                            <mat-menu class="popupMenu" #warningMenu="matMenu" xPosition="before">
+                                                <div class="RestrictedPileTooltip" (click)="$event.stopPropagation();">
+                                                    <div class="tooltip-main">
+                                                        <h1>
+                                                            <mat-icon>warning</mat-icon>warning
+                                                        </h1>
+                                                        <div class="tooltip-main">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                                                        </div>
+                                                        <div class="tooltip-main">
+                                                            <button mat-raised-button color="primary" class="blue-btn dark-green ">OK</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </mat-menu>
+
                                         </div>
                                         <div class="button-link">
                                             <a href="#">View Parent</a>
@@ -731,7 +749,25 @@
                                             <img src="/assets/images/mp-icon.jpg">
                                         </div>
                                         <div class="button-main">
-                                            <button mat-raised-button color="primary">Add Item</button>
+                                            <button mat-raised-button color="primary" class="yellow-badg" [matMenuTriggerFor]="warningMenu">warning</button>
+                                            <mat-menu class="popupMenu" #warningMenu="matMenu" xPosition="before">
+                                                <div class="warningPileTooltip" (click)="$event.stopPropagation();">
+                                                    <div class="tooltip-main">
+                                                        <h1>
+                                                            <mat-icon>warning</mat-icon>warning
+                                                        </h1>
+                                                        <div class="tooltip-main">
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                                                        </div>
+                                                        <div class="tooltip-main">
+                                                            <button mat-raised-button color="primary" class="blue-btn greenish-gry anyway">ADD
+                                ANYWAY</button>
+                                                            <button mat-raised-button color="primary" class="blue-btn dark-green ">OK</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </mat-menu>
                                         </div>
                                         <div class="button-link">
                                             <a href="#">View Parent</a>
@@ -896,8 +932,7 @@
     </div>
     <!-- <div class="addnew-sidebar">
 
-        
+
 
     </div> -->
 </div>
-
