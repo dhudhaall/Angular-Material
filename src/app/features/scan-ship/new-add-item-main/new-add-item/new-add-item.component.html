@@ -520,9 +520,9 @@
                                             <img class="" src="/assets/images/mp-icon.jpg">
                                         </div>
                                         <div class="button-main">
-                                            <button mat-raised-button color="primary" [matMenuTriggerFor]="warningMenu" class="red-badge">RESTRICTED</button>
+                                            <button mat-raised-button color="primary" [matMenuTriggerFor]="warningMenu" class="red-badge" #matMenuRestricted="matMenuTrigger">RESTRICTED</button>
                                             <mat-menu class="popupMenu" #warningMenu="matMenu" xPosition="before">
-                                                <div class="RestrictedPileTooltip" (click)="$event.stopPropagation();">
+                                                <div class="RestrictedPileTooltip" >
                                                     <div class="tooltip-main">
                                                         <h1>
                                                             <mat-icon>warning</mat-icon>warning
@@ -532,7 +532,7 @@
                                                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
                                                         </div>
                                                         <div class="tooltip-main">
-                                                            <button mat-raised-button color="primary" class="blue-btn dark-green ">OK</button>
+                                                            <button mat-raised-button color="primary" class="blue-btn dark-green">OK</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -749,9 +749,9 @@
                                             <img src="/assets/images/mp-icon.jpg">
                                         </div>
                                         <div class="button-main">
-                                            <button mat-raised-button color="primary" class="yellow-badg" [matMenuTriggerFor]="warningMenu">warning</button>
+                                            <button mat-raised-button color="primary" class="yellow-badg" [matMenuTriggerFor]="warningMenu" #matMenuTrigger2="matMenuTrigger" (mouseenter)="matMenuTrigger2.openMenu()" >warning</button>
                                             <mat-menu class="popupMenu" #warningMenu="matMenu" xPosition="before">
-                                                <div class="warningPileTooltip" (click)="$event.stopPropagation();">
+                                                <div class="warningPileTooltip" >
                                                     <div class="tooltip-main">
                                                         <h1>
                                                             <mat-icon>warning</mat-icon>warning
@@ -763,14 +763,17 @@
                                                         <div class="tooltip-main">
                                                             <button mat-raised-button color="primary" class="blue-btn greenish-gry anyway">ADD
                                 ANYWAY</button>
-                                                            <button mat-raised-button color="primary" class="blue-btn dark-green ">OK</button>
+                                                            <button mat-raised-button color="primary" class="blue-btn dark-green " (click)="matMenuTrigger2.closeMenu()">OK</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </mat-menu>
                                         </div>
-                                        <div class="button-link">
-                                            <a href="#">View Parent</a>
+                                        <div class="button-link" >
+                                            <a href="#">
+                                                
+                                                View Parent
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
