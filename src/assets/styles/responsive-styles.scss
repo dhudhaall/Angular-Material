@@ -19,6 +19,15 @@
         font-size: 15px;
         font-weight: 600;
     }
+    .add-ship-section .add-ship-main .pils-table .item-Head .item-name h3 {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .add-ship-section .add-ship-main .pils-table .item-Head .item-name p span {
+        font-size: 20px;
+        color: #43454b;
+        margin-left: 5px;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -101,7 +110,7 @@
     }
     .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-item-detail .new-add-item-main-detail .new-heading-detail .offer-status h2 span {
         font-size: 18px;
-        padding: 3px 9px;
+        padding: 2px 8px;
     }
     .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name .offers .offer-opption h5 {
         margin-bottom: 5px;
@@ -185,6 +194,18 @@
     .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 .heading-text h1 {
         font-size: 16px;
     }
+    .dashbord .scan-ship-details .scan-ship-main .detail-1 .detail-text p {
+        text-align: center;
+        font-size: 13px;
+    }
+    .rest-items-section .rest-items-main .destination-main {
+        /* border: 1px solid #555; */
+        /* border-radius: 5px; */
+        /* padding: 15px; */
+        flex-basis: 48%;
+        margin-top: 20px;
+        /* margin-left: 0px; */
+    }
 }
 
 @media only screen and (max-width: 994px) {
@@ -236,6 +257,9 @@
     .pop-up-section .popup-input-section .print-lable-section .print-lable-main .print-lable-flex1 h1 {
         font-size: 14px;
     }
+    .add-ship-section .add-ship-main .pils-table .item-Head .item-name p span {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 860px) {
@@ -273,6 +297,9 @@
     }
     .addnew-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-1 .heading-text h1 {
         font-size: 27px;
+    }
+    .addpils-item-main .add-new-item-section-main .main-item-add-new .item-Head .actions-items .icons img {
+        width: 21px;
     }
 }
 
@@ -494,6 +521,10 @@
     .pop-up-section .popup-input-section .popup-input .inputs-main .input-flex1 {
         flex-basis: 100%;
         margin-bottom: 10px;
+    }
+    .rest-items-section .rest-items-main .destination-main {
+        flex-basis: 100%;
+        margin-top: 20px;
     }
 }
 
