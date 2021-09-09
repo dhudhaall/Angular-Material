@@ -2373,6 +2373,7 @@ mat-sidenav[style] {
 
 .rest-items-section {
   margin-top: 10px;
+  margin-bottom: 30px;
   .rest-items-main {
     display: flex;
     justify-content: space-around;
@@ -2828,6 +2829,8 @@ mat-sidenav[style] {
     border: 1px solid $greenish-gry;
     padding: 20px;
     margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px #ddd;
     .tbale-heading {
       border-bottom: 1px solid $greenish-gry;
       h2 {
