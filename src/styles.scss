@@ -2222,6 +2222,7 @@ mat-sidenav[style] {
 .printPileTooltip {
   padding: 0 8px;
   max-width: 180px;
+  position: relative;
 
   .mat-radio-button {
     padding-bottom: 10px;
@@ -2245,6 +2246,19 @@ mat-sidenav[style] {
       color: $greenish-gry;
     }
   }
+}
+.mat-menu-panel {
+  overflow: unset !important;
+}
+.printPileTooltip::before {
+  position: absolute;
+  content: "";
+  right: 14px;
+  top: -26px;
+  background-image: url(/assets/images/arow-tooltip.png);
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
 }
 
 .standardPileTooltip {

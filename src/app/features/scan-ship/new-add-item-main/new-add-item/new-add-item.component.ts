@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-import { CreateNewSellerOfferDialogComponent } from '../create-new-seller-offer-dialog/create-new-seller-offer-dialog.component';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-new-add-item',
@@ -16,6 +16,7 @@ export class NewAddItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 
 
 }
