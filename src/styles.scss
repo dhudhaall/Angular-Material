@@ -1,32 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "assets/styles/variables.scss";
-
 /* width */
 
 ::-webkit-scrollbar {
   width: 7px;
 }
-
 /* Track */
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
 }
-
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 /*//////Global Styles ///////*/
 
 * {
@@ -107,7 +102,6 @@ body {
 //   border-left: 15px solid red;
 //   z-index: 1;
 // }
-
 /*//////Topbar Styles ///////*/
 
 .header-main {
@@ -167,7 +161,6 @@ body {
     }
   }
 }
-
 /*//////Sidebar Styles ///////*/
 
 mat-sidenav[style] {
@@ -241,7 +234,6 @@ mat-sidenav[style] {
     padding-left: 30px;
   }
 }
-
 /*//////Breadcrumbs Styles ///////*/
 
 .breadcrumbs-main {
@@ -253,7 +245,6 @@ mat-sidenav[style] {
     display: flex;
   }
 }
-
 /*//////Content Wrapper Styles ///////*/
 
 .content-wrapper {
@@ -277,7 +268,6 @@ mat-sidenav[style] {
     transition: all 0.3s ease;
   }
 }
-
 /*//////Shippment Styles ///////*/
 
 .shipping-listing-search {
@@ -2222,8 +2212,6 @@ mat-sidenav[style] {
 .printPileTooltip {
   padding: 0 8px;
   max-width: 180px;
-  position: relative;
-
   .mat-radio-button {
     padding-bottom: 10px;
     padding-top: 10px;
@@ -2246,19 +2234,6 @@ mat-sidenav[style] {
       color: $greenish-gry;
     }
   }
-}
-.mat-menu-panel {
-  overflow: unset !important;
-}
-.printPileTooltip::before {
-  position: absolute;
-  content: "";
-  right: 14px;
-  top: -26px;
-  background-image: url(/assets/images/arow-tooltip.png);
-  width: 20px;
-  height: 20px;
-  transform: rotate(-90deg);
 }
 
 .standardPileTooltip {
@@ -2283,7 +2258,6 @@ mat-sidenav[style] {
     font-weight: 300;
   }
 }
-
 /*//////////Responisve styles imported //////////////*/
 
 .next-step-btns {
@@ -2588,9 +2562,6 @@ mat-sidenav[style] {
   }
 }
 
-.new-seller-popup {
-  max-height: calc(100vh - 100px);
-}
 .pop-up-section {
   max-width: 800px;
   position: relative;
@@ -3081,6 +3052,17 @@ mat-sidenav[style] {
               border-radius: 3px;
             }
           }
+          .button-main {
+            display: flex;
+            align-content: center;
+            margin-bottom: 15px;
+            .icon-img {
+              width: 40px;
+              img {
+                width: 100%;
+              }
+            }
+          }
           select {
             background-color: $light-green;
             padding: 10px;
@@ -3088,7 +3070,6 @@ mat-sidenav[style] {
             color: #fff;
             border: 0;
             width: 80%;
-            margin-bottom: 15px;
           }
         }
       }
@@ -3226,7 +3207,6 @@ mat-sidenav[style] {
     }
   }
 }
-
 /* Tooltip container */
 
 .tooltip {
@@ -3235,7 +3215,6 @@ mat-sidenav[style] {
   border-bottom: 1px dotted black;
   /* If you want dots under the hoverable text */
 }
-
 /* Tooltip text */
 
 .tooltip .tooltiptext {
@@ -3253,11 +3232,450 @@ mat-sidenav[style] {
   left: 50%;
   margin-left: -60px;
 }
-
 /* Show the tooltip text when you mouse over the tooltip container */
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.shipment-detail-main {
+  padding: 20px;
+  .shipment-heading-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heading {
+      display: flex;
+      align-items: center;
+      .heading-icon {
+        .mat-icon {
+          font-size: 50px;
+          vertical-align: middle;
+          width: 50px;
+          height: 50px;
+          color: $secondarycolor;
+          margin-right: 20px;
+        }
+      }
+      .heading-text {
+        h1 {
+          font-size: 50px;
+          margin-bottom: 0;
+          color: $secondarycolor;
+          font-weight: 600;
+        }
+      }
+    }
+    .button {
+      .copy {
+        margin-left: 20px;
+      }
+    }
+  }
+  .shipment-table {
+    background-color: #ffffff;
+    border: 1px solid $greenish-gry;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    //   .tbale-heading {
+    //     border-bottom: 1px solid $greenish-gry;
+    //     h2 {
+    //         font-size: 15px;
+    //         margin-bottom: 0;
+    //         color: $dark-gray-bdg;
+    //         span {
+    //             padding: 3px 8px;
+    //             border-radius: 50%;
+    //             color: #000;
+    //         }
+    //     }
+    // }
+    .headings-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $greenish-gry;
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+      .flex1 {
+        h1 {
+          margin-bottom: 0;
+          a {
+            font-size: 20px;
+            color: #000;
+            font-weight: 500;
+            margin-right: 10px;
+          }
+          .bw14 {
+            border-radius: 5px;
+            padding: 2px 7px;
+            color: #ffffff;
+            margin-right: 10px;
+          }
+          .clear {
+            font-size: 15px;
+            color: #000;
+          }
+        }
+      }
+      .flex2 {
+        p {
+          font-size: 15px;
+          margin-bottom: 0;
+          color: $dark-gray-bdg;
+          .us {
+            border-radius: 5px;
+            padding: 3px 5px;
+            color: #ffffff;
+            margin-right: 10px;
+            font-size: 13px;
+          }
+          .chain {
+            color: #000;
+            margin-right: 10px;
+          }
+          .mode {
+            margin-right: 10px;
+            line-height: 25px;
+          }
+          .closed {
+            line-height: 25px;
+          }
+        }
+      }
+    }
+    .shipment-detail-cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      .card1 {
+        flex-basis: 40%;
+        padding: 0px 20px 0px 0px;
+        .card1-detail {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          .detail-left {
+            h3 {
+              font-size: 15px;
+              color: #000;
+              font-weight: 600;
+            }
+            h4 {
+              font-size: 13px;
+              margin-bottom: 2px;
+              line-height: 1;
+              span {
+                font-size: 17px;
+                font-weight: 500;
+              }
+            }
+          }
+          .detail-right {
+            h4 {
+              font-size: 13px;
+              span {
+                font-size: 17px;
+                font-weight: 500;
+              }
+            }
+            .input-flex {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              p {
+                font-size: 20px;
+                margin: 0;
+              }
+              .doler {
+                max-width: 80px;
+              }
+              .mat-icon {
+                color: $light-green;
+              }
+            }
+          }
+        }
+        .card-heading {
+          border-bottom: 1px solid $greenish-gry;
+          h2 {
+            color: $greenish-gry;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+      }
+      .card2 {
+        flex-basis: 30%;
+        .card-heading {
+          border-bottom: 1px solid $greenish-gry;
+          h2 {
+            color: $greenish-gry;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+        .card2-text {
+          margin-top: 20px;
+          h2 {
+            color: #000;
+            font-size: 17px;
+            margin-bottom: 2px;
+            line-height: 1;
+            font-weight: 500;
+          }
+          h3 {
+            color: $dark-gray-bdg;
+            font-size: 17px;
+            margin-bottom: 2px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+      }
+      .card3 {
+        flex-basis: 30%;
+        .card-heading {
+          border-bottom: 1px solid $greenish-gry;
+          h2 {
+            color: $greenish-gry;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+        .card2-text {
+          margin-top: 20px;
+          h2 {
+            color: #000;
+            font-size: 17px;
+            margin-bottom: 2px;
+            line-height: 1;
+            font-weight: 500;
+          }
+          h3 {
+            color: $dark-gray-bdg;
+            font-size: 17px;
+            margin-bottom: 2px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+      }
+      .card4 {
+        flex-basis: 30%;
+        margin-top: 20px;
+        .card-heading {
+          border-bottom: 1px solid $greenish-gry;
+          h2 {
+            color: $greenish-gry;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+        .card2-text {
+          margin-top: 20px;
+          h2 {
+            color: #000;
+            font-size: 17px;
+            margin-bottom: 2px;
+            font-weight: 500;
+            span {
+              font-size: 15px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .card5 {
+        flex-basis: 40%;
+        margin-top: 20px;
+        padding: 0px 20px;
+        .card-heading {
+          border-bottom: 1px solid $greenish-gry;
+          h2 {
+            color: $greenish-gry;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+        .card2-text {
+          margin-top: 20px;
+          h2 {
+            color: #000;
+            font-size: 17px;
+            margin-bottom: 2px;
+            line-height: 1;
+            font-weight: 500;
+            span {
+              font-size: 15px;
+              font-weight: 300;
+            }
+          }
+          h3 {
+            color: $greenish-gry;
+            font-size: 17px;
+            margin-bottom: 2px;
+            line-height: 1;
+            font-weight: 500;
+            span {
+              font-size: 15px;
+              font-weight: 300;
+            }
+            a {
+              color: $greenish-gry;
+            }
+          }
+          .gry {
+            color: $greenish-gry !important;
+          }
+        }
+      }
+      .card6 {
+        flex-basis: 15%;
+        margin-top: 20px;
+        .card-heading {
+          border-bottom: 1px solid $greenish-gry;
+          h2 {
+            color: $greenish-gry;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+        .card2-text {
+          margin-top: 20px;
+          h2 {
+            color: #000;
+            font-size: 17px;
+            margin-bottom: 2px;
+            line-height: 1;
+            font-weight: 500;
+          }
+          h3 {
+            color: #000;
+            font-size: 17px;
+            margin-bottom: 2px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+      }
+      .card7 {
+        flex-basis: 15%;
+        margin-top: 20px;
+        .card-heading {
+          border-bottom: 1px solid $greenish-gry;
+          h2 {
+            color: $greenish-gry;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+          }
+        }
+        .card2-text {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .shipment-detail-table {
+    background-color: #ffffff;
+    border: 1px solid $greenish-gry;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    .table-main {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        box-sizing: border-box;
+        th {
+          font-size: 13px;
+          border-right: 1px solid #dddddd59;
+          text-align: center;
+          padding: 5px;
+          font-weight: 500;
+          color: $greenish-gry;
+          border-bottom: 1px solid #dddddd59;
+        }
+        td:nth-last-child(1) {
+          border-right: none;
+        }
+        th:nth-last-child(1) {
+          border-right: none;
+        }
+        td {
+          border-bottom: 1px solid #b7bfbe7a;
+          border-right: 1px solid #dddddd59;
+          font-size: 16px;
+          padding: 19px 5px;
+          .top {
+            line-height: 26px;
+            padding: 0px 25px;
+            font-size: 13px;
+          }
+          .product {
+            border: 2px solid #b7bfbe94;
+            border-radius: 5px;
+            .product-image {
+              width: 70px;
+              margin: auto;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          h2 {
+            font-size: 13px;
+            margin-bottom: 6px;
+            line-height: 1;
+          }
+          .new {
+            line-height: 26px;
+            padding: 0px 25px;
+            font-size: 13px;
+          }
+          .input-icon {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .mat-icon {
+              color: #6cda19;
+              font-size: 27px;
+              width: 30px;
+              height: 30px;
+            }
+            .doler {
+              max-width: 65px;
+              padding: 5px 7px;
+              max-width: 61px;
+              background-color: #ffffff;
+              border-radius: none;
+            }
+          }
+          .price {
+            max-width: 65px;
+            padding: 5px 7px;
+            max-width: 61px;
+            background-color: #ffffff;
+            border-radius: none;
+          }
+          .icon-img {
+            width: 30px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @import "assets/styles/responsive-styles.scss";
