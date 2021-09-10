@@ -107,6 +107,18 @@ $icon-color: #ebecec;
     background-color: $secondarycolor !important;
 }
 
+.light-bluesh-white {
+    background-color: $lightBlue-badge !important;
+}
+
+.green {
+    background-color: #427a0a !important;
+}
+
+.pink {
+    background-color: #920352 !important;
+}
+
 //////////////////MATE ICON + TEXT COLOR/////////////
 .icon-color {
     color: #ebecec !important;
@@ -151,4 +163,8 @@ $icon-color: #ebecec;
     padding: 10px 10px;
     color: #000;
     font-size: 15px;
+}
+
+.cutom-button {
+    width: 300px;
 }

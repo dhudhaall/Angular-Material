@@ -1,16 +1,17 @@
 <div class="shipping-listing-main">
     <div class="shipping-listing-search">
-            <div class="title">
-                <mat-icon>local_shipping</mat-icon> <h1> Shipment History</h1>
-            </div>
-            <div class="search-form">
-               
-                    <input type="text" placeholder="Search SKUs, ASINs, Shipment IDs, Destination etc.">
-              
-                 <button type="button" (click)="search()" mat-raised-button color="primary">Search</button>
+        <div class="title">
+            <mat-icon>local_shipping</mat-icon>
+            <h1> Shipment History</h1>
+        </div>
+        <div class="search-form">
 
-            </div>
-            
+            <input type="text" placeholder="Search SKUs, ASINs, Shipment IDs, Destination etc.">
+
+            <button type="button" (click)="search()" mat-raised-button color="primary">Search</button>
+
+        </div>
+
     </div>
 
     <div class="shipment-table-main">
@@ -19,30 +20,25 @@
             </mat-paginator>
         </div>
         <div class="table">
-            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-            
-                <!--- Note that these columns can be defined in any order.
-                    The actual rendered columns are set as a property on the row definition" -->
-            
-                <!-- Position Column -->
+            <!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
                 <ng-container matColumnDef="id">
                     <th mat-header-cell *matHeaderCellDef> Shipment ID </th>
                     <td mat-cell *matCellDef="let element"> <a class="link">{{element.id}}</a> </td>
                 </ng-container>
-            
-                <!-- Name Column -->
+
+
                 <ng-container matColumnDef="name">
                     <th mat-header-cell *matHeaderCellDef> Shipment Name </th>
                     <td mat-cell *matCellDef="let element"> {{element.name}} </td>
                 </ng-container>
-            
-                <!-- Weight Column -->
+
+
                 <ng-container matColumnDef="marketPlace">
                     <th mat-header-cell *matHeaderCellDef> Market Place </th>
                     <td mat-cell *matCellDef="let element"> {{element.marketPlace}} </td>
                 </ng-container>
-            
-                <!-- Symbol Column -->
+
+
                 <ng-container matColumnDef="lastModified">
                     <th mat-header-cell *matHeaderCellDef> Last Modified </th>
                     <td mat-cell *matCellDef="let element"> {{element.lastModified}} </td>
@@ -64,29 +60,434 @@
                 </ng-container>
 
                 <ng-container matColumnDef="received">
-                    <th mat-header-cell *matHeaderCellDef>  (SKU|Unit) <br> Received </th>
+                    <th mat-header-cell *matHeaderCellDef> (SKU|Unit) <br> Received </th>
                     <td mat-cell *matCellDef="let element"> {{element.received}} </td>
                 </ng-container>
 
                 <ng-container matColumnDef="label">
                     <th mat-header-cell *matHeaderCellDef> Label </th>
-                    <td mat-cell *matCellDef="let element"> <span class="badgeCustom-label grey-badge">{{element.label}}</span> </td>
+                    <td mat-cell *matCellDef="let element"> <span class="badgeCustom-label grey-badge">{{element.label}}</span>
+                    </td>
                 </ng-container>
 
                 <ng-container matColumnDef="shippingTier">
                     <th mat-header-cell *matHeaderCellDef> Shipping Tier </th>
-                    <td mat-cell *matCellDef="let element"><span class="badgeCustom-label purple-badge"> {{element.shippingTier}}</span> </td>
+                    <td mat-cell *matCellDef="let element"><span class="badgeCustom-label purple-badge">
+              {{element.shippingTier}}</span> </td>
                 </ng-container>
 
                 <ng-container matColumnDef="status">
                     <th mat-header-cell *matHeaderCellDef> Status </th>
-                    <td mat-cell *matCellDef="let element"> <span class="badgeCustom-label green-badge">{{element.status}}</span> </td>
+                    <td mat-cell *matCellDef="let element"> <span class="badgeCustom-label green-badge">{{element.status}}</span>
+                    </td>
                 </ng-container>
-            
+
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            </table>
+            </table> -->
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Shipment ID
+                        <mat-icon>arrow_downward</mat-icon>
+                    </th>
+                    <th>Shipment Name</th>
+                    <th>Cart</th>
+                    <th>Last Modified</th>
+                    <th>Destination </th>
+                    <th><span>Total</span> <br> Weight</th>
+                    <th><span>(SKU|Unit)</span> <br>Shipped</th>
+                    <th><span>(SKU|Unit)</span> <br>Recieved</th>
+                    <th>Label </th>
+                    <th>Shipping Tier</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>
+                        <h1><span class="new red-badge">New</span></h1>
+                    </td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us red-badge">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #000;" mat-raised-button color="primary" class="saler bluesh-white ">SELLER</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd light-bluesh-white ">STANDARD</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed orange-badge ">CLOSED</button>
+                    </td>
+                </tr>
+                <tr>
 
+
+                    <td>
+                        <h1><span class="new red-badge">New</span></h1>
+                    </td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us yellow-badg" style="color: #000;">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #ffff;" mat-raised-button color="primary" class="saler green">MERCHANT</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd orange-badge  ">OVERSIZED</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed pink   ">WORKING</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1><span class="new red-badge">New</span></h1>
+                    </td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us red-badge">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #fff;" mat-raised-button color="primary" class="saler yellow-badg  ">MIXED
+            </button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd light-bluesh-white ">HEAVY</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed orange-badge ">CLOSED</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us yellow-badg" style="color: #000;">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #ffff;" mat-raised-button color="primary" class="saler dark-gray-bdg  ">NONE</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd pink">APPARAL</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed orange-badge ">CLOSED</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us red-badge">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #000;" mat-raised-button color="primary" class="saler bluesh-white ">SELLER</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd yellow-badg ">SMALL+LITE</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed orange-badge ">CLOSED</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us red-badge">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #000;" mat-raised-button color="primary" class="saler bluesh-white ">SELLER</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd purple-badge ">SHOES
+            </button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed orange-badge ">CLOSED</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us yellow-badg" style="color: #000">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #fff;" mat-raised-button color="primary" class="saler green ">MERCHANT</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd light-bluesh-white ">WATCHES</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed pink">WORKING</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us yellow-badg" style="color: #000;">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #ffff;" mat-raised-button color="primary" class="saler dark-gray-bdg  ">NONE</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd pink">APPARAL</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed orange-badge ">CLOSED</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us red-badge">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #000;" mat-raised-button color="primary" class="saler bluesh-white ">SELLER</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd yellow-badg ">SMALL+LITE</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed orange-badge ">CLOSED</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us red-badge">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #000;" mat-raised-button color="primary" class="saler bluesh-white ">SELLER</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd purple-badge ">SHOES
+            </button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed orange-badge ">CLOSED</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h1>
+                            <a class="link">FBA15FMTX9L3</a>
+                        </h1>
+                    </td>
+                    <td>
+                        <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    </td>
+                    <td>
+                        <p>SellerChain<span class="us yellow-badg" style="color: #000">us</span></p>
+                    </td>
+                    <td>
+                        <p>Jan 12, 2019 | <span class="time"> 5:29PM</span></p>
+                    </td>
+                    <td>
+                        <p><span><b>PHX6</b></span> | Phoenix, AZ 85043</p>
+                    </td>
+                    <td>
+                        <P>1|50</P>
+                    </td>
+                    <td>
+                        <P>1|48</P>
+                    </td>
+                    <td>
+                        <p>1|48</p>
+                    </td>
+                    <td><button type="button" (click)="search()" style="color: #fff;" mat-raised-button color="primary" class="saler green ">MERCHANT</button>
+                    </td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="staderd light-bluesh-white ">WATCHES</button></td>
+                    <td><button type="button" (click)="search()" mat-raised-button color="primary" class="closed pink">WORKING</button>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
