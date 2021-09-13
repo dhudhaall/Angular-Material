@@ -24,7 +24,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
-import {MatCardModule,} from '@angular/material/card';
+import { MatCardModule, } from '@angular/material/card';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import {MatCardModule,} from '@angular/material/card';
   imports: [
     CommonModule, FormsModule, ReactiveFormsModule,
     MatTooltipModule,MatCardModule,
-    MatIconModule,
+    MatIconModule,IvyCarouselModule,
     MatTabsModule,
     MatDialogModule,
     MatExpansionModule,
@@ -50,7 +51,7 @@ import {MatCardModule,} from '@angular/material/card';
   exports: [
     TopbarComponent,
     SidebarComponent, FormsModule, ReactiveFormsModule,
-    MatSelectModule,MatCardModule,
+    MatSelectModule,MatCardModule,IvyCarouselModule,
     MatDialogModule,
     MatTabsModule,MatCheckboxModule,
     MatSlideToggleModule,
