@@ -112,11 +112,14 @@
                 <div class="heading-text">
                     <h1>SHIPMENT NAME:</h1>
                     <div class="name-icon">
-                        <div class="icon">
+                        <div class="icon" [ngClass]="isEditable ? 'disable' : 'enable'">
                             <p>ONT6 - SELLER_LABEL 6/4/2019 5:04 PM</p>
                         </div>
                         <div class="icon">
-                            <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                            <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="isEditable = !isEditable">
+                               <span *ngIf="isEditable">edit</span> 
+                               <span *ngIf="!isEditable">Save</span> 
+                            </mat-icon>
                         </div>
                     </div>
                 </div>
