@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-to-shipment.component.scss']
 })
 export class AddToShipmentComponent implements OnInit {
-
+  isEditable = true;
   constructor() { }
 
   ngOnInit(): void {

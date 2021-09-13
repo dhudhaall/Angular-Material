@@ -224,13 +224,12 @@
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
                                     <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
-                        [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                        [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
                                         <span>
-                      <mat-icon (click)="isEditable = !isEditable">
-                        <span *ngIf="isEditable">edit</span>
-                                        <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
-
-                                        </mat-icon>
+                                            <mat-icon (click)="isEditable = !isEditable">
+                                                <span *ngIf="isEditable">edit</span>
+                                                <span  *ngIf="!isEditable"><img style="width:20px" src="/assets/images/greentick.png"></span>
+                                            </mat-icon>
                                         </span>
                                     </p>
                                 </div>
