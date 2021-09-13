@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./step1.component.scss']
 })
 export class Step1Component implements OnInit {
-
+  isEditable = true;
   constructor() { }
 
   ngOnInit(): void {

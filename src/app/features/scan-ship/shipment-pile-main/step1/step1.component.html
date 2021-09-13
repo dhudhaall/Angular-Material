@@ -86,10 +86,16 @@
                                 <a class="item-id">B00RN08585</a>
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
-                                    <p>Label by:<span><input type="text" placeholder="SELLER" disabled
-                        class="disable custom-inputs"></span> <span>
-                      <mat-icon>edit</mat-icon>
-                    </span></p>
+                                    <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
+                        [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                                        <span>
+                      <mat-icon (click)="isEditable = !isEditable">
+                        <span *ngIf="isEditable">edit</span>
+                                        <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+
+                                        </mat-icon>
+                                        </span>
+                                    </p>
                                 </div>
                                 <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>
                             </div>
@@ -217,10 +223,16 @@
                                 <a class="item-id">B00RN08585</a>
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
-                                    <p>Label by:<span><input type="text" placeholder="SELLER" disabled
-                        class="disable custom-inputs"></span> <span>
-                      <mat-icon>edit</mat-icon>
-                    </span></p>
+                                    <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
+                        [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                                        <span>
+                      <mat-icon (click)="isEditable = !isEditable">
+                        <span *ngIf="isEditable">edit</span>
+                                        <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+
+                                        </mat-icon>
+                                        </span>
+                                    </p>
                                 </div>
                                 <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>
                             </div>
@@ -349,11 +361,15 @@
                                 <a class="item-id">B00RN08585</a>
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
-                                    <p>Label by:<span><input type="text" placeholder="SELLER" disabled
-                        class="disable custom-inputs"></span>
+                                    <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
+                        [ngClass]="isEditable ? 'disable' : 'enable'"></span>
                                         <span>
-                      <mat-icon>edit</mat-icon>
-                    </span>
+                      <mat-icon (click)="isEditable = !isEditable">
+                        <span *ngIf="isEditable">edit</span>
+                                        <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+
+                                        </mat-icon>
+                                        </span>
                                     </p>
                                 </div>
                                 <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>

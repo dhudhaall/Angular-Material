@@ -199,12 +199,19 @@
         font-size: 13px;
     }
     .rest-items-section .rest-items-main .destination-main {
-        /* border: 1px solid #555; */
-        /* border-radius: 5px; */
-        /* padding: 15px; */
         flex-basis: 48%;
         margin-top: 20px;
-        /* margin-left: 0px; */
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-item-detail .new-add-item-main-detail .new-heading-detail .heading-main h1 {
+        font-size: 20px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-item-detail .new-add-item-main-detail .new-heading-detail .offer-status h2 span {
+        font-size: 16px;
+        padding: 1px 6px;
+    }
+    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-item-detail .new-add-item-main-detail .new-heading-detail .offer-status h2 {
+        font-size: 15px;
+        margin-left: 10px;
     }
 }
 
@@ -592,3 +599,4 @@
         margin-bottom: 10px;
     }
 }
+

@@ -117,8 +117,8 @@
                         </div>
                         <div class="icon">
                             <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="isEditable = !isEditable">
-                               <span *ngIf="isEditable">edit</span> 
-                               <span *ngIf="!isEditable">Save</span> 
+                                <span *ngIf="isEditable">edit</span>
+                                <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
                             </mat-icon>
                         </div>
                     </div>
@@ -164,11 +164,14 @@
                 <div class="heading-text">
                     <h1>SHIPMENT NAME:</h1>
                     <div class="name-icon">
-                        <div class="icon">
+                        <div class="icon" [ngClass]="isEditable ? 'disable' : 'enable'">
                             <p>ONT6 - SELLER_LABEL 6/4/2019 5:04 PM</p>
                         </div>
                         <div class="icon">
-                            <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                            <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="isEditable = !isEditable">
+                                <span *ngIf="isEditable">edit</span>
+                                <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+                            </mat-icon>
                         </div>
                     </div>
                 </div>
@@ -213,11 +216,14 @@
                 <div class="heading-text">
                     <h1>SHIPMENT NAME:</h1>
                     <div class="name-icon">
-                        <div class="icon">
+                        <div class="icon" [ngClass]="isEditable ? 'disable' : 'enable'">
                             <p>ONT6 - SELLER_LABEL 6/4/2019 5:04 PM</p>
                         </div>
                         <div class="icon">
-                            <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                            <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="isEditable = !isEditable">
+                                <span *ngIf="isEditable">edit</span>
+                                <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+                            </mat-icon>
                         </div>
                     </div>
                 </div>
@@ -246,236 +252,236 @@
 </section>
 
 <mat-card>
-<section class="add-new-item-section-2">
-    <div class="main-item-add-new">
-        <table>
-            <tr>
-                <th>Image</th>
-                <th>ASIN | SKU | FN SKU</th>
-                <th>Condition</th>
-                <th>Weight</th>
-                <th>Case Qty</th>
-                <th>Units|Case</th>
-                <th>Units</th>
-                <th>Destination</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="/assets/images/watch.png">
+    <section class="add-new-item-section-2">
+        <div class="main-item-add-new">
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>ASIN | SKU | FN SKU</th>
+                    <th>Condition</th>
+                    <th>Weight</th>
+                    <th>Case Qty</th>
+                    <th>Units|Case</th>
+                    <th>Units</th>
+                    <th>Destination</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2 ">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
                         </div>
 
-                    </div>
-                </td>
-                <td>
-                    <div class="products-name">
-                        <h1><a href="#" class="link2 ">B00RN08585</a></h1>
-                        <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
-                        <p>X001RCAUQ5</p>
-                    </div>
-
-                </td>
-                <td>
-                    <button mat-raised-button color="primary" class="red-badge here">HERE</button>
-                </td>
-                <td>
-                    <P>2 lb 2 oz</P>
-                </td>
-                <td>
-                    <P>1</P>
-                </td>
-                <td>
-                    <P>50</P>
-                </td>
-                <td>
-                    <h4>50</h4>
-                </td>
-                <td>
-                    <div class="last-chiled-flex">
-                        <div><span>ONT5</span></div>
-                        <div>
-                            <h1>Elsewhere,<br> CA 92551</h1>
-                        </div>
-                    </div>
-
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="/assets/images/watch.png">
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="red-badge here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
                         </div>
 
-                    </div>
-                </td>
-                <td>
-                    <div class="products-name">
-                        <h1><a href="#" class="link2 ">B00RN08585</a></h1>
-                        <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
-                        <p>X001RCAUQ5</p>
-                    </div>
+                    </td>
 
-                </td>
-                <td>
-                    <button mat-raised-button color="primary" class="red-badge here">HERE</button>
-                </td>
-                <td>
-                    <P>2 lb 2 oz</P>
-                </td>
-                <td>
-                    <P>1</P>
-                </td>
-                <td>
-                    <P>50</P>
-                </td>
-                <td>
-                    <h4>50</h4>
-                </td>
-                <td>
-                    <div class="last-chiled-flex">
-                        <div><span>ONT5</span></div>
-                        <div>
-                            <h1>Elsewhere,<br> CA 92551</h1>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
                         </div>
-                    </div>
-
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="/assets/images/watch.png">
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2 ">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
                         </div>
 
-                    </div>
-                </td>
-                <td>
-                    <div class="products-name">
-                        <h1><a href="#" class="link2 ">B00RN08585</a></h1>
-                        <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
-                        <p>X001RCAUQ5</p>
-                    </div>
-
-                </td>
-                <td>
-                    <button mat-raised-button color="primary" class="red-badge here">HERE</button>
-                </td>
-                <td>
-                    <P>2 lb 2 oz</P>
-                </td>
-                <td>
-                    <P>1</P>
-                </td>
-                <td>
-                    <P>50</P>
-                </td>
-                <td>
-                    <h4>50</h4>
-                </td>
-                <td>
-                    <div class="last-chiled-flex">
-                        <div><span>ONT5</span></div>
-                        <div>
-                            <h1>Elsewhere,<br> CA 92551</h1>
-                        </div>
-                    </div>
-
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="/assets/images/watch.png">
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="red-badge here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
                         </div>
 
-                    </div>
-                </td>
-                <td>
-                    <div class="products-name">
-                        <h1><a href="#" class="link2">B00RN08585</a></h1>
-                        <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
-                        <p>X001RCAUQ5</p>
-                    </div>
+                    </td>
 
-                </td>
-                <td>
-                    <button mat-raised-button color="primary" class="dark-green here">HERE</button>
-                </td>
-                <td>
-                    <P>2 lb 2 oz</P>
-                </td>
-                <td>
-                    <P>1</P>
-                </td>
-                <td>
-                    <P>50</P>
-                </td>
-                <td>
-                    <h4>50</h4>
-                </td>
-                <td>
-                    <div class="last-chiled-flex">
-                        <div><span>ONT5</span></div>
-                        <div>
-                            <h1>Elsewhere,<br> CA 92551</h1>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
                         </div>
-                    </div>
-
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="/assets/images/watch.png">
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2 ">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
                         </div>
 
-                    </div>
-                </td>
-                <td>
-                    <div class="products-name">
-                        <h1><a href="#" class="link2 ">B00RN08585</a></h1>
-                        <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
-                        <p>X001RCAUQ5</p>
-                    </div>
-
-                </td>
-                <td>
-                    <button mat-raised-button color="primary" class="orange-badge here">HERE</button>
-                </td>
-                <td>
-                    <P>2 lb 2 oz</P>
-                </td>
-                <td>
-                    <P>1</P>
-                </td>
-                <td>
-                    <P>50</P>
-                </td>
-                <td>
-                    <h4>50</h4>
-                </td>
-                <td>
-                    <div class="last-chiled-flex">
-                        <div><span>ONT5</span></div>
-                        <div>
-                            <h1>Elsewhere,<br> CA 92551</h1>
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="red-badge here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
                         </div>
-                    </div>
 
-                </td>
+                    </td>
 
-            </tr>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
 
-        </table>
-    </div>
-</section>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="dark-green here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2 ">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="orange-badge here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </table>
+        </div>
+    </section>
 </mat-card>
