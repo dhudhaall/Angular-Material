@@ -8,17 +8,17 @@ const routes: Routes = [
       {
         path: 'accounts',
         loadChildren: () => import('./features/accounts/accounts.module').then(m => m.AccountsModule),
-         
+
       },
       {
         path: 'dashboard',
         loadChildren: () => import('./features/dashboard/dashboard.module').then(m => m.DashboardModule),
-         
+
       },
       {
         path: 'mylisting',
         loadChildren: () => import('./features/my-listings/my-listings.module').then(m => m.MyListingsModule),
-        
+
       },
       {
         path: 'shipmentHistory',
