@@ -5,13 +5,16 @@ import { ShipmentHistoryRoutingModule } from './shipment-history-routing.module'
 import { ShipmentListingComponent } from './shipment-listing/shipment-listing.component';
 import { ShipmentFiltersComponent } from './shipment-filters/shipment-filters.component';
 import { ShipmentMainComponent } from './shipment-main/shipment-main.component';
+import { ShipmentDetailsMainComponent } from './shipment-details-main/shipment-details-main.component';
+import { ShipmentDetailsComponent } from './shipment-details-main/shipment-details/shipment-details.component';
 
 
 @NgModule({
   declarations: [
     ShipmentListingComponent,
     ShipmentFiltersComponent,
-    ShipmentMainComponent
+    ShipmentMainComponent,ShipmentDetailsComponent,
+    ShipmentDetailsMainComponent
   ],
   imports: [
     CommonModule,SharedModule,
