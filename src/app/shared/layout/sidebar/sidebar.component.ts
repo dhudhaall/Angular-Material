@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit {
     { link: "#", name: "Scan + Ship", icon: "qr_code",
       children: [
         { link: "scanship/addItem", name: "Add Item", icon: "add" },
-        { link: "scanship/bulkUpload", name: "Bulk Uploads", icon: "local_shipping" },
+        { link: "scanship/bulkupload", name: "Bulk Uploads", icon: "local_shipping" },
         { link: "scanship/scanShip-appSettings", name: "App Settings", icon: "settings" },
       ]
     },

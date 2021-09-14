@@ -6,6 +6,7 @@ import { NewAddItemMainComponent } from './new-add-item-main/new-add-item-main.c
 import { ShipmentDetailsComponent } from '../shipment-history/shipment-details-main/shipment-details/shipment-details.component';
 import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-main.component';
 import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
+import { BulkUploadViewComponent } from './bulk-uploads/bulk-upload-view/bulk-upload-view.component';
 
 const routes: Routes = [
   {
@@ -19,12 +20,16 @@ const routes: Routes = [
   {
     path: 'shipmentpile',
     component:ShipmentPileMainComponent
-  }
-  ,
+  },
   {
     path:'addtoshipment',
     component:AddToShipmentComponent
-  }
+  },
+  {
+    path:'bulkupload',
+    component:BulkUploadViewComponent
+  },
+
 ];
 
 @NgModule({
