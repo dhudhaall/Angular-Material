@@ -80,7 +80,7 @@ $icon-color: #ebecec;
 }
 
 .orange-badge {
-    background-color: #ffb249 !important;
+    background-color: #ff9027 !important;
 }
 
 .dark-gray-bdg {
@@ -157,7 +157,7 @@ $icon-color: #ebecec;
 }
 
 .custom-inputs {
-    border: 1px solid $dark-gray-bdg;
+    border: 1px solid #e7ebea;
     border-radius: 5px;
     background-color: #f6f4f4;
     padding: 10px 10px;
@@ -168,3 +168,18 @@ $icon-color: #ebecec;
 .cutom-button {
     width: 300px;
 }
+
+// .custom-dropdown {
+//     .mat-form-field-appearance-fill .mat-form-field-flex {
+//         border-radius: 2px 2px 2px 2px;
+//         padding: 0px 0px 0px 0px;
+//         background-color: #f9fafa;
+//         border: 1px solid #8d8f8f;
+//     }
+//     .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+//         transform: unset;
+//     }
+//     .mat-form-field-infix {
+//         width: 250px
+//     }
+// }
