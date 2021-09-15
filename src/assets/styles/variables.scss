@@ -170,16 +170,22 @@ $icon-color: #ebecec;
 }
 
 // .custom-dropdown {
-//     .mat-form-field-appearance-fill .mat-form-field-flex {
-//         border-radius: 2px 2px 2px 2px;
-//         padding: 0px 0px 0px 0px;
-//         background-color: #f9fafa;
-//         border: 1px solid #8d8f8f;
-//     }
-//     .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
-//         transform: unset;
-//     }
-//     .mat-form-field-infix {
-//         width: 250px
-//     }
+//  .mat-form-field-appearance-fill .mat-form-field-flex {
+//   border-radius: 2px 2px 2px 2px;
+//   padding: 0px 1px 0px 9px;
+//   background-color: #f9fafa;
+//   border: 1px solid #97a0a0;
+//   color: $greenish-gry;
+// }
+// .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+//   transform: unset;
+// }
+// .mat-form-field-underline {
+//   width: auto;
+// }
+//  mat-form-field-infix {
+//   width: 250px;
+//   padding: 10px 0px 10px 8px;
+//   border: 0;
+// }
 // }

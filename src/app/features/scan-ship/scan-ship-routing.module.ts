@@ -7,6 +7,7 @@ import { ShipmentDetailsComponent } from '../shipment-history/shipment-details-m
 import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-main.component';
 import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
 import { BulkUploadViewComponent } from './bulk-uploads/bulk-upload-view/bulk-upload-view.component';
+import { SubmitBulkUploadPopupComponent } from './submit-bulk-upload-popup/submit-bulk-upload-popup.component';
 
 const routes: Routes = [
   {
@@ -29,7 +30,10 @@ const routes: Routes = [
     path:'bulkupload',
     component:BulkUploadViewComponent
   },
-
+  {
+    path:'blukpopup',
+    component:SubmitBulkUploadPopupComponent
+  }
 ];
 
 @NgModule({

@@ -13,7 +13,6 @@ export class NewAddItemFiltersComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
    openDialog() {
     const dialogRef = this.dialog.open(CreateNewSellerOfferDialogComponent);
 

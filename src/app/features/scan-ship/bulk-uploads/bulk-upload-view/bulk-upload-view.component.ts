@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import{SubmitBulkUploadPopupComponent } from './../../submit-bulk-upload-popup/submit-bulk-upload-popup.component'
 
 @Component({
   selector: 'app-bulk-upload-view',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BulkUploadViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+  submitDialog() {
+    const dialogRef = this.dialog.open(SubmitBulkUploadPopupComponent);
 
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log(`Dialog result: ${result}`);
+    // });
+  }
 }

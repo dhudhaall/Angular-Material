@@ -48,7 +48,9 @@
 
                 <div class="flex3">
                     <div class="input-type-file-style">
-                        <label for="profilepic">Bulk-Upload-Template.csv</label>
+                        <label for="profilepic">Bulk-Upload-Template.csv
+              <img src="/assets/images/input.png">
+            </label>
                         <!-- <input id="profilepic" #fileinput (change)="onFileChange($event.target.files);fileinput.value=''" type="file"  accept=".png,.jpg,.jpeg" formControlName="profile_pic"> -->
                         <input type="file" placeholder="Bulk-Upload-Template.csv" id="profilepic" class="custom-inputs">
                     </div>
@@ -527,6 +529,33 @@
                     </table>
 
                 </div>
+            </div>
+        </div>
+        <div class="submit-section">
+            <div class="flex1">
+                <h1>ITEMS TOTAL: <span><b>SKU | 1 UNITS</b></span> </h1>
+            </div>
+            <div class="flex2">
+                <h2>SHIP FROM:</h2>
+            </div>
+            <div class="flex3">
+
+                <mat-form-field appearance="fill">
+                    <mat-select>
+                        <mat-option value="SellerChain, 1060 Linwood...">SellerChain, 1060 Linwood...</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="flex4">
+                <button mat-raised-button color="primary" (click)="submitDialog()" class="dark-green">SUBMIT</button>
+
+            </div>
+            <div class="flex5">
+                <mat-form-field appearance="fill">
+                    <mat-select>
+                        <mat-option value="UPLOAD TO CUSTOM PILE">UPLOAD TO CUSTOM PILE</mat-option>
+                    </mat-select>
+                </mat-form-field>
             </div>
         </div>
     </div>
