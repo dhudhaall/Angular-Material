@@ -8,6 +8,7 @@ import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-ma
 import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
 import { BulkUploadViewComponent } from './bulk-uploads/bulk-upload-view/bulk-upload-view.component';
 import { SubmitBulkUploadPopupComponent } from './submit-bulk-upload-popup/submit-bulk-upload-popup.component';
+import { BulkUploadHistoryComponent } from './bulk-upload-history/bulk-upload-history.component';
 
 const routes: Routes = [
   {
@@ -31,8 +32,13 @@ const routes: Routes = [
     component:BulkUploadViewComponent
   },
   {
-    path:'blukpopup',
+    path:'bulkpopup',
     component:SubmitBulkUploadPopupComponent
+  }
+  ,
+  {
+   path:'bulkhistory',
+   component:BulkUploadHistoryComponent
   }
 ];
 
