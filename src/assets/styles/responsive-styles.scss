@@ -261,6 +261,7 @@
     }
     .bulk-section .bulk-section-main .upload-section .upload-main .flex1 h1 {
         font-size: 16px;
+        width: 62px;
     }
     .bulk-section .bulk-section-main .upload-section .upload-main .flex3 .input-type-file-style label {
         width: 230px;
@@ -278,6 +279,7 @@
     }
     .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex1 h1 {
         font-size: 16px;
+        width: 62px;
     }
     .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 {
         padding-left: 10px;
@@ -308,6 +310,24 @@
     }
     .bulk-section .bulk-section-main .submit-section .flex5 .mat-form-field-infix {
         width: 160px;
+    }
+    .history-top-hheading .history-page-heading .button-input .upload-input {
+        width: 170px;
+    }
+    .history-top-hheading .history-page-heading .button-dropdown .dropdown .mat-form-field-infix {
+        width: 200px;
+    }
+    .history-top-hheading .history-page-heading .heading-txt .heading-flex h1 {
+        font-size: 18px;
+        margin-right: 0px;
+    }
+    .history-top-hheading .history-page-heading .heading-txt .mat-icon {
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .history-top-hheading .history-page-heading .button-dropdown .button {
+        margin-right: 10px;
     }
 }
 
@@ -367,9 +387,76 @@
         font-size: 20px;
     }
     .bulk-section .bulk-section-main .page-heading .heading-txt .mat-icon {
-        font-size: 30px;
-        width: 30px;
-        height: 30px;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt .heading-flex .left-tag {
+        /* color: #3eadf2; */
+        font-size: 10px;
+    }
+    .bulk-section .bulk-section-main .page-heading .button-dropdown .dropdown .mat-form-field-infix {
+        width: 160px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex3 .input-type-file-style label {
+        width: 177px;
+        font-size: 11px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex3 .file-icon h3 {
+        font-size: 11px;
+        /* color: #000; */
+        /* margin-bottom: 0; */
+        /* line-height: 1; */
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex2 p {
+        font-size: 11px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex2 p {
+        font-size: 10px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex1 h1 {
+        font-size: 14px;
+        width: 52px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex1 h1 {
+        font-size: 14px;
+        width: 52px;
+    }
+    .bulk-section .bulk-section-main .page-heading .button-dropdown .button .mat-raised-button {
+        font-size: 12px;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt .heading-flex .right-tag {
+        font-size: 10px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex3 .mat-raised-button {
+        font-size: 12px;
+    }
+    .bulk-section .bulk-section-main .page-heading .button-dropdown .dropdown label {
+        font-size: 12px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 .condition .mat-form-field-appearance-fill .mat-form-field-infix {
+        width: 130px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 .prep-owner .mat-form-field-appearance-fill .mat-form-field-infix {
+        width: 130px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 .prep-owner .dropdown label {
+        font-size: 12px;
+    }
+    .bulk-section .bulk-section-main .submit-section .flex1 h1 {
+        font-size: 12px;
+    }
+    .bulk-section .bulk-section-main .submit-section h2 {
+        font-size: 13px;
+    }
+    .history-top-hheading .history-page-heading .heading-txt .heading-flex h1 {
+        font-size: 16px;
+    }
+    .history-top-hheading .history-page-heading .button-input .upload-input {
+        width: 130px;
+    }
+    .history-top-hheading .history-page-heading .button-dropdown .dropdown .mat-form-field-infix {
+        width: 130px;
     }
 }
 
@@ -411,6 +498,85 @@
     }
     .addpils-item-main .add-new-item-section-main .main-item-add-new .item-Head .actions-items .icons img {
         width: 21px;
+    }
+    .bulk-section .bulk-section-main .page-heading {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-file-setting {
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-file-setting .heading-text h3 {
+        margin-bottom: 5px;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt .heading-flex .right-tag {
+        font-size: 13px;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt .heading-flex .left-tag {
+        font-size: 13px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main {
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex1 h1 {
+        font-size: 17px;
+        width: unset;
+        margin-bottom: 10px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex1 h1 {
+        font-size: 17px;
+        width: unset;
+        margin-bottom: 10px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex2 p {
+        font-size: 14px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex2 p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form {
+        padding: 20px 20px 20px 20px;
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 {
+        border-left: none;
+    }
+    .bulk-section .bulk-section-main .submit-section .flex3 .mat-form-field-infix {
+        width: 120px;
+    }
+    .bulk-section .bulk-section-main .submit-section .flex5 .mat-form-field-infix {
+        width: 120px;
+    }
+    .history-top-hheading .history-page-heading {
+        flex-direction: column;
+    }
+    .history-top-hheading .history-page-heading .button-input {
+        flex-basis: 100%;
+    }
+    .history-top-hheading .history-page-heading .heading-txt {
+        flex-basis: 100%;
+    }
+    .history-top-hheading .history-page-heading .button-dropdown {
+        flex-basis: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .history-top-hheading .history-page-heading .button-input .input-main {
+        margin-right: 10px;
+    }
+    .history-top-hheading .history-page-heading .button-dropdown .button {
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .history-top-hheading .history-page-heading .button-dropdown .dropdown .mat-form-field-infix {
+        width: 220px;
+    }
+    .history-top-hheading .history-page-heading .heading-txt .mat-icon {
+        font-size: 32px;
+        width: 39px;
+        height: 39px;
     }
 }
 
@@ -603,7 +769,6 @@
         text-align: center;
     }
     .pop-up-section .popup-input-section .error-section .error-main .error-main-flex2 .mat-checkbox-layout .mat-checkbox-label {
-        /* line-height: 24px; */
         margin-right: 10px;
     }
     .pop-up-section .popup-input-section .print-lable-section .print-lable-main .print-lable-flex2 .input-button {
@@ -636,6 +801,32 @@
     .rest-items-section .rest-items-main .destination-main {
         flex-basis: 100%;
         margin-top: 20px;
+    }
+    .bulk-section .bulk-section-main .submit-section {
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .submit-section .flex1 h1 {
+        font-size: 15px;
+    }
+    .bulk-section .bulk-section-main .submit-section h2 {
+        font-size: 15px;
+    }
+    .bulk-section .bulk-section-main .submit-section .flex3 .mat-form-field-infix {
+        width: 220px;
+    }
+    .bulk-section .bulk-section-main .submit-section .flex5 .mat-form-field-infix {
+        width: 220px;
+    }
+    .bulk-section .bulk-section-main .submit-section .flex2 {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .bulk-section .bulk-section-main .submit-section h2 {
+        margin-bottom: 10px;
+    }
+    .bulk-section .bulk-section-main .submit-section .flex4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -701,5 +892,138 @@
     }
     .pop-up-section .popup-input-section .popup-input .inputs-main .input-flex2 {
         margin-bottom: 10px;
+    }
+    .bulk-section {
+        margin-top: 50px;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt .heading-flex {
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt {
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt .mat-icon {
+        font-size: 33px;
+        width: 33px;
+        height: 33px;
+        margin-right: 0px;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt {
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .page-heading .heading-txt .heading-flex .right-tag {
+        margin-left: 0px;
+        border-left: none;
+        padding-left: 0px;
+    }
+    .bulk-section .bulk-section-main .page-heading .button-dropdown {
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .page-heading .button-dropdown .dropdown label {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .bulk-section .bulk-section-main .page-heading .button-dropdown .button {
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-file-setting .heading-icon .mat-icon {
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-file-setting .heading-text h3 {
+        text-align: center;
+        font-size: 12px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex3 .input-type-file-style label {
+        width: 237px;
+        font-size: 13px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex3 .upload {
+        margin-left: 0px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex3 .mat-raised-button {
+        font-size: 13px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        line-height: 30px;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex3 {
+        flex-direction: column;
+    }
+    .bulk-section .bulk-section-main .upload-section .upload-main .flex3 .file-icon {
+        margin-left: 0px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form {
+        padding: 20px 0px 20px 0px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 {
+        padding-left: 0px;
+        flex-direction: column;
+        flex-basis: 100%;
+        text-align: center
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 .prep-owner .dropdown label {
+        font-size: 14px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 .condition .dropdown label {
+        font-size: 15px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 .condition .mat-form-field-appearance-fill .mat-form-field-infix {
+        width: 220px;
+    }
+    .bulk-section .bulk-section-main .upload-section .file-table-section .file-in-form .flex3 .prep-owner .mat-form-field-appearance-fill .mat-form-field-infix {
+        width: 220px;
+    }
+    .submit-popup {
+        padding: 10px;
+    }
+    .submit-popup .popup-main .popup-input {
+        width: 100%;
+    }
+    .history-top-hheading {
+        margin-top: 17px;
+    }
+    .history-top-hheading .history-page-heading .heading-txt {
+        flex-basis: 30%;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .submit-popup .popup-main .popup-main-text p {
+        font-size: 13px;
+    }
+    .submit-popup .popup-main .popup-input .input-label {
+        flex-direction: column;
+    }
+    .submit-popup .popup-main .popup-input .input-main .email-input {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .submit-popup .popup-main .popup-input .input-label label {
+        line-height: 29px;
+    }
+    .submit-popup .popup-main .button-text h2 {
+        line-height: 1;
+    }
+    .submit-popup .popup-main .popup-input .input-lower-text p {
+        font-size: 13px;
+    }
+    .submit-popup .popup-main .button-text .another {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .history-top-hheading .history-page-heading .button-input {
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+    .history-top-hheading .history-page-heading .button-input .upload-input {
+        width: 100%;
+    }
+    .history-top-hheading .history-page-heading .button-input .search {
+        margin-top: 10px;
     }
 }

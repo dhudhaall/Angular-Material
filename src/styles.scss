@@ -3943,6 +3943,7 @@ mat-sidenav[style] {
                         font-weight: 600;
                         font-size: 20px;
                         line-height: 1;
+                        width: 80px;
                     }
                 }
                 .flex2 {
@@ -4025,6 +4026,7 @@ mat-sidenav[style] {
                             font-weight: 600;
                             font-size: 20px;
                             line-height: 1;
+                            width: 80px;
                         }
                     }
                     .flex2 {
@@ -4287,6 +4289,142 @@ mat-sidenav[style] {
             .thanks {
                 border-radius: 0px;
                 box-shadow: none;
+            }
+        }
+    }
+}
+
+/////////////////////////////bulk-upload-history-page///////////////////
+.history-top-hheading {
+    margin-top: 10px;
+    .history-page-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .heading-txt {
+            flex-basis: 30%;
+            display: flex;
+            align-items: center;
+            .mat-icon {
+                font-size: 40px;
+                color: #3eadf2;
+                margin-right: 10px;
+                width: 40px;
+                height: 40px;
+                vertical-align: middle;
+            }
+            .heading-flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                h1 {
+                    margin: 0;
+                    font-size: 25px;
+                    color: $primaryColor;
+                    font-weight: 700;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .button-input {
+            flex-basis: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .search {
+                border-radius: 0px;
+                box-shadow: none;
+            }
+            .upload-input {
+                width: 262px;
+                background-color: #ffffff;
+            }
+        }
+        .button-dropdown {
+            flex-basis: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .button {
+                margin-right: 20px;
+                .upload-new {
+                    border-radius: 0px;
+                    box-shadow: none;
+                }
+            }
+            .dropdown {
+                label {
+                    font-size: 15px;
+                    color: #97a2a0;
+                    margin-bottom: 5px;
+                }
+                .mat-form-field-appearance-fill .mat-form-field-flex {
+                    border-radius: 2px 2px 2px 2px;
+                    padding: 0px 0px 0px 0px;
+                    background-color: #f9fafa;
+                    border: 1px solid #97a0a0;
+                }
+                .mat-form-field-infix {
+                    width: 250px;
+                    padding: 10px 0px 10px 8px;
+                    border: 0;
+                }
+                .mat-form-field-underline {
+                    width: auto;
+                }
+                .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+                    transform: unset;
+                }
+            }
+        }
+    }
+}
+
+.bulk-upload-history {
+    padding: 0px 20px 0px 20px;
+}
+
+.history-table {
+    .table-main {
+        border-top: 2px solid #b7bfbe;
+        padding-top: 10px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            td:nth-last-child(1) {
+                border-right: none;
+            }
+            th:nth-last-child(1) {
+                border-right: none;
+            }
+            th {
+                color: #afb0b3;
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+                border-bottom: 1px solid #b7bfbe;
+                border-right: 1px solid #b7bfbe;
+            }
+            td {
+                padding: 5px 5px;
+                background-color: #f9fafa;
+                border-right: 1px solid #b7bfbe;
+                border-bottom: 1px solid #b7bfbe;
+                text-align: center;
+                font-size: 12px;
+                .error {
+                    line-height: 26px;
+                    font-size: 12px;
+                    width: 87px;
+                }
+                .view {
+                    line-height: 26px;
+                    font-size: 12px;
+                    padding: 0px 25px 0px 25px;
+                }
+                span {
+                    font-size: 10px;
+                }
             }
         }
     }
