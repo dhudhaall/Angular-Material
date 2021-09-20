@@ -329,6 +329,28 @@
     .history-top-hheading .history-page-heading .button-dropdown .button {
         margin-right: 10px;
     }
+    .dublicat-item-popup .popup-mian .popup-heading p {
+        font-size: 13px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button .update {
+        font-size: 10px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .text h3 {
+        font-size: 10px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button .update {
+        font-size: 10px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button .marge {
+        /* color: #ffffff; */
+        /* margin: 0px 10px 0px 0px; */
+        font-size: 10px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button .select {
+        /* color: #ffffff; */
+        /* margin: 0px 10px 0px 0px; */
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 994px) {
@@ -577,6 +599,20 @@
         font-size: 32px;
         width: 39px;
         height: 39px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons {
+        flex-direction: column;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .text h3 {
+        margin-bottom: 25px;
+    }
+    .dublicat-item-popup .popup-mian .popup-heading h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .dublicat-item-popup .popup-mian .popup-heading p {
+        text-align: center;
+        margin-bottom: 5px;
     }
 }
 
@@ -828,6 +864,29 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button {
+        display: flex;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button .buttons-input {
+        margin: 0px 0px 10px 0px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button .update {
+        margin: 0px 0px 10px 0px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button .marge {
+        margin: 0px 0px 10px 0px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button .select {
+        margin: 0px 0px 10px 0px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .button {
+        display: flex;
+        flex-direction: column;
+    }
+    .dublicat-item-popup .popup-mian .popup-heading h1 span {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -990,6 +1049,14 @@
         flex-basis: 30%;
         flex-direction: column;
     }
+    .dublicat-item-popup .popup-mian .popup-heading p {
+        font-size: 10px;
+    }
+    .dublicat-item-popup .popup-mian .popup-heading h1 span {
+        padding: 3px 7px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -1025,5 +1092,11 @@
     }
     .history-top-hheading .history-page-heading .button-input .search {
         margin-top: 10px;
+    }
+    .dublicat-item-popup .popup-mian .popup-table .popup-table-buttons .text h3 {
+        font-size: 9px;
+    }
+    .dublicat-item-popup .popup-mian .popup-heading p span {
+        font-size: 12px;
     }
 }

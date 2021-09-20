@@ -18,6 +18,7 @@ import { AddToShipmentComponent } from './add-to-shipment/add-to-shipment.compon
 import { BulkUploadViewComponent } from './bulk-uploads/bulk-upload-view/bulk-upload-view.component';
 import { SubmitBulkUploadPopupComponent } from './submit-bulk-upload-popup/submit-bulk-upload-popup.component';
 import { BulkUploadHistoryComponent } from './bulk-upload-history/bulk-upload-history.component';
+import { CheckdublicatitemComponent } from './checkdublicatitem/checkdublicatitem.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { BulkUploadHistoryComponent } from './bulk-upload-history/bulk-upload-hi
     BulkUploadViewComponent,
     SubmitBulkUploadPopupComponent,
     BulkUploadHistoryComponent,
+    CheckdublicatitemComponent,
     
   ],
   imports: [

@@ -9,12 +9,15 @@
                     <h1>BULK ITEM UPLOAD</h1>
                     <a href="#" class="left-tag">Normal View</a>
                     <a href="#" class="right-tag">Tab View</a>
+                    <a class="right-tag link2" (click)="dublicatitemspopup()">CHECK DUPLICATE ITEMS</a>
+
                 </div>
             </div>
 
             <div class="button-dropdown">
                 <div class="button">
-                    <button mat-raised-button color="primary" class="orange-badge">VIEW UPLOAD HISTORY</button>
+                    <button mat-raised-button color="primary" class="orange-badge" routerLink="/scanship/bulkhistory">VIEW UPLOAD
+            HISTORY</button>
                 </div>
                 <div class="dropdown">
 
@@ -86,7 +89,8 @@
                                 <label>LABEL | PREP OWNER:</label>
                                 <mat-form-field appearance="fill">
                                     <mat-select>
-                                        <mat-option value="option">SHOW ALL</mat-option>
+                                        <mat-option value="option">SELLER
+                                        </mat-option>
                                     </mat-select>
                                 </mat-form-field>
 
@@ -98,7 +102,8 @@
                                 <label>CONDITION:</label>
                                 <mat-form-field appearance="fill">
                                     <mat-select>
-                                        <mat-option value="option">SHOW ALL</mat-option>
+                                        <mat-option value="option">SELLER
+                                        </mat-option>
                                     </mat-select>
                                 </mat-form-field>
 
@@ -155,10 +160,12 @@
 
                 </select>
                             </td>
-                            <td><select name="cars" id="cars" class="custom-inputs input-width">
+                            <td>
+                                <select name="cars" id="cars" class="custom-inputs input-width">
                   <option value="NEW">SELLER</option>
 
-                </select></td>
+                </select>
+                            </td>
                             <td><select name="cars" id="cars" class="custom-inputs input-width">
                   <option value="NEW">Z Pile</option>
 
@@ -195,7 +202,8 @@
                                 <label>LABEL | PREP OWNER:</label>
                                 <mat-form-field appearance="fill">
                                     <mat-select>
-                                        <mat-option value="option">SHOW ALL</mat-option>
+                                        <mat-option value="option">SELLER
+                                        </mat-option>
                                     </mat-select>
                                 </mat-form-field>
 
@@ -207,7 +215,8 @@
                                 <label>CONDITION:</label>
                                 <mat-form-field appearance="fill">
                                     <mat-select>
-                                        <mat-option value="option">SHOW ALL</mat-option>
+                                        <mat-option value="option">SELLER
+                                        </mat-option>
                                     </mat-select>
                                 </mat-form-field>
 
