@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddItemMainComponent } from './add-item-main/add-item-main.component';
 import { AddToShipmentComponent } from './add-to-shipment/add-to-shipment.component';
@@ -8,7 +8,8 @@ import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-ma
 import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
 import { BulkUploadViewComponent } from './bulk-uploads/bulk-upload-view/bulk-upload-view.component';
 import { SubmitBulkUploadPopupComponent } from './submit-bulk-upload-popup/submit-bulk-upload-popup.component';
-import { BulkUploadHistoryComponent } from './bulk-upload-history/bulk-upload-history.component';
+import { BulkUploadHistoryComponent } from './bulk-uploads/bulk-upload-history/bulk-upload-history.component';
+import { BulkItemDetailComponent } from './bulk-uploads/bulk-item-detail/bulk-item-detail.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,11 @@ const routes: Routes = [
   {
    path:'bulkhistory',
    component:BulkUploadHistoryComponent
+  }
+  ,
+  {
+    path: 'bulkhdetail',
+    component:BulkItemDetailComponent
   }
 ];
 
