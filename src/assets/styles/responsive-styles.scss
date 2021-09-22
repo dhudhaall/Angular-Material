@@ -176,6 +176,74 @@
         font-size: 19px;
         margin-left: 14px;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name h3 {
+        font-size: 20px;
+       
+        margin-bottom: 5px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name p span {
+        font-size: 20px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name p {
+        font-size: 12px;
+       
+        margin-bottom: 7px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name .offers .offer-text h5 {
+        margin-bottom: 0px;
+        font-size: 14px;
+      
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name .offers .offer-opption h5 {
+        margin-bottom: 5px;
+        font-size: 13px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name .offers .offer-opption h5 span {
+        background-color: #444431;
+        
+        padding: 3px 7px;
+        font-size: 12px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-brand h3 {
+      
+        font-size: 14px;
+       
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-brand p {
+        font-size: 14px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-date-mfr h3 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 4px;
+       
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-date-mfr .rank-main .rank1 h3 {
+        font-size: 15px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-date-mfr .rank-main .rank2 p {
+        font-size: 15px;
+       
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-button .button-link a {
+        font-size: 16px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-button .button-img {
+        margin-bottom: 0px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .new-add-item-detail .new-add-item-main-detail .new-heading-detail .heading-main h1 {
+        font-size: 25px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head {
+        
+        padding: 0px 85px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -351,6 +419,14 @@
         /* margin: 0px 10px 0px 0px; */
         font-size: 10px;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head {
+       
+        padding: 0px 0px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-brand {
+        flex-basis: 29%;
+        
+    }
 }
 
 @media only screen and (max-width: 994px) {
@@ -479,6 +555,58 @@
     }
     .history-top-hheading .history-page-heading .button-dropdown .dropdown .mat-form-field-infix {
         width: 130px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .heading-txt .mat-icon {
+        font-size: 40px;    
+        width: 40px;
+        height: 40px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .heading-txt .heading-flex h1 {
+       
+        font-size: 23px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head {
+        padding: 0px 0px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name h3 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name p span {
+        font-size: 17px;
+       
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name p {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-name .offers .offer-text h5 {
+        
+        font-size: 12px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-brand h3 {
+        font-size: 12px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head .item-brand p {
+        font-size: 12px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h1 {
+        font-size: 14px;
+       
+        margin-right: 15px;
+        
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h3 {
+        font-size: 14px;
+       
+        margin-right: 13px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h4 {
+        font-size: 14px;
+        /* margin-bottom: 0px; */
+        /* line-height: 1; */
     }
 }
 
@@ -613,6 +741,56 @@
     .dublicat-item-popup .popup-mian .popup-heading p {
         text-align: center;
         margin-bottom: 5px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .heading-txt {
+        
+        justify-content: center;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading {
+     
+        flex-direction: column;
+        
+    }
+   
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .button-dropdown {
+        
+        justify-content: center;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .button-dropdown {
+       
+        flex-direction: column;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .button-dropdown .dropdown label {
+     
+        text-align: center;
+      
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .button-dropdown .button {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading {
+        
+        flex-direction: column;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .heading-text h1 {
+      
+        margin-bottom: 5px;
+      
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h3 {
+        font-size: 12px;
+        margin-right: 9px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h1 {
+        font-size: 13px;
+        margin-right: 9px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h4 span {
+        margin-left: 5px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h3 span {  
+        margin-left: 4px;
     }
 }
 
@@ -1057,6 +1235,32 @@
         font-size: 10px;
         margin-left: 10px;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .heading-txt .heading-flex {
+       
+        flex-direction: column;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .page-heading .heading-txt {
+       
+        flex-direction: column;
+       
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status {
+       
+        flex-direction: column;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h1 {
+       
+        margin-bottom: 7px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h3 {
+      
+        margin-bottom: 7px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .proccesisng-upload-table .table-heading .item-status h4 {
+        
+        margin-bottom: 7px;
+    }
+
 }
 
 @media only screen and (max-width: 460px) {
