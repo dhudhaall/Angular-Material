@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule} from 'src/app/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { ScanShipRoutingModule } from './scan-ship-routing.module';
 import { AddItemComponent } from './add-item-main/add-item/add-item.component';
 import { AddItemMainComponent } from './add-item-main/add-item-main.component';
@@ -16,9 +16,9 @@ import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-ma
 import { ShipmentPileFiltersComponent } from './shipment-pile-main/shipment-pile-filters/shipment-pile-filters.component';
 import { AddToShipmentComponent } from './add-to-shipment/add-to-shipment.component';
 import { BulkUploadViewComponent } from './bulk-uploads/bulk-upload-view/bulk-upload-view.component';
-import { SubmitBulkUploadPopupComponent } from './submit-bulk-upload-popup/submit-bulk-upload-popup.component';
+import { SubmitBulkUploadPopupComponent } from './bulk-uploads/submit-bulk-upload-popup/submit-bulk-upload-popup.component';
 import { BulkUploadHistoryComponent } from './bulk-uploads/bulk-upload-history/bulk-upload-history.component';
-import { CheckdublicatitemComponent } from './checkdublicatitem/checkdublicatitem.component';
+import { CheckdublicatitemComponent } from './bulk-uploads/checkdublicatitem/checkdublicatitem.component';
 import { BulkItemDetailComponent } from './bulk-uploads/bulk-item-detail/bulk-item-detail.component';
 
 
@@ -42,10 +42,10 @@ import { BulkItemDetailComponent } from './bulk-uploads/bulk-item-detail/bulk-it
     BulkUploadHistoryComponent,
     CheckdublicatitemComponent,
     BulkItemDetailComponent,
-    
+
   ],
   imports: [
-    CommonModule,SharedModule,
+    CommonModule, SharedModule,
     ScanShipRoutingModule
   ]
 })

@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
@@ -9,14 +9,14 @@ import { MatMenuTrigger } from '@angular/material/menu';
 })
 export class NewAddItemComponent implements OnInit {
 
-  constructor(public dialog: MatDialog ) {
-    
+  constructor(public dialog: MatDialog) {
+
   }
 
   ngOnInit(): void {
   }
 
-  
+
 
 
 }

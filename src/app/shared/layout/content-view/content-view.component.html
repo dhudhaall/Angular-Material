@@ -4,14 +4,14 @@
             <app-breadcrumbs></app-breadcrumbs>
         </div>
         <div class="content-wrapper">
-                <ng-content select="[body]"></ng-content>
+            <ng-content select="[body]"></ng-content>
         </div>
-     
+
     </div>
     <div class="filters-side" [class.slideBarInOut]="hideBar">
-        <div class="filter-actions-main" >
+        <div class="filter-actions-main">
             <div class="filter-actions-inner">
-        
+
                 <div class="left-side-menu">
                     <div class="left-uper-icons">
                         <div class="icon-back active" (click)="showHideSection(1)">
@@ -31,35 +31,35 @@
                         <div class="icon-back">
                             <mat-icon class="icon">push_pin</mat-icon>
                         </div>
-                        <div class="icon-back" (click)="hideShowRightBar()">
-                            <mat-icon class="icon">navigate_next</mat-icon>
+                        <div class="icon-back " (click)="hideShowRightBar()">
+                            <mat-icon class="icon next">navigate_next</mat-icon>
                         </div>
                     </div>
-        
-        
+
+
                 </div>
                 <div class="rigt-side-actions">
                     <div *ngIf="div1">
-                       
+
                         <ng-content select="[content1]"></ng-content>
                     </div>
-        
+
                     <div class="settings" *ngIf="div2">
-                       
+
                         <ng-content select="[content2]"></ng-content>
                     </div>
                     <div class="settings" *ngIf="div3">
-                        
+
                         <ng-content select="[content3]"></ng-content>
                     </div>
                     <div class="settings" *ngIf="div4">
-                    <ng-content select="[content4]"></ng-content>
+                        <ng-content select="[content4]"></ng-content>
                     </div>
-        
-        
+
+
                 </div>
             </div>
         </div>
-        
+
     </div>
 </div>

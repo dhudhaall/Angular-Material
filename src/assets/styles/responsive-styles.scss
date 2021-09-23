@@ -28,6 +28,11 @@
         color: #43454b;
         margin-left: 5px;
     }
+    .overly-image {
+        display: flex;
+        height: 200px;
+        margin-top: -161px;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -242,7 +247,16 @@
     }
     .bulk-item-detail-section .bulk-item-detail-main .status-tabs .mat-tab-body-content .multipel-item-main .item-Head {
         
-        padding: 0px 85px;
+        padding: 0px 30px;
+    }
+    .RestrictedPileTooltip .tooltip-main h1 {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .RestrictedPileTooltip .tooltip-main p {
+        font-size: 12px;
+        line-height: 18px;
+        width: 200px;
     }
 }
 
@@ -377,6 +391,12 @@
         width: 160px;
     }
     .bulk-section .bulk-section-main .submit-section .flex5 .mat-form-field-infix {
+        width: 160px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex3 .mat-form-field-infix {
+        width: 160px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex5 .mat-form-field-infix {
         width: 160px;
     }
     .history-top-hheading .history-page-heading .button-input .upload-input {
@@ -547,6 +567,12 @@
     .bulk-section .bulk-section-main .submit-section h2 {
         font-size: 13px;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex1 h1 {
+        font-size: 12px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section h2 {
+        font-size: 13px;
+    }
     .history-top-hheading .history-page-heading .heading-txt .heading-flex h1 {
         font-size: 16px;
     }
@@ -696,6 +722,12 @@
         width: 120px;
     }
     .bulk-section .bulk-section-main .submit-section .flex5 .mat-form-field-infix {
+        width: 120px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex3 .mat-form-field-infix {
+        width: 120px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex5 .mat-form-field-infix {
         width: 120px;
     }
     .history-top-hheading .history-page-heading {
@@ -1006,7 +1038,7 @@
         width: 200px;
     }
     .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-name {
-        flex-basis: 100%;
+        flex-basis: 20%;
     }
     .pop-up-section .popup-input-section .popup-input .inputs-main .input-flex1 {
         flex-basis: 100%;
@@ -1019,26 +1051,52 @@
     .bulk-section .bulk-section-main .submit-section {
         flex-direction: column;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section {
+        flex-direction: column;
+    }
     .bulk-section .bulk-section-main .submit-section .flex1 h1 {
+        font-size: 15px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex1 h1 {
         font-size: 15px;
     }
     .bulk-section .bulk-section-main .submit-section h2 {
         font-size: 15px;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section h2 {
+        font-size: 15px;
+    }
     .bulk-section .bulk-section-main .submit-section .flex3 .mat-form-field-infix {
         width: 220px;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex3 .mat-form-field-infix {
+        width: 220px;
+    }
     .bulk-section .bulk-section-main .submit-section .flex5 .mat-form-field-infix {
+        width: 220px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex5 .mat-form-field-infix {
         width: 220px;
     }
     .bulk-section .bulk-section-main .submit-section .flex2 {
         margin-right: 0;
         margin-top: 10px;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex2 {
+        margin-right: 0;
+        margin-top: 10px;
+    }
     .bulk-section .bulk-section-main .submit-section h2 {
         margin-bottom: 10px;
     }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section h2 {
+        margin-bottom: 10px;
+    }
     .bulk-section .bulk-section-main .submit-section .flex4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .bulk-item-detail-section .bulk-item-detail-main .resubmit-section .flex4 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -1064,6 +1122,21 @@
     .dublicat-item-popup .popup-mian .popup-heading h1 span {
         padding: 4px 8px;
         font-size: 12px;
+    }
+    .add-ship-section .add-ship-main .tbale-heading h2 {
+      
+        text-align: center;
+    }
+    .add-ship-section .add-ship-main .table-text p {
+        
+        text-align: center;
+    }
+    .add-ship-section .add-ship-main .shipment-btn {
+       
+        text-align: center;
+    }
+    .add-ship-section .add-ship-main .shipment-btn .shipment {
+        margin-right: 0px;
     }
 }
 

@@ -7,44 +7,44 @@ import { ShipmentDetailsComponent } from '../shipment-history/shipment-details-m
 import { ShipmentPileMainComponent } from './shipment-pile-main/shipment-pile-main.component';
 import { ShipmentPileComponent } from './shipment-pile-main/shipment-pile/shipment-pile.component';
 import { BulkUploadViewComponent } from './bulk-uploads/bulk-upload-view/bulk-upload-view.component';
-import { SubmitBulkUploadPopupComponent } from './submit-bulk-upload-popup/submit-bulk-upload-popup.component';
+import { SubmitBulkUploadPopupComponent } from './bulk-uploads/submit-bulk-upload-popup/submit-bulk-upload-popup.component';
 import { BulkUploadHistoryComponent } from './bulk-uploads/bulk-upload-history/bulk-upload-history.component';
 import { BulkItemDetailComponent } from './bulk-uploads/bulk-item-detail/bulk-item-detail.component';
 
 const routes: Routes = [
   {
     path: 'addItem',
-    component:AddItemMainComponent
+    component: AddItemMainComponent
   },
   {
     path: 'newaddItem',
-    component:NewAddItemMainComponent
+    component: NewAddItemMainComponent
   },
   {
     path: 'shipmentpile',
-    component:ShipmentPileMainComponent
+    component: ShipmentPileMainComponent
   },
   {
-    path:'addtoshipment',
-    component:AddToShipmentComponent
+    path: 'addtoshipment',
+    component: AddToShipmentComponent
   },
   {
-    path:'bulkupload',
-    component:BulkUploadViewComponent
+    path: 'bulkupload',
+    component: BulkUploadViewComponent
   },
   {
-    path:'bulkpopup',
-    component:SubmitBulkUploadPopupComponent
+    path: 'bulkpopup',
+    component: SubmitBulkUploadPopupComponent
   }
   ,
   {
-   path:'bulkhistory',
-   component:BulkUploadHistoryComponent
+    path: 'bulkhistory',
+    component: BulkUploadHistoryComponent
   }
   ,
   {
     path: 'bulkhdetail',
-    component:BulkItemDetailComponent
+    component: BulkItemDetailComponent
   }
 ];
 

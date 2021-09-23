@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import{SubmitBulkUploadPopupComponent } from '../../submit-bulk-upload-popup/submit-bulk-upload-popup.component'
-import{CheckdublicatitemComponent}from '../../checkdublicatitem/checkdublicatitem.component'
+import { SubmitBulkUploadPopupComponent } from '../submit-bulk-upload-popup/submit-bulk-upload-popup.component'
+import { CheckdublicatitemComponent } from '../checkdublicatitem/checkdublicatitem.component'
 @Component({
   selector: 'app-bulk-upload-view',
   templateUrl: './bulk-upload-view.component.html',
