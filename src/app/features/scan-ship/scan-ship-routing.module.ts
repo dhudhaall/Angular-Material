@@ -10,6 +10,7 @@ import { BulkUploadViewComponent } from './bulk-uploads/bulk-upload-view/bulk-up
 import { SubmitBulkUploadPopupComponent } from './bulk-uploads/submit-bulk-upload-popup/submit-bulk-upload-popup.component';
 import { BulkUploadHistoryComponent } from './bulk-uploads/bulk-upload-history/bulk-upload-history.component';
 import { BulkItemDetailComponent } from './bulk-uploads/bulk-item-detail/bulk-item-detail.component';
+import { ScanshipDashbordMainComponent } from './scanship-dashbord-main/scanship-dashbord-main.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,12 @@ const routes: Routes = [
   {
     path: 'bulkhdetail',
     component: BulkItemDetailComponent
+  }
+  ,
+
+  {
+    path: 'dashboard',
+    component: ScanshipDashbordMainComponent
   }
 ];
 

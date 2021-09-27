@@ -44,7 +44,8 @@
                     </mat-menu>
                 </div>
                 <div class=" pagination">
-                    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+                    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+                        aria-label="Select page">
                     </mat-paginator>
                 </div>
             </div>
@@ -77,6 +78,10 @@
                             <div class="item-image">
                                 <div class="img-border">
                                     <img src="/assets/images/watch.png">
+                                    <div class="warning-img">
+                                        <img src="/assets/images/warning-icon.png">
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -87,13 +92,14 @@
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
                                     <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
-                        [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                                                [ngClass]="isEditable ? 'disable' : 'enable'"></span>
                                         <span>
-                      <mat-icon (click)="isEditable = !isEditable">
-                        <span *ngIf="isEditable">edit</span>
-                                        <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+                                            <mat-icon (click)="isEditable = !isEditable">
+                                                <span *ngIf="isEditable">edit</span>
+                                                <span *ngIf="!isEditable"><img
+                                                        src="/assets/images/greentick.png"></span>
 
-                                        </mat-icon>
+                                            </mat-icon>
                                         </span>
                                     </p>
                                 </div>
@@ -101,10 +107,10 @@
                             </div>
                             <div class="item-brand">
                                 <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
-                    Color: Silver (Model: SUP865)</a></h3>
+                                        Color: Silver (Model: SUP865)</a></h3>
                                 <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product
-                    Group: <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions:
-                    <span>3.3*3.8*5.1 inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> |
+                                        Group: <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions:
+                                        <span>3.3*3.8*5.1 inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> |
                                     <a>Total Weight: <span>15.00 lbs</span></a>
                                 </p>
                             </div>
@@ -126,10 +132,10 @@
                                 <div class="button-main">
 
                                     <select>
-                    <option value="" selected>Print Label(s)</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </select>
+                                        <option value="" selected>Print Label(s)</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
 
                                 </div>
                                 <div class="button-link">
@@ -157,7 +163,7 @@
                                     <tr>
                                         <td>A.</td>
                                         <td><span class="unit orange-badge">6</span></td>
-                                        <td><span class="orange-badge td-fc">ONT6</span></td>
+                                        <td><span class="light-pink td-fc">ONT6</span></td>
                                         <td>
                                             <h6>Moreno Valley, CA 92551</h6>
                                             <p>Last Checked: 5 hours ago</p>
@@ -166,7 +172,7 @@
                                     <tr>
                                         <td>A.</td>
                                         <td><span class="unit orange-badge">6</span></td>
-                                        <td><span class="orange-badge td-fc">ONT6</span></td>
+                                        <td><span class="yellow-badg td-fc">ONT6</span></td>
                                         <td>
                                             <h6>Moreno Valley, CA 92551</h6>
                                             <p>Last Checked: 5 hours ago</p>
@@ -175,7 +181,7 @@
                                     <tr>
                                         <td>A.</td>
                                         <td><span class="unit orange-badge">6</span></td>
-                                        <td><span class="orange-badge td-fc">ONT6</span></td>
+                                        <td><span class="bluesh-white td-fc">ONT6</span></td>
                                         <td>
                                             <h6>Moreno Valley, CA 92551</h6>
                                             <p>Last Checked: 5 hours ago</p>
@@ -224,11 +230,12 @@
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
                                     <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
-                        [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
+                                                [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
                                         <span>
                                             <mat-icon (click)="isEditable = !isEditable">
                                                 <span *ngIf="isEditable">edit</span>
-                                                <span  *ngIf="!isEditable"><img style="width:20px" src="/assets/images/greentick.png"></span>
+                                                <span *ngIf="!isEditable"><img style="width:20px"
+                                                        src="/assets/images/greentick.png"></span>
                                             </mat-icon>
                                         </span>
                                     </p>
@@ -237,13 +244,13 @@
                             </div>
                             <div class="item-brand">
                                 <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
-                    Color: Silver (Model: SUP865)</a></h3>
+                                        Color: Silver (Model: SUP865)</a></h3>
                                 <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product
-                    Group:
-                    <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1
-                      inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total
-                    Weight:
-                    <span>15.00 lbs</span></a>
+                                        Group:
+                                        <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1
+                                            inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total
+                                        Weight:
+                                        <span>15.00 lbs</span></a>
                                 </p>
                             </div>
                             <div class="totalUnits">
@@ -264,10 +271,10 @@
                                 <div class="button-main">
 
                                     <select>
-                    <option value="" selected>Print Label(s)</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </select>
+                                        <option value="" selected>Print Label(s)</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
 
                                 </div>
                                 <div class="button-link">
@@ -296,7 +303,7 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="pink td-fc">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
@@ -305,7 +312,7 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="bluesh-white td-fc">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
@@ -314,13 +321,13 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="dark-green ">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
                                                 </td>
                                             </tr>
-                                    
+
                                         </table>
                                     </div>
                                 </div>
@@ -347,7 +354,7 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="bluesh-white td-fc">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
@@ -356,13 +363,13 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="light-pink td-fc">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
                                                 </td>
                                             </tr>
-                                
+
                                         </table>
                                     </div>
                                 </div>
@@ -380,7 +387,7 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="light-pink td-fc">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
@@ -389,7 +396,7 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="green td-fc">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
@@ -398,13 +405,13 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="light-green td-fc">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
                                                 </td>
                                             </tr>
-                                
+
                                         </table>
                                     </div>
                                 </div>
@@ -447,7 +454,7 @@
                                                     <p>Last Checked: 5 hours ago</p>
                                                 </td>
                                             </tr>
-                                
+
                                         </table>
                                     </div>
                                 </div>
@@ -466,7 +473,16 @@
                                             <tr>
                                                 <td>A.</td>
                                                 <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td><span class="pink td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="dark-green td-fc">ONT6</span></td>
                                                 <td>
                                                     <h6>Moreno Valley, CA 92551</h6>
                                                     <p>Last Checked: 5 hours ago</p>
@@ -481,23 +497,14 @@
                                                     <p>Last Checked: 5 hours ago</p>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>A.</td>
-                                                <td><span class="unit orange-badge">6</span></td>
-                                                <td><span class="orange-badge td-fc">ONT6</span></td>
-                                                <td>
-                                                    <h6>Moreno Valley, CA 92551</h6>
-                                                    <p>Last Checked: 5 hours ago</p>
-                                                </td>
-                                            </tr>
-                                
+
                                         </table>
                                     </div>
                                 </div>
-                                
+
                             </carousel>
-                            
-                           
+
+
                         </div>
 
                     </div>
@@ -538,13 +545,14 @@
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
                                     <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
-                        [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                                                [ngClass]="isEditable ? 'disable' : 'enable'"></span>
                                         <span>
-                      <mat-icon (click)="isEditable = !isEditable">
-                        <span *ngIf="isEditable">edit</span>
-                                        <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+                                            <mat-icon (click)="isEditable = !isEditable">
+                                                <span *ngIf="isEditable">edit</span>
+                                                <span *ngIf="!isEditable"><img
+                                                        src="/assets/images/greentick.png"></span>
 
-                                        </mat-icon>
+                                            </mat-icon>
                                         </span>
                                     </p>
                                 </div>
@@ -552,13 +560,13 @@
                             </div>
                             <div class="item-brand">
                                 <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
-                    Color: Silver (Model: SUP865)</a></h3>
+                                        Color: Silver (Model: SUP865)</a></h3>
                                 <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product
-                    Group:
-                    <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1
-                      inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total
-                    Weight:
-                    <span>15.00 lbs</span></a>
+                                        Group:
+                                        <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1
+                                            inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total
+                                        Weight:
+                                        <span>15.00 lbs</span></a>
                                 </p>
                             </div>
                             <div class="totalUnits">
@@ -579,10 +587,10 @@
                                 <div class="button-main">
 
                                     <select>
-                    <option value="" selected>Print Label(s)</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </select>
+                                        <option value="" selected>Print Label(s)</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
 
                                 </div>
                                 <div class="button-link">

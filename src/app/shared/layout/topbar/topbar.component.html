@@ -12,37 +12,51 @@
             </div>
         </div>
         <div class="header-menu">
-                <div class="admin-message">
-                        <p>Good Afternoon Sam</p>
-                </div>
-                <div class="top-menu-icons">
-                    <span [matMenuTriggerFor]="menu" style="cursor: pointer;">
-                        <mat-icon matBadge="4" matBadgeColor="warn" class="message-icon">
-                            message
-                        
-                        </mat-icon>
-                    </span>
-                    <mat-menu #menu="matMenu">
-                        <button mat-menu-item>
-                            
-                            <span>this is Message 1</span>
-                        </button>
-                        <button mat-menu-item >
-                            <span>Message 2</span>
-                        </button>
-                        <button mat-menu-item>
-                            <span>Message 3</span>
-                        </button>
-                    </mat-menu>
-                    
-                    
-                    <mat-icon>
-                        settings
+            <div class="admin-message">
+                <p>Good Afternoon Sam</p>
+            </div>
+            <div class="top-menu-icons">
+                <span [matMenuTriggerFor]="menu" style="cursor: pointer;">
+                    <mat-icon matBadge="4" matBadgeColor="warn" class="message-icon">
+                        message
+
                     </mat-icon>
-                    <mat-icon>
-                        account_circle
-                    </mat-icon>
-                </div>
+                </span>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+
+                        <span>this is Message 1</span>
+                    </button>
+                    <button mat-menu-item>
+                        <span>Message 2</span>
+                    </button>
+                    <button mat-menu-item>
+                        <span>Message 3</span>
+                    </button>
+                </mat-menu>
+
+
+                <mat-icon>
+                    settings
+                </mat-icon>
+                <mat-icon mat-icon-button [matMenuTriggerFor]="profile" aria-label="Example icon-button with a menu">
+                    account_circle
+                </mat-icon>
+                <mat-menu #profile="matMenu">
+                    <button mat-menu-item>
+                        <!-- <mat-icon>dialpad</mat-icon> -->
+                        <span>USERS</span>
+                    </button>
+                    <button mat-menu-item disabled>
+                        <!-- <mat-icon>voicemail</mat-icon> -->
+                        <span>SETTINGS</span>
+                    </button>
+                    <button mat-menu-item>
+                        <!-- <mat-icon>notifications_off</mat-icon> -->
+                        <span>LOGOUT</span>
+                    </button>
+                </mat-menu>
+            </div>
         </div>
     </div>
 </div>

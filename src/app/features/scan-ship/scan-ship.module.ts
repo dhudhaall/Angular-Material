@@ -20,6 +20,9 @@ import { SubmitBulkUploadPopupComponent } from './bulk-uploads/submit-bulk-uploa
 import { BulkUploadHistoryComponent } from './bulk-uploads/bulk-upload-history/bulk-upload-history.component';
 import { CheckdublicatitemComponent } from './bulk-uploads/checkdublicatitem/checkdublicatitem.component';
 import { BulkItemDetailComponent } from './bulk-uploads/bulk-item-detail/bulk-item-detail.component';
+import { ScanshipDashbordMainComponent } from './scanship-dashbord-main/scanship-dashbord-main.component';
+import { DashboardComponent } from './scanship-dashbord-main/dashboard/dashboard.component';
+import { DashboardFiltersComponent } from './scanship-dashbord-main/dashboard-filters/dashboard-filters.component';
 
 
 @NgModule({
@@ -42,6 +45,9 @@ import { BulkItemDetailComponent } from './bulk-uploads/bulk-item-detail/bulk-it
     BulkUploadHistoryComponent,
     CheckdublicatitemComponent,
     BulkItemDetailComponent,
+    ScanshipDashbordMainComponent,
+    DashboardComponent,
+    DashboardFiltersComponent,
 
   ],
   imports: [

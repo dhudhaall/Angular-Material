@@ -45,7 +45,9 @@ body {
   word-break: break-word;
   width: 100px;
 }
-
+button{
+  border-radius: 0px !important;
+}
 .custom-button {
   width: 200px;
 }
@@ -153,6 +155,7 @@ body {
       .mat-icon {
         padding: 5px;
         color: #322536;
+        cursor: pointer;
       }
       .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
         width: 15px;
@@ -331,6 +334,9 @@ mat-sidenav[style] {
       border-radius: 4px;
       margin-right: 20px;
       width: 550px;
+    }
+    input:focus {
+      outline: none;
     }
     button {
       background-color: $secondarycolor;
@@ -815,16 +821,19 @@ mat-sidenav[style] {
       align-items: center;
       .flex-basis-1 {
         flex-basis: 20%;
+        text-align: right;
         img {
           width: 100px;
         }
       }
       .flex-basis-2 {
         flex-basis: 10%;
+        text-align: center;
         h2 {
           font-size: 20px;
-          font-weight: 600;
-          margin: 0px 20px 0px 20px;
+          font-weight: 500;
+          margin-bottom: 0px;
+          color: #6c7776;
         }
       }
       .flex-basis-3 {
@@ -836,9 +845,16 @@ mat-sidenav[style] {
           h4 {
             font-size: 20px;
             margin-bottom: 0;
+            color: #6c7776;
           }
           .mat-radio-button {
             padding-left: 20px;
+            color: #6c7776;
+          }
+          .mat-radio-label{
+            color:#749797;
+            font-size: 20px;
+            font-weight: 500;
           }
           .mat-radio-button.mat-accent.mat-radio-checked
             .mat-radio-outer-circle {
@@ -876,6 +892,13 @@ mat-sidenav[style] {
               border-radius: 4px 4px 4px 4px;
               padding: 0px 9px 0px 9px;
             }
+            .mat-form-field-infix {
+              
+              border-top: 0px solid transparent; 
+          }
+          .mat-form-field-appearance-fill .mat-form-field-infix {
+            padding: 10px 0px 10px 0px;
+        }
             .mat-form-field-underline {
               width: auto;
             }
@@ -956,6 +979,7 @@ mat-sidenav[style] {
       font-weight: 300;
       text-align: center;
       margin-bottom: 50px;
+      color: #788383;
     }
     .text-about-product {
       display: flex;
@@ -967,6 +991,10 @@ mat-sidenav[style] {
           margin: auto;
           h2 {
             margin-bottom: 10px;
+          }
+          p{
+            font-size: 15px;
+            color: #788383;
           }
         }
       }
@@ -1683,6 +1711,16 @@ mat-sidenav[style] {
               width: 100%;
               padding: 10px;
               margin: auto;
+              position: relative;
+              .warning-img{
+                width: 20px;
+                bottom: 0;
+                right: 3px;
+                position: absolute;
+                img{
+                  width: 100%;
+                }
+              }
               img {
                 width: 100%;
               }
@@ -1737,7 +1775,7 @@ mat-sidenav[style] {
             }
           }
           .item-brand {
-            flex-basis: 30%;
+            flex-basis: 29%;
             padding: 20px 7px;
             border-right: 1px solid #e7e8e8;
             h3 {
@@ -2169,8 +2207,8 @@ mat-sidenav[style] {
                     font-size: 13px;
                   }
                   .td-fc {
-                    padding: 2px 4px;
-                    border-radius: 3px;
+                    padding: 2px 8px;
+                   
                     color: #fff;
                   }
                 }
@@ -2257,6 +2295,10 @@ mat-sidenav[style] {
               padding: 6px;
               max-width: 80px;
               border-radius: 3px;
+              font-weight: 700;
+            }
+            input:focus{
+              outline: none;
             }
           }
         }
@@ -2265,15 +2307,22 @@ mat-sidenav[style] {
           padding: 20px 7px;
           .units-price {
             margin-bottom: 10px;
+
             label {
               padding-right: 10px;
             }
+
             input {
               border: 2px solid #d8d8d8;
               padding: 6px;
               max-width: 80px;
               border-radius: 3px;
+              font-weight: 700;
             }
+            input:focus{
+              outline: none;
+            }
+
           }
           select {
             background-color: $light-green;
@@ -2283,6 +2332,9 @@ mat-sidenav[style] {
             border: 0;
             width: 100%;
             margin-bottom: 20px;
+          }
+          select:focus{
+            outline: none;
           }
         }
       }
@@ -3195,7 +3247,7 @@ mat-sidenav[style] {
           }
         }
         .item-brand {
-          flex-basis: 30%;
+          flex-basis: 29%;
           padding: 20px 7px;
           h3 {
             font-weight: 600;
@@ -3225,6 +3277,7 @@ mat-sidenav[style] {
               padding: 6px;
               max-width: 80px;
               border-radius: 3px;
+              font-weight: 700;
             }
           }
         }
@@ -3241,6 +3294,10 @@ mat-sidenav[style] {
               padding: 6px;
               max-width: 80px;
               border-radius: 3px;
+              font-weight: 700;
+            }
+            input:focus{
+              outline: none;
             }
           }
           .button-main {
@@ -3261,6 +3318,9 @@ mat-sidenav[style] {
             color: #fff;
             border: 0;
             width: 80%;
+          }
+          select:focus{
+            outline: none;
           }
         }
       }
@@ -5103,7 +5163,7 @@ mat-sidenav[style] {
               }
             }
             .item-brand {
-              flex-basis: 30%;
+              flex-basis: 29%;
               padding: 20px 7px;
               border-right: 1px solid #e7e8e8;
               h3 {
