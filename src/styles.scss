@@ -271,6 +271,10 @@ mat-sidenav[style] {
       .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
         background-color: rgba(0,0,0,.38);
     }
+    .mat-slide-toggle{
+      min-width: 70px;
+     
+    }
     .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
       background-color: #ffffff;
   }
@@ -1124,9 +1128,10 @@ mat-sidenav[style] {
               display: flex;
               flex-direction: column;
             }
-            // .mat-radio-button {
-            //     padding-bottom: 10px;
-            // }
+
+            .mat-radio-button {
+                padding-bottom: 3px;
+            }
             .mat-radio-button.mat-accent.mat-radio-checked
               .mat-radio-outer-circle {
               border-color: #00aeef;
@@ -1194,6 +1199,7 @@ mat-sidenav[style] {
           .fiter-icon {
             display: flex;
             margin-left: 10px;
+            cursor: pointer;
             
             h3 {
               font-size: 15px;
@@ -1563,9 +1569,9 @@ mat-sidenav[style] {
                   display: flex;
                   flex-direction: column;
                 }
-                // .mat-radio-button {
-                //     padding-bottom: 10px;
-                // }
+                .mat-radio-button {
+                    padding-bottom: 3px;
+                }
                 .mat-radio-button.mat-accent.mat-radio-checked
                   .mat-radio-outer-circle {
                   border-color: #00aeef;
@@ -1636,6 +1642,7 @@ mat-sidenav[style] {
               .fiter-icon {
                 display: flex;
                 margin-left: 10px;
+                cursor: pointer;
                 h3 {
                   font-size: 15px;
                   margin-bottom: 0;

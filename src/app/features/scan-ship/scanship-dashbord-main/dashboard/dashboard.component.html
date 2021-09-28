@@ -145,41 +145,30 @@
 
                         <mat-icon aria-hidden="false" [matMenuTriggerFor]="filter" aria-label="Example home icon">
                             filter_alt</mat-icon>
-                        <mat-menu #filter="matMenu" class="filer-menu">
-                            <div mat-menu-item>
-                                <h3>SEARCH BY</h3>
+                        <mat-menu #filter="matMenu" class="filer-menu" (click)="$event.stopPropagation();">
+                            <div (click)="$event.stopPropagation();">
+                                <div mat-menu-item>
+                                    <h3>SEARCH BY</h3>
+                                </div>
+                                <div mat-menu-item>
+                                    <mat-radio-button value="1">ALL</mat-radio-button>
+                                </div>
+                                <div mat-menu-item>
+                                    <mat-radio-button value="1">SellerSKU</mat-radio-button>
+                                </div>
+                                <div mat-menu-item>
+                                    <mat-radio-button value="1">ASIN</mat-radio-button>
+                                </div>
+                                <div mat-menu-item>
+                                    <mat-radio-button value="1">UPC</mat-radio-button>
+                                </div>
+                                <div mat-menu-item>
+                                    <mat-radio-button value="1">EAN</mat-radio-button>
+                                </div>
+                                <div mat-menu-item>
+                                    <mat-radio-button value="1">ISBN</mat-radio-button>
+                                </div>
                             </div>
-                            <div mat-menu-item>
-                                <mat-radio-button value="1">ALL</mat-radio-button>
-                            </div>
-                            <div mat-menu-item>
-                                <mat-radio-button value="1">SellerSKU</mat-radio-button>
-                            </div>
-                            <div mat-menu-item>
-                                <mat-radio-button value="1">ASIN</mat-radio-button>
-                            </div>
-                            <div mat-menu-item>
-                                <mat-radio-button value="1">UPC</mat-radio-button>
-                            </div>
-                            <div mat-menu-item>
-                                <mat-radio-button value="1">EAN</mat-radio-button>
-                            </div>
-                            <div mat-menu-item>
-                                <mat-radio-button value="1">ISBN</mat-radio-button>
-                            </div>
-
-                            <!-- <button mat-menu-item>
-                                <mat-icon>dialpad</mat-icon>
-                                <span>Redial</span>
-                            </button>
-                            <button mat-menu-item disabled>
-                                <mat-icon>voicemail</mat-icon>
-                                <span>Check voice mail</span>
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>notifications_off</mat-icon>
-                                <span>Disable alerts</span>
-                            </button> -->
                         </mat-menu>
                     </div>
                 </div>
