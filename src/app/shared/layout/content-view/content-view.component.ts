@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-view.component.scss']
 })
 export class ContentViewComponent implements OnInit {
-  hideBar = false;
-div1 = true;
+  hideBar = true;
+  div1 = true;
   div2 = false;
   div3 = false;
   div4 = false;
@@ -16,32 +16,32 @@ div1 = true;
   ngOnInit(): void {
   }
 
-  showHideSection(num:number){
+  showHideSection(num: number) {
     switch (num) {
-      case 1:{
+      case 1: {
         this.div1 = true;
         this.div2 = false;
         this.div3 = false;
         this.div4 = false;
         break;
       }
-      case 2:{
+      case 2: {
         this.div2 = true;
         this.div1 = false;
         this.div3 = false;
         this.div4 = false;
         break;
       }
-      case 3:{
+      case 3: {
         this.div3 = true;
         this.div1 = false;
         this.div2 = false;
         this.div4 = false;
         break;
       }
-      case 4:{
+      case 4: {
         this.div4 = true;
-         this.div1 = false;
+        this.div1 = false;
         this.div2 = false;
         this.div3 = false;
         break;
@@ -52,6 +52,6 @@ div1 = true;
   hideShowRightBar() {
 
     console.log(this.hideBar);
-    this.hideBar =  !this.hideBar;
+    this.hideBar = !this.hideBar;
   }
 }

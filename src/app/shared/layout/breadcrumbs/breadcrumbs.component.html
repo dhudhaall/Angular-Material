@@ -7,7 +7,7 @@
 
         <div class="slide-text">
             <h1>CASE PACK MODE</h1>
-            <mat-slide-toggle>OFF</mat-slide-toggle>
+            <mat-slide-toggle [(ngModel)]="packMode">{{packMode ? 'ON':'OFF'}}</mat-slide-toggle>
         </div>
 
     </div>
