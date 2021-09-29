@@ -4,13 +4,13 @@ import { ShipmentDetailsComponent } from './shipment-details-main/shipment-detai
 import { ShipmentMainComponent } from './shipment-main/shipment-main.component';
 
 const routes: Routes = [
-   {
-      path: '',
-      component: ShipmentMainComponent
+  {
+    path: '',
+    component: ShipmentMainComponent
   },
-   {
-      path: ':id',
-      component: ShipmentDetailsComponent
+  {
+    path: ':id',
+    component: ShipmentDetailsComponent
   },
 
 ];
@@ -20,3 +20,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class ShipmentHistoryRoutingModule { }
+
