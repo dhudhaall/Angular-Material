@@ -2,24 +2,13 @@
     .addnew-item-main {
         .addnew-content-section{
             .add-new-item-section-main{
+                 
                 .main-item-add-new {
                     .item-Head {
                         .item-date-mfr {
                             h3 {
                                 font-size: 14px;
                             }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-date-mfr {
                             .rank-main {
                                 .rank2 {
                                     p {
@@ -28,16 +17,7 @@
                                 }
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
+
                         .item-button {
                             .button-link{
                                 a {
@@ -45,43 +25,15 @@
                                 }
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main{
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new .item-Head .item-name h3 {
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section{
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
                         .item-name {
+                            h3 {
+                                font-size: 20px;
+                            }
                             p {
                                 span {
                                     font-size: 20px;
                                 }
                             }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-name {
                             .offers {
                                 .offer-opption {
                                     h5 {
@@ -97,6 +49,7 @@
             }
         }
     }
+   
     .add-ship-section{
         .add-ship-main {
             .pils-table {
@@ -106,16 +59,6 @@
                             font-size: 20px;
                             margin-bottom: 4px;
                         }
-                    }
-                }
-            }
-        }
-    }
-    .add-ship-section {
-        .add-ship-main {
-            .pils-table {
-                .item-Head {
-                    .item-name {
                         p {
                             span {
                                 font-size: 20px;
@@ -128,6 +71,7 @@
             }
         }
     }
+    
     .overly-image {
         display: flex;
         height: 200px;
@@ -195,6 +139,9 @@
     .side-bar{
         .side-bar-main {
             .plan-sec {
+                h3 {
+                    font-size: 12px;
+                }
                 .plan-main {
                     .plan .flex{
                         h4 {
@@ -202,197 +149,100 @@
                         }
                     }
                 }
-            }
-        }
-    } 
-    .side-bar {
-        .side-bar-main {
-            .plan-sec{
-                h3 {
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-    .side-bar {
-        .side-bar-main{
-            .plan-sec{
                 h1 {
                     font-size: 20px;
                 }
-            }
-        }
-    }
-    .side-bar {
-        .side-bar-main {
-            .plan-sec {
                 p {
                     font-size: 13px;
                 }
             }
         }
-    }
+    } 
+    
+    
+    
     .addnew-item-main {
         .addnew-content-section {
+
             .add-new-item-section-main {
                 .main-item-add-new {
                     .item-Head {
                         .item-image {
                             flex-basis: 10%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-button {
-                            flex-basis: 14%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .item-Head {
-        .item-image {
-            .img-border {
-                img {
-                    width: 100%;
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-name {
-                            h3 {
-                                font-size: 17px;
-                                margin-bottom: 0px;
+                            .img-border {
+                                img {
+                                    width: 100%;
+                                }
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main{
-                .main-item-add-new {
-                    .item-Head {
+                        .item-button {
+                            flex-basis: 14%;
+                            .button-main {
+                                .mat-raised-button.mat-primary{
+                                    background-color: #39b54a;
+                                    font-size: 13px;
+                                }
+                                .mat-fab.mat-primary{
+                                    background-color: #39b54a;
+                                    font-size: 13px;
+                                }
+                                .mat-mini-fab.mat-primary{
+                                    background-color: #39b54a;
+                                    font-size: 13px;
+                                }
+                            }
+                                .button-img {
+                                    margin-bottom: 10px;
+                                }
+                           
+                        }
                         .item-name {
+                            h3 {
+                                
+                                font-size: 20px;     
+                                margin-bottom: 5px;
+                            }
                             p {
                                 font-size: 13px;
                             }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main{
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head .item-name {
-                        .offers {
-                            .offer-opption {
-                                h5 {
-                                    span {
-        
-                                        padding: 3px 6px;
-                                        font-size: 11px;
-                                        
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-name {
                             .offers {
+                                
+                                    .offer-text {
+                                        h5 {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                
                                 .offer-opption {
                                     h5 {
-                                        margin-bottom: 5px;
-                                        font-size: 12px;
+                                       
+                                            margin-bottom: 5px;
+                                            font-size: 11px;
+                                            
+                                        
+                                        span {
+            
+                                            padding: 3px 6px;
+                                            font-size: 11px;
+                                            
+                                        }
                                     }
+                                    
                                 }
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
                         .item-brand{
                             h3 {
                                 font-size: 13px;
                             }
-                        }
-                        
-                    }
-                    
-                }
-            }
-        }
-    }
-    .addnew-item-main{
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-brand {
                             p {
                                 font-size: 13px;
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
                         .item-date-mfr {
                             h3 {
                                 font-size: 13px;
                             }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main{
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-date-mfr {
                             .rank-main {
                                 .rank1 {
                                     h3 {
@@ -400,96 +250,18 @@
                                     }
                                 }
                             }
-                            
                         }
                     }
-                }
-            }
-        }
-    }
-    .primary,
-    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button .button-main .mat-raised-button.mat-primary,
-    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button .button-main .mat-fab.mat-primary,
-    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .item-Head .item-button .button-main .mat-mini-fab.mat-primary {
-        background-color: #39b54a;
-        font-size: 13px;
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-button {
-                            .button-img {
-                                margin-bottom: 10px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-name {
-                            .offers {
-                                .offer-text {
-                                    h5 {
-                                        font-size: 14px;
+                    .new-add-item-detail {
+                        .new-add-item-main-detail {
+                            .new-heading-detail {
+                                .heading-main {
+                                    h1 {
+                                        
+                                        font-size: 19px;
+                                        margin-left: 14px;
                                     }
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .main-item-add-new {
-                .item-Head {
-                    .item-name {
-                        .offers {
-                            .offer-opption {
-                                h5 {
-                                    font-size: 11px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .new-add-item-detail {
-                        .new-add-item-main-detail {
-                            .new-heading-detail {
-                                .heading-main h1 {
-                                    font-size: 25px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .new-add-item-detail {
-                        .new-add-item-main-detail {
-                            .new-heading-detail {
                                 .offer-status {
                                     h2 {
                                         span {
@@ -498,61 +270,26 @@
                                         }
                                     }
                                 }
+
                             }
                         }
                     }
-                }
-            }
-            
-        }
-    }
-    
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .item-Head {
-                        .item-name {
-                            .offers {
-                                .offer-opption {
-                                    h5 {
-                                        margin-bottom: 5px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
-        }
-    }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
                     .new-add-table {
                         table {
                             td {
                                 padding: 5px;
                                 font-size: 12px;
+                               
+                                .mat-fab.mat-primary,.mat-mini-fab.mat-primary,.mat-raised-button.mat-primary,.mat-flat-button.mat-primary{
+                                 width: 90px;
+                                 font-size: 14px;
+                                }
+                                
                             }
                         }
                     }
                 }
             }
-            
-        }
-    }
-    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td .mat-flat-button.mat-primary,
-    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td .mat-raised-button.mat-primary,
-    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td .mat-fab.mat-primary,
-    .addnew-item-main .addnew-content-section .add-new-item-section-main .main-item-add-new .new-add-table table td .mat-mini-fab.mat-primary {
-        width: 90px;
-        font-size: 14px;
-    }
-    .addnew-item-main {
-        .addnew-content-section {
             .new-item-heading-sec {
                 .heading-main {
                     .flex-1 {
@@ -565,27 +302,11 @@
             }
         }
     }
-    .addnew-item-main {
-        .addnew-content-section {
-            .add-new-item-section-main {
-                .main-item-add-new {
-                    .new-add-item-detail {
-                        .new-add-item-main-detail {
-                            .new-heading-detail {
-                                .offer-status {
-                                    h2 {
-                                        font-size: 19px;
-                                        margin-left: 14px;
-                                    }
-                                }
-                            }
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
+   
+    
+    
+    
+   
     .bulk-item-detail-section {
         .bulk-item-detail-main {
             .status-tabs {
@@ -594,9 +315,7 @@
                         .item-Head {
                             .item-name {
                                 h3 {
-                                    font-size: 20px;
                                    
-                                    margin-bottom: 5px;
                                 }
                             }
                         }
@@ -1361,6 +1080,7 @@
                             .drop-heading{
                                 h1 {
                                     font-size: 13px;
+                                    margin-bottom: 10px;
                                 }
                             }
                         }
@@ -1665,7 +1385,13 @@
         flex-wrap: nowrap;
         flex-direction: column;
     }
-    
+    .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .radio-text h4 {
+        font-size: 13px;
+      
+    }
+    .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn .fiter-icon h3 {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 994px) {
@@ -4304,7 +4030,7 @@
                             .condition {
                                 .mat-form-field-appearance-fill {
                                     .mat-form-field-infix {
-                                        width: 220px;
+                                        width: 310px;
                                     }
                                 }
                             }
@@ -4323,7 +4049,7 @@
                             .prep-owner {
                                 .mat-form-field-appearance-fill {
                                     .mat-form-field-infix {
-                                        width: 220px;
+                                        width: 310px;
                                     }
                                 }
                             }
@@ -4447,7 +4173,6 @@
     }
 
    .breadcrumbs-main .breadcrumbs-inner {
- 
     flex-direction: column;
     }
 

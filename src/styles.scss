@@ -1128,6 +1128,9 @@ mat-sidenav[style] {
               display: flex;
               flex-direction: column;
             }
+            .mat-radio-label-content {
+              font-size: 13px;
+          }
 
             .mat-radio-button {
                 padding-bottom: 3px;
@@ -1165,6 +1168,11 @@ mat-sidenav[style] {
             .mat-form-field {
               width: 100%;
             }
+            .mat-form-field-infix {
+              padding: 10px 0; 
+             border-top: none; 
+             
+         }
             .mat-form-field-wrapper {
               padding-bottom: 0px;
             }
@@ -1608,6 +1616,12 @@ mat-sidenav[style] {
                 .mat-form-field {
                   width: 100%;
                 }
+               
+                .mat-form-field-infix {
+                   padding: 10px 0; 
+                  border-top: none; 
+
+              }
                 .mat-form-field-wrapper {
                   padding-bottom: 0px;
                 }
