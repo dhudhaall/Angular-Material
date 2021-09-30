@@ -1,5 +1,7 @@
 import { MediaMatcher } from '@angular/cdk/layout/media-matcher';
 import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { SubmitBulkUploadPopupComponent } from './features/scan-ship/bulk-uploads/submit-bulk-upload-popup/submit-bulk-upload-popup.component';
 
 @Component({
   selector: 'app-root',
@@ -21,11 +23,19 @@ export class AppComponent {
   //   this.mobileQuery.removeListener(this._mobileQueryListener);
   // }
 
+  constructor(private dialog:MatDialog){
+
+  }
   public isExpanded = false;
   isLoggedIn = true;
   modeSidebar = "side";
 
   public toggleMenu() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  onDragBtnClick(){
+    console.log('hi')
+    const dialogRef = this.dialog.open(SubmitBulkUploadPopupComponent);
   }
 }

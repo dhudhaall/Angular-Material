@@ -26,7 +26,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatCardModule, } from '@angular/material/card';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
-
+import { ResizableModule } from 'angular-resizable-element';
 @NgModule({
   declarations: [
     SidebarComponent,
@@ -45,7 +45,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     MatSelectModule,MatMenuModule,
     MatListModule, MatBadgeModule,MatCarouselModule.forRoot(),
     MatButtonModule,MatTableModule,MatRadioModule,MatCheckboxModule,
-    RouterModule,MatFormFieldModule,MatInputModule,MatPaginatorModule
+    RouterModule,MatFormFieldModule,MatInputModule,MatPaginatorModule,ResizableModule,
 
   ],
   exports: [

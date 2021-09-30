@@ -1,4 +1,6 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { ResizeEvent } from 'angular-resizable-element';
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -7,6 +9,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class SidebarComponent implements OnInit {
   @Input() isExpanded: boolean = false;
   @Output() toggleMenu = new EventEmitter();
+  @ViewChild('otherPotion') otherPotion:any;
+  max_height:number=0
 
   public routeLinks = [
     { link: "dashboard", name: "Dashboard", icon: "dashboard" },
@@ -41,8 +45,19 @@ export class SidebarComponent implements OnInit {
 
 
   constructor() { }
-
+  height:string='100%';
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit(){
+    this.max_height= this.otherPotion.nativeElement.offsetHeight;
+  }
+
+  onResizeEnd(event: ResizeEvent): void {
+    console.log('Element was resized', event);
+    const top:number = event.edges.top as number || 0;
+    const height =  (this.otherPotion.nativeElement.offsetHeight + top)
+    height < this.max_height? this.height=height + 'px': this.height=this.max_height+'px'
   }
 
 }

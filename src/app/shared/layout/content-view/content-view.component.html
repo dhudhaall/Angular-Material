@@ -14,16 +14,16 @@
 
                 <div class="left-side-menu">
                     <div class="left-uper-icons">
-                        <div class="icon-back active" (click)="showHideSection(1)">
+                        <div class="icon-back" [class.active]='this.div1' (click)="showHideSection(1)">
                             <mat-icon class="icon">more_horiz</mat-icon>
                         </div>
-                        <div class="icon-back" (click)="showHideSection(2)">
+                        <div class="icon-back" [class.active]='this.div2' (click)="showHideSection(2)">
                             <mat-icon class="icon">keyboard_alt</mat-icon>
                         </div>
-                        <div class="icon-back" (click)="showHideSection(3)">
+                        <div class="icon-back" [class.active]='this.div3' (click)="showHideSection(3)">
                             <mat-icon class="icon">other_houses</mat-icon>
                         </div>
-                        <div class="icon-back" (click)="showHideSection(4)">
+                        <div class="icon-back" [class.active]='this.div4' (click)="showHideSection(4)">
                             <mat-icon class="icon">settings</mat-icon>
                         </div>
                     </div>

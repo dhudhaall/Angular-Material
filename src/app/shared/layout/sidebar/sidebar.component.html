@@ -4,7 +4,7 @@
             {{ isExpanded ? "keyboard_backspace" : "dehaze" }}
         </mat-icon>
     </div> -->
-    <div>
+    <div #otherPotion class="other-potion" [style.height]='height'>
         <mat-list class="nav" *ngFor="let route of routeLinks">
             <a mat-list-item routerLinkActive="active-link" class="hover" routerLink="{{ route?.link }}">
                 <mat-icon mat-list-icon>
@@ -23,8 +23,24 @@
                 </mat-list>
             </div>
         </mat-list>
+               <!-- <div
+        class="resize-handle-bottom"
+        mwlResizeHandle
+        [resizeEdges]="{ bottom: true }"
+      ></div> -->
     </div>
-    <div class="user-potion">
+
+
+    <div class="user-potion"
+    mwlResizable
+    [enableGhostResize]="true"
+    (resizeEnd)="onResizeEnd($event)"
+ >
+      <div
+      class="resize-handle-top"
+      mwlResizeHandle
+      [resizeEdges]="{ top: true }"
+    ></div>
         <mat-list class="nav">
             <a mat-list-item class="hover">
                 <mat-icon mat-list-icon>
