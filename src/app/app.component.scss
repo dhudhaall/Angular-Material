@@ -1,7 +1,15 @@
-.fab{
-  height: 100px;
-  width: 100px;
-  background-color: pink;
-  border-radius: 100%;
+.fab-main{
+  display: table;
+  .fab-button{
+    
+    border-radius: 50% !important;
+    border: none;
+    font-weight: 600;
+    color: #ffff;
+    font-size: 44px;
+    padding: 7px 20px;
+
+  }
 }
+
 

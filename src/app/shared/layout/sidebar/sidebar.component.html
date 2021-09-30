@@ -23,7 +23,7 @@
                 </mat-list>
             </div>
         </mat-list>
-               <!-- <div
+        <!-- <div
         class="resize-handle-bottom"
         mwlResizeHandle
         [resizeEdges]="{ bottom: true }"
@@ -31,16 +31,9 @@
     </div>
 
 
-    <div class="user-potion"
-    mwlResizable
-    [enableGhostResize]="true"
-    (resizeEnd)="onResizeEnd($event)"
- >
-      <div
-      class="resize-handle-top"
-      mwlResizeHandle
-      [resizeEdges]="{ top: true }"
-    ></div>
+    <div class="user-potion" mwlResizable [enableGhostResize]="true" (resizeEnd)="onResizeEnd($event)">
+        <div class="resize-handle-top handel-img" mwlResizeHandle [resizeEdges]="{ top: true }"><img
+                src="/assets/images/handel-border.png"></div>
         <mat-list class="nav">
             <a mat-list-item class="hover">
                 <mat-icon mat-list-icon>
