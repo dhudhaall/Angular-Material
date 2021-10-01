@@ -23,7 +23,7 @@ export class AppComponent {
   //   this.mobileQuery.removeListener(this._mobileQueryListener);
   // }
 
-  constructor(private dialog:MatDialog){
+  constructor(private dialog: MatDialog) {
 
   }
   public isExpanded = false;
@@ -34,8 +34,8 @@ export class AppComponent {
     this.isExpanded = !this.isExpanded;
   }
 
-  onDragBtnClick(){
+  onDragBtnClick() {
     console.log('hi')
-    const dialogRef = this.dialog.open(SubmitBulkUploadPopupComponent);
+    // const dialogRef = this.dialog.open(SubmitBulkUploadPopupComponent);
   }
 }
