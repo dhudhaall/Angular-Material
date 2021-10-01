@@ -27,12 +27,14 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatCardModule, } from '@angular/material/card';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { ResizableModule } from 'angular-resizable-element';
+import { ClickToShowDirective } from './directives/click-to-show.directive';
 @NgModule({
   declarations: [
     SidebarComponent,
     TopbarComponent,
     BreadcrumbsComponent,
-    ContentViewComponent
+    ContentViewComponent,
+    ClickToShowDirective
   ],
   imports: [
     CommonModule, FormsModule, ReactiveFormsModule,
@@ -58,7 +60,7 @@ import { ResizableModule } from 'angular-resizable-element';
     MatExpansionModule, MatCarouselModule,
     MatTooltipModule, MatTableModule, MatBadgeModule, MatRadioModule, MatMenuModule,
     MatIconModule, ContentViewComponent, MatInputModule, MatPaginatorModule,
-    MatListModule, MatButtonModule, BreadcrumbsComponent, MatFormFieldModule
+    MatListModule, MatButtonModule, BreadcrumbsComponent, MatFormFieldModule,ClickToShowDirective
   ]
 })
 export class SharedModule { }

@@ -5548,4 +5548,8 @@ mat-sidenav[style] {
   }
 }
 
+.display-block .custom-inputs{
+  visibility: visible !important;
+}
+
 @import "assets/styles/responsive-styles.scss";
