@@ -16,7 +16,8 @@
         <router-outlet></router-outlet>
 
         <div cdkDrag class="fab-main">
-          <button (click)='onDragBtnClick();' [matMenuTriggerFor]="fabmanu" class="fab-button orange-badge">{{trigger.menuOpen?'-':'+'}}</button>
+          <button (click)='onDragBtnClick();' [matMenuTriggerFor]="fabmanu"
+            class="fab-button orange-badge">{{trigger.menuOpen?'-':'+'}}</button>
 
           <mat-menu #fabmanu="matMenu" class="manu-panel">
             <div class="fab-search-type-main" (click)="$event.stopPropagation();">

@@ -681,6 +681,7 @@
     .add-item-sec {
         .add-item-main {
             .serch-feild-flex {
+                flex-direction: column;
                 .flex-basis-3 {
                     .search-type {
                         h4 {
@@ -1364,6 +1365,15 @@
             }
         }
     }
+    .addpils-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .standard-box {
+        margin-right: 15px;
+    }
+    .addpils-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .units {
+        margin-right: 15px;
+    }
+    .addpils-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .errors {
+        margin-right: 15px;
+    }
     .addnew-item-main {
         .addnew-content-section {
             .new-item-heading-sec {
@@ -2017,6 +2027,18 @@
             }
         }
     }
+    .addpils-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 {
+        flex-direction: column;
+    }
+    .addpils-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .standard-box {
+        margin-bottom: 10px;
+    }
+    .addpils-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .units {
+        margin-bottom: 10px;
+    }
+    .addpils-item-main .addnew-content-section .new-item-heading-sec .heading-main .flex-2 .errors {
+        margin-bottom: 10px;
+    }
     .add-item-sec {
         padding: 20px;
     }
@@ -2150,6 +2172,9 @@
     .addpils-item-main {
         .add-new-item-section-main {
             .main-item-add-new {
+                .top-title-info2 h4 {
+                    font-size: 14px;
+                }
                 .item-Head {
                     .actions-items {
                         .icons {
@@ -2552,6 +2577,7 @@
         .bulk-item-detail-main {
             .proccesisng-upload-table {
                 .table-heading {
+                    flex-direction: column;
                     .item-status {
                         h3 {
                             font-size: 12px;
@@ -2702,9 +2728,6 @@
     .add-item-sec {
         .add-item-main {
             .header-btn {
-                .header-btn-main {
-                    flex-direction: column;
-                }
             }
         }
     }
