@@ -4,7 +4,7 @@
             <div class="heading-main">
                 <div class="flex-1">
                     <div class="bar-img">
-                        <img src="/assets/images/barcode.svg" alt="">
+                        <img src="/assets/images/Shipmentpiles.png" alt="">
                     </div>
                     <div class="heading-text">
                         <h1>SHIPMENT PILE</h1>
@@ -30,25 +30,26 @@
                             <div class="printPileTooltip" (click)="$event.stopPropagation();">
                                 <mat-radio-group aria-label="Select an option">
                                     <mat-radio-button value="1">PRINT PILE ITEMS</mat-radio-button>
-                                            <mat-checkbox class="example-margin">INCLUDE LOCATIONS</mat-checkbox>
-                                            <mat-checkbox class="example-margin">INCLUDE ERRORS</mat-checkbox>
+                                    <mat-checkbox class="example-margin">INCLUDE LOCATIONS</mat-checkbox>
+                                    <mat-checkbox class="example-margin">INCLUDE ERRORS</mat-checkbox>
                                     <mat-radio-button value="2">PRINT ERRORS ONLY</mat-radio-button>
                                     <div class="print-errors">
                                         <mat-icon>settings</mat-icon>
-                                         <button mat-raised-button color="primary" class="blue-btn smallBtn">Print</button>
+                                        <button mat-raised-button color="primary"
+                                            class="blue-btn smallBtn">Print</button>
                                         <img src="/assets/images/excl-file-icon.png">
                                     </div>
                                 </mat-radio-group>
                             </div>
                         </mat-menu>
-                        
+
                         <mat-icon aria-hidden="false" aria-label="Example settings icon">settings</mat-icon>
                     </div>
 
                 </div>
             </div>
 
-            
+
         </section>
 
         <div class="create-shipment-pick">
@@ -58,14 +59,16 @@
             <div class="step2" *ngIf="showStep2">
                 <app-step2></app-step2>
             </div>
-           
+
         </div>
 
         <div class="next-step-btns">
-        <button mat-raised-button *ngIf="!showStep2" class="orange-badge nextBtn" (click)="showStep2 = true">NEXT STEP</button>
-        <button mat-raised-button *ngIf="showStep2" class="orange-badge nextBtn" (click)="showStep2 = true">CREATE SHIPMENT</button>
+            <button mat-raised-button *ngIf="!showStep2" class="orange-badge nextBtn" (click)="showStep2 = true">NEXT
+                STEP</button>
+            <button mat-raised-button *ngIf="showStep2" class="orange-badge nextBtn" (click)="showStep2 = true">CREATE
+                SHIPMENT</button>
 
         </div>
     </div>
- 
+
 </div>

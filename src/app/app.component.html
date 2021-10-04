@@ -15,6 +15,34 @@
 
         <router-outlet></router-outlet>
 
+        <div cdkDrag class="fab-main">
+          <button (click)='onDragBtnClick();' [matMenuTriggerFor]="fabmanu" class="fab-button orange-badge">
+            <span *ngIf="trigger.menuOpen" class="minus"><img src="/assets/images/minus.png"></span>
+            <span *ngIf="!trigger.menuOpen" class="plus"><img src="/assets/images/plusbtn.png"></span>
+          </button>
+
+          <mat-menu #fabmanu="matMenu" class="manu-panel searchBtn-global">
+            <div class="fab-search-type-main" (click)="$event.stopPropagation();">
+              <diV class="search-type">
+                <h4>SEARCH TYPE:</h4>
+                <mat-radio-group aria-label="Select an option">
+                  <mat-radio-button value="1">ALL</mat-radio-button>
+                  <mat-radio-button value="2">SELLER SKU</mat-radio-button>
+                </mat-radio-group>
+              </diV>
+              <div class="search-field">
+                <div class="search-main">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <input matInput placeholder="Search an ASIN, UPC, SKU, keyword, etc...">
+                  </mat-form-field>
+                </div>
+                <div class="search-btn">
+                  <button mat-button color="primary" routerLink="/scanship/newaddItem">Search</button>
+                </div>
+              </div>
+            </div>
+          </mat-menu>
+        </div>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
@@ -28,5 +56,4 @@
   <div class="accounts-main">
     <router-outlet></router-outlet>
   </div>
-
 </div>

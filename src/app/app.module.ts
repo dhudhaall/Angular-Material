@@ -4,9 +4,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
-
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -19,6 +19,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     SharedModule,
     BrowserAnimationsModule,
     MatSidenavModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

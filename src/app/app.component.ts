@@ -1,5 +1,8 @@
 import { MediaMatcher } from '@angular/cdk/layout/media-matcher';
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { MatMenuTrigger } from '@angular/material/menu';
+import { SubmitBulkUploadPopupComponent } from './features/scan-ship/bulk-uploads/submit-bulk-upload-popup/submit-bulk-upload-popup.component';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +10,9 @@ import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger={} as any;
   title = 'SellerChainAppSuit';
+
   // mobileQuery: MediaQueryList;
   // _mobileQueryListener: () => void;
 
@@ -21,11 +26,22 @@ export class AppComponent {
   //   this.mobileQuery.removeListener(this._mobileQueryListener);
   // }
 
+  constructor(private dialog: MatDialog) {
+
+  }
   public isExpanded = false;
   isLoggedIn = true;
   modeSidebar = "side";
 
   public toggleMenu() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  ngAfterViewInit(){
+
+  }
+  onDragBtnClick() {
+    console.log('hi')
+    // const dialogRef = this.dialog.open(SubmitBulkUploadPopupComponent);
   }
 }

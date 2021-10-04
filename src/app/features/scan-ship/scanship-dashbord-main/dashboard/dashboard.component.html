@@ -62,7 +62,8 @@
             <div class="detail-1">
                 <div class="icon-text-notif">
                     <div class="text-icon">
-                        <mat-icon aria-hidden="false" aria-label="Example home icon">account_tree</mat-icon>
+                        <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">account_tree</mat-icon> -->
+                        <img src="/assets/images/dash-sml-open-pile-icon.png">
                     </div>
                     <div class="text">
                         <h3>OPEN PILES:</h3>
@@ -95,6 +96,7 @@
                     <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
                     <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
                     <p>PHX6 - MIX 3/4/2019 8:10 PM</p>
+                    <a class="link3">View 4 More</a>
 
                 </div>
             </div>
@@ -102,7 +104,7 @@
             <div class="detail-1">
                 <div class="icon-text-notif">
                     <div class="text-icon">
-                        <mat-icon aria-hidden="false" aria-label="Example home icon">warning</mat-icon>
+                        <img src="/assets/images/dash-sml-bulk-icon.png">
                     </div>
                     <div class="text">
                         <h3>BULK ERRORS:</h3>
@@ -301,6 +303,8 @@
                         <ng-container matColumnDef="select">
                             <th mat-header-cell *matHeaderCellDef>
                                 Shipment ID
+                                <img src="/assets/images/tabel-hd-arrow.png">
+
                             </th>
                             <td mat-cell *matCellDef="let row">
                                 <mat-checkbox (click)="$event.stopPropagation()"
@@ -344,7 +348,8 @@
 
                             </th>
                             <td mat-cell *matCellDef="let element">
-                                <button mat-button color="primary" class="view-all">CLOSE</button>
+                                <button mat-button color="primary" class="view-all ">WORKING
+                                </button>
                             </td>
                         </ng-container>
 

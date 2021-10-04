@@ -2,12 +2,13 @@
     <div class="main-item-add-new">
         <div class="top-title-info">
             <div class="panel-flex1">
-                <h3> <span>STEP 1</span> CHOOSE YOUR ‘TOP ITEM’ TO SELECT A SHIPPING PLAN</h3>
+                <h3> <span>STEP 1</span> CHOOSE YOUR ‘TOP ITEM’ TO SELECT A SHIPPING PLAN <mat-icon>lock</mat-icon>
+                </h3>
             </div>
             <div class="panel-flex2">
 
                 <button mat-raised-button color="primary" class="orange-badge">HIDE LOCATIONS</button>
-                <button mat-raised-button color="primary" class="gry-badge">CHOOSE BY LOCATION</button>
+                <button mat-raised-button color="primary" class="dark-gray-bdg">CHOOSE BY LOCATION</button>
             </div>
         </div>
         <div class="top-title-info2">
@@ -29,7 +30,8 @@
             </div>
             <div class="flex1 sortnPagination">
                 <div class=" sort">
-                    <mat-icon [matMenuTriggerFor]="menu" aria-hidden="false" aria-label="Example settings icon">sort
+                    <mat-icon [matMenuTriggerFor]="menu" aria-hidden="false" aria-label="Example settings icon">
+                        import_export
                     </mat-icon>
                     <mat-menu #menu="matMenu">
                         <div class="sortByMenu" (click)="$event.stopPropagation();">
@@ -92,13 +94,12 @@
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
                                     <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
-                                                [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                                                [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
                                         <span>
                                             <mat-icon (click)="isEditable = !isEditable">
-                                                <span *ngIf="isEditable">edit</span>
-                                                <span *ngIf="!isEditable"><img
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
+                                                <span *ngIf="!isEditable"><img style="width:20px"
                                                         src="/assets/images/greentick.png"></span>
-
                                             </mat-icon>
                                         </span>
                                     </p>
@@ -106,11 +107,13 @@
                                 <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>
                             </div>
                             <div class="item-brand">
-                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
+                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,<br>
                                         Color: Silver (Model: SUP865)</a></h3>
-                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product
-                                        Group: <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions:
-                                        <span>3.3*3.8*5.1 inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> |
+                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> <br>
+                                    <a>Product
+                                        Group: <span>Watches | Apparal | Fashion</span></a> <br> <a>Dimensions:
+                                        <span>3.3*3.8*5.1 inches</span></a> <br> <a>Unit Weight: <span>0.6
+                                            lbs</span></a> |
                                     <a>Total Weight: <span>15.00 lbs</span></a>
                                 </p>
                             </div>
@@ -233,7 +236,7 @@
                                                 [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
                                         <span>
                                             <mat-icon (click)="isEditable = !isEditable">
-                                                <span *ngIf="isEditable">edit</span>
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
                                                 <span *ngIf="!isEditable"><img style="width:20px"
                                                         src="/assets/images/greentick.png"></span>
                                             </mat-icon>
@@ -243,14 +246,14 @@
                                 <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>
                             </div>
                             <div class="item-brand">
-                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
+                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,<br>
                                         Color: Silver (Model: SUP865)</a></h3>
-                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product
-                                        Group:
-                                        <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1
-                                            inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total
-                                        Weight:
-                                        <span>15.00 lbs</span></a>
+                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> <br>
+                                    <a>Product
+                                        Group: <span>Watches | Apparal | Fashion</span></a> <br> <a>Dimensions:
+                                        <span>3.3*3.8*5.1 inches</span></a> <br> <a>Unit Weight: <span>0.6
+                                            lbs</span></a> |
+                                    <a>Total Weight: <span>15.00 lbs</span></a>
                                 </p>
                             </div>
                             <div class="totalUnits">
@@ -288,7 +291,7 @@
                     <div class="new-add-item-main-detail">
 
                         <div class="table-lfex-main">
-                            <carousel [cellsToShow]="3" [margin]="20" [height]="250">
+                            <carousel [cellsToShow]="3" [margin]="20" [height]="170">
                                 <div class="carousel-cell">
                                     <div class="new-add-table">
                                         <table>
@@ -545,13 +548,12 @@
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
                                     <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
-                                                [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                                                [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
                                         <span>
                                             <mat-icon (click)="isEditable = !isEditable">
-                                                <span *ngIf="isEditable">edit</span>
-                                                <span *ngIf="!isEditable"><img
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
+                                                <span *ngIf="!isEditable"><img style="width:20px"
                                                         src="/assets/images/greentick.png"></span>
-
                                             </mat-icon>
                                         </span>
                                     </p>
@@ -559,14 +561,14 @@
                                 <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>
                             </div>
                             <div class="item-brand">
-                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,
+                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,<br>
                                         Color: Silver (Model: SUP865)</a></h3>
-                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> | <a>Product
-                                        Group:
-                                        <span>Watches | Apparal | Fashion</span></a> | <a>Dimensions: <span>3.3*3.8*5.1
-                                            inches</span></a> <a>Unit Weight: <span>0.6 lbs</span></a> | <a>Total
-                                        Weight:
-                                        <span>15.00 lbs</span></a>
+                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> <br>
+                                    <a>Product
+                                        Group: <span>Watches | Apparal | Fashion</span></a> <br> <a>Dimensions:
+                                        <span>3.3*3.8*5.1 inches</span></a> <br> <a>Unit Weight: <span>0.6
+                                            lbs</span></a> |
+                                    <a>Total Weight: <span>15.00 lbs</span></a>
                                 </p>
                             </div>
                             <div class="totalUnits">
