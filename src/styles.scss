@@ -5650,3 +5650,7 @@ mat-sidenav[style] {
 }
 
 @import "assets/styles/responsive-styles.scss";
+
+mat-panel-description{
+  display: inline-table !important;
+}
