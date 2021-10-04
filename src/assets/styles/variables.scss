@@ -118,7 +118,7 @@ $icon-color: #ebecec;
 .pink {
     background-color: #920352 !important;
 }
-.light-pink{
+.light-pink {
     background-color: #ea2c58 !important;
 }
 //////////////////MATE ICON + TEXT COLOR/////////////
@@ -174,17 +174,16 @@ $icon-color: #ebecec;
 .button-radius {
     border-radius: 0px !important;
 }
-.dropdown-width{
+.dropdown-width {
     max-width: 150px !important;
 }
-.submit-tooltip{
+.submit-tooltip {
     font-size: 14px !important;
     margin-bottom: 0px !important;
     width: 170px;
     text-align: center;
     margin-left: 10px !important;
     margin-right: 10px !important;
-
 }
 // .custom-dropdown {
 //  .mat-form-field-appearance-fill .mat-form-field-flex {
@@ -206,14 +205,35 @@ $icon-color: #ebecec;
 //   border: 0;
 // }
 // }
-.filer-menu{
-    h3{
-      margin-bottom: 0px;
-      color:#6c7776;
+.filer-menu {
+    h3 {
+        margin-bottom: 0px;
+        color: #6c7776;
     }
-    .mat-menu-item{
+    .mat-menu-item {
         line-height: 20px;
         height: 29px;
     }
-    
 }
+
+// .mat-radio-button {
+//     padding-left: 20px;
+//     color: #6c7776;
+// }
+// .mat-radio-label {
+//     color: #749797;
+//     font-size: 20px;
+//     font-weight: 500;
+// }
+// .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+//     border-color: #00aeef;
+// }
+// .mat-radio-button.mat-accent .mat-radio-inner-circle,
+// .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+// .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+// .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+//     background-color: #00aeef;
+// }
+// .mat-radio-outer-circle {
+//     background-color: #ffffff;
+// }

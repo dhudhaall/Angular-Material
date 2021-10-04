@@ -7,93 +7,35 @@
   -webkit-box-shadow: 3px 2px 16px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 3px 2px 16px 0px rgba(0, 0, 0, 0.55);
   border-radius: 50%;
+  .fab-button:focus {
+    outline: none;
+  }
   .fab-button {
     border-radius: 50% !important;
     border: none;
     font-weight: 600;
     color: #ffff;
-    font-size: 44px;
+    font-size: 50px;
     min-width: 60px;
     min-height: 60px;
-  }
-}
-.fab-search-type-main {
-  .search-type {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    h4 {
-      font-size: 20px;
-      margin-bottom: 0;
-      color: #6c7776;
-    }
-    .mat-radio-button {
-      padding-left: 20px;
-      color: #6c7776;
-    }
-    .mat-radio-label {
-      color: #749797;
-      font-size: 20px;
-      font-weight: 500;
-    }
-    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
-      border-color: #00aeef;
-    }
-    .mat-radio-button.mat-accent .mat-radio-inner-circle,
-    .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
-    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
-    .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
-      background-color: #00aeef;
-    }
-    .mat-radio-outer-circle {
-      background-color: #ffffff;
-    }
-  }
-  .search-field {
-    display: flex;
-    align-items: center;
-    .search-main {
-      flex-basis: 80%;
-      .mat-form-field {
-        width: 100%;
-      }
-      .mat-form-field-wrapper {
-        padding-bottom: 0px;
-      }
-      .mat-form-field-appearance-fill .mat-form-field-flex {
-        background-color: white;
-        border: 1px solid #e3e3e5;
-      }
-      .mat-form-field-appearance-fill .mat-form-field-flex {
-        border-radius: 4px 4px 4px 4px;
-        padding: 0px 9px 0px 9px;
-      }
-      .mat-form-field-infix {
-        border-top: 0px solid transparent;
-      }
-      .mat-form-field-appearance-fill .mat-form-field-infix {
-        padding: 10px 0px 10px 0px;
-      }
-      .mat-form-field-underline {
-        width: auto;
+    cursor: pointer;
+    .minus {
+      img {
+        width: 30px;
+        vertical-align: middle;
+        padding-bottom: 8px;
       }
     }
-    .search-btn {
-      margin-left: 20px;
-      flex-basis: 20%;
-      .mat-button,
-      .mat-icon-button,
-      .mat-stroked-button {
-        background-color: #00aeef;
-      }
-      .mat-button.mat-primary,
-      .mat-icon-button.mat-primary,
-      .mat-stroked-button.mat-primary {
-        color: #ffffff;
+    .plus {
+      img {
+        width: 27px;
+        vertical-align: middle;
+        padding-bottom: 8px;
       }
     }
   }
 }
+
 .mat-menu-panel {
   width: auto !important;
 }

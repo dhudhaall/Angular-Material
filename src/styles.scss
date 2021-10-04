@@ -801,6 +801,7 @@ mat-sidenav[style] {
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 30px;
+        line-height: 1;
       }
       p {
         font-size: 20px;
@@ -817,6 +818,7 @@ mat-sidenav[style] {
         color: #ffffff;
         font-size: 30px;
         margin-bottom: 30px;
+        line-height: 1;
       }
     }
     .serch-feild-flex {
@@ -837,6 +839,7 @@ mat-sidenav[style] {
           font-weight: 500;
           margin-bottom: 0px;
           color: #6c7776;
+          line-height: 1;
         }
       }
       .flex-basis-3 {
@@ -849,6 +852,7 @@ mat-sidenav[style] {
             font-size: 20px;
             margin-bottom: 0;
             color: #6c7776;
+            line-height: 1;
           }
           .mat-radio-button {
             padding-left: 20px;
@@ -929,6 +933,7 @@ mat-sidenav[style] {
             text-align: center;
             p {
               font-size: 13px;
+              line-height: 1;
             }
             .mat-button,
             .mat-icon-button,
@@ -949,6 +954,7 @@ mat-sidenav[style] {
             text-align: center;
             p {
               font-size: 13px;
+              line-height: 1;
             }
             .mat-button,
             .mat-icon-button,
@@ -989,10 +995,12 @@ mat-sidenav[style] {
           margin: auto;
           h2 {
             margin-bottom: 10px;
+            line-height: 1;
           }
           p {
             font-size: 15px;
             color: #788383;
+            line-height: 1;
           }
         }
       }
@@ -1205,9 +1213,7 @@ mat-sidenav[style] {
           }
           .fiter-icon {
             display: flex;
-            margin-left: 10px;
             cursor: pointer;
-
             h3 {
               font-size: 15px;
               margin-bottom: 0;
@@ -1479,6 +1485,10 @@ mat-sidenav[style] {
               .mat-icon {
                 display: inline-block;
                 vertical-align: middle;
+                color: #97a2a0;
+              }
+              .warning {
+                color: #ffc032;
               }
             }
           }
@@ -1665,8 +1675,9 @@ mat-sidenav[style] {
               }
               .fiter-icon {
                 display: flex;
-                margin-left: 10px;
+                // margin-left: 10px;
                 cursor: pointer;
+
                 h3 {
                   font-size: 15px;
                   margin-bottom: 0;
@@ -1704,10 +1715,7 @@ mat-sidenav[style] {
         .mat-expansion-panel-header-description {
           margin-right: 0;
         }
-        .mat-expansion-panel-header-title,
-        .mat-expansion-panel-header-description {
-          margin-right: 0;
-        }
+
         .mat-expansion-panel-content {
           background-color: #fafafa;
           padding-bottom: 0px;
@@ -2099,11 +2107,12 @@ mat-sidenav[style] {
           }
           .units {
             p {
-              font-size: 10px;
+              font-size: 15px;
               color: #595b61;
               margin-bottom: 0;
               span {
-                font-size: 15px;
+                font-size: 20px;
+                font-weight: 600;
               }
             }
           }
@@ -2116,6 +2125,7 @@ mat-sidenav[style] {
                 display: inline-block;
                 vertical-align: middle;
                 position: relative;
+
                 a {
                   position: absolute;
                   top: 0px;
@@ -2124,7 +2134,7 @@ mat-sidenav[style] {
                   color: #fff;
                 }
               }
-              font-size: 15px;
+              font-size: 18px;
               margin-bottom: 0;
               color: #595b61;
             }
@@ -2133,6 +2143,7 @@ mat-sidenav[style] {
             .mat-icon {
               color: #b7bfbe;
               cursor: pointer;
+              font-size: 26px;
             }
           }
         }
@@ -2191,11 +2202,17 @@ mat-sidenav[style] {
         .flex1 {
           padding: 5px;
         }
+
         .sortnPagination {
           display: flex;
           .mat-paginator-container {
             display: block;
             min-height: auto;
+          }
+          .sort {
+            .mat-icon {
+              color: #595b61;
+            }
           }
           .mat-paginator-range-actions {
             .mat-paginator-range-label {
@@ -2311,6 +2328,9 @@ mat-sidenav[style] {
                   font-weight: 600;
                 }
               }
+              .edit-icon {
+                color: #afb0b3;
+              }
             }
             text-transform: uppercase;
             .mat-icon {
@@ -2323,7 +2343,7 @@ mat-sidenav[style] {
           .labels {
             color: #000 !important;
             font-size: 14px;
-            font-weight: 300;
+            font-weight: 500;
           }
         }
         .item-brand {
@@ -5542,13 +5562,90 @@ mat-sidenav[style] {
     }
   }
 }
-.fab-main {
-  .mat-menu-panel {
-    max-width: 500px !important;
+
+.searchBtn-global {
+  max-width: 500px !important;
+  padding: 10px 20px;
+  .fab-search-type-main {
+    .search-type {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      h4 {
+        font-size: 20px;
+        margin-bottom: 0;
+        color: #6c7776;
+      }
+      .mat-radio-button {
+        padding-left: 20px;
+        color: #6c7776;
+      }
+      .mat-radio-label {
+        color: #749797;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+        border-color: #00aeef;
+      }
+      .mat-radio-button.mat-accent .mat-radio-inner-circle,
+      .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+      .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+      .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+        background-color: #00aeef;
+      }
+      .mat-radio-outer-circle {
+        background-color: #ffffff;
+      }
+    }
+    .search-field {
+      display: flex;
+      align-items: center;
+      .search-main {
+        flex-basis: 80%;
+        .mat-form-field {
+          width: 100%;
+        }
+        .mat-form-field-wrapper {
+          padding-bottom: 0px;
+        }
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+          background-color: white;
+          border: 1px solid #e3e3e5;
+        }
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+          border-radius: 4px 4px 4px 4px;
+          padding: 0px 9px 0px 9px;
+        }
+        .mat-form-field-infix {
+          border-top: 0px solid transparent;
+        }
+        .mat-form-field-appearance-fill .mat-form-field-infix {
+          padding: 10px 0px 10px 0px;
+        }
+        .mat-form-field-underline {
+          width: auto;
+        }
+      }
+      .search-btn {
+        margin-left: 20px;
+        flex-basis: 20%;
+        .mat-button,
+        .mat-icon-button,
+        .mat-stroked-button {
+          background-color: #00aeef;
+        }
+        .mat-button.mat-primary,
+        .mat-icon-button.mat-primary,
+        .mat-stroked-button.mat-primary {
+          color: #ffffff;
+        }
+      }
+    }
   }
 }
 
-.display-block .custom-inputs{
+.display-block .custom-inputs {
   visibility: visible !important;
 }
 

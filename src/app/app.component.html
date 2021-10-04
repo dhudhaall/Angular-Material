@@ -16,10 +16,12 @@
         <router-outlet></router-outlet>
 
         <div cdkDrag class="fab-main">
-          <button (click)='onDragBtnClick();' [matMenuTriggerFor]="fabmanu"
-            class="fab-button orange-badge">{{trigger.menuOpen?'-':'+'}}</button>
+          <button (click)='onDragBtnClick();' [matMenuTriggerFor]="fabmanu" class="fab-button orange-badge">
+            <span *ngIf="trigger.menuOpen" class="minus"><img src="/assets/images/minus.png"></span>
+            <span *ngIf="!trigger.menuOpen" class="plus"><img src="/assets/images/plusbtn.png"></span>
+          </button>
 
-          <mat-menu #fabmanu="matMenu" class="manu-panel">
+          <mat-menu #fabmanu="matMenu" class="manu-panel searchBtn-global">
             <div class="fab-search-type-main" (click)="$event.stopPropagation();">
               <diV class="search-type">
                 <h4>SEARCH TYPE:</h4>

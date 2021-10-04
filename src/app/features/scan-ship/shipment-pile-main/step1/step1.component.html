@@ -30,7 +30,8 @@
             </div>
             <div class="flex1 sortnPagination">
                 <div class=" sort">
-                    <mat-icon [matMenuTriggerFor]="menu" aria-hidden="false" aria-label="Example settings icon">sort
+                    <mat-icon [matMenuTriggerFor]="menu" aria-hidden="false" aria-label="Example settings icon">
+                        import_export
                     </mat-icon>
                     <mat-menu #menu="matMenu">
                         <div class="sortByMenu" (click)="$event.stopPropagation();">
@@ -93,13 +94,12 @@
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
                                     <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
-                                                [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                                                [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
                                         <span>
                                             <mat-icon (click)="isEditable = !isEditable">
-                                                <span *ngIf="isEditable">edit</span>
-                                                <span *ngIf="!isEditable"><img
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
+                                                <span *ngIf="!isEditable"><img style="width:20px"
                                                         src="/assets/images/greentick.png"></span>
-
                                             </mat-icon>
                                         </span>
                                     </p>
@@ -236,7 +236,7 @@
                                                 [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
                                         <span>
                                             <mat-icon (click)="isEditable = !isEditable">
-                                                <span *ngIf="isEditable">edit</span>
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
                                                 <span *ngIf="!isEditable"><img style="width:20px"
                                                         src="/assets/images/greentick.png"></span>
                                             </mat-icon>
@@ -548,13 +548,12 @@
                                 <p>FN SKU:<span>X001RCAUQ5</span></p>
                                 <div class="labelby">
                                     <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
-                                                [ngClass]="isEditable ? 'disable' : 'enable'"></span>
+                                                [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
                                         <span>
                                             <mat-icon (click)="isEditable = !isEditable">
-                                                <span *ngIf="isEditable">edit</span>
-                                                <span *ngIf="!isEditable"><img
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
+                                                <span *ngIf="!isEditable"><img style="width:20px"
                                                         src="/assets/images/greentick.png"></span>
-
                                             </mat-icon>
                                         </span>
                                     </p>
