@@ -5135,6 +5135,9 @@ mat-sidenav[style] {
           }
         }
         .multipel-item-main {
+          // .mat-expansion-panel-header-description {
+          //   height: 79px;
+          // }
           .mat-expansion-panel:not([class*="mat-elevation-z"]) {
             box-shadow: none;
           }
