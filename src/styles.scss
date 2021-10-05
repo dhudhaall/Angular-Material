@@ -196,6 +196,7 @@ mat-sidenav[style] {
 
 .mat-drawer-content {
   margin-left: 68px;
+  overflow: hidden !important;
 }
 
 .sidebar {
@@ -286,14 +287,13 @@ mat-sidenav[style] {
 .content-wrapper {
   padding: 10px;
   // height: 100%;
-  min-width: 1050px;
 }
 
 .content-view-component {
   display: flex;
   .body-side {
     flex: 1;
-    overflow-x: auto;
+    max-width: 100%;
   }
   .filters-side {
     flex-basis: 370px;
@@ -1703,11 +1703,13 @@ mat-sidenav[style] {
     }
     .add-new-item-section-main {
       margin-top: 30px;
+      overflow-x: auto;
       .main-item-add-new {
         border: 1px solid #97a2a0;
         border-radius: 5px;
         background-color: #fff;
         padding: 10px;
+        min-width: 1050px;
         .mat-expansion-panel:not([class*="mat-elevation-z"]) {
           box-shadow: none;
         }
