@@ -33,19 +33,23 @@ mwlResizable {
 .resize-handle-bottom {
   bottom: 0;
 }
-.user-potion{
+.user-potion {
   position: relative;
   background-color: white;
-  .handel-img{
+  .handel-img {
     height: 0px;
-  img{
-   width: 100%;
-   height: 10px;
-  } 
+    img {
+      width: 100%;
+      height: 10px;
+      margin-bottom: 5px;
+    }
+  }
+  .lower-nav {
+    padding-top: 6px;
   }
 }
 
-.other-potion{
+.other-potion {
   position: relative;
   background-color: white;
   overflow: auto;
@@ -64,4 +68,3 @@ mwlResizable {
   color: #121621;
   margin: auto;
 }
-

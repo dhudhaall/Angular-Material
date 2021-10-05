@@ -124,9 +124,14 @@
         .scan-ship-main {
             .detail-1 {
                 .icon-text-notif {
-                    .text h3 {
-                        font-size: 14px;
+                    .text {
+                        h3 {
+                            font-size: 12px;
+                        }
                     }
+                }
+                .detail-text p {
+                    font-size: 12px;
                 }
             }
         }
@@ -589,23 +594,13 @@
             }
         }
     }
-    .dashbord {
-        .scan-ship-details {
-            .scan-ship-main {
-                .detail-1 {
-                    .icon-text-notif {
-                        .text {
-                            h3 {
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+
     .custom-button {
         width: 170px;
+    }
+    .overly-image {
+        height: 157px;
+        margin-top: -143px;
     }
 }
 
@@ -822,7 +817,7 @@
                     .detail-text {
                         p {
                             text-align: center;
-                            font-size: 13px;
+                            font-size: 10px;
                         }
                     }
                 }
@@ -1338,6 +1333,9 @@
     }
     .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn .fiter-icon h3 {
         font-size: 13px;
+    }
+    .shipping-listing-search .search-form input {
+        width: 450px;
     }
 }
 
@@ -2350,6 +2348,9 @@
         height: 120px;
         margin-top: -90px;
     }
+    .shipping-listing-search .search-form input {
+        width: 350px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3259,6 +3260,47 @@
                 }
             }
         }
+    }
+    .dashbord {
+        .scan-search-fields-tabel {
+            .fields-tabel-main {
+                .table-section {
+                    .table-heading {
+                        flex-direction: column;
+                        .heading {
+                            flex-basis: 100%;
+                            margin-bottom: 5px;
+                        }
+                        .txt {
+                            flex-basis: 100%;
+                            margin-bottom: 5px;
+                        }
+                        .heding-btn {
+                            flex-basis: 100%;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shipping-listing-search {
+        flex-direction: column;
+        .search-form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .shipping-listing-search .search-form input {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .shipping-listing-search .search-form input {
+        width: 250px;
+    }
+    .dashbord .scan-search-fields-tabel .fields-tabel-main .fields-main .input-btn .input-main {
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
 }
 

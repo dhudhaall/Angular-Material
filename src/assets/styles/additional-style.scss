@@ -1,0 +1,334 @@
+///////////////////////////////////////////////////////////////BOX CONTENT DASHBOARD///////////////////
+.box-content-section {
+    .box-content-main {
+        ////////////////// BOX CONTENT HEADING STYLE///////////////
+        .page-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #b7bfbe;
+
+            .heading-txt {
+                display: flex;
+                align-items: center;
+
+                .mat-icon {
+                    font-size: 60px;
+                    color: #3eadf2;
+                    margin-right: 10px;
+                    width: 64px;
+                    height: 64px;
+                    vertical-align: middle;
+                }
+                .heading-flex {
+                    display: flex;
+                    align-items: center;
+                    h1 {
+                        margin: 0;
+                        font-size: 30px;
+                        color: #3eadf2;
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        ////////////////// BOX CONTENT FIELDS STYLE///////////////
+        .field-flex {
+            display: flex;
+            border-bottom: 1px solid #b7bfbe;
+
+            .box-content-field {
+                .fields-main {
+                    display: flex;
+                    align-items: center;
+                    padding: 20px 30px;
+                    justify-content: center;
+                    .radio-text {
+                        display: flex;
+                        align-items: center;
+                        .radio-btn {
+                            margin-left: 20px;
+                            .mat-radio-group {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            .mat-radio-button {
+                                padding-bottom: 3px;
+                            }
+                            .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+                                border-color: #00aeef;
+                            }
+                            .mat-radio-button.mat-accent .mat-radio-inner-circle,
+                            .mat-radio-button.mat-accent
+                                .mat-radio-ripple
+                                .mat-ripple-element:not(.mat-radio-persistent-ripple),
+                            .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+                            .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+                                background-color: #00aeef;
+                            }
+                            .mat-radio-outer-circle {
+                                background-color: #ffffff;
+                            }
+                        }
+                        h4 {
+                            font-size: 15px;
+                            margin-bottom: 0;
+                            display: block;
+                            line-height: 1;
+                            width: 57px;
+                        }
+                    }
+                    .input-btn {
+                        display: flex;
+                        align-items: center;
+                        flex-basis: 70%;
+                        .input-main {
+                            margin-left: 20px;
+                            flex: 1;
+                            .mat-form-field {
+                                width: 100%;
+                            }
+
+                            .mat-form-field-infix {
+                                padding: 10px 0;
+                                border-top: none;
+                            }
+                            .mat-form-field-wrapper {
+                                padding-bottom: 0px;
+                            }
+                            .mat-form-field-appearance-fill .mat-form-field-flex {
+                                background-color: white;
+                                border: 1px solid #e3e3e5;
+                            }
+                            .mat-form-field-appearance-fill .mat-form-field-flex {
+                                border-radius: 4px 4px 4px 4px;
+                                padding: 0px 9px 0px 9px;
+                            }
+                            .mat-form-field-underline {
+                                width: auto;
+                            }
+                        }
+                        .search-btn {
+                            .browse {
+                                background-color: #afb0b3 !important;
+                            }
+                            .mat-button,
+                            .mat-icon-button,
+                            .mat-stroked-button {
+                                background-color: #00aeef;
+                                margin-left: 20px;
+                            }
+                            .mat-button.mat-primary,
+                            .mat-icon-button.mat-primary,
+                            .mat-stroked-button.mat-primary {
+                                color: #ffffff;
+                            }
+                        }
+                        .fiter-icon {
+                            display: flex;
+
+                            cursor: pointer;
+
+                            h3 {
+                                font-size: 15px;
+                                margin-bottom: 0;
+                                display: block;
+                                line-height: 1;
+                                margin-right: 10px;
+                            }
+                            .mat-icon {
+                                font-size: 30px;
+                                color: #afb0b3;
+                                display: block;
+                            }
+                            .download-icon {
+                                font-size: 30px;
+                                color: #39b54a;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        ////////////////// BOX CONTENT TABELS STYLE///////////////
+        .box-conten-table-main {
+            display: flex;
+            margin-top: 30px;
+            .right-table {
+                flex: 1;
+                background-color: #ffff;
+                border: 1px solid #e7e8e8;
+                border-radius: 4px;
+                .table-heading {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 30px;
+                    text-align: right;
+                    padding: 7px 6px;
+                    justify-content: space-between;
+                    background-color: #f2fff0;
+
+                    .heading {
+                        flex-basis: 50%;
+                        h1 {
+                            font-size: 22px;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                            color: #87c846;
+                            text-align: left;
+                        }
+                    }
+
+                    .heding-btn {
+                        flex: 1;
+                        .view-all {
+                            background-color: #ff482e;
+                            color: #ffffff;
+                        }
+                        .item-page {
+                            background-color: #87c846;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                .table-main {
+                    min-width: 600px;
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        th {
+                            padding: 6px 10px;
+                            border-bottom: 1px solid #e7e8e8;
+                            color: #929d9b;
+                            font-weight: 500;
+                            font-size: 13px;
+                            line-height: 1;
+                            span {
+                                font-size: 10px;
+                            }
+                            img {
+                                width: 17px;
+                                vertical-align: middle;
+                                margin-left: 6px;
+                            }
+                        }
+
+                        td {
+                            padding: 6px 5px;
+                            border-bottom: 1px solid #e7e8e8;
+                            color: #000;
+                            line-height: 1;
+                            text-align: center;
+                            .close {
+                                color: #ffff;
+                                line-height: 26px;
+                            }
+                            .view-edit-btns {
+                                display: flex;
+                                align-items: center;
+                                .flex1 {
+                                    padding-right: 10px;
+                                    .Boxed {
+                                        border: 2px solid #87c846;
+                                        padding: 1px 2px;
+                                        color: #87c846;
+                                    }
+                                    .view-edit {
+                                        color: #fff;
+                                        margin-top: 10px;
+                                        line-height: 22px;
+                                        padding: 0px 0px;
+                                        font-size: 10px;
+                                    }
+                                }
+                                .flex2 {
+                                    display: flex;
+                                    .mat-icon {
+                                        color: #87c846;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .left-table {
+                flex-basis: 50%;
+                background-color: #ffff;
+                border: 1px solid #e7e8e8;
+                border-radius: 4px;
+                margin-right: 10px;
+                .table-heading {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 30px;
+                    text-align: right;
+                    padding: 7px 6px;
+                    justify-content: space-between;
+                    background-color: aliceblue;
+
+                    .heading {
+                        flex-basis: 50%;
+                        h1 {
+                            font-size: 22px;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                            color: #3eadf2;
+                            text-align: left;
+                        }
+                    }
+
+                    .heding-btn {
+                        flex-basis: 25%;
+                        .view-all {
+                            background-color: #ff482e;
+                            color: #ffffff;
+                        }
+                        .item-page {
+                            background-color: #87c846;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                .table-main {
+                    min-width: 600px;
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        th {
+                            padding: 6px 10px;
+                            border-bottom: 1px solid #e7e8e8;
+                            color: #929d9b;
+                            font-weight: 500;
+                            font-size: 13px;
+                            line-height: 1;
+                            span {
+                                font-size: 10px;
+                            }
+                            img {
+                                width: 17px;
+                                vertical-align: middle;
+                                margin-left: 6px;
+                            }
+                        }
+
+                        td {
+                            padding: 10px 10px;
+                            border-bottom: 1px solid #e7e8e8;
+                            color: #000;
+                            line-height: 1;
+                            text-align: center;
+                            .close {
+                                color: #ffff;
+                                line-height: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
