@@ -5118,6 +5118,7 @@ mat-sidenav[style] {
               padding: 5px 5px;
               background-color: #f9fafa;
               border-right: 1px solid #b7bfbe;
+
               border-bottom: 1px solid #b7bfbe;
               text-align: center;
               .input-width {
@@ -5326,14 +5327,14 @@ mat-sidenav[style] {
             }
           }
           .mat-expansion-panel-body {
-            padding: 0px 24px 0px 24px;
+            padding: 0px 0px 0px 0px;
             background-color: #ffff;
           }
           .new-add-item-detail {
             padding: 0px 10px;
             .new-add-item-main-detail {
               border-bottom: 2px solid #868a89;
-              border-top: 1px solid #868a89;
+
               .error-table {
                 .table-main {
                   margin-top: -2px;
@@ -5378,7 +5379,9 @@ mat-sidenav[style] {
               }
               .new-heading-detail {
                 display: flex;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+
                 .heading-main {
                   h1 {
                     font-size: 37px;
@@ -5654,6 +5657,6 @@ mat-sidenav[style] {
 
 @import "assets/styles/responsive-styles.scss";
 
-mat-panel-description{
+mat-panel-description {
   display: inline-table !important;
 }
