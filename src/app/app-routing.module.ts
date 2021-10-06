@@ -29,6 +29,11 @@ const routes: Routes = [
         loadChildren: () => import('./features/scan-ship/scan-ship.module').then(m => m.ScanShipModule),
       },
       {
+        path: 'boxcontent',
+        loadChildren: () => import('./features/box-content/box-content.module').then(m => m.BoxContentModule),
+      }
+      ,
+      {
         path: '**',
         redirectTo: 'accounts',
         pathMatch: 'full'

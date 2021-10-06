@@ -9,8 +9,8 @@ import { ResizeEvent } from 'angular-resizable-element';
 export class SidebarComponent implements OnInit {
   @Input() isExpanded: boolean = false;
   @Output() toggleMenu = new EventEmitter();
-  @ViewChild('otherPotion') otherPotion:any;
-  max_height:number=0
+  @ViewChild('otherPotion') otherPotion: any;
+  max_height: number = 0
 
   public routeLinks = [
     { link: "dashboard", name: "Dashboard", icon: "dashboard" },
@@ -38,6 +38,13 @@ export class SidebarComponent implements OnInit {
         { link: "sku-link-manager", name: "Sku Link Manager", icon: "link" },
       ]
     },
+    {
+      link: "boxcontent/dashboard", name: "Box Content", icon: "inventory",
+      children: [
+        { link: "item", name: "Item cost Tool", icon: "price_change" },
+        { link: "sku-link-manager", name: "Sku Link Manager", icon: "link" },
+      ]
+    },
 
 
 
@@ -45,19 +52,19 @@ export class SidebarComponent implements OnInit {
 
 
   constructor() { }
-  height:string='100%';
+  height: string = '100%';
   ngOnInit(): void {
   }
 
-  ngAfterViewInit(){
-    this.max_height= this.otherPotion.nativeElement.offsetHeight;
+  ngAfterViewInit() {
+    this.max_height = this.otherPotion.nativeElement.offsetHeight;
   }
 
   onResizeEnd(event: ResizeEvent): void {
     console.log('Element was resized', event);
-    const top:number = event.edges.top as number || 0;
-    const height =  (this.otherPotion.nativeElement.offsetHeight + top)
-    height < this.max_height? this.height=height + 'px': this.height=this.max_height+'px'
+    const top: number = event.edges.top as number || 0;
+    const height = (this.otherPotion.nativeElement.offsetHeight + top)
+    height < this.max_height ? this.height = height + 'px' : this.height = this.max_height + 'px'
   }
 
 }

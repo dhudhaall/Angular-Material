@@ -1,0 +1,321 @@
+<section class="box-content-section">
+    <div class="box-content-main">
+        <!-- ////////////////// BOX CONTENT HEADING HTML/////////////// -->
+        <div class="page-heading">
+            <div class="heading-txt">
+                <div>
+                    <mat-icon>local_shipping</mat-icon>
+                </div>
+                <div class="heading-flex">
+                    <h1>Box Content Dashboard</h1>
+                </div>
+            </div>
+
+            <div class="box-content-button">
+                <div class="button">
+                    <button mat-raised-button color="primary" class="bluesh-white"> Create Manifest</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ////////////////// BOX CONTENT FIELDS HTML/////////////// -->
+        <div class="field-flex">
+            <div class="box-content-field ">
+                <div class="fields-main">
+                    <div class="radio-text">
+                        <h4>SEARCH TYPE:</h4>
+                        <div class="radio-btn">
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1">All</mat-radio-button>
+                                <mat-radio-button value="2">SELLER SKU</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+                    <div class="input-btn">
+                        <div class="input-main">
+                            <mat-form-field class="example-full-width" appearance="fill">
+                                <input matInput placeholder="Scan a barcode or search here.">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="search-btn">
+                            <button mat-button color="primary">SEARCH</button>
+                        </div>
+                        <div class="fiter-icon">
+                            <mat-icon aria-hidden="false" [matMenuTriggerFor]="filter" aria-label="Example home icon">
+                                filter_alt</mat-icon>
+                            <mat-menu #filter="matMenu" class="filer-menu" (click)="$event.stopPropagation();">
+                                <div (click)="$event.stopPropagation();">
+                                    <div mat-menu-item>
+                                        <h3>SEARCH BY</h3>
+                                    </div>
+                                    <div mat-menu-item>
+                                        <mat-radio-button value="1">ALL</mat-radio-button>
+                                    </div>
+                                    <div mat-menu-item>
+                                        <mat-radio-button value="1">SellerSKU</mat-radio-button>
+                                    </div>
+                                    <div mat-menu-item>
+                                        <mat-radio-button value="1">ASIN</mat-radio-button>
+                                    </div>
+                                    <div mat-menu-item>
+                                        <mat-radio-button value="1">UPC</mat-radio-button>
+                                    </div>
+                                    <div mat-menu-item>
+                                        <mat-radio-button value="1">EAN</mat-radio-button>
+                                    </div>
+                                    <div mat-menu-item>
+                                        <mat-radio-button value="1">ISBN</mat-radio-button>
+                                    </div>
+                                </div>
+                            </mat-menu>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field-right">
+
+            </div>
+        </div>
+        <!-- ////////////////// BOX CONTENT TABELS HTML/////////////// -->
+        <div class="box-conten-table-main">
+            <div class="left-table">
+                <div class="table-heading">
+                    <div class="heading">
+                        <h1>SHIPMENT HISTORY</h1>
+                    </div>
+
+                    <div class="heding-btn">
+                        <button mat-button color="primary" class="view-all">VIEW
+                            ALL</button>
+                    </div>
+                </div>
+                <div class="tabl-scrol">
+                    <div class="table-main">
+                        <table>
+                            <tr>
+                                <th>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </th>
+                                <th>Shipment ID</th>
+                                <th>Shipment Name</th>
+                                <th><span>(SKU|Unit)</span> <br>
+                                    Shipped</th>
+                                <th> <span>(SKU|Unit)</span> <br>
+                                    Recieved</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
+                                <td>3|105</td>
+                                <td>0|0</td>
+                                <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
+                                <td>3|105</td>
+                                <td>0|0</td>
+                                <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
+                                <td>3|105</td>
+                                <td>0|0</td>
+                                <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
+                                <td>3|105</td>
+                                <td>0|0</td>
+                                <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
+                                <td>3|105</td>
+                                <td>0|0</td>
+                                <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="right-table ">
+                <div class="table-heading">
+                    <div class="heading">
+                        <h1>Box Content History</h1>
+                    </div>
+
+                    <div class="heding-btn">
+                        <button mat-button color="primary" class="view-all">VIEW
+                            ALL</button>
+                    </div>
+                </div>
+                <div class="tabl-scrol">
+                    <div class="table-main">
+                        <table>
+                            <tr>
+                                <th>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </th>
+                                <th>Shipment ID</th>
+                                <th>Name</th>
+                                <th>Destination</th>
+                                <th>Status</th>
+                                <th><span>(SKU|Unit)</span>
+                                </th>
+                                <th>Last Modified</th>
+                                <th>Box Content Status</th>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td></td>
+                                <td> AVPI</td>
+                                <td>Working</td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:30 pm</td>
+                                <td><button mat-button color="primary" class=" blue-btn close">BOX ME</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td></td>
+                                <td> AVPI</td>
+                                <td>Working</td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:30 pm</td>
+                                <td>
+                                    <div class="view-edit-btns">
+                                        <div class="flex1">
+                                            <span class="Boxed" (click)="boxedpopup()">Boxed</span>
+                                            <button mat-button color="primary"
+                                                class="red-badge view-edit">View/Edit</button>
+                                        </div>
+                                        <div class="flex2">
+                                            <mat-icon>print</mat-icon>
+                                            <mat-icon>task</mat-icon>
+                                        </div>
+                                    </div>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td></td>
+                                <td> AVPI</td>
+                                <td>Working</td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:30 pm</td>
+                                <td><button mat-button color="primary" class=" blue-btn close">BOX ME</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td></td>
+                                <td> AVPI</td>
+                                <td>Working</td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:30 pm</td>
+                                <td><button mat-button color="primary" class=" blue-btn close">BOX ME</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td></td>
+                                <td> AVPI</td>
+                                <td>Working</td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:30 pm</td>
+                                <td><button mat-button color="primary" class=" blue-btn close">BOX ME</button>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

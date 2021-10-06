@@ -60,7 +60,7 @@ import { ClickToShowDirective } from './directives/click-to-show.directive';
     MatExpansionModule, MatCarouselModule,
     MatTooltipModule, MatTableModule, MatBadgeModule, MatRadioModule, MatMenuModule,
     MatIconModule, ContentViewComponent, MatInputModule, MatPaginatorModule,
-    MatListModule, MatButtonModule, BreadcrumbsComponent, MatFormFieldModule,ClickToShowDirective
+    MatListModule, MatButtonModule, BreadcrumbsComponent, MatFormFieldModule, ClickToShowDirective
   ]
 })
 export class SharedModule { }
