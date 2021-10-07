@@ -39,9 +39,9 @@ export class SidebarComponent implements OnInit {
       ]
     },
     {
-      link: "boxcontent/dashboard", name: "Box Content", icon: "inventory",
+      link: "boxcontent/dashboard", name: "Content Dashboard", icon: "inventory",
       children: [
-        { link: "item", name: "Item cost Tool", icon: "price_change" },
+        { link: "boxcontent/contentdetail", name: "Content Detail", icon: "price_change" },
         { link: "sku-link-manager", name: "Sku Link Manager", icon: "link" },
       ]
     },

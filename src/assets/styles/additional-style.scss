@@ -347,14 +347,10 @@
     .heading {
         position: relative;
         margin-top: 10px;
-        padding: 0px 10px 0px 10px;
+
         h1 {
             line-height: 1;
             margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 0px;
-            line-height: 1;
         }
         .mat-icon {
             color: #000;
@@ -362,11 +358,15 @@
             right: 0;
             position: absolute;
         }
+        p {
+            margin-bottom: 0px;
+            line-height: 1;
+        }
     }
     .popup-btn {
         text-align: right;
         margin-top: 20px;
-        background-color: antiquewhite;
+        background-color: #88d3db;
 
         padding: 10px 8px 10px 6px;
         a {
@@ -380,8 +380,12 @@
         }
     }
 }
+////////////////////////////////////////////////BOX -----EMPTY-----POPUP//////////////////////
 .add-empty-popup {
+    width: 500px;
     .add-empty-heading {
+        position: relative;
+
         h2 {
             font-size: 22px;
             margin-bottom: 10px;
@@ -414,11 +418,14 @@
             margin-left: 10px;
             margin-right: 10px;
         }
+        .input:focus {
+            outline: none;
+        }
     }
     .emty-value-btn {
         text-align: right;
         margin-top: 20px;
-        background-color: #00aeef;
+        background-color: #88d3db;
 
         padding: 10px 8px 10px 6px;
         a {
@@ -429,6 +436,194 @@
             line-height: 33px;
             color: #fff;
             font-size: 13px;
+        }
+    }
+}
+//////////////////////////////////////////////BOX------MANIFEST------ POPUP////////////////////
+.box-manifest-popup {
+    width: 500px;
+    position: relative;
+    h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        line-height: 1;
+        font-weight: 500;
+        .mat-icon {
+            color: #000;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+    }
+    .manifest-details {
+        label {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .input {
+            width: 100%;
+            border: 1px solid #e7ebea;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 10px 10px;
+            color: #000;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .input:focus {
+            outline: none;
+        }
+    }
+    .manifest-btn {
+        text-align: right;
+        margin-top: 20px;
+        background-color: #88d3db;
+        padding: 10px 8px 10px 6px;
+        a {
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        .create {
+            line-height: 33px;
+            color: #fff;
+            font-size: 13px;
+        }
+    }
+}
+/////////////////////////////////////////// BOX CONTENT HEADING HTML/////////////////////////////////
+.content-details-section {
+    margin-left: 10px;
+    .content-details-main {
+        ////////////////// BOX CONTENT HEADING STYLE///////////////
+        .page-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #b7bfbe;
+
+            .heading-txt {
+                display: flex;
+                align-items: center;
+                .mat-icon {
+                    font-size: 60px;
+                    color: #3eadf2;
+                    margin-right: 10px;
+                    width: 64px;
+                    height: 64px;
+                    vertical-align: middle;
+                }
+                .heading-flex {
+                    display: flex;
+                    align-items: center;
+                    h1 {
+                        margin: 0;
+                        font-size: 30px;
+                        color: #3eadf2;
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        ////////////////// field-flex --STYLE///////////////
+        .field-flex {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #b7bfbe;
+            .fields-main {
+                flex-basis: 50%;
+                display: flex;
+                align-items: center;
+
+                .input-main {
+                    margin-left: 20px;
+                    flex: 1;
+                    .mat-form-field {
+                        width: 100%;
+                    }
+
+                    .mat-form-field-infix {
+                        padding: 10px 0;
+                        border-top: none;
+                    }
+                    .mat-form-field-wrapper {
+                        padding-bottom: 0px;
+                    }
+                    .mat-form-field-appearance-fill .mat-form-field-flex {
+                        background-color: white;
+                        border: 1px solid #e3e3e5;
+                    }
+                    .mat-form-field-appearance-fill .mat-form-field-flex {
+                        border-radius: 4px 4px 4px 4px;
+                        padding: 0px 9px 0px 9px;
+                    }
+                    .mat-form-field-underline {
+                        width: auto;
+                    }
+                }
+                .search-btn {
+                    .browse {
+                        background-color: #afb0b3 !important;
+                    }
+                    .mat-button,
+                    .mat-icon-button,
+                    .mat-stroked-button {
+                        background-color: #00aeef;
+                        margin-left: 20px;
+                    }
+                    .mat-button.mat-primary,
+                    .mat-icon-button.mat-primary,
+                    .mat-stroked-button.mat-primary {
+                        color: #ffffff;
+                    }
+                }
+                .select-field-main {
+                    .select-field {
+                        background-color: #fff;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .field-right {
+                flex-basis: 50%;
+            }
+        }
+        ////////////////// boxes-tabs-section --STYLE///////////////
+        .boxes-tabs-section {
+            display: flex;
+
+            .left-flex {
+                flex-basis: 70%;
+                .boxes-tabs {
+                    background-color: #fff;
+                    border: 1px solid #b7bfbe;
+                    .heading {
+                        font-size: 20px;
+                        margin-bottom: 0;
+                    }
+                    .tab-main {
+                        .table-mian {
+                            table {
+                                td {
+                                    img {
+                                        width: 30px;
+                                    }
+                                    h3 {
+                                        font-size: 15px;
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .right-flex {
+                flex-basis: 30%;
+            }
         }
     }
 }

@@ -7,6 +7,8 @@ import { DashboardComponent } from './dashboard-main/dashboard/dashboard.compone
 import { FilterCntent1Component } from './dashboard-main/filter-cntent1/filter-cntent1.component';
 import { BoxContentPopupsComponent } from './dashboard-main/box-content-popups/box-content-popups.component';
 import { AddEmptyBoxPopupComponent } from './dashboard-main/add-empty-box-popup/add-empty-box-popup.component';
+import { ManiFestPopupComponent } from './dashboard-main/mani-fest-popup/mani-fest-popup.component';
+import { BoxContentDetailsComponent } from './box-content-details/box-content-details.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { AddEmptyBoxPopupComponent } from './dashboard-main/add-empty-box-popup/
     DashboardComponent,
     FilterCntent1Component,
     BoxContentPopupsComponent,
-    AddEmptyBoxPopupComponent
+    AddEmptyBoxPopupComponent,
+    ManiFestPopupComponent,
+    BoxContentDetailsComponent
   ],
   imports: [
     CommonModule,
