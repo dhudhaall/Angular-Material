@@ -372,6 +372,7 @@
         a {
             margin-right: 10px;
             font-size: 15px;
+            cursor: pointer;
         }
         .add {
             line-height: 33px;
@@ -431,6 +432,7 @@
         a {
             margin-right: 10px;
             font-size: 15px;
+            cursor: pointer;
         }
         .add {
             line-height: 33px;
@@ -483,6 +485,7 @@
         a {
             margin-right: 10px;
             font-size: 15px;
+            cursor: pointer;
         }
         .create {
             line-height: 33px;
@@ -600,15 +603,15 @@
                 .boxes-tabs {
                     background-color: #fff;
                     border: 1px solid #b7bfbe;
+                    .mat-ink-bar {
+                        background-color: #39b54a !important;
+                    }
                     .heading {
                         font-size: 20px;
                         margin-bottom: 0;
                         line-height: 1;
                     }
                     .tab-main {
-                        .mat-tab-group.mat-primary .mat-ink-bar {
-                            color: #39b54a !important;
-                        }
                         .table-mian {
                             table {
                                 width: 100%;
@@ -645,9 +648,9 @@
                     }
                 }
             }
-            .right-flex {
-                // flex-basis: 30%;
-            }
+            // .right-flex {
+            //     // flex-basis: 30%;
+            // }
         }
     }
 }
