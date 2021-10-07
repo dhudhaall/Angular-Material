@@ -9,11 +9,14 @@ import { AddEmptyBoxPopupComponent } from '../add-empty-box-popup/add-empty-box-
 export class BoxContentPopupsComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
-
+  addEmptyBoxDimension:boolean=false;
   ngOnInit(): void {
   }
   addemptypopup() {
-    const dialogRef = this.dialog.open(AddEmptyBoxPopupComponent);
+    this.addEmptyBoxDimension=true;
 
+  }
+  skipModal(){
+    this.dialog.closeAll()
   }
 }

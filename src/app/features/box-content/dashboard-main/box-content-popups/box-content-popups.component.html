@@ -1,18 +1,18 @@
-<div class="boxed-popup">
+<div *ngIf='!addEmptyBoxDimension' class="boxed-popup">
     <div class="heading">
         <h2>Box Me!</h2>
         <p>Want to add empty box#1 info?</p>
         <mat-icon>close</mat-icon>
     </div>
     <div class="popup-btn">
-        <a>Skip</a>
+        <a (click)='skipModal()'>Skip</a>
         <button mat-button color="primary" (click)="addemptypopup()" class=" blue-btn add">ADD EMPTY BOX
             DIMENSION</button>
     </div>
 </div>
 
 <!-- /////////////////////////////BOX -----EMPTY-----POPUP///////////////////////////////// -->
-<div class="add-empty-popup">
+<div *ngIf='addEmptyBoxDimension'  class="add-empty-popup">
     <div class="add-empty-heading">
         <h2>What is your empty Box#1 info?</h2>
         <mat-icon>close</mat-icon>
@@ -51,7 +51,7 @@
 
     </div>
     <div class="emty-value-btn">
-        <a>Skip</a>
+        <a (click)='skipModal()'>Skip</a>
         <button mat-button color="primary" class=" blue-btn add">START BOXING</button>
     </div>
 </div>
