@@ -9,6 +9,10 @@ import { BoxContentPopupsComponent } from './dashboard-main/box-content-popups/b
 import { AddEmptyBoxPopupComponent } from './dashboard-main/add-empty-box-popup/add-empty-box-popup.component';
 import { ManiFestPopupComponent } from './dashboard-main/mani-fest-popup/mani-fest-popup.component';
 import { BoxContentDetailsComponent } from './box-content-details/box-content-details.component';
+import { BoxContentDetailsMainComponent } from './box-content-details/box-content-details-main/box-content-details-main.component';
+import { BoxContenFilterComponent } from './box-content-details/box-conten-filter/box-conten-filter.component';
+import { BoxContentDetailspopupsComponent } from './box-content-details/box-content-detailspopups/box-content-detailspopups.component';
+import { WarningPopupComponent } from './box-content-details/warning-popup/warning-popup.component';
 
 
 @NgModule({
@@ -19,7 +23,11 @@ import { BoxContentDetailsComponent } from './box-content-details/box-content-de
     BoxContentPopupsComponent,
     AddEmptyBoxPopupComponent,
     ManiFestPopupComponent,
-    BoxContentDetailsComponent
+    BoxContentDetailsComponent,
+    BoxContentDetailsMainComponent,
+    BoxContenFilterComponent,
+    BoxContentDetailspopupsComponent,
+    WarningPopupComponent
   ],
   imports: [
     CommonModule,
