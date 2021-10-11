@@ -601,7 +601,9 @@
 
             .left-flex {
                 flex-basis: 68%;
-                margin-right: 20px;
+                margin-right: 10px;
+                max-width: 100%;
+
                 .boxes-tabs {
                     background-color: #fff;
                     border: 1px solid #b7bfbe;
@@ -622,10 +624,10 @@
                                     padding: 0px 10px;
                                     border-bottom: 1px solid #b7bfbe;
                                     img {
-                                        width: 100px;
+                                        width: 70px;
                                     }
                                     h3 {
-                                        font-size: 15px;
+                                        font-size: 13px;
                                         margin-bottom: 5px;
                                         font-weight: 600;
                                         line-height: 1;
@@ -637,9 +639,13 @@
                                     }
                                     .split {
                                         color: #fff;
+                                        font-size: 11px;
+                                        line-height: 30px;
                                     }
                                     .Print {
                                         color: #fff;
+                                        font-size: 11px;
+                                        line-height: 30px;
                                     }
                                     .remove {
                                         color: #d32d23;
@@ -660,15 +666,101 @@
             }
             .right-flex {
                 flex-basis: 30%;
+                width: 300px;
                 .right-boxes-back {
                     background-color: #fff;
                     border: 1px solid #b7bfbe;
-                    height: 400px;
+                    padding: 20px 10px 20px 10px;
+                    border-radius: 3px;
+                    .boxes-over-flow {
+                        overflow-y: auto;
+                        padding: 0px 2px;
+                        .boxes-min-hight {
+                            max-height: 480px;
+                            .box-mian {
+                                background-color: #fff;
+                                border: 1px solid #b7bfbe;
+                                margin-top: 20px;
+
+                                .box-mian-padding {
+                                    padding: 10px 10px 10px 10px;
+                                    .spacing {
+                                        margin-top: 5px;
+                                    }
+                                    .box-btns {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .box1 {
+                                            font-size: 10px;
+                                            color: #fff;
+                                            line-height: 18px;
+                                        }
+                                        .list-text {
+                                            font-size: 13px;
+                                            font-weight: 600;
+                                            line-height: 1;
+                                            .mat-icon {
+                                                font-size: 15px;
+                                                width: 17px;
+                                                height: 17px;
+                                                vertical-align: middle;
+                                                color: $linkcolorOrange;
+                                            }
+                                        }
+                                        .over30 {
+                                            font-size: 13px;
+                                            color: #b7bfbe;
+                                        }
+                                    }
+                                }
+
+                                .drop-here {
+                                    background-color: #f7f7f7;
+                                    padding: 10px 0px;
+                                    border-top: 1px solid #b7bfbe;
+                                    p {
+                                        font-size: 13px;
+                                        line-height: 1;
+                                        margin-bottom: 0px;
+                                        font-weight: 500;
+                                        text-align: center;
+                                        color: #b7bfbe;
+                                    }
+                                }
+                            }
+                            .select {
+                                background-color: #afff5f1c;
+                                border: 1px solid #87c846;
+                            }
+                        }
+                    }
+                    .box-add-btns {
+                        margin-top: 20px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .Print-box {
+                            background-color: transparent;
+                            border: 1px solid #000;
+                            font-size: 12px;
+                            margin-right: 10px;
+                            color: #000;
+
+                            line-height: 32px;
+                        }
+                        .add-box {
+                            font-size: 12px;
+                            color: #ffffff;
+                            line-height: 34px;
+                        }
+                    }
                     h1 {
-                        font-size: 24px;
+                        font-size: 22px;
                         margin-bottom: 0px;
                         line-height: 1;
-                        font-weight: 500;
+                        font-weight: 600;
                     }
                 }
             }
