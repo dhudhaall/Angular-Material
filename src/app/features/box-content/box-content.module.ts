@@ -13,6 +13,7 @@ import { BoxContentDetailsMainComponent } from './box-content-details/box-conten
 import { BoxContenFilterComponent } from './box-content-details/box-conten-filter/box-conten-filter.component';
 import { BoxContentDetailspopupsComponent } from './box-content-details/box-content-detailspopups/box-content-detailspopups.component';
 import { WarningPopupComponent } from './box-content-details/warning-popup/warning-popup.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { WarningPopupComponent } from './box-content-details/warning-popup/warni
   imports: [
     CommonModule,
     BoxContentRoutingModule,
-    SharedModule
+    SharedModule,
+    DragDropModule
   ]
 })
 export class BoxContentModule { }

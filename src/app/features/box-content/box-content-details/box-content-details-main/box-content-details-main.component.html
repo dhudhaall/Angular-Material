@@ -44,7 +44,7 @@
             </div>
         </div>
         <!-- ////////////////// BOX CONTENT -- DESTAIL --- TABS/////////////// -->
-        <div class="boxes-tabs-section">
+        <div cdkDropListGroup class="boxes-tabs-section">
             <div class="left-flex">
                 <div class="boxes-tabs">
                     <mat-tab-group>
@@ -54,34 +54,38 @@
                             </ng-template>
                             <div class="tab-main">
                                 <div class="table-mian">
-                                    <table>
-                                        <tr>
+                                    <table cdkDropList
+                                      [cdkDropListData]="productList"
+                                      class="example-list"
+                                      (cdkDropListDropped)="drop($event)">
+
+                                        <tr cdkDrag [cdkDragData]="product"  *ngFor='let product of productList'>
                                             <td>
                                                 <img src="/assets/images/watch.png">
                                             </td>
                                             <td>
                                                 <h3>ASIN:</h3>
-                                                <p>0516882239</p>
+                                                <p>{{product.asin}}</p>
                                             </td>
                                             <td>
                                                 <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
+                                                <p>{{product.sku}}</p>
                                             </td>
                                             <td>
                                                 <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
+                                                <p>{{product.fnsku}}</p>
                                             </td>
                                             <td>
                                                 <h3>Quantity:</h3>
-                                                <p>23</p>
+                                                <p>{{product.quanity}}</p>
                                             </td>
                                             <td>
                                                 <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
+                                                <p>{{product.remaining_quantity}}</p>
                                             </td>
                                             <td>
                                                 <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
+                                                <p>{{product.required_labeling? 'Yes': 'No'}}</p>
                                             </td>
                                             <td>
                                                 <button mat-button color="primary" (click)="saplitpopup()"
@@ -100,96 +104,7 @@
                                                     </span></mat-icon>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/watch.png">
-                                            </td>
-                                            <td>
-                                                <h3>ASIN:</h3>
-                                                <p>0516882239</p>
-                                            </td>
-                                            <td>
-                                                <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
-                                            </td>
-                                            <td>
-                                                <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
-                                            </td>
-                                            <td>
-                                                <h3>Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" (click)="saplitpopup()"
-                                                    class="orange-badge split">Split
-                                                    Me</button>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" class="dark-gray-bdg Print">Print
-                                                    Item
-                                                    Lable
-                                                    ALL</button>
-                                            </td>
-                                            <td>
-                                                <mat-icon><span class="material-icons" (click)="warningpopup()">
-                                                        delete
-                                                    </span></mat-icon>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/watch.png">
-                                            </td>
-                                            <td>
-                                                <h3>ASIN:</h3>
-                                                <p>0516882239</p>
-                                            </td>
-                                            <td>
-                                                <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
-                                            </td>
-                                            <td>
-                                                <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
-                                            </td>
-                                            <td>
-                                                <h3>Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" (click)="saplitpopup()"
-                                                    class="orange-badge split">Split
-                                                    Me</button>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" class="dark-gray-bdg Print">Print
-                                                    Item
-                                                    Lable
-                                                    ALL</button>
-                                            </td>
-                                            <td>
-                                                <mat-icon><span class="material-icons" (click)="warningpopup()">
-                                                        delete
-                                                    </span></mat-icon>
-                                            </td>
-                                        </tr>
+                                        <tr *ngIf='!productList.length'>No Products</tr>
                                     </table>
 
                                 </div>
@@ -201,150 +116,58 @@
                             </ng-template>
                             <div class="tab-main">
                                 <div class="table-mian">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/watch.png">
-                                            </td>
-                                            <td>
-                                                <h3>ASIN:</h3>
-                                                <p>0516882239</p>
-                                            </td>
-                                            <td>
-                                                <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
-                                            </td>
-                                            <td>
-                                                <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
-                                            </td>
-                                            <td>
-                                                <h3>Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" (click)="saplitpopup()"
-                                                    class="orange-badge split">Split
-                                                    Me</button>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" class="dark-gray-bdg Print">Print
-                                                    Item
-                                                    Lable
-                                                    ALL</button>
-                                                <button mat-button color="primary" class=" remove">Remove
-                                                    From Shipment</button>
-                                            </td>
-                                            <td>
-                                                <mat-icon><span class="material-icons" (click)="warningpopup()">
-                                                        delete
-                                                    </span></mat-icon>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/watch.png">
-                                            </td>
-                                            <td>
-                                                <h3>ASIN:</h3>
-                                                <p>0516882239</p>
-                                            </td>
-                                            <td>
-                                                <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
-                                            </td>
-                                            <td>
-                                                <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
-                                            </td>
-                                            <td>
-                                                <h3>Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" (click)="saplitpopup()"
-                                                    class="orange-badge split">Split
-                                                    Me</button>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" class="dark-gray-bdg Print">Print
-                                                    Item
-                                                    Lable
-                                                    ALL</button>
-                                                <button mat-button color="primary" class=" remove">Remove
-                                                    From Shipment</button>
-                                            </td>
-                                            <td>
-                                                <mat-icon><span class="material-icons" (click)="warningpopup()">
-                                                        delete
-                                                    </span></mat-icon>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/watch.png">
-                                            </td>
-                                            <td>
-                                                <h3>ASIN:</h3>
-                                                <p>0516882239</p>
-                                            </td>
-                                            <td>
-                                                <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
-                                            </td>
-                                            <td>
-                                                <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
-                                            </td>
-                                            <td>
-                                                <h3>Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" (click)="saplitpopup()"
-                                                    class="orange-badge split">Split
-                                                    Me</button>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" class="dark-gray-bdg Print">Print
-                                                    Item
-                                                    Lable
-                                                    ALL</button>
-                                                <button mat-button color="primary" class=" remove">Remove
-                                                    From Shipment</button>
+                                  <table cdkDropList
+                                  [cdkDropListData]="productList"
+                                  class="example-list"
+                                  (cdkDropListDropped)="drop($event)">
 
-                                            </td>
-                                            <td>
-                                                <mat-icon><span class="material-icons" (click)="warningpopup()">
-                                                        delete
-                                                    </span></mat-icon>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    <tr cdkDrag [cdkDragData]="product"  *ngFor='let product of productList'>
+                                        <td>
+                                            <img src="/assets/images/watch.png">
+                                        </td>
+                                        <td>
+                                            <h3>ASIN:</h3>
+                                            <p>{{product.asin}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>SKU:</h3>
+                                            <p>{{product.sku}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>FNSKU:</h3>
+                                            <p>{{product.fnsku}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>Quantity:</h3>
+                                            <p>{{product.quanity}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>Remaining Quantity:</h3>
+                                            <p>{{product.remaining_quantity}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>Labeling Requaired:</h3>
+                                            <p>{{product.required_labeling? 'Yes': 'No'}}</p>
+                                        </td>
+                                        <td>
+                                            <button mat-button color="primary" (click)="saplitpopup()"
+                                                class="orange-badge split">Split
+                                                Me</button>
+                                        </td>
+                                        <td>
+                                            <button mat-button color="primary" class="dark-gray-bdg Print">Print
+                                                Item
+                                                Lable
+                                                ALL</button>
+                                        </td>
+                                        <td>
+                                            <mat-icon><span class="material-icons" (click)="warningpopup()">
+                                                    delete
+                                                </span></mat-icon>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!productList.length'>No Products</tr>
+                                </table>
 
                                 </div>
                             </div>
@@ -355,143 +178,58 @@
                             </ng-template>
                             <div class="tab-main">
                                 <div class="table-mian">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/watch.png">
-                                            </td>
-                                            <td>
-                                                <h3>ASIN:</h3>
-                                                <p>0516882239</p>
-                                            </td>
-                                            <td>
-                                                <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
-                                            </td>
-                                            <td>
-                                                <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
-                                            </td>
-                                            <td>
-                                                <h3>Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" (click)="saplitpopup()"
-                                                    class="orange-badge split">Split
-                                                    Me</button>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" class="dark-gray-bdg Print">Print
-                                                    Item
-                                                    Lable
-                                                    ALL</button>
-                                            </td>
-                                            <td>
-                                                <mat-icon><span class="material-icons" (click)="warningpopup()">
-                                                        delete
-                                                    </span></mat-icon>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/watch.png">
-                                            </td>
-                                            <td>
-                                                <h3>ASIN:</h3>
-                                                <p>0516882239</p>
-                                            </td>
-                                            <td>
-                                                <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
-                                            </td>
-                                            <td>
-                                                <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
-                                            </td>
-                                            <td>
-                                                <h3>Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" (click)="saplitpopup()"
-                                                    class="orange-badge split">Split
-                                                    Me</button>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" class="dark-gray-bdg Print">Print
-                                                    Item
-                                                    Lable
-                                                    ALL</button>
-                                            </td>
-                                            <td>
-                                                <mat-icon><span class="material-icons" (click)="warningpopup()">
-                                                        delete
-                                                    </span></mat-icon>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="/assets/images/watch.png">
-                                            </td>
-                                            <td>
-                                                <h3>ASIN:</h3>
-                                                <p>0516882239</p>
-                                            </td>
-                                            <td>
-                                                <h3>SKU:</h3>
-                                                <p>0516882239-Useditem-FBA</p>
-                                            </td>
-                                            <td>
-                                                <h3>FNSKU:</h3>
-                                                <p>B00RN08585</p>
-                                            </td>
-                                            <td>
-                                                <h3>Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Remaining Quantity:</h3>
-                                                <p>23</p>
-                                            </td>
-                                            <td>
-                                                <h3>Labeling Requaired:</h3>
-                                                <p>yes</p>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" (click)="saplitpopup()"
-                                                    class="orange-badge split">Split
-                                                    Me</button>
-                                            </td>
-                                            <td>
-                                                <button mat-button color="primary" class="dark-gray-bdg Print">Print
-                                                    Item
-                                                    Lable
-                                                    ALL</button>
-                                            </td>
-                                            <td>
-                                                <mat-icon><span class="material-icons" (click)="warningpopup()">
-                                                        delete
-                                                    </span></mat-icon>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                  <table cdkDropList
+                                  [cdkDropListData]="productList"
+                                  class="example-list"
+                                  (cdkDropListDropped)="drop($event)">
+
+                                    <tr cdkDrag *ngFor='let product of productList'>
+                                        <td>
+                                            <img src="/assets/images/watch.png">
+                                        </td>
+                                        <td>
+                                            <h3>ASIN:</h3>
+                                            <p>{{product.asin}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>SKU:</h3>
+                                            <p>{{product.sku}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>FNSKU:</h3>
+                                            <p>{{product.fnsku}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>Quantity:</h3>
+                                            <p>{{product.quanity}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>Remaining Quantity:</h3>
+                                            <p>{{product.remaining_quantity}}</p>
+                                        </td>
+                                        <td>
+                                            <h3>Labeling Requaired:</h3>
+                                            <p>{{product.required_labeling? 'Yes': 'No'}}</p>
+                                        </td>
+                                        <td>
+                                            <button mat-button color="primary" (click)="saplitpopup()"
+                                                class="orange-badge split">Split
+                                                Me</button>
+                                        </td>
+                                        <td>
+                                            <button mat-button color="primary" class="dark-gray-bdg Print">Print
+                                                Item
+                                                Lable
+                                                ALL</button>
+                                        </td>
+                                        <td>
+                                            <mat-icon><span class="material-icons" (click)="warningpopup()">
+                                                    delete
+                                                </span></mat-icon>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf='!productList.length'>No Products</tr>
+                                </table>
 
                                 </div>
                             </div>
@@ -500,8 +238,60 @@
                 </div>
             </div>
             <div class="right-flex">
-                <div class="right-boxes-back">
+                <div  (cdkDropListDropped)="drop($event)"
+                [cdkDropListData]="chosenProducts"
+                cdkDropList class="right-boxes-back">
                     <h1>Boxes</h1>
+                    <table class="chosenProductsTable">
+
+                      <tr cdkDrag [cdkDragData]="product" *ngFor='let product of chosenProducts'>
+                          <td>
+                              <img src="/assets/images/watch.png">
+                          </td>
+                          <td>
+                              <h3>ASIN:</h3>
+                              <p>{{product.asin}}</p>
+                          </td>
+                          <td>
+                              <h3>SKU:</h3>
+                              <p>{{product.sku}}</p>
+                          </td>
+                          <td>
+                              <h3>FNSKU:</h3>
+                              <p>{{product.fnsku}}</p>
+                          </td>
+                          <td>
+                              <h3>Quantity:</h3>
+                              <p>{{product.quanity}}</p>
+                          </td>
+                          <td>
+                              <h3>Remaining Quantity:</h3>
+                              <p>{{product.remaining_quantity}}</p>
+                          </td>
+                          <td>
+                              <h3>Labeling Requaired:</h3>
+                              <p>{{product.required_labeling? 'Yes': 'No'}}</p>
+                          </td>
+                          <td>
+                              <button mat-button color="primary" (click)="saplitpopup()"
+                                  class="orange-badge split">Split
+                                  Me</button>
+                          </td>
+                          <td>
+                              <button mat-button color="primary" class="dark-gray-bdg Print">Print
+                                  Item
+                                  Lable
+                                  ALL</button>
+                          </td>
+                          <td>
+                              <mat-icon><span class="material-icons" (click)="warningpopup()">
+                                      delete
+                                  </span></mat-icon>
+                          </td>
+                      </tr>
+
+                      <tr *ngIf='!chosenProducts.length'>No Products</tr>
+                  </table>
                 </div>
             </div>
         </div>
