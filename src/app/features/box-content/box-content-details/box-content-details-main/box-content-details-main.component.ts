@@ -1,6 +1,7 @@
 import { moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { BoxAddpopupComponent } from '../box-addpopup/box-addpopup.component';
 import { BoxContentDetailspopupsComponent } from '../box-content-detailspopups/box-content-detailspopups.component';
 import { WarningPopupComponent } from '../warning-popup/warning-popup.component';
 
@@ -16,37 +17,37 @@ export class BoxContentDetailsMainComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  productList:any[]=[
+  productList: any[] = [
     {
-      id:1,
-      asin:'0516882239',
-      sku:'0516882239-Useditem-FBA',
-      fnsku:'B00RN08585',
-      quantity:23,
-      remaining_quantity:23,
-      required_labeling:true
+      id: 1,
+      asin: '0516882239',
+      sku: '0516882239-Useditem-FBA',
+      fnsku: 'B00RN08585',
+      quantity: 23,
+      remaining_quantity: 23,
+      required_labeling: true
     },
     {
-      id:2,
-      asin:'0516882239',
-      sku:'0516882239-Useditem-FBA',
-      fnsku:'B00RN08585',
-      quantity:23,
-      remaining_quantity:23,
-      required_labeling:true
+      id: 2,
+      asin: '0516882239',
+      sku: '0516882239-Useditem-FBA',
+      fnsku: 'B00RN08585',
+      quantity: 23,
+      remaining_quantity: 23,
+      required_labeling: true
     },
     {
-      id:3,
-      asin:'0516882239',
-      sku:'0516882239-Useditem-FBA',
-      fnsku:'B00RN08585',
-      quantity:23,
-      remaining_quantity:23,
-      required_labeling:true
+      id: 3,
+      asin: '0516882239',
+      sku: '0516882239-Useditem-FBA',
+      fnsku: 'B00RN08585',
+      quantity: 23,
+      remaining_quantity: 23,
+      required_labeling: true
     },
   ];
 
-  chosenProducts:any[]=[]
+  chosenProducts: any[] = []
   saplitpopup() {
     const dialogRef = this.dialog.open(BoxContentDetailspopupsComponent);
 
@@ -55,15 +56,19 @@ export class BoxContentDetailsMainComponent implements OnInit {
     const dialogRef = this.dialog.open(WarningPopupComponent);
 
   }
-  drop(event:any){
+  addboxgpopup() {
+    const dialogRef = this.dialog.open(BoxAddpopupComponent);
+
+  }
+  drop(event: any) {
     console.log(event)
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
       transferArrayItem(event.previousContainer.data,
-                        event.container.data,
-                        event.previousIndex,
-                        event.currentIndex);
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex);
     }
   }
 }

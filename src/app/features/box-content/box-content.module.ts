@@ -14,6 +14,7 @@ import { BoxContenFilterComponent } from './box-content-details/box-conten-filte
 import { BoxContentDetailspopupsComponent } from './box-content-details/box-content-detailspopups/box-content-detailspopups.component';
 import { WarningPopupComponent } from './box-content-details/warning-popup/warning-popup.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { BoxAddpopupComponent } from './box-content-details/box-addpopup/box-addpopup.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     BoxContentDetailsMainComponent,
     BoxContenFilterComponent,
     BoxContentDetailspopupsComponent,
-    WarningPopupComponent
+    WarningPopupComponent,
+    BoxAddpopupComponent
   ],
   imports: [
     CommonModule,
