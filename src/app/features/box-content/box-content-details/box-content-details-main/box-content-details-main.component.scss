@@ -1,3 +1,44 @@
-.chosenProductsTable tr{
+.chosenProductsTable tr {
   background-color: red;
+}
+.cdk-drag-preview {
+  td {
+    padding: 0px 10px;
+
+    img {
+      width: 70px;
+    }
+    h3 {
+      font-size: 13px;
+      margin-bottom: 5px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 5px;
+      line-height: 1;
+    }
+    .split {
+      color: #fff;
+      font-size: 11px;
+      line-height: 30px;
+    }
+    .Print {
+      color: #fff;
+      font-size: 11px;
+      line-height: 30px;
+    }
+    .remove {
+      color: #d32d23;
+      background: transparent;
+      border: 1px solid;
+      padding: 4px 4px;
+      line-height: 1;
+      margin-top: 10px;
+    }
+    .mat-icon {
+      color: #d32d23;
+    }
+  }
 }
