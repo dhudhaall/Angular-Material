@@ -52,7 +52,7 @@ export class SidebarComponent implements OnInit {
 
 
   constructor() { }
-  height: string = '100%';
+  height: string = '85vh';
   ngOnInit(): void {
   }
 

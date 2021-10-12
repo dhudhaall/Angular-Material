@@ -190,6 +190,10 @@ mat-sidenav[style] {
   top: 57px;
   left: 0;
   height: 100vh;
+
+  .mat-drawer-inner-container{
+    overflow: hidden;
+  }
 }
 
 .mat-drawer {
