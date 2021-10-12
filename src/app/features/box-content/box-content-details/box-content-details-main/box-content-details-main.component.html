@@ -237,23 +237,23 @@
                     <h1>Boxes</h1>
                     <div class="boxes-over-flow">
                         <div class="boxes-min-hight">
-                            <div class="box-mian select">
+                            <div *ngFor='let product of chosenProducts;let index=index' class="box-mian select">
                                 <div class="box-mian-padding">
                                     <div class="box-btns  spacing">
-                                        <button mat-button color="primary" class="light-green box1">Box1</button>
+                                        <button mat-button color="primary" class="light-green box1">Box {{index+1}}</button>
                                         <button mat-button color="primary" class="orange-badge box1">Genrate
                                             Barcode</button>
                                     </div>
                                     <div class="box-btns spacing">
-                                        <span class="list-text">Item:4</span>
+                                        <span class="list-text">Item:{{product.item_number}}</span>
 
                                     </div>
                                     <div class="box-btns spacing">
-                                        <span class="list-text">Weight:2.5lb</span>
+                                        <span class="list-text">Weight:{{product.weight_lb}}lb</span>
                                         <!-- <button mat-button color="primary" class="light-green box1">Box1</button> -->
                                     </div>
                                     <div class="box-btns spacing">
-                                        <span class="list-text">Weight:4</span>
+                                        <span class="list-text">Weight:{{product.weight_kg}}kg</span>
                                         <!-- <button mat-button color="primary" class="light-green box1">Box1</button> -->
                                     </div>
                                 </div>
@@ -262,7 +262,7 @@
                                     <p>Drop Here In Box</p>
                                 </div>
                             </div>
-                            <div class="box-mian">
+                            <!-- <div class="box-mian">
                                 <div class="box-mian-padding">
                                     <div class="box-btns  spacing">
                                         <button mat-button color="primary" class="light-green box1">Box1</button>
@@ -336,7 +336,7 @@
                                 <div class="drop-here">
                                     <p>Drop Here In Box</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>

@@ -25,7 +25,11 @@ export class BoxContentDetailsMainComponent implements OnInit {
       fnsku: 'B00RN08585',
       quantity: 23,
       remaining_quantity: 23,
-      required_labeling: true
+      required_labeling: true,
+      item_number:1,
+      weight_lb:2.5,
+      weight_kg:4,
+
     },
     {
       id: 2,
@@ -34,7 +38,10 @@ export class BoxContentDetailsMainComponent implements OnInit {
       fnsku: 'B00RN08585',
       quantity: 23,
       remaining_quantity: 23,
-      required_labeling: true
+      required_labeling: true,
+      item_number:2,
+      weight_lb:2.5,
+      weight_kg:4,
     },
     {
       id: 3,
@@ -43,7 +50,10 @@ export class BoxContentDetailsMainComponent implements OnInit {
       fnsku: 'B00RN08585',
       quantity: 23,
       remaining_quantity: 23,
-      required_labeling: true
+      required_labeling: true,
+      item_number:3,
+      weight_lb:2.5,
+      weight_kg:4,
     },
   ];
 
