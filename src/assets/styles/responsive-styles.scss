@@ -1438,6 +1438,9 @@
             }
         }
     }
+    .content-details-section .content-details-main .page-heading .heading-txt .heading-flex h1 {
+        font-size: 26px;
+    }
     .pop-up-section {
         .pop-up-main {
             .left-flex {
@@ -1726,6 +1729,26 @@
     .overly-image {
         height: 155px;
         margin-top: -102px;
+    }
+    .content-details-section .content-details-main .page-heading .heading-txt .mat-icon {
+        font-size: 41px;
+        /* color: #3eadf2; */
+        /* margin-right: 10px; */
+        width: 48px;
+        height: 43px;
+        /* vertical-align: middle; */
+    }
+    .content-details-section .content-details-main .boxes-tabs-section {
+        flex-direction: column;
+    }
+    .content-details-section .content-details-main .boxes-tabs-section .right-flex {
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .content-details-section .content-details-main .boxes-tabs-section .left-flex {
+        flex-basis: 100%;
+        margin-right: 0px;
     }
 }
 
@@ -2503,6 +2526,10 @@
     .add-item-sec .add-item-main .add-item-headings p {
         font-size: 12px;
     }
+    .content-details-section .content-details-main .page-heading .heading-txt .heading-flex h1 {
+        font-size: 20px;
+    }
+
     .add-item-sec .add-item-main .add-item-headings h1 {
         font-size: 25px;
         margin-bottom: 13px;
@@ -2517,6 +2544,26 @@
     .add-item-sec .add-item-main .header-btn .header-btn-main .btn-flex-2 .btn-text .mat-stroked-button.mat-primary {
         font-size: 10px;
     }
+    .content-details-section .content-details-main .field-flex .fields-main .input-main {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .content-details-section .content-details-main .field-flex {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content-details-section .content-details-main .field-flex .fields-main {
+        flex-direction: column;
+    }
+    .content-details-section .content-details-main .field-flex .fields-main .search-btn .mat-button {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .content-details-section .content-details-main .field-flex .fields-main .select-field-main .select-field {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
     .add-item-sec {
         .add-item-main {
             .serch-feild-flex {
@@ -3349,6 +3396,9 @@
             }
         }
     }
+    .content-details-section .content-details-main .page-heading {
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -3391,6 +3441,12 @@
                 }
             }
         }
+    }
+    .content-details-section .content-details-main .page-heading {
+        flex-direction: column;
+    }
+    .content-details-section .content-details-main .page-heading .heading-txt {
+        flex-direction: column;
     }
     .add-item-sec {
         .add-item-main {
