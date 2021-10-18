@@ -384,6 +384,22 @@
 ////////////////////////////////////////////////BOX -----EMPTY-----POPUP//////////////////////
 .add-empty-popup {
     width: 500px;
+    .tamplet-name {
+        .input {
+            width: 100%;
+            border: 1px solid #e7ebea;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 10px 10px;
+            color: #000;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .input:focus {
+            outline: none;
+        }
+    }
     .add-empty-heading {
         position: relative;
 
@@ -438,6 +454,9 @@
             line-height: 33px;
             color: #fff;
             font-size: 13px;
+        }
+        .skip {
+            margin-right: 10px;
         }
     }
 }
