@@ -26,9 +26,9 @@ export class BoxContentDetailsMainComponent implements OnInit {
       quantity: 23,
       remaining_quantity: 23,
       required_labeling: true,
-      item_number:1,
-      weight_lb:2.5,
-      weight_kg:4,
+      item_number: 1,
+      weight_lb: 2.5,
+      weight_kg: 4,
 
     },
     {
@@ -39,9 +39,9 @@ export class BoxContentDetailsMainComponent implements OnInit {
       quantity: 23,
       remaining_quantity: 23,
       required_labeling: true,
-      item_number:2,
-      weight_lb:2.5,
-      weight_kg:4,
+      item_number: 2,
+      weight_lb: 2.5,
+      weight_kg: 4,
     },
     {
       id: 3,
@@ -51,9 +51,9 @@ export class BoxContentDetailsMainComponent implements OnInit {
       quantity: 23,
       remaining_quantity: 23,
       required_labeling: true,
-      item_number:3,
-      weight_lb:2.5,
-      weight_kg:4,
+      item_number: 3,
+      weight_lb: 2.5,
+      weight_kg: 4,
     },
   ];
 
@@ -70,6 +70,7 @@ export class BoxContentDetailsMainComponent implements OnInit {
     const dialogRef = this.dialog.open(BoxAddpopupComponent);
 
   }
+
   drop(event: any) {
     console.log(event)
     if (event.previousContainer === event.container) {

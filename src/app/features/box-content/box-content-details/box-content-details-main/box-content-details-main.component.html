@@ -7,11 +7,13 @@
                     <mat-icon>local_shipping</mat-icon>
                 </div>
                 <div class="heading-flex">
-                    <h1>Box Content Dashboard</h1>
+                    <h1>Box Content Details</h1>
                 </div>
             </div>
             <div class="box-content-button">
                 <div class="button">
+                    <button mat-raised-button color="primary" class="bluesh-white"> Create
+                        Manifest</button>
                 </div>
 
             </div>
@@ -28,13 +30,7 @@
                 <div class="search-btn">
                     <button mat-button color="primary">SEARCH</button>
                 </div>
-                <div class="select-field-main">
-                    <select class="custom-inputs select-field">
-                        <option>SCAN TO BOX</option>
-                        <option>SCAN TO BOX</option>
-                        <option>SCAN TO BOX</option>
-                    </select>
-                </div>
+
             </div>
 
             <div class="field-right">
@@ -238,7 +234,7 @@
                     <div class="boxes-over-flow">
                         <div class="boxes-min-hight">
                             <div [cdkDragData]="product" cdkDrag *ngFor='let product of chosenProducts;let index=index'
-                                class="box-mian select">
+                                s class="box-mian select">
                                 <div class="box-mian-padding">
                                     <div class="box-btns  spacing">
                                         <button mat-button color="primary" class="light-green box1">Box

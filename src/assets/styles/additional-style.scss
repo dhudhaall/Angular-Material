@@ -77,6 +77,7 @@
                             display: block;
                             line-height: 1;
                             width: 57px;
+                            text-align: right;
                         }
                     }
                     .input-btn {
@@ -154,11 +155,11 @@
         }
         ////////////////// BOX CONTENT TABELS STYLE///////////////
         .box-conten-table-main {
-            display: flex;
+            // display: flex;
             margin-top: 30px;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             .left-table {
-                flex: 1;
+                // flex: 1;
                 background-color: #ffff;
                 border: 1px solid #e7e8e8;
                 border-radius: 4px;
@@ -172,8 +173,7 @@
                     text-align: right;
                     padding: 7px 6px;
                     justify-content: space-between;
-                    background-color: aliceblue;
-
+                    border-bottom: 1px solid #ddd;
                     .heading {
                         flex-basis: 50%;
                         h1 {
@@ -198,9 +198,9 @@
                     }
                 }
                 .table-main {
-                    min-width: 650px;
+                    min-width: 600px;
                     table {
-                        border-collapse: collapse;
+                        // border-collapse: collapse;
                         width: 100%;
                         th {
                             padding: 6px 10px;
@@ -253,13 +253,12 @@
                     text-align: right;
                     padding: 7px 6px;
                     justify-content: space-between;
-                    background-color: #f2fff0;
-
+                    border-bottom: 1px solid #ddd;
                     .heading {
                         flex-basis: 50%;
                         h1 {
                             font-size: 22px;
-                            font-weight: 400;
+                            font-weight: 600;
                             margin-bottom: 0;
                             color: #87c846;
                             text-align: left;
@@ -309,6 +308,11 @@
                             .close {
                                 color: #ffff;
                                 line-height: 26px;
+                            }
+                            .boxed-main {
+                                .view-edit {
+                                    margin-left: 10px;
+                                }
                             }
                             .view-edit-btns {
                                 display: flex;
