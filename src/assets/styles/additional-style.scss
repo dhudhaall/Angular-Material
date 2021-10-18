@@ -213,6 +213,7 @@
                             span {
                                 font-size: 10px;
                             }
+
                             img {
                                 width: 17px;
                                 vertical-align: middle;
@@ -229,6 +230,11 @@
                             .close {
                                 color: #ffff;
                                 line-height: 26px;
+                            }
+                            .boxed-main {
+                                .view-edit {
+                                    margin-left: 10px;
+                                }
                             }
                         }
                     }
@@ -627,11 +633,7 @@
                                     img {
                                         width: 70px;
                                     }
-                                    .boxed-main {
-                                        .view-edit {
-                                            margin-left: 10px;
-                                        }
-                                    }
+
                                     h3 {
                                         font-size: 12px;
                                         margin-bottom: 5px;
