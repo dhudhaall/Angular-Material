@@ -101,25 +101,16 @@
                                 </th>
                                 <th>Shipment ID</th>
                                 <th>Shipment Name</th>
-                                <th><span>(SKU|Unit)</span> <br>
-                                    Shipped</th>
-                                <th> <span>(SKU|Unit)</span> <br>
-                                    Recieved</th>
                                 <th>Status</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <mat-checkbox class="example-margin"></mat-checkbox>
-                                </td>
-                                <td>
-
-                                    <a class="link">FBA15FMTX9L3</a>
-                                </td>
-                                <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
-                                <td>3|105</td>
-                                <td>0|0</td>
-                                <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
-                                </td>
+                                <!-- <th><span>(SKU|Unit)</span> <br>
+                                    Shipped</th> -->
+                                <th>(SKU|Unit)
+                                </th>
+                                <th>Last Modified
+                                </th>
+                                <th>Box Content Status</th>
+                                <!-- <th> <span>(SKU|Unit)</span> <br>
+                                    Recieved</th> -->
 
                             </tr>
                             <tr>
@@ -131,10 +122,13 @@
                                     <a class="link">FBA15FMTX9L3</a>
                                 </td>
                                 <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
-                                <td>3|105</td>
-                                <td>0|0</td>
                                 <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
                                 </td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:39pm</td>
+                                <td><button mat-button color="primary" class=" blue-btn close">BOX ME</button>
+                                </td>
+
 
                             </tr>
                             <tr>
@@ -146,10 +140,20 @@
                                     <a class="link">FBA15FMTX9L3</a>
                                 </td>
                                 <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
-                                <td>3|105</td>
-                                <td>0|0</td>
                                 <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
                                 </td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:39pm</td>
+                                <td>
+                                    <div class="boxed-main">
+
+                                        <button mat-button color="primary" (click)="boxedpopup()"
+                                            class=" orange-badge close ">CLOSE</button>
+                                        <button mat-button color="primary"
+                                            class="red-badge view-edit close ">View/Edit</button>
+                                    </div>
+                                </td>
+
 
                             </tr>
                             <tr>
@@ -161,10 +165,13 @@
                                     <a class="link">FBA15FMTX9L3</a>
                                 </td>
                                 <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
-                                <td>3|105</td>
-                                <td>0|0</td>
                                 <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
                                 </td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:39pm</td>
+                                <td><button mat-button color="primary" class=" blue-btn close">BOX ME</button>
+                                </td>
+
 
                             </tr>
                             <tr>
@@ -176,17 +183,39 @@
                                     <a class="link">FBA15FMTX9L3</a>
                                 </td>
                                 <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
-                                <td>3|105</td>
-                                <td>0|0</td>
                                 <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
                                 </td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:39pm</td>
+                                <td><button mat-button color="primary" class=" blue-btn close">BOX ME</button>
+                                </td>
+
 
                             </tr>
+                            <tr>
+                                <td>
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </td>
+                                <td>
+
+                                    <a class="link">FBA15FMTX9L3</a>
+                                </td>
+                                <td> PHX6 - MIX 3/4/2019 8:10 PM </td>
+                                <td><button mat-button color="primary" class=" orange-badge close">CLOSE</button>
+                                </td>
+                                <td>3|105</td>
+                                <td>05/15/2021 03:39pm</td>
+                                <td><button mat-button color="primary" class=" blue-btn close">BOX ME</button>
+                                </td>
+
+
+                            </tr>
+
                         </table>
                     </div>
                 </div>
             </div>
-            <div class="right-table ">
+            <!-- <div class="right-table ">
                 <div class="table-heading">
                     <div class="heading">
                         <h1>Box Content History</h1>
@@ -314,7 +343,7 @@
                         </table>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 

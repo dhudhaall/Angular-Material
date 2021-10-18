@@ -209,6 +209,7 @@
                             font-weight: 500;
                             font-size: 13px;
                             line-height: 1;
+                            text-align: left;
                             span {
                                 font-size: 10px;
                             }
@@ -224,7 +225,7 @@
                             border-bottom: 1px solid #e7e8e8;
                             color: #000;
                             line-height: 1;
-                            text-align: center;
+                            text-align: left;
                             .close {
                                 color: #ffff;
                                 line-height: 26px;
@@ -625,6 +626,11 @@
                                     border-bottom: 1px solid #b7bfbe;
                                     img {
                                         width: 70px;
+                                    }
+                                    .boxed-main {
+                                        .view-edit {
+                                            margin-left: 10px;
+                                        }
                                     }
                                     h3 {
                                         font-size: 12px;
