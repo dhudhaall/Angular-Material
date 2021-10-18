@@ -30,6 +30,12 @@ export class SidebarComponent implements OnInit {
         { link: "bleed-settings", name: "App Settings", icon: "settings" },
       ]
     },
+    {
+      link: "boxcontent/dashboard", name: "Box Content Dashboard", icon: "inventory",
+      children: [
+        { link: "boxcontent/contentdetail", name: "Box Content Detail", icon: "price_change" },
+      ]
+    },
     { link: "appSettings", name: "Settings", icon: "settings" },
     {
       link: "#", name: "Inventory", icon: "inventory",
@@ -38,13 +44,7 @@ export class SidebarComponent implements OnInit {
         { link: "sku-link-manager", name: "Sku Link Manager", icon: "link" },
       ]
     },
-    {
-      link: "boxcontent/dashboard", name: "Content Dashboard", icon: "inventory",
-      children: [
-        { link: "boxcontent/contentdetail", name: "Content Detail", icon: "price_change" },
-        { link: "sku-link-manager", name: "Sku Link Manager", icon: "link" },
-      ]
-    },
+
 
 
 
