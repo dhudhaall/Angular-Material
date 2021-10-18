@@ -2,7 +2,7 @@
     <div class="heading">
         <h2>Box Me!</h2>
         <p>Want to add empty box#1 info?</p>
-        <mat-icon>close</mat-icon>
+        <mat-icon (click)='skipModal()'>close</mat-icon>
     </div>
     <div class="popup-btn">
         <a (click)='skipModal()'>Skip</a>
@@ -16,7 +16,7 @@
 
     <div class="add-empty-heading">
         <h2>What is your empty Box#1 info?</h2>
-        <mat-icon>close</mat-icon>
+        <mat-icon (click)='skipModal()'>close</mat-icon>
     </div>
     <div class="tamplet-name">
         <label>Template Name</label>
@@ -57,7 +57,7 @@
     </div>
     <div class="emty-value-btn">
 
-        <button mat-button color="primary" class=" orange-badge add skip"><a (click)='skipModal()'>SKIP</a></button>
+        <button mat-button color="primary" (click)='skipModal()' class=" orange-badge add skip"><a >SKIP</a></button>
         <button mat-button color="primary" class=" light-green add skip">SAVE TEMPLATE</button>
         <button mat-button color="primary" class=" blue-btn add skip">START BOXING</button>
         <button mat-button color="primary" class=" dark-gray-bdg add">CANCEL</button>
