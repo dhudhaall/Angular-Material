@@ -5,10 +5,10 @@
     <p>Doing so may incur:charge form Amazon</p>
     <div class="ammunt-input">
         <label for=""> Add Amount</label>
-        <input type="number" value="3" class="input">
+        <input type="number" min="1" value="1" #number class="input">
     </div>
     <div class=" proceed-btns">
-        <button mat-button color="primary" class=" blue-btn Proceed">ADD</button>
+        <button mat-button color="primary" [mat-dialog-close]="number.value" class=" blue-btn Proceed">ADD</button>
         <button mat-button color="primary" class=" full-dark-gary  Proceed ">PROCEED WITH ALL</button>
         <button mat-button color="primary" (click)='skipModal()' class=" dark-gray-bdg  Proceed ">CANCEL</button>
     </div>
