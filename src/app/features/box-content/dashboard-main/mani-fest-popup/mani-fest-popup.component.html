@@ -1,7 +1,7 @@
 <!-- /////////////////////////////BOX------MANIFEST------ POPUP///////////////////////////////// -->
 <div class="box-manifest-popup">
     <h1>Add Box Manifest
-        <mat-icon (click)='skipModal()' >close</mat-icon>
+        <mat-icon (click)='skipModal()'>close</mat-icon>
     </h1>
     <div class="manifest-details">
         <label>Mabifest Name</label>
@@ -20,8 +20,9 @@
         <input type="text" class="input">
     </div>
     <div class="manifest-btn">
-        <a (click)='skipModal()'>Cancel</a>
+
         <button mat-button color="primary" class=" blue-btn create">CREATE</button>
+        <button mat-button color="primary" (click)='skipModal()' class=" dark-gray-bdg cancel">CANCEL</button>
     </div>
 
 </div>
