@@ -91,6 +91,8 @@ export class BoxContentDetailsMainComponent implements OnInit {
     }
   }
   copyInBox($event: CdkDragDrop<any>, index: any) {
+    const c_index = $event.currentIndex;
+    this.productList.splice(c_index, 1);
     let chosenBox = this.chosenProducts[index];
     console.log('he');
     if (chosenBox.id) {

@@ -329,7 +329,7 @@
                     <h1>Boxes</h1>
                     <div class="boxes-over-flow">
                         <div class="boxes-min-hight">
-                            <div [cdkDragData]="product" cdkDropList (cdkDropListDropped)='copyInBox($event,index)' cdkDrag *ngFor='let product of chosenProducts;let index=index'
+                            <div  cdkDropList (cdkDropListDropped)='copyInBox($event,index)'  *ngFor='let product of chosenProducts;let index=index'
                                 s class="box-mian select">
                                 <div class="box-mian-padding">
                                     <div class="box-btns  spacing">
