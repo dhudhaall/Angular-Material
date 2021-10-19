@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 ///////////////////////////////////////////////////////////////BOX CONTENT DASHBOARD///////////////////
 .box-content-section {
     .box-content-main {
@@ -647,10 +649,11 @@
                     // background-color: #fff;
                     // border: 1px solid #b7bfbe;
                     .mat-ink-bar {
-                        background-color: #39b54a !important;
+                        background-color: $secondarycolor !important;
                     }
                     .mat-tab-body.mat-tab-body-active {
                         background-color: #ffff !important;
+
                         // border-right: 1px solid #b7bfbe;
                         // border-left: 1px solid #b7bfbe;
                         // border-bottom: 1px solid #b7bfbe;
@@ -663,7 +666,9 @@
                         border-radius: 5px;
                         border-bottom: none;
                         background-color: #ffffff;
-                        margin-right: 20px;
+                        margin-right: 10px;
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 0;
                     }
                     .paginator {
                         display: flex;
@@ -894,6 +899,7 @@
                     border: 1px solid #b7bfbe;
                     padding: 20px 10px 20px 10px;
                     border-radius: 3px;
+                    box-shadow: 0 0 10px 3px #ddd;
                     .boxes-over-flow {
                         overflow-y: auto;
                         padding: 0px 2px;
