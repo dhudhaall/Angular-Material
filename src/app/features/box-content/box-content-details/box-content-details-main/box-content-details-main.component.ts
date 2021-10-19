@@ -94,24 +94,23 @@ export class BoxContentDetailsMainComponent implements OnInit {
     const c_index = $event.currentIndex;
     this.productList.splice(c_index, 1);
     let chosenBox = this.chosenProducts[index];
-    console.log('he');
-    if (chosenBox.id) {
-      //create attached Products list if not created
-      !chosenBox['attachedProducts']
-        ? (chosenBox['attachedProducts'] = [])
-        : '';
+    // console.log('he');
+    // if (chosenBox.id) {
+    //create attached Products list if not created
+    !chosenBox['attachedProducts'] ? (chosenBox['attachedProducts'] = []) : '';
 
-      chosenBox.attachedProducts.push(chosenBox);
-      const newItem = $event.item.data;
-      chosenBox = {
-        ...chosenBox,
-        ...newItem,
-        weight_kg: chosenBox.weight_kg + newItem.weight_kg,
-        weight_lb: chosenBox.weight_lb + newItem.weight_lb,
-      };
-      this.chosenProducts[index] = chosenBox;
-    } else {
-      this.chosenProducts[index] = $event.item.data;
-    }
+    chosenBox.attachedProducts.push(chosenBox);
+    const newItem = $event.item.data;
+    chosenBox = {
+      ...chosenBox,
+      ...newItem,
+      weight_kg: (chosenBox.weight_kg || 0) + newItem.weight_kg,
+      weight_lb: (chosenBox.weight_lb || 0) + newItem.weight_lb,
+    };
+    this.chosenProducts[index] = chosenBox;
+    // } else {
+    //   this.chosenProducts[index] = $event.item.data;
+    // }
+    console.log(this.chosenProducts[index]);
   }
 }
