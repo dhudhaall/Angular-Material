@@ -661,6 +661,18 @@
                     .mat-ink-bar {
                         background-color: #ffff;
                     }
+
+                    .mat-tab-label {
+                        h2 {
+                            color: #616161;
+                        }
+                        h2:hover {
+                            color: #f04926;
+                        }
+                        h2.active {
+                            color: #f04926;
+                        }
+                    }
                     .mat-tab-label {
                         border: 1px solid #b7bfbe;
                         border-radius: 5px;
