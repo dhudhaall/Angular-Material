@@ -14,6 +14,7 @@ export class SidebarComponent implements OnInit {
 
   public routeLinks = [
     { link: "dashboard", name: "Dashboard", icon: "dashboard" },
+    { link: "appsuite", name: "Apps Suite", icon: "dashboard" },
     { link: "mylisting", name: "My Listing", icon: "format_list_bulleted" },
     { link: "shipmentHistory", name: "Shipment History", icon: "schedule" },
     {

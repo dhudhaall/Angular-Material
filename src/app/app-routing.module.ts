@@ -31,6 +31,10 @@ const routes: Routes = [
       {
         path: 'boxcontent',
         loadChildren: () => import('./features/box-content/box-content.module').then(m => m.BoxContentModule),
+      },
+      {
+        path: 'appsuite',
+        loadChildren: () => import('./features/app-suite/app-suite.module').then(m => m.AppSuiteModule),
       }
       ,
       {
