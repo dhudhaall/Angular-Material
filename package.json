@@ -24,6 +24,7 @@
     "@ngmodule/material-carousel": "^0.6.0",
     "angular-resizable-element": "^4.0.0",
     "angular-responsive-carousel": "^2.1.2",
+    "ngx-bootstrap": "^7.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
