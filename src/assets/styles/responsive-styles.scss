@@ -651,6 +651,11 @@
         .overweight-main {
         padding: 8px 3px;
     }
+    .box-content-section .box-content-main .page-heading .heading-txt .mat-icon {
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -683,6 +688,7 @@
             }
         }
     }
+
     .add-item-sec {
         .add-item-main {
             .add-item-headings {

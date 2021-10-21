@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AppSuiteRoutingModule } from './app-suite-routing.module';
 import { AppsListingComponent } from './apps-listing/apps-listing.component';
 import { SelectPackageComponent } from './select-package/select-package.component';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import { SelectPackageComponent } from './select-package/select-package.componen
   ],
   imports: [
     CommonModule,
-    AppSuiteRoutingModule
+    AppSuiteRoutingModule,
+    SharedModule
   ]
 })
 export class AppSuiteModule { }
