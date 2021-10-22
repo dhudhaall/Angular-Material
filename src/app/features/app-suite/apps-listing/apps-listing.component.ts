@@ -12,4 +12,8 @@ export class AppsListingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeLabelText() {
+
+  }
+
 }
