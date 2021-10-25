@@ -16,7 +16,7 @@ const routes: Routes = [
   }
   ,
   {
-    path: 'templats',
+    path: 'templates',
     component: BoxTaemplateComponent
   }
 ];

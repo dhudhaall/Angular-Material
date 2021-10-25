@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit {
   public routeLinks = [
     { link: "dashboard", name: "Dashboard", icon: "dashboard" },
     { link: "appsuite", name: "Apps Suite", icon: "dashboard" },
-    { link: "mylisting", name: "My Listing", icon: "format_list_bulleted" },
+    { link: "", name: "My Listing", icon: "format_list_bulleted" },
     { link: "shipmentHistory", name: "Shipment History", icon: "schedule" },
     {
       link: "/scanship/dashboard", name: "Scan + Ship", icon: "qr_code",
@@ -35,11 +35,12 @@ export class SidebarComponent implements OnInit {
       link: "boxcontent/dashboard", name: "Box Content Dashboard", icon: "inventory",
       children: [
         { link: "boxcontent/contentdetail", name: "Box Content Detail", icon: "price_change" },
+        // { link: "/boxcontent/templates", name: "Box Content Detail", icon: "price_change" },
       ]
     },
-    { link: "boxcontent/templats", name: "Settings", icon: "settings" },
+    { link: "", name: "Settings", icon: "settings" },
     {
-      link: "#", name: "Inventory", icon: "inventory",
+      link: "", name: "Inventory", icon: "inventory",
       children: [
         { link: "item", name: "Item cost Tool", icon: "price_change" },
         { link: "sku-link-manager", name: "Sku Link Manager", icon: "link" },
