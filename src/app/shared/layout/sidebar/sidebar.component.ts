@@ -35,7 +35,7 @@ export class SidebarComponent implements OnInit {
       link: "boxcontent/dashboard", name: "Box Content Dashboard", icon: "inventory",
       children: [
         { link: "boxcontent/contentdetail", name: "Box Content Detail", icon: "price_change" },
-        // { link: "/boxcontent/templates", name: "Box Content Detail", icon: "price_change" },
+        { link: "boxcontent/templates", name: "Box Content Detail", icon: "price_change" },
       ]
     },
     { link: "", name: "Settings", icon: "settings" },
@@ -46,10 +46,6 @@ export class SidebarComponent implements OnInit {
         { link: "sku-link-manager", name: "Sku Link Manager", icon: "link" },
       ]
     },
-
-
-
-
   ];
 
 
