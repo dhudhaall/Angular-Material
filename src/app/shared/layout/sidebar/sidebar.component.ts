@@ -37,7 +37,7 @@ export class SidebarComponent implements OnInit {
         { link: "boxcontent/contentdetail", name: "Box Content Detail", icon: "price_change" },
       ]
     },
-    { link: "appSettings", name: "Settings", icon: "settings" },
+    { link: "boxcontent/templats", name: "Settings", icon: "settings" },
     {
       link: "#", name: "Inventory", icon: "inventory",
       children: [

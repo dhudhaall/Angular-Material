@@ -634,6 +634,10 @@
             }
             .field-right {
                 flex-basis: 50%;
+                text-align: right;
+                .box-setup {
+                    color: #fff;
+                }
             }
         }
         ////////////////// boxes-tabs-section --STYLE///////////////
