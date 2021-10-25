@@ -659,6 +659,9 @@
     .slect-package-section .right-section {
         flex-basis: 324px;
     }
+    .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-main .text h1 {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1407,6 +1410,7 @@
     .custom-button {
         width: unset;
     }
+
     .dashbord {
         .scan-ship-details {
             .scan-ship-main {
