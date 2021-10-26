@@ -1034,7 +1034,28 @@
 }
 
 ////////////////// Box content Detail pOPupS --STYLE///////////////
+.box-steup {
+    h1 {
+        font-weight: 400 !important;
+    }
+    .table-main {
+        table {
+            border-collapse: collapse;
+            border: 1px solid #61616150;
 
+            th {
+                text-align: left;
+                font-weight: 300;
+                border-bottom: 1px solid #61616150;
+                padding: 10px 10px;
+            }
+            td {
+                border-bottom: 1px solid #61616150;
+                padding: 10px 10px;
+            }
+        }
+    }
+}
 .split-popup-section {
     width: 500px;
     position: relative;
@@ -1076,9 +1097,11 @@
             }
         }
     }
+
     .table-main {
         table {
             width: 100%;
+
             td {
                 .input-main {
                     text-align: left;

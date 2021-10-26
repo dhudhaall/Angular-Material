@@ -15,10 +15,11 @@ import { BoxContentDetailspopupsComponent } from './box-content-details/box-cont
 import { WarningPopupComponent } from './box-content-details/warning-popup/warning-popup.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BoxAddpopupComponent } from './box-content-details/box-addpopup/box-addpopup.component';
-import { BoxTaemplateComponent } from './box-taemplate/box-taemplate.component';
-import { TemplatsFilterComponent } from './box-taemplate/templats-filter/templats-filter.component';
-import { BoxTemplateMainComponent } from './box-taemplate/box-template-main/box-template-main.component';
 
+import { BoxTemplatesMainComponent } from './box-templates-main/box-templates-main.component';
+import { BoxTemplatesComponent } from './box-templates-main/box-templates/box-templates.component';
+import { TemplatsFilterComponent } from './box-templates-main/templats-filter/templats-filter.component';
+import { BoxSetupComponent } from './box-content-details/box-setup/box-setup.component'
 
 @NgModule({
   declarations: [
@@ -34,9 +35,11 @@ import { BoxTemplateMainComponent } from './box-taemplate/box-template-main/box-
     BoxContentDetailspopupsComponent,
     WarningPopupComponent,
     BoxAddpopupComponent,
-    BoxTaemplateComponent,
     TemplatsFilterComponent,
-    BoxTemplateMainComponent
+
+    BoxTemplatesMainComponent,
+    BoxTemplatesComponent,
+    BoxSetupComponent
   ],
   imports: [
     CommonModule,

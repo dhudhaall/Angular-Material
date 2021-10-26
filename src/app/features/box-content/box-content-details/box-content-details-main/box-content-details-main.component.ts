@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { BoxAddpopupComponent } from '../box-addpopup/box-addpopup.component';
 import { BoxContentDetailspopupsComponent } from '../box-content-detailspopups/box-content-detailspopups.component';
+import { BoxSetupComponent } from '../box-setup/box-setup.component';
 import { WarningPopupComponent } from '../warning-popup/warning-popup.component';
 
 @Component({
@@ -15,9 +16,9 @@ import { WarningPopupComponent } from '../warning-popup/warning-popup.component'
   styleUrls: ['./box-content-details-main.component.scss'],
 })
 export class BoxContentDetailsMainComponent implements OnInit {
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   productList: any[] = [
     {
       id: 1,
@@ -63,6 +64,9 @@ export class BoxContentDetailsMainComponent implements OnInit {
   }
   warningpopup() {
     const dialogRef = this.dialog.open(WarningPopupComponent);
+  }
+  boxsetuppopup() {
+    const dialogRef = this.dialog.open(BoxSetupComponent);
   }
   addboxgpopup() {
     const dialogRef = this.dialog.open(BoxAddpopupComponent);
