@@ -1,0 +1,51 @@
+<div class="add-empty-popup">
+
+    <div class="add-empty-heading">
+        <h2>What is your empty Box#1 info?</h2>
+        <mat-icon (click)='skipModal()'>close</mat-icon>
+    </div>
+    <div class="tamplet-name">
+        <label>Template Name</label>
+        <input type="text" class="input">
+    </div>
+    <h3>Box Dimensions</h3>
+    <div class="dimensions">
+        <div class="flex">
+            <label>Height</label>
+            <input type="number" class="input">
+        </div>
+        <div class="flex">
+            <label>Length</label>
+            <input type="number" class="input">
+        </div>
+        <div class="flex">
+            <label>Width</label>
+            <input type="number" class="input">
+        </div>
+        <div class="flex">
+            <label>Inches</label>
+
+        </div>
+
+    </div>
+    <h3>Box Weight</h3>
+    <div class="dimensions">
+        <div class="flex">
+            <label>LB</label>
+            <input type="number" class="input">
+        </div>
+        <div class="flex">
+            <label>OZ</label>
+            <input type="number" class="input">
+        </div>
+
+
+    </div>
+    <div class="emty-value-btn">
+
+        <button mat-button color="primary" (click)='skipModal()' class=" orange-badge add skip"><a>SKIP</a></button>
+        <button mat-button color="primary" class=" light-green add skip">SAVE TEMPLATE</button>
+        <button mat-button color="primary" class=" blue-btn add skip">START BOXING</button>
+        <button mat-button color="primary" (click)='skipModal()' class=" dark-gray-bdg add">CANCEL</button>
+    </div>
+</div>

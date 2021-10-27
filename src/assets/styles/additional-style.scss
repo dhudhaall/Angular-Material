@@ -732,7 +732,9 @@
                                 .row-back {
                                     background-color: #fff;
                                 }
-
+                                .overweight-td {
+                                    text-align: center;
+                                }
                                 td {
                                     border-bottom: 1px solid #b7bfbe;
                                     border-top: 1px solid #b7bfbe;
@@ -804,7 +806,11 @@
                                             }
                                         }
                                     }
+
                                     .overweight-inputs {
+                                        .flex-center {
+                                            justify-content: center;
+                                        }
                                         .flex1 {
                                             display: flex;
                                             align-items: center;
@@ -818,12 +824,40 @@
                                                     font-size: 12px;
                                                     font-weight: 500;
                                                 }
+                                                .quanity-border {
+                                                    border: 1px solid #66666650;
+                                                    padding: 5px 15px;
+                                                    text-align: center;
+                                                    margin-left: 10px;
+                                                    border-radius: 3px;
+                                                    p {
+                                                        font-size: 10px;
+                                                        font-weight: 600;
+                                                        margin-bottom: 0px;
+                                                        line-height: 1;
+                                                    }
+                                                }
                                                 .box-input {
                                                     width: 70px;
                                                     background-color: #fff;
                                                     margin-left: 10px;
                                                 }
                                             }
+                                        }
+                                        h1 {
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            text-align: center;
+                                            margin-bottom: 0px;
+                                        }
+                                        .box {
+                                            line-height: 22px;
+                                            color: #00aeef;
+                                            font-size: 12px;
+                                            background-color: transparent;
+                                            border: 1px solid #00aeef;
+                                            font-size: 10px;
+                                            font-weight: 500;
                                         }
                                     }
                                     .Print {

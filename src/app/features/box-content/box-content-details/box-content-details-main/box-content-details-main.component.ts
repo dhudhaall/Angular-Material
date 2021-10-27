@@ -5,6 +5,7 @@ import {
 } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { AddEmptyPopupComponent } from '../add-empty-popup/add-empty-popup.component';
 import { BoxAddpopupComponent } from '../box-addpopup/box-addpopup.component';
 import { BoxContentDetailspopupsComponent } from '../box-content-detailspopups/box-content-detailspopups.component';
 import { BoxSetupComponent } from '../box-setup/box-setup.component';
@@ -67,6 +68,9 @@ export class BoxContentDetailsMainComponent implements OnInit {
   }
   boxsetuppopup() {
     const dialogRef = this.dialog.open(BoxSetupComponent);
+  }
+  emptyboxpopup() {
+    const dialogRef = this.dialog.open(AddEmptyPopupComponent);
   }
   addboxgpopup() {
     const dialogRef = this.dialog.open(BoxAddpopupComponent);
