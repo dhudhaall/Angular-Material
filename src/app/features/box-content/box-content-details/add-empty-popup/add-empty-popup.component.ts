@@ -14,4 +14,7 @@ export class AddEmptyPopupComponent implements OnInit {
   skipModal() {
     this.dialog.closeAll()
   }
+  // addBoxes(number: string) {
+  //   this.dialog.closeAll();
+  // }
 }

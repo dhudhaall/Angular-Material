@@ -18,7 +18,7 @@ import { WarningPopupComponent } from '../warning-popup/warning-popup.component'
 })
 export class BoxContentDetailsMainComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
-
+  activeindex=-1
   ngOnInit(): void { }
   productList: any[] = [
     {
@@ -71,13 +71,20 @@ export class BoxContentDetailsMainComponent implements OnInit {
   }
   emptyboxpopup() {
     const dialogRef = this.dialog.open(AddEmptyPopupComponent);
+    dialogRef.afterClosed().subscribe((name) => {
+      // for (let i = 0; i < numberOfBoxes; i++) {
+      //   this.chosenProducts.push({});
+      // }
+      this.chosenProducts.push({name});
+    });
   }
   addboxgpopup() {
     const dialogRef = this.dialog.open(BoxAddpopupComponent);
-    dialogRef.afterClosed().subscribe((numberOfBoxes) => {
-      for (let i = 0; i < numberOfBoxes; i++) {
-        this.chosenProducts.push({});
-      }
+    dialogRef.afterClosed().subscribe((name) => {
+      // for (let i = 0; i < numberOfBoxes; i++) {
+      //   this.chosenProducts.push({});
+      // }
+      this.chosenProducts.push({name});
     });
   }
 

@@ -59,9 +59,15 @@
 // {
 //
 // }
-.cdk-drop-list-receiving {
-  border: 1px solid #d32d23 !important;
+.cdk-drop-list-receiving.box-recive {
+  border: 1px solid #7ac943 !important;
 }
+.cdk-drop-list-dragging.box-recive {
+  border: 1px solid #7ac943 !important;
+}
+// .cdk-drag-placeholder.box-recive {
+//   border: 4px solid #d32d23 !important;
+// }
 .cdk-drag-preview {
   table {
     width: 100px;
@@ -121,4 +127,8 @@
       display: none;
     }
   }
+}
+.chosenbox {
+  border: 1px solid #7ac943 !important;
+  background-color: #7ac9431f !important;
 }
