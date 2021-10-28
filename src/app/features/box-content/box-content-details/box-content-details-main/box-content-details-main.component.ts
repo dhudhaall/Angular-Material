@@ -135,4 +135,12 @@ export class BoxContentDetailsMainComponent implements OnInit {
     // }
     console.log(this.chosenProducts[index]);
   }
+
+  chooseBox(product: any) {
+    if (this.activeBox && this.activeBox.id === product.id) {
+      this.activeBox = null;
+    } else {
+      this.activeBox = product;
+    }
+  }
 }
