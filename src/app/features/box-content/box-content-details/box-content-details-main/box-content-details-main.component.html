@@ -515,7 +515,7 @@
             </div>
 
           </div>
-          <div *ngIf='activeindex==-1'class="box-add-btns">
+          <div *ngIf='activeindex==-1' class="box-add-btns">
             <button mat-button color="primary" class=" Print-box">Print Box
               (s)</button>
             <button mat-button color="primary" class="blue-btn add-box" (click)="emptyboxpopup()">Add
@@ -523,8 +523,8 @@
           </div>
           <div *ngIf='activeindex>-1' class="box-add-btns">
             <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
-            <button mat-button color="primary" class="blue-btn add-box">Delete Box</button>
-        </div>
+            <button mat-button color="primary" class="light-red add-box">Delete Box</button>
+          </div>
 
           <!-- <div class="box-add-btns">
                         <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
@@ -600,9 +600,9 @@
           </div>
 
           <div *ngIf='activeindex>-1' class="box-add-btns">
-                        <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
-                        <button mat-button color="primary" class="blue-btn add-box">Delete Box</button>
-                    </div>
+            <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
+            <button mat-button color="primary" class="blue-btn add-box">Delete Box</button>
+          </div>
 
 
           <!-- <table class="chosenProductsTable">
