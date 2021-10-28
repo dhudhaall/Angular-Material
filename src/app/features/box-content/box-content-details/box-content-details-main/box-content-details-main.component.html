@@ -57,8 +57,8 @@
 
               <div class="tab-main">
                 <div class="table-mian">
-                  <table cdkDropList [cdkDropListData]='productList'>
-                    <tr class="row-back" cdkDrag [cdkDragData]='product' *ngFor='let product of productList'>
+                  <table>
+                    <tr class="row-back" *ngFor='let product of productList'>
                       <td>
                         <div class="table-check">
                           <mat-checkbox class="example-margin"></mat-checkbox>
@@ -267,9 +267,9 @@
               </div>
               <div class="tab-main">
                 <div class="table-mian">
-                  <table cdkDropList [cdkDropListData]='productList'>
+                  <table>
                     <ng-container *ngIf="activeindex>-1">
-                      <tr class="row-back" cdkDrag [cdkDragData]='product' *ngFor='let product of productList'>
+                      <tr class="row-back" *ngFor='let product of productList'>
                         <td>
                           <div class="table-check">
                             <mat-checkbox class="example-margin"></mat-checkbox>
@@ -325,7 +325,7 @@
                       </tr>
                     </ng-container>
                     <ng-container *ngIf="activeindex-1">
-                      <tr class="row-back" cdkDrag [cdkDragData]='product' *ngFor='let product of productList'>
+                      <tr class="row-back" *ngFor='let product of productList'>
                         <td>
                           <div class="table-check">
                             <mat-checkbox class="example-margin"></mat-checkbox>

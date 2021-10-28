@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PickAnAppComponent } from './pick-an-app.component';
+import { AddEmptyPopupComponent } from './add-empty-popup.component';
 
-describe('PickAnAppComponent', () => {
-  let component: PickAnAppComponent;
-  let fixture: ComponentFixture<PickAnAppComponent>;
+describe('AddEmptyPopupComponent', () => {
+  let component: AddEmptyPopupComponent;
+  let fixture: ComponentFixture<AddEmptyPopupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PickAnAppComponent ]
+      declarations: [ AddEmptyPopupComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PickAnAppComponent);
+    fixture = TestBed.createComponent(AddEmptyPopupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

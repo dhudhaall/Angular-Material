@@ -5,6 +5,7 @@ import {
 } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { AddEmptyPopupComponent } from '../add-empty-popup/add-empty-popup.component';
 import { BoxAddpopupComponent } from '../box-addpopup/box-addpopup.component';
 import { BoxContentDetailspopupsComponent } from '../box-content-detailspopups/box-content-detailspopups.component';
 import { BoxSetupComponent } from '../box-setup/box-setup.component';
@@ -17,7 +18,7 @@ import { WarningPopupComponent } from '../warning-popup/warning-popup.component'
 })
 export class BoxContentDetailsMainComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
-
+  activeindex=-1
   ngOnInit(): void { }
   productList: any[] = [
     {
@@ -68,12 +69,22 @@ export class BoxContentDetailsMainComponent implements OnInit {
   boxsetuppopup() {
     const dialogRef = this.dialog.open(BoxSetupComponent);
   }
+  emptyboxpopup() {
+    const dialogRef = this.dialog.open(AddEmptyPopupComponent);
+    dialogRef.afterClosed().subscribe((name) => {
+      // for (let i = 0; i < numberOfBoxes; i++) {
+      //   this.chosenProducts.push({});
+      // }
+      this.chosenProducts.push({name});
+    });
+  }
   addboxgpopup() {
     const dialogRef = this.dialog.open(BoxAddpopupComponent);
-    dialogRef.afterClosed().subscribe((numberOfBoxes) => {
-      for (let i = 0; i < numberOfBoxes; i++) {
-        this.chosenProducts.push({});
-      }
+    dialogRef.afterClosed().subscribe((name) => {
+      // for (let i = 0; i < numberOfBoxes; i++) {
+      //   this.chosenProducts.push({});
+      // }
+      this.chosenProducts.push({name});
     });
   }
 
