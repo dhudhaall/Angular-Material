@@ -18,11 +18,13 @@ import { WarningPopupComponent } from '../warning-popup/warning-popup.component'
 })
 export class BoxContentDetailsMainComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
-  activeindex = -1;
+  // activeindex = -1;
+  activeBox: any;
   ngOnInit(): void {}
   productList: any[] = [
     {
       id: 1,
+      name: 'item 1',
       asin: '0516882239',
       sku: '0516882239-Useditem-FBA',
       fnsku: 'B00RN08585',
@@ -35,6 +37,7 @@ export class BoxContentDetailsMainComponent implements OnInit {
     },
     {
       id: 2,
+      name: 'item 2',
       asin: '0516882239',
       sku: '0516882239-Useditem-FBA',
       fnsku: 'B00RN08585',
@@ -47,6 +50,7 @@ export class BoxContentDetailsMainComponent implements OnInit {
     },
     {
       id: 3,
+      name: 'item 3',
       asin: '0516882239',
       sku: '0516882239-Useditem-FBA',
       fnsku: 'B00RN08585',
@@ -75,7 +79,8 @@ export class BoxContentDetailsMainComponent implements OnInit {
       // for (let i = 0; i < numberOfBoxes; i++) {
       //   this.chosenProducts.push({});
       // }
-      if (name) this.chosenProducts.push({ name });
+      const id = this.chosenProducts.length;
+      if (name) this.chosenProducts.push({ name, id });
     });
   }
   // addboxgpopup() {
@@ -119,10 +124,12 @@ export class BoxContentDetailsMainComponent implements OnInit {
     chosenBox = {
       ...chosenBox,
       ...newItem,
+      id: chosenBox.id,
       weight_kg: (chosenBox.weight_kg || 0) + newItem.weight_kg,
       weight_lb: (chosenBox.weight_lb || 0) + newItem.weight_lb,
     };
     this.chosenProducts[index] = chosenBox;
+
     // } else {
     //   this.chosenProducts[index] = $event.item.data;
     // }
