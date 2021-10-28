@@ -491,7 +491,8 @@
                             <div class="inputs-mian">
 
                               <label>Quantity</label>
-                              <div><input type="text" class="custom-inputs box-input">
+                              <div class="custom-inputs box-input">
+                                6
                               </div>
                             </div>
                             <button mat-button color="primary" class="dark-purpel split ml-2" (click)="saplitpopup()">
@@ -529,15 +530,17 @@
           <div class="boxes-over-flow">
             <div class="boxes-min-hight">
               <div cdkDropList (cdkDropListDropped)='copyInBox($event,index)'
-                *ngFor='let product of chosenProducts;let index=index' (click)="chooseBox(product)"
-                [class.chosenbox]="activeBox?.id==product.id" class="box-mian box-recive">
+                *ngFor='let product of chosenProducts;let index=index' [class.chosenbox]="activeBox?.id==product.id"
+                class="box-mian box-recive">
                 <div class="box-mian-padding">
                   <div class="box-btns  spacing">
-                    <button mat-button color="primary" class="light-green box1">Box
+                    <button mat-button color="primary" class="light-green box1" (click)="chooseBox(product)">Box
                       {{index+1}}</button>
 
                     <button mat-button color="primary" class="orange-badge box1">Genrate
                       Barcode</button>
+
+                    <mat-icon class="deleteBox" (click)="removeBox()">delete</mat-icon>
                   </div>
                   <div class="box-btns spacing">
                     <span class="list-text">Item:{{product.attachedProducts?product.attachedProducts.length:0
@@ -640,11 +643,11 @@
             <button mat-button color="primary" class=" Print-box">Print Box
               (s)</button>
             <button mat-button color="primary" class="blue-btn add-box" (click)="emptyboxpopup()">Add
-              BOX</button>
+              Box</button>
           </div>
           <div *ngIf='activeBox' class="box-add-btns">
             <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
-            <button mat-button color="primary" class="light-red add-box" (click)="warningpopup() ">Delete Box</button>
+            <!-- <button mat-button color="primary" class="light-red add-box" (click)="removeBox() ">Delete Box</button> -->
           </div>
 
           <!-- <div class="box-add-btns">

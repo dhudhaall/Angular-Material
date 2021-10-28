@@ -1,0 +1,444 @@
+<!------ Added Header html here but will replace later with component------>
+
+<div class="header-app-suite">
+
+</div>
+<section class="slect-package-section">
+    <div class="left-section">
+        <div class="slider">
+            <carousel [cellsToShow]="3" [margin]="20" [height]="83">
+                <div class="carousel-cell">
+                    <div class="package-main">
+                        <button mat-button color="primary" class="add-more-app">
+                            ADD More App
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="package-main">
+                        <div class="package-border active">
+                            <div class="app-text">
+                                <h1>Scan + Ship App</h1>
+                                <p>You will be charged a monthly<br>
+                                    subscription fee of $199.</p>
+                            </div>
+                            <div class="app-image">
+                                <img src="/assets/images/blod.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="package-main">
+                        <div class="package-border">
+                            <div class="app-text">
+                                <h1>Scan + Ship App</h1>
+                                <p>You will be charged a monthly<br>
+                                    subscription fee of $199.</p>
+                            </div>
+                            <div class="app-image">
+                                <img src="/assets/images/blod.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="package-main">
+                        <div class="package-border">
+                            <div class="app-text">
+                                <h1>Scan + Ship App</h1>
+                                <p>You will be charged a monthly<br>
+                                    subscription fee of $199.</p>
+                            </div>
+                            <div class="app-image">
+                                <img src="/assets/images/blod.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="package-main">
+                        <div class="package-border">
+                            <div class="app-text">
+                                <h1>Scan + Ship App</h1>
+                                <p>You will be charged a monthly<br>
+                                    subscription fee of $199.</p>
+                            </div>
+                            <div class="app-image">
+                                <img src="/assets/images/blod.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </carousel>
+        </div>
+        <div class="marketplace-main">
+            <div class="flex-1">
+                <div class="flex-boder">
+                    <p>You may add more Marketplaces for $149/month each.</p>
+                    <div class="plus-minus-btn">
+                        <div class="remove">
+                            <mat-icon>remove_circle</mat-icon>
+                        </div>
+                        <div class="btn-txt">
+                            <p>01</p>
+                        </div>
+                        <div class="add">
+                            <mat-icon>add_circle</mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-2">
+                <div class="flex-boder">
+                    <p>You may add more Users for $25/month each.</p>
+                    <div class="plus-minus-btn">
+                        <div class="remove">
+                            <mat-icon>remove_circle</mat-icon>
+                        </div>
+                        <div class="btn-txt">
+                            <p>01</p>
+                        </div>
+                        <div class="add">
+                            <mat-icon>add_circle</mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="plans-select-main">
+            <div class="flex1">
+                <div class="plan-border">
+                    <div class="plan-main">
+                        <div class="text">
+                            <h1>Basic <span>$200/month</span> </h1>
+                            <p>Package Tier Includes:</p>
+                        </div>
+                        <div class="arrow">
+                            <mat-icon (click)="isShow = !isShow">{{isShow? 'arrow_drop_up':'arrow_drop_down'}}
+                            </mat-icon>
+                        </div>
+                    </div>
+                    <div class="plan-list-main" [class.showHideListing]="isShow">
+                        <div class="plan-list">
+                            <div>
+                                <p>1 Initial Concept Included</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>Source File</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="red">cancel</mat-icon> -->
+                                <img src="/assets/images/remove.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>No Monthly Subscription</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="red">cancel</mat-icon> -->
+                                <img src="/assets/images/remove.png">
+                            </div>
+                        </div>
+
+                        <div class="plan-list">
+                            <div>
+                                <p>2 Free Shipments</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>2 Free Bleed Reports</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-button">
+
+                        <input type="radio" name="package" id="radio" class="select">
+                        <label for="radio">Select</label>
+                    </div>
+                </div>
+            </div>
+            <div class="flex1">
+                <div class="plan-border">
+                    <div class="plan-main">
+                        <div class="text">
+                            <h1>Gold <span>$350/month</span> </h1>
+                            <p>Package Tier Includes:</p>
+                        </div>
+                        <div class="arrow">
+                            <mat-icon (click)="isShow2 = !isShow2">{{isShow2? 'arrow_drop_up':'arrow_drop_down'}}
+                            </mat-icon>
+                        </div>
+                    </div>
+                    <div class="plan-list-main" [class.showHideListing]="isShow2">
+                        <div class="plan-list">
+                            <div>
+                                <p>1 Initial Concept Included</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>Source File</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="red">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>No Monthly Subscription</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="red">cancel</mat-icon> -->
+                                <img src="/assets/images/remove.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>2 Free Shipments</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>2 Free Bleed Reports</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-button">
+                        <!-- <button mat-button color="primary" class="select">
+                            Select
+                        </button> -->
+
+                        <input type="radio" name="package" id="radio2" class="select">
+                        <label for="radio2">Select</label>
+                    </div>
+                </div>
+            </div>
+            <div class="flex1">
+                <div class="plan-border premium">
+                    <div class="plan-main">
+                        <div class="text">
+                            <h1>Premium <span>$699/month</span> </h1>
+                            <p>Package Tier Includes:</p>
+                        </div>
+                        <div class="arrow">
+                            <mat-icon (click)="isShow3 = !isShow3">{{isShow3? 'arrow_drop_up':'arrow_drop_down'}}
+                            </mat-icon>
+                        </div>
+                    </div>
+                    <div class="plan-list-main" [class.showHideListing]="isShow3">
+                        <div class="plan-list">
+                            <div>
+                                <p>Unlimited Initial Concept Included</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>Unlimited Source File</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="red">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>Unlimited Free Shipments</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="red">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+
+                        <div class="plan-list">
+                            <div>
+                                <p>Unlimited Free Bleed Reports</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                        <div class="plan-list">
+                            <div>
+                                <p>1 Initial Concept Included</p>
+                            </div>
+                            <div>
+                                <!-- <mat-icon class="green-icon">cancel</mat-icon> -->
+                                <img src="/assets/images/added.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-button">
+
+                        <input type="radio" name="package" id="radio3" class="select">
+                        <label for="radio3">Select</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="package-right-side-bar">
+            <div class="package-side-bar-buttons">
+                <div class="select1">
+                    <input type="radio" checked name="monthlyYearly" id="monthly" class="select-input">
+                    <label for="monthly">Monthly</label>
+                </div>
+                <div class="select1">
+                    <input type="radio" name="monthlyYearly" id="yearly" class="select-input">
+                    <label for="yearly">Yearly</label>
+                </div>
+
+            </div>
+            <h1>Your Total Billing</h1>
+            <div class="pakages-plan-table">
+                <div class="table-headings">
+                    <h3>Scan + Ship App</h3>
+                    <p>You will be charged a monthly subscription fee of $199.</p>
+                    <p>Included with your subscription are:</p>
+                </div>
+                <div class="table-main">
+                    <table>
+                        <tr>
+                            <td>
+                                1 Market Place + 2 User's
+                            </td>
+                            <td class="tex-right">
+                                $348.00 USD
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Setup Fee
+                            </td>
+                            <td class="tex-right">
+                                $348.00 USD
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Basic Tier Package Fee
+                            </td>
+                            <td class="tex-right">
+                                $348.00 USD
+                            </td>
+                        </tr>
+                        <tr class="no-border">
+                            <td>
+                                Total / month
+                            </td>
+                            <td class="tex-right red">
+                                $348.00 USD
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pakages-plan-table back">
+                <div class="table-headings">
+                    <h3>Bleed Report App</h3>
+                    <p>You will be charged a monthly subscription fee of $199.</p>
+                    <p>Included with your subscription are:</p>
+                </div>
+                <div class="table-main">
+                    <table>
+                        <tr>
+                            <td>
+                                1 Market Place + 2 User's
+                            </td>
+                            <td class="tex-right">
+                                $348.00 USD
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Setup Fee
+                            </td>
+                            <td class="tex-right">
+                                $348.00 USD
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Basic Tier Package Fee
+                            </td>
+                            <td class="tex-right">
+                                $348.00 USD
+                            </td>
+                        </tr>
+                        <tr class="no-border">
+                            <td>
+                                Total / month
+                            </td>
+                            <td class="tex-right red">
+                                $348.00 USD
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="total-payment">
+                <div>
+                    <h3>Grand Total</h3>
+                </div>
+                <div>
+                    <h2>$1,792.00 USD</h2>
+                </div>
+            </div>
+            <div class="pay-now">
+
+                <button>
+                    Pay Now
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<!------ Added footer html here but will replace later with component------>
+
+<div class="footer-apsuite">
+    <div class="footer-image">
+
+    </div>
+
+    <div class="footer-text">
+        <p>Copyright © 2021 SellerChain. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>

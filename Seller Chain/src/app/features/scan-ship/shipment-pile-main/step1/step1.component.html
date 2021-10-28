@@ -1,0 +1,658 @@
+<section class="add-new-item-section-main">
+    <div class="main-item-add-new">
+        <div class="top-title-info">
+            <div class="panel-flex1">
+                <h3> <span>STEP 1</span> CHOOSE YOUR ‘TOP ITEM’ TO SELECT A SHIPPING PLAN <mat-icon>lock</mat-icon>
+                </h3>
+            </div>
+            <div class="panel-flex2">
+
+                <button mat-raised-button color="primary" class="orange-badge">HIDE LOCATIONS</button>
+                <button mat-raised-button color="primary" class="dark-gray-bdg">CHOOSE BY LOCATION</button>
+            </div>
+        </div>
+        <div class="top-title-info2">
+            <div class=" flex1 chehkbox">
+
+                <mat-checkbox class="example-margin"></mat-checkbox>
+            </div>
+            <div class="flex1 all-items">
+                <h4>ALL ITEMS <span class="smallCircleSpan">1</span></h4>
+            </div>
+            <div class="flex1 itemsWithDest">
+                <h4>ITEMS WITH 1 DESTINATION<span class="smallCircleSpan">1</span></h4>
+            </div>
+            <div class="flex1 itemsWithDest">
+                <h4>ITEMS WITH 2 DESTINATION<span class="smallCircleSpan">2</span></h4>
+            </div>
+            <div class="flex1 itemsWithDest">
+                <h4>ITEMS WITH 3 DESTINATION<span class="smallCircleSpan">3</span></h4>
+            </div>
+            <div class="flex1 sortnPagination">
+                <div class=" sort">
+                    <mat-icon [matMenuTriggerFor]="menu" aria-hidden="false" aria-label="Example settings icon">
+                        import_export
+                    </mat-icon>
+                    <mat-menu #menu="matMenu">
+                        <div class="sortByMenu" (click)="$event.stopPropagation();">
+                            <p>Sort By:</p>
+                            <mat-checkbox class="example-margin">Location</mat-checkbox>
+                            <mat-checkbox class="example-margin">SKU</mat-checkbox>
+                            <mat-checkbox class="example-margin">Units</mat-checkbox>
+                            <mat-checkbox class="example-margin">Weight</mat-checkbox>
+                            <mat-checkbox class="example-margin">Total Quantity</mat-checkbox>
+                        </div>
+
+                    </mat-menu>
+                </div>
+                <div class=" pagination">
+                    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+                        aria-label="Select page">
+                    </mat-paginator>
+                </div>
+            </div>
+
+        </div>
+
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <div class="item-Head">
+                            <div class="actions-items">
+                                <div class="inddex">
+                                    1.
+                                </div>
+                                <div class="icons">
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </div>
+                                <div class="icons">
+                                    <img src="/assets/images/fba-icon.png">
+                                </div>
+                                <div class="icons">
+                                    <img src="/assets/images/delete-icon.png">
+                                </div>
+
+
+                            </div>
+                            <div class="item-image">
+                                <div class="img-border">
+                                    <img src="/assets/images/watch.png">
+                                    <div class="warning-img">
+                                        <img src="/assets/images/warning-icon.png">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="item-name">
+                                <h3 class="link">FBA15FMTX9L3-NEW</h3>
+                                <p>CONDITION:<span>NEW</span></p>
+                                <a class="item-id">B00RN08585</a>
+                                <p>FN SKU:<span>X001RCAUQ5</span></p>
+                                <div class="labelby">
+                                    <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
+                                                [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
+                                        <span>
+                                            <mat-icon (click)="isEditable = !isEditable">
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
+                                                <span *ngIf="!isEditable"><img style="width:20px"
+                                                        src="/assets/images/greentick.png"></span>
+                                            </mat-icon>
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>
+                            </div>
+                            <div class="item-brand">
+                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,<br>
+                                        Color: Silver (Model: SUP865)</a></h3>
+                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> <br>
+                                    <a>Product
+                                        Group: <span>Watches | Apparal | Fashion</span></a> <br> <a>Dimensions:
+                                        <span>3.3*3.8*5.1 inches</span></a> <br> <a>Unit Weight: <span>0.6
+                                            lbs</span></a> |
+                                    <a>Total Weight: <span>15.00 lbs</span></a>
+                                </p>
+                            </div>
+                            <div class="totalUnits">
+                                <div class="units-price">
+                                    <label>Total Units:</label>
+                                    <input type="text">
+                                </div>
+                                <div class="units-price">
+                                    <label>Price:</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="item-buttons">
+                                <div class="units-price">
+                                    <label>PRINT QTY:</label>
+                                    <input type="text">
+                                </div>
+                                <div class="button-main">
+
+                                    <select>
+                                        <option value="" selected>Print Label(s)</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+
+                                </div>
+                                <div class="button-link">
+                                    <button mat-raised-button disabled>SAVE FOR LATER</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="new-add-item-detail">
+                    <div class="new-add-item-main-detail">
+
+                        <div class="table-lfex-main">
+                            <div class="new-add-table">
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </th>
+                                        <th>UNITS</th>
+                                        <th>FC</th>
+                                        <th>LOCATION</th>
+                                    </tr>
+                                    <tr>
+                                        <td>A.</td>
+                                        <td><span class="unit orange-badge">6</span></td>
+                                        <td><span class="light-pink td-fc">ONT6</span></td>
+                                        <td>
+                                            <h6>Moreno Valley, CA 92551</h6>
+                                            <p>Last Checked: 5 hours ago</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A.</td>
+                                        <td><span class="unit orange-badge">6</span></td>
+                                        <td><span class="yellow-badg td-fc">ONT6</span></td>
+                                        <td>
+                                            <h6>Moreno Valley, CA 92551</h6>
+                                            <p>Last Checked: 5 hours ago</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A.</td>
+                                        <td><span class="unit orange-badge">6</span></td>
+                                        <td><span class="bluesh-white td-fc">ONT6</span></td>
+                                        <td>
+                                            <h6>Moreno Valley, CA 92551</h6>
+                                            <p>Last Checked: 5 hours ago</p>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <div class="item-Head">
+                            <div class="actions-items">
+                                <div class="inddex">
+                                    1.
+                                </div>
+                                <div class="icons">
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </div>
+                                <div class="icons">
+                                    <img src="/assets/images/fba-icon.png">
+                                </div>
+                                <div class="icons">
+                                    <img src="/assets/images/delete-icon.png">
+                                </div>
+
+
+                            </div>
+                            <div class="item-image">
+                                <div class="img-border">
+                                    <img src="/assets/images/watch.png">
+                                </div>
+
+                            </div>
+                            <div class="item-name">
+                                <h3 class="link">FBA15FMTX9L3-NEW</h3>
+                                <p>CONDITION:<span>NEW</span></p>
+                                <a class="item-id">B00RN08585</a>
+                                <p>FN SKU:<span>X001RCAUQ5</span></p>
+                                <div class="labelby">
+                                    <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
+                                                [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
+                                        <span>
+                                            <mat-icon (click)="isEditable = !isEditable">
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
+                                                <span *ngIf="!isEditable"><img style="width:20px"
+                                                        src="/assets/images/greentick.png"></span>
+                                            </mat-icon>
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>
+                            </div>
+                            <div class="item-brand">
+                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,<br>
+                                        Color: Silver (Model: SUP865)</a></h3>
+                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> <br>
+                                    <a>Product
+                                        Group: <span>Watches | Apparal | Fashion</span></a> <br> <a>Dimensions:
+                                        <span>3.3*3.8*5.1 inches</span></a> <br> <a>Unit Weight: <span>0.6
+                                            lbs</span></a> |
+                                    <a>Total Weight: <span>15.00 lbs</span></a>
+                                </p>
+                            </div>
+                            <div class="totalUnits">
+                                <div class="units-price">
+                                    <label>Total Units:</label>
+                                    <input type="text">
+                                </div>
+                                <div class="units-price">
+                                    <label>Price:</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="item-buttons">
+                                <div class="units-price">
+                                    <label>PRINT QTY:</label>
+                                    <input type="text">
+                                </div>
+                                <div class="button-main">
+
+                                    <select>
+                                        <option value="" selected>Print Label(s)</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+
+                                </div>
+                                <div class="button-link">
+                                    <button mat-raised-button disabled>SAVE FOR LATER</button>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="new-add-item-detail">
+                    <div class="new-add-item-main-detail">
+
+                        <div class="table-lfex-main">
+                            <carousel [cellsToShow]="3" [margin]="20" [height]="170">
+                                <div class="carousel-cell">
+                                    <div class="new-add-table">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <mat-radio-button value="1"></mat-radio-button>
+                                                </th>
+                                                <th>UNITS</th>
+                                                <th>FC</th>
+                                                <th>LOCATION</th>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="pink td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="bluesh-white td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="dark-green ">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div class="new-add-table">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <mat-radio-button value="1"></mat-radio-button>
+                                                </th>
+                                                <th>UNITS</th>
+                                                <th>FC</th>
+                                                <th>LOCATION</th>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="bluesh-white td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="light-pink td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div class="new-add-table">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <mat-radio-button value="1"></mat-radio-button>
+                                                </th>
+                                                <th>UNITS</th>
+                                                <th>FC</th>
+                                                <th>LOCATION</th>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="light-pink td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="green td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="light-green td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cell">
+                                    <div class="new-add-table">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <mat-radio-button value="1"></mat-radio-button>
+                                                </th>
+                                                <th>UNITS</th>
+                                                <th>FC</th>
+                                                <th>LOCATION</th>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cell">
+                                    <div class="new-add-table">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <mat-radio-button value="1"></mat-radio-button>
+                                                </th>
+                                                <th>UNITS</th>
+                                                <th>FC</th>
+                                                <th>LOCATION</th>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="pink td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="dark-green td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>A.</td>
+                                                <td><span class="unit orange-badge">6</span></td>
+                                                <td><span class="orange-badge td-fc">ONT6</span></td>
+                                                <td>
+                                                    <h6>Moreno Valley, CA 92551</h6>
+                                                    <p>Last Checked: 5 hours ago</p>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </carousel>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <div class="item-Head">
+                            <div class="actions-items">
+                                <div class="inddex">
+                                    1.
+                                </div>
+                                <div class="icons">
+                                    <mat-checkbox class="example-margin"></mat-checkbox>
+                                </div>
+                                <div class="icons">
+                                    <img src="/assets/images/fba-icon.png">
+                                </div>
+                                <div class="icons">
+                                    <img src="/assets/images/delete-icon.png">
+                                </div>
+
+
+                            </div>
+                            <div class="item-image">
+                                <div class="img-border">
+                                    <img src="/assets/images/watch.png">
+                                </div>
+
+                            </div>
+                            <div class="item-name">
+                                <h3 class="link">FBA15FMTX9L3-NEW</h3>
+                                <p>CONDITION:<span>NEW</span></p>
+                                <a class="item-id">B00RN08585</a>
+                                <p>FN SKU:<span>X001RCAUQ5</span></p>
+                                <div class="labelby">
+                                    <p>Label by:<span><input type="text" placeholder="SELLER" class="custom-inputs"
+                                                [ngClass]="isEditable ? 'disable' : 'enable'" value="SELLER"></span>
+                                        <span>
+                                            <mat-icon (click)="isEditable = !isEditable">
+                                                <span *ngIf="isEditable" class="edit-icon">edit</span>
+                                                <span *ngIf="!isEditable"><img style="width:20px"
+                                                        src="/assets/images/greentick.png"></span>
+                                            </mat-icon>
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="labels">LABEL | PREP REQUIRED: LABEL | POLYBAG | BUBBLE</p>
+                            </div>
+                            <div class="item-brand">
+                                <h3><a href="#">Seiko Men’s Quartz Stainless Steel Watch,<br>
+                                        Color: Silver (Model: SUP865)</a></h3>
+                                <p> <a>Brand: <span>Seiko</span></a> | <a>Part#: <span>ABC-12435</span></a> <br>
+                                    <a>Product
+                                        Group: <span>Watches | Apparal | Fashion</span></a> <br> <a>Dimensions:
+                                        <span>3.3*3.8*5.1 inches</span></a> <br> <a>Unit Weight: <span>0.6
+                                            lbs</span></a> |
+                                    <a>Total Weight: <span>15.00 lbs</span></a>
+                                </p>
+                            </div>
+                            <div class="totalUnits">
+                                <div class="units-price">
+                                    <label>Total Units:</label>
+                                    <input type="text">
+                                </div>
+                                <div class="units-price">
+                                    <label>Price:</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="item-buttons">
+                                <div class="units-price">
+                                    <label>PRINT QTY:</label>
+                                    <input type="text">
+                                </div>
+                                <div class="button-main">
+
+                                    <select>
+                                        <option value="" selected>Print Label(s)</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+
+                                </div>
+                                <div class="button-link">
+                                    <button mat-raised-button disabled>SAVE FOR LATER</button>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="new-add-item-detail">
+                    <div class="new-add-item-main-detail">
+
+                        <div class="table-lfex-main">
+                            <div class="new-add-table">
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <mat-radio-button value="1"></mat-radio-button>
+                                        </th>
+                                        <th>UNITS</th>
+                                        <th>FC</th>
+                                        <th>LOCATION</th>
+                                    </tr>
+                                    <tr>
+                                        <td>A.</td>
+                                        <td><span class="unit orange-badge">6</span></td>
+                                        <td><span class="orange-badge td-fc">ONT6</span></td>
+                                        <td>
+                                            <h6>Moreno Valley, CA 92551</h6>
+                                            <p>Last Checked: 5 hours ago</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A.</td>
+                                        <td><span class="unit orange-badge">6</span></td>
+                                        <td><span class="orange-badge td-fc">ONT6</span></td>
+                                        <td>
+                                            <h6>Moreno Valley, CA 92551</h6>
+                                            <p>Last Checked: 5 hours ago</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A.</td>
+                                        <td><span class="unit orange-badge">6</span></td>
+                                        <td><span class="orange-badge td-fc">ONT6</span></td>
+                                        <td>
+                                            <h6>Moreno Valley, CA 92551</h6>
+                                            <p>Last Checked: 5 hours ago</p>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </mat-expansion-panel>
+
+        </mat-accordion>
+
+    </div>
+</section>

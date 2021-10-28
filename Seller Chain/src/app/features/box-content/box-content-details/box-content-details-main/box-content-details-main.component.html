@@ -1,0 +1,787 @@
+<section class="content-details-section">
+  <div class="content-details-main">
+    <!-- ////////////////// BOX CONTENT HEADING HTML/////////////// -->
+    <div class="page-heading">
+      <div class="heading-txt">
+        <div>
+          <mat-icon>inventory_2</mat-icon>
+        </div>
+        <div class="heading-flex">
+          <h1>Box Content Details</h1>
+        </div>
+      </div>
+      <div class="box-content-button">
+        <div class="button">
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ////////////////// BOX CONTENT FIELDS HTML/////////////// -->
+    <div class="field-flex">
+      <div class="fields-main">
+        <div class="input-main">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <input matInput placeholder="Sear For SKU ASIN,...">
+          </mat-form-field>
+        </div>
+        <div class="search-btn">
+          <button mat-button color="primary">SEARCH</button>
+        </div>
+        <div class="select-field-main">
+          <select class="custom-inputs select-field">
+            <option>SCAN TO BOX</option>
+            <option>SCAN TO BOX</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="field-right">
+        <button mat-button color="primary" (click)="boxsetuppopup()" class="box-setup full-dark-gary">
+          Box Setup
+        </button>
+      </div>
+    </div>
+    <!-- ////////////////// BOX CONTENT -- DESTAIL --- TABS/////////////// -->
+    <div cdkDropListGroup class="boxes-tabs-section">
+      <div class="left-flex">
+        <div class="boxes-tabs">
+          <mat-tab-group>
+            <mat-tab label="First">
+              <ng-template mat-tab-label>
+                <h2 class="heading active">All</h2>
+              </ng-template>
+
+
+              <div class="tab-main">
+                <div class="table-mian">
+                  <table>
+                    <tr class="row-back" *ngFor='let product of productList'>
+                      <td>
+                        <div class="table-check">
+                          <mat-checkbox class="example-margin"></mat-checkbox>
+                          <mat-icon>delete</mat-icon>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="product-main">
+                          <div class="product-img">
+                            <img src="/assets/images/watch.png">
+                          </div>
+                          <div class="image-text">
+                            <h3>{{product.name}}</h3>
+                            <p><span>ASIN:</span>{{product.asin}}</p>
+                            <p><span>SKU:</span>{{product.sku}}</p>
+                            <p><span>FNSKU:</span>{{product.fnsku}}</p>
+                            <p><span>labling Requaired:</span>
+                              {{product.required_labeling?'Yes':'No'}}</p>
+
+                          </div>
+
+                        </div>
+                      </td>
+                      <td>
+                        <div class="overweight-main">
+                          <h3>
+                            <mat-icon>warning</mat-icon> OVERWEIGHT <span>REQUIRES
+                              SPLIT</span>
+                          </h3>
+                        </div>
+                        <diV class="overweight-inputs">
+                          <div class="flex1">
+                            <div class="inputs-mian">
+
+                              <label>Total Unit</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                            <div class="inputs-mian">
+                              <label>Total Weight</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex1">
+                            <div class="inputs-mian">
+                              <label>Boxed</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                            <div class="inputs-mian">
+                              <label>Un-boxed</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                          </div>
+                        </diV>
+                      </td>
+                      <td class="tex-align">
+                        <button mat-button color="primary" class="light-green Print">Print
+                          Item
+                          Lable
+                        </button>
+                        <div class="boxes-main">
+                          <button mat-button color="primary" class="box">
+                            box#1 Quantity 2
+                          </button>
+                          <button mat-button color="primary" class="box margin">
+                            box#2 Quantity 1
+                          </button>
+                        </div>
+                        <button mat-button color="primary" class="dark-purpel split" (click)="saplitpopup()">
+                          Split Me
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Second">
+              <ng-template mat-tab-label>
+                <h2 class="heading ">Unboxed</h2>
+              </ng-template>
+              <div class="paginator">
+                <div class="check-paginator">
+                  <div class="check-main">
+                    <mat-checkbox class="example-margin">SELECTED ITEM</mat-checkbox>
+                  </div>
+                  <div class="check-txt">
+                    <P><span class="yellow-light">0</span> of 5</P>
+                  </div>
+
+                </div>
+                <div class="pagination-top">
+                  <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+                    aria-label="Select page">
+                  </mat-paginator>
+                </div>
+              </div>
+              <div class="tab-main">
+                <div class="table-mian">
+
+                  <table cdkDropList style="min-height: 100px;" [cdkDropListData]='productList'>
+                    <tr class="row-back" cdkDrag [cdkDragData]='product' *ngFor='let product of productList'>
+                      <td>
+                        <div class="table-check">
+                          <mat-checkbox class="example-margin"></mat-checkbox>
+                          <mat-icon>delete</mat-icon>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="product-main">
+                          <div class="product-img">
+                            <img src="/assets/images/watch.png">
+                          </div>
+                          <div class="image-text">
+                            <h3>{{product.name}}</h3>
+                            <p><span>ASIN:</span>{{product.asin}}</p>
+                            <p><span>SKU:</span>{{product.sku}}</p>
+                            <p><span>FNSKU:</span>{{product.fnsku}}</p>
+                            <p><span>labling Requaired:</span>
+                              {{product.required_labeling?'Yes':'No'}}</p>
+
+                          </div>
+
+                        </div>
+                      </td>
+                      <td>
+                        <div class="overweight-main">
+                          <h3>
+                            <mat-icon>warning</mat-icon> OVERWEIGHT <span>REQUIRES
+                              SPLIT</span>
+                          </h3>
+                        </div>
+                        <diV class="overweight-inputs">
+                          <div class="flex1">
+                            <div class="inputs-mian">
+
+                              <label>Total Unit</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                            <div class="inputs-mian">
+                              <label>Total Weight</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex1">
+                            <div class="inputs-mian">
+                              <label>Boxed</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                            <div class="inputs-mian">
+                              <label>Un-boxed</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                          </div>
+                        </diV>
+                      </td>
+                      <td class="tex-align">
+                        <button mat-button color="primary" class="light-green Print">Print
+                          Item
+                          Lable
+                        </button>
+                        <div class="boxes-main">
+                          <button mat-button color="primary" class="box">
+                            box#1 Quantity 2
+                          </button>
+                          <button mat-button color="primary" class="box margin">
+                            box#2 Quantity 1
+                          </button>
+                        </div>
+                        <button mat-button color="primary" class="dark-purpel split" (click)="saplitpopup()">
+                          Split Me
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Third">
+              <ng-template mat-tab-label>
+                <h2 class="heading">Boxed</h2>
+              </ng-template>
+              <div class="paginator">
+                <div class="check-paginator">
+                  <div class="check-main">
+                    <mat-checkbox class="example-margin">SELECTED ITEM</mat-checkbox>
+                  </div>
+                  <div class="check-txt">
+                    <P><span class="yellow-light">0</span> of 5</P>
+                  </div>
+
+                </div>
+                <div class="pagination-top">
+                  <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+                    aria-label="Select page">
+                  </mat-paginator>
+                </div>
+              </div>
+              <div class="tab-main">
+                <div class="table-mian">
+                  <table>
+                    <ng-container *ngIf="activeBox">
+                      <tr class="row-back" *ngFor='let product of activeBox?.attachedProducts'>
+                        <td>
+                          <div class="table-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+
+                          </div>
+                        </td>
+                        <td>
+                          <div class="product-main">
+                            <div class="product-img">
+                              <img src="/assets/images/watch.png">
+                            </div>
+                            <div class="image-text">
+                              <h3>{{product.name}}</h3>
+                              <p><span>ASIN:</span>{{product.asin}}</p>
+                              <p><span>SKU:</span>{{product.sku}}</p>
+                              <p><span>FNSKU:</span>{{product.fnsku}}</p>
+                              <p><span>labeling Requaired:</span>
+                                {{product.required_labeling?'Yes':'No'}}</p>
+
+                            </div>
+
+                          </div>
+                        </td>
+                        <td>
+
+                          <diV class="overweight-inputs">
+                            <div class="flex1">
+                              <div class="inputs-mian">
+
+                                <label>Quantity</label>
+                                <div><input type="text" class="custom-inputs box-input">
+                                </div>
+                              </div>
+                              <button mat-button color="primary" class="dark-purpel split ml-2" (click)="saplitpopup()">
+                                Split Me
+                              </button>
+
+                            </div>
+
+                          </diV>
+                        </td>
+                        <td class="tex-align">
+                          <button mat-button color="primary" class="boxed2 red-badge-shine remove">Remove
+                          </button>
+                          <div class="boxes-main">
+                            <button mat-button color="primary" class="boxed2 light-green">
+                              Print Item Label
+                            </button>
+
+                          </div>
+
+                        </td>
+                      </tr>
+                    </ng-container>
+                    <ng-container *ngIf="!activeBox">
+                      <tr class="row-back" *ngFor='let product of  activeBox?.attachedProducts'>
+                        <td>
+                          <div class="table-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+
+                          </div>
+                        </td>
+                        <td>
+                          <div class="product-main">
+                            <div class="product-img">
+                              <img src="/assets/images/watch.png">
+                            </div>
+                            <div class="image-text">
+                              <h3>{{product.name}}</h3>
+                              <p><span>ASIN:</span>{{product.asin}}</p>
+                              <p><span>SKU:</span>{{product.sku}}</p>
+                              <p><span>FNSKU:</span>{{product.fnsku}}</p>
+                              <p><span>labeling Requaired:</span>
+                                {{product.required_labeling?'Yes':'No'}}</p>
+
+                            </div>
+
+                          </div>
+                        </td>
+                        <td class="overweight-td">
+
+                          <diV class="overweight-inputs">
+                            <div class="flex1 flex-center">
+                              <div class="inputs-mian">
+
+                                <label>Quantity</label>
+                                <div class=" quanity-border">
+                                  <p>3</p>
+                                </div>
+                              </div>
+                              <div class="inputs-mian">
+
+                                <label>Quantity</label>
+                                <div class=" quanity-border">
+                                  <p>3</p>
+                                </div>
+                              </div>
+
+                              <!-- <button mat-button color="primary"
+                                                              class="dark-purpel split ml-2" (click)="saplitpopup()">
+                                                              Split Me
+                                                          </button> -->
+
+                            </div>
+                            <h1>SPLITS:</h1>
+                            <button mat-button color="primary" class="box margin">
+                              box#2 Quantity 1
+                            </button>
+
+                          </diV>
+                        </td>
+                        <td class="tex-align">
+                          <button mat-button color="primary" class="boxed2 red-badge-shine remove">Remove
+                          </button>
+                          <div class="boxes-main">
+                            <button mat-button color="primary" class="boxed2 light-green">
+                              Print Item Label
+                            </button>
+
+                          </div>
+
+                        </td>
+                      </tr>
+                    </ng-container>
+                    <tr class="row-back">
+                      <td>
+                        <div class="table-check">
+                          <mat-checkbox class="example-margin"></mat-checkbox>
+
+                        </div>
+                      </td>
+                      <td>
+                        <div class="product-main">
+                          <div class="product-img">
+                            <img src="/assets/images/watch.png">
+                          </div>
+                          <div class="image-text">
+                            <h3>item 1</h3>
+                            <p><span>ASIN:</span>0516882239</p>
+                            <p><span>SKU:</span>0516882239-Useditem-FBA</p>
+                            <p><span>FNSKU:</span>B00RN08585</p>
+                            <p><span>B00RN08585</span>
+                            </p>
+
+                          </div>
+
+                        </div>
+                      </td>
+                      <td class="overweight-td">
+
+                        <diV class="overweight-inputs">
+                          <div class="flex1 flex-center">
+                            <div class="inputs-mian">
+
+                              <label>Quantity</label>
+                              <div class=" quanity-border">
+                                <p>3</p>
+                              </div>
+                            </div>
+                            <div class="inputs-mian">
+
+                              <label>Quantity</label>
+                              <div class=" quanity-border">
+                                <p>3</p>
+                              </div>
+                            </div>
+
+
+
+                          </div>
+                          <h1>SPLITS:</h1>
+                          <button mat-button color="primary" class="box margin">
+                            box#2 Quantity 1
+                          </button>
+
+                        </diV>
+                      </td>
+                      <td class="tex-align">
+                        <button mat-button color="primary" class="boxed2 red-badge-shine remove">Remove
+                        </button>
+                        <div class="boxes-main">
+                          <button mat-button color="primary" class="boxed2 light-green">
+                            Print Item Label
+                          </button>
+
+                        </div>
+
+                      </td>
+                    </tr>
+
+                    <tr class="row-back">
+                      <td>
+                        <div class="table-check">
+                          <mat-checkbox class="example-margin"></mat-checkbox>
+
+                        </div>
+                      </td>
+                      <td>
+                        <div class="product-main">
+                          <div class="product-img">
+                            <img src="/assets/images/watch.png">
+                          </div>
+                          <div class="image-text">
+                            <h3>Dummy</h3>
+                            <p><span>ASIN:</span>dummy</p>
+                            <p><span>SKU:</span>dummy</p>
+                            <p><span>FNSKU:</span>Dummy/p>
+                            <p><span>labeling Requaired:</span>
+                              Yes</p>
+
+                          </div>
+
+                        </div>
+                      </td>
+                      <td>
+
+                        <diV class="overweight-inputs">
+                          <div class="flex1">
+                            <div class="inputs-mian">
+
+                              <label>Quantity</label>
+                              <div><input type="text" class="custom-inputs box-input">
+                              </div>
+                            </div>
+                            <button mat-button color="primary" class="dark-purpel split ml-2" (click)="saplitpopup()">
+                              Split Me
+                            </button>
+
+                          </div>
+
+                        </diV>
+                      </td>
+                      <td class="tex-align">
+                        <button mat-button color="primary" class="boxed2 red-badge-shine remove">Remove
+                        </button>
+                        <div class="boxes-main">
+                          <button mat-button color="primary" class="boxed2 light-green">
+                            Print Item Label
+                          </button>
+
+                        </div>
+
+                      </td>
+                    </tr>
+
+
+                  </table>
+                </div>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+      <div class="right-flex">
+        <div *ngIf='!!chosenProducts.length' class="right-boxes-back">
+          <h1>Boxes</h1>
+          <div class="boxes-over-flow">
+            <div class="boxes-min-hight">
+              <div cdkDropList (cdkDropListDropped)='copyInBox($event,index)'
+                *ngFor='let product of chosenProducts;let index=index' (click)="chooseBox(product)"
+                [class.chosenbox]="activeBox?.id==product.id" class="box-mian box-recive">
+                <div class="box-mian-padding">
+                  <div class="box-btns  spacing">
+                    <button mat-button color="primary" class="light-green box1">Box
+                      {{index+1}}</button>
+
+                    <button mat-button color="primary" class="orange-badge box1">Genrate
+                      Barcode</button>
+                  </div>
+                  <div class="box-btns spacing">
+                    <span class="list-text">Item:{{product.attachedProducts?product.attachedProducts.length:0
+                      }}</span>
+
+                  </div>
+                  <div class="box-btns spacing">
+                    <span class="list-text">Weight:{{product.weight_lb}}lb</span>
+                    <!-- <button mat-button color="primary" class="light-green box1">Box1</button> -->
+                  </div>
+                  <div class="box-btns spacing">
+                    <span class="list-text">Weight:{{product.weight_kg}}kg</span>
+                    <!-- <button mat-button color="primary" class="light-green box1">Box1</button> -->
+                  </div>
+                </div>
+
+                <div class="drop-here">
+                  <p>Drop Here In Box</p>
+                </div>
+              </div>
+              <!-- <div class="box-mian">
+                                <div class="box-mian-padding">
+                                    <div class="box-btns  spacing">
+                                        <button mat-button color="primary" class="light-green box1">Box1</button>
+                                        <button mat-button color="primary" class="orange-badge box1">Genrate
+                                            Barcode</button>
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Item:4</span>
+
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Weight:2.5lb <mat-icon>warning</mat-icon></span>
+                                        <button mat-button color="primary" class="red-badge  box1">Warning</button>
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Weight:4</span>
+                                        <span class="over30">Over 30.5lb</span>
+                                    </div>
+                                </div>
+
+                                <div class="drop-here">
+                                    <p>Drop Here In Box</p>
+                                </div>
+                            </div>
+                            <div class="box-mian">
+                                <div class="box-mian-padding">
+                                    <div class="box-btns  spacing">
+                                        <button mat-button color="primary" class="light-green box1">Box1</button>
+                                        <button mat-button color="primary" class="orange-badge box1">Genrate
+                                            Barcode</button>
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Item:4</span>
+
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Weight:2.5lb</span>
+                                        <button mat-button color="primary" class="light-green box1">Mech Lift</button>
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Weight:4</span>
+                                        <button mat-button color="primary" class="light-green box1">Heavy</button>
+                                    </div>
+                                </div>
+
+                                <div class="drop-here">
+                                    <p>Drop Here In Box</p>
+                                </div>
+                            </div>
+                            <div class="box-mian">
+                                <div class="box-mian-padding">
+                                    <div class="box-btns  spacing">
+                                        <button mat-button color="primary" class="light-green box1">Box1</button>
+                                        <button mat-button color="primary" class="orange-badge box1">Genrate
+                                            Barcode</button>
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Item:4</span>
+
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Weight:2.5lb</span>
+                                        <button mat-button color="primary" class="light-green box1">Mech Lift</button>
+                                    </div>
+                                    <div class="box-btns spacing">
+                                        <span class="list-text">Weight:4</span>
+                                        <button mat-button color="primary" class="light-green box1">Heavy</button>
+                                    </div>
+                                </div>
+
+                                <div class="drop-here">
+                                    <p>Drop Here In Box</p>
+                                </div>
+                            </div> -->
+            </div>
+
+          </div>
+          <div *ngIf='!activeBox' class="box-add-btns">
+            <button mat-button color="primary" class=" Print-box">Print Box
+              (s)</button>
+            <button mat-button color="primary" class="blue-btn add-box" (click)="emptyboxpopup()">Add
+              Box</button>
+          </div>
+          <div *ngIf='activeBox' class="box-add-btns">
+            <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
+            <button mat-button color="primary" class="light-red add-box" (click)="warningpopup() ">Delete Box</button>
+          </div>
+
+          <!-- <div class="box-add-btns">
+                        <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
+                        <button mat-button color="primary" class="blue-btn add-box">Delete Box</button>
+                    </div> -->
+
+
+          <!-- <table class="chosenProductsTable">
+
+                      <tr cdkDrag [cdkDragData]="product" *ngFor='let product of chosenProducts'>
+                          <td>
+                              <img src="/assets/images/watch.png">
+                          </td>
+                          <td>
+                              <h3>ASIN:</h3>
+                              <p>{{product.asin}}</p>
+                          </td>
+                          <td>
+                              <h3>SKU:</h3>
+                              <p>{{product.sku}}</p>
+                          </td>
+                          <td>
+                              <h3>FNSKU:</h3>
+                              <p>{{product.fnsku}}</p>
+                          </td>
+                          <td>
+                              <h3>Quantity:</h3>
+                              <p>{{product.quanity}}</p>
+                          </td>
+                          <td>
+                              <h3>Remaining Quantity:</h3>
+                              <p>{{product.remaining_quantity}}</p>
+                          </td>
+                          <td>
+                              <h3>Labeling Requaired:</h3>
+                              <p>{{product.required_labeling? 'Yes': 'No'}}</p>
+                          </td>
+                          <td>
+                              <button mat-button color="primary" (click)="saplitpopup()"
+                                  class="orange-badge split">Split
+                                  Me</button>
+                          </td>
+                          <td>
+                              <button mat-button color="primary" class="dark-gray-bdg Print">Print
+                                  Item
+                                  Lable
+                                  ALL</button>
+                          </td>
+                          <td>
+                              <mat-icon><span class="material-icons" (click)="warningpopup()">
+                                      delete
+                                  </span></mat-icon>
+                          </td>
+                      </tr>
+
+                      <tr *ngIf='!chosenProducts.length'>No Products</tr>
+                  </table> -->
+        </div>
+        <div *ngIf='!chosenProducts.length' cdkDropList
+          (cdkDropListDropped)='chosenProducts.length==0?emptyboxpopup():""' class="right-boxes-back">
+          <h1>Boxes</h1>
+          <div class="boxes-over-flow">
+            <div class="boxes-min-hight">
+
+            </div>
+
+          </div>
+          <div class="box-add-btns">
+            <button mat-button color="primary" class=" Print-box">Print Box
+              (s)</button>
+            <button mat-button color="primary" class="blue-btn add-box" (click)="emptyboxpopup()">Add
+              BOX</button>
+          </div>
+
+          <!-- <div *ngIf='' class="box-add-btns">
+            <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
+            <button mat-button color="primary" class="blue-btn add-box">Delete Box</button>
+          </div> -->
+
+
+          <!-- <table class="chosenProductsTable">
+
+                      <tr cdkDrag [cdkDragData]="product" *ngFor='let product of chosenProducts'>
+                          <td>
+                              <img src="/assets/images/watch.png">
+                          </td>
+                          <td>
+                              <h3>ASIN:</h3>
+                              <p>{{product.asin}}</p>
+                          </td>
+                          <td>
+                              <h3>SKU:</h3>
+                              <p>{{product.sku}}</p>
+                          </td>
+                          <td>
+                              <h3>FNSKU:</h3>
+                              <p>{{product.fnsku}}</p>
+                          </td>
+                          <td>
+                              <h3>Quantity:</h3>
+                              <p>{{product.quanity}}</p>
+                          </td>
+                          <td>
+                              <h3>Remaining Quantity:</h3>
+                              <p>{{product.remaining_quantity}}</p>
+                          </td>
+                          <td>
+                              <h3>Labeling Requaired:</h3>
+                              <p>{{product.required_labeling? 'Yes': 'No'}}</p>
+                          </td>
+                          <td>
+                              <button mat-button color="primary" (click)="saplitpopup()"
+                                  class="orange-badge split">Split
+                                  Me</button>
+                          </td>
+                          <td>
+                              <button mat-button color="primary" class="dark-gray-bdg Print">Print
+                                  Item
+                                  Lable
+                                  ALL</button>
+                          </td>
+                          <td>
+                              <mat-icon><span class="material-icons" (click)="warningpopup()">
+                                      delete
+                                  </span></mat-icon>
+                          </td>
+                      </tr>
+
+                      <tr *ngIf='!chosenProducts.length'>No Products</tr>
+                  </table> -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>

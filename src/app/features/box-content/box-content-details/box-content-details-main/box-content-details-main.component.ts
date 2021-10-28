@@ -17,10 +17,10 @@ import { WarningPopupComponent } from '../warning-popup/warning-popup.component'
   styleUrls: ['./box-content-details-main.component.scss'],
 })
 export class BoxContentDetailsMainComponent implements OnInit {
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) { }
   // activeindex = -1;
   activeBox: any;
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   productList: any[] = [
     {
       id: 1,
@@ -67,20 +67,18 @@ export class BoxContentDetailsMainComponent implements OnInit {
   saplitpopup() {
     const dialogRef = this.dialog.open(BoxContentDetailspopupsComponent);
   }
-  warningpopup() {
-    const dialogRef = this.dialog.open(WarningPopupComponent);
-  }
+
   boxsetuppopup() {
     const dialogRef = this.dialog.open(BoxSetupComponent);
   }
   emptyboxpopup() {
     const dialogRef = this.dialog.open(AddEmptyPopupComponent);
-    dialogRef.afterClosed().subscribe((name) => {
+    dialogRef.afterClosed().subscribe((result) => {
       // for (let i = 0; i < numberOfBoxes; i++) {
       //   this.chosenProducts.push({});
       // }
       const id = this.chosenProducts.length;
-      if (name) this.chosenProducts.push({ name, id });
+      if (result) this.chosenProducts.push({ name: 'Box1', id });
     });
   }
   // addboxgpopup() {
@@ -143,4 +141,19 @@ export class BoxContentDetailsMainComponent implements OnInit {
       this.activeBox = product;
     }
   }
+
+  removeBox() {
+
+    const dialogRef = this.dialog.open(WarningPopupComponent);
+    dialogRef.afterClosed().subscribe((result) => {
+      // for (let i = 0; i < numberOfBoxes; i++) {
+      //   this.chosenProducts.push({});
+      // }
+
+      if (result) this.chosenProducts.pop();
+    });
+
+  }
+
+
 }

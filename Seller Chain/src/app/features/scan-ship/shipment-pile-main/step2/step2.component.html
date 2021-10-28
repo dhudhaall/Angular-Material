@@ -1,0 +1,492 @@
+<section class="add-new-item-section-main">
+    <div class="main-item-add-new">
+        <div class="top-title-info">
+            <div class="panel-flex1">
+                <h3> <span>STEP 2</span> ALL OF YOUR ITEMS WILL BE SENT TO ONE LOCATION:</h3>
+            </div>
+
+        </div>
+
+        <div class="top-item-createshipping">
+            <div class="top-item">
+                <table>
+                    <tr class="header-tr">
+                        <td style="width: 20%;">
+                            <p>SHIP FROM ADDRESS:</p>
+                        </td>
+                        <td>
+                            <p>TOP ITEM:</p>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr class="content-tr">
+                        <td>
+                            <div class="shipping-address">
+                                <mat-select class="matSelectCustom" placeholder="Select Address">
+                                    <!-- <mat-select-trigger>Select Address</mat-select-trigger> -->
+                                    <mat-option value="option">SHOW ALL</mat-option>
+                                    <mat-option value="option">SHOW ALL</mat-option>
+                                    <mat-option value="option">SHOW ALL</mat-option>
+                                    <mat-option value="option">SHOW ALL</mat-option>
+                                </mat-select>
+
+                                <p>SellerChain 1060 Linwood Street Brooklyn, NY 11208</p>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="item-image">
+                                <div class="img-border">
+                                    <img src="/assets/images/watch.png">
+                                </div>
+                                <button mat-raised-button color="primary" class="blue-btn smallBtn">TOP ITEM</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-name">
+                                <h3 class="link">FBA15FMTX9L3-NEW</h3>
+                                <p>CONDITION: NEW</p>
+                                <a class="item-id">B00RN08585</a>
+                                <p>FN SKU:<span>X001RCAUQ5</span></p>
+                                <div class="labelby">
+                                    <p>Label by:<span>seller</span></p>
+                                </div>
+                                <p class="labels">LABEL | PREP REQUIRED:
+                                    <span>LABEL | POLYBAG | BUBBLE</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item-brand">
+                                <h3>Seiko Men’s Quartz Stainless Steel Watch, Color: Silver (Model: SUP865)</h3>
+                                <p class="total-units">TOTAL UNITS: <span>13</span></p>
+                                <p><a>Dimensions:
+                                        <span>3.3*3.8*5.1 inches</span></a> | <a>Unit Weight: <span>0.6 lbs</span></a> |
+                                    <a>Total Weight: <span>15.00 lbs</span></a>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+<section class="creating-text">
+    <h3>YOU WILL BE CREATING <span class="bigCircleSpan">3</span> SEPARATE SHIPMENTS TO EACH OF THE FULFILLMENT CENTE
+    </h3>
+    <p>Only your ‘Top Item’ must be split up and sent to all these locations and you are required to send the quantity
+    <p>The rest of the items in your pile can all be added to any of these shipments.</p> <br>
+    <h3>PLEASE CHOOSE A DESTINATION FOR THE REST OF THE ITEMS:</h3>
+</section>
+<section class="rest-items-section">
+    <div class="rest-items-main">
+        <div class="destination-main active">
+            <div class="profile">
+                <div class="picture1">
+                    <h1><span class="greenish-gry">A</span></h1>
+                </div>
+                <div class="picture2">
+                    <h2><span class="orange-badge">ONT6</span></h2>
+                </div>
+                <div class="picture3">
+                    <h3>Moreno Valley, <br>CA 92551
+                    </h3>
+                </div>
+            </div>
+            <div class="name-id-main">
+                <div class="heading-text">
+                    <h1>SHIPMENT ID:</h1>
+                    <p><b>FBA15H0M48J3</b></p>
+                </div>
+                <div class="heading-text">
+                    <h1>SHIPMENT NAME:</h1>
+                    <div class="name-icon">
+                        <div class="icon" [ngClass]="isEditable ? 'disable' : 'enable'">
+                            <p>ONT6 - SELLER_LABEL 6/4/2019 5:04 PM</p>
+                        </div>
+                        <div class="icon">
+                            <mat-icon aria-hidden="false" aria-label="Example home icon"
+                                (click)="isEditable = !isEditable">
+                                <span *ngIf="isEditable">edit</span>
+                                <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+                            </mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-button-main">
+                <div class="unit-button1">
+                    <h1> UNITS: <span class="orange-badge">6</span></h1>
+                </div>
+                <div class="unit-button2">
+                    <div class="button-flex">
+                        <div class="button-heaing">
+                            <h1>SHIP REST OF ITEMS:</h1>
+                        </div>
+                        <div class="button-heaing">
+                            <button mat-raised-button color="primary" class="greenish-gry ">HERE</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="destination-main">
+            <div class="profile">
+                <div class="picture1">
+                    <h1><span class="greenish-gry">A</span></h1>
+                </div>
+                <div class="picture2">
+                    <h2><span>ONT6</span></h2>
+                </div>
+                <div class="picture3">
+                    <h3>Moreno Valley, <br>CA 92551
+                    </h3>
+                </div>
+            </div>
+            <div class="name-id-main">
+                <div class="heading-text">
+                    <h1>SHIPMENT ID:</h1>
+                    <p><b>FBA15H0M48J3</b></p>
+                </div>
+                <div class="heading-text">
+                    <h1>SHIPMENT NAME:</h1>
+                    <div class="name-icon">
+                        <div class="icon" [ngClass]="isEditable ? 'disable' : 'enable'">
+                            <p>ONT6 - SELLER_LABEL 6/4/2019 5:04 PM</p>
+                        </div>
+                        <div class="icon">
+                            <mat-icon aria-hidden="false" aria-label="Example home icon"
+                                (click)="isEditable = !isEditable">
+                                <span *ngIf="isEditable">edit</span>
+                                <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+                            </mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-button-main">
+                <div class="unit-button1">
+                    <h1> UNITS: <span class="orange-badge">6</span></h1>
+                </div>
+                <div class="unit-button2">
+                    <div class="button-flex">
+                        <div class="button-heaing">
+                            <h1>SHIP REST OF ITEMS:</h1>
+                        </div>
+                        <div class="button-heaing">
+                            <button mat-raised-button color="primary" class="dark-green">HERE</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="destination-main">
+            <div class="profile">
+                <div class="picture1">
+                    <h1><span class="greenish-gry">A</span></h1>
+                </div>
+                <div class="picture2">
+                    <h2><span class="red-badge">ONT6</span></h2>
+                </div>
+                <div class="picture3">
+                    <h3>Moreno Valley, <br>CA 92551
+                    </h3>
+                </div>
+            </div>
+            <div class="name-id-main">
+                <div class="heading-text">
+                    <h1>SHIPMENT ID:</h1>
+                    <p><b>FBA15H0M48J3</b></p>
+                </div>
+                <div class="heading-text">
+                    <h1>SHIPMENT NAME:</h1>
+                    <div class="name-icon">
+                        <div class="icon" [ngClass]="isEditable ? 'disable' : 'enable'">
+                            <p>ONT6 - SELLER_LABEL 6/4/2019 5:04 PM</p>
+                        </div>
+                        <div class="icon">
+                            <mat-icon aria-hidden="false" aria-label="Example home icon"
+                                (click)="isEditable = !isEditable">
+                                <span *ngIf="isEditable">edit</span>
+                                <span *ngIf="!isEditable"><img src="/assets/images/greentick.png"></span>
+                            </mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-button-main">
+                <div class="unit-button1">
+                    <h1> UNITS: <span class="orange-badge">6</span></h1>
+                </div>
+                <div class="unit-button2">
+                    <div class="button-flex">
+                        <div class="button-heaing">
+                            <h1>SHIP REST OF ITEMS:</h1>
+                        </div>
+                        <div class="button-heaing">
+                            <button mat-raised-button color="primary" class="greenish-gry here">HERE</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<mat-card>
+    <section class="add-new-item-section-2">
+        <div class="main-item-add-new">
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>ASIN | SKU | FN SKU
+                        <img src="/assets/images/tabel-hd-arrow.png">
+                    </th>
+                    <th>Condition</th>
+                    <th>Weight</th>
+                    <th>Case Qty</th>
+                    <th>Units|Case</th>
+                    <th>Units</th>
+                    <th>Destination</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2 ">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="red-badge here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2 ">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="red-badge here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2 ">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="red-badge here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="dark-green here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="/assets/images/watch.png">
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="products-name">
+                            <h1><a href="#" class="link2 ">B00RN08585</a></h1>
+                            <h1><a href="#" class="link">FBA15FMTX9L3-NEW</a></h1>
+                            <p>X001RCAUQ5</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <button mat-raised-button color="primary" class="orange-badge here">HERE</button>
+                    </td>
+                    <td>
+                        <P>2 lb 2 oz</P>
+                    </td>
+                    <td>
+                        <P>1</P>
+                    </td>
+                    <td>
+                        <P>50</P>
+                    </td>
+                    <td>
+                        <h4>50</h4>
+                    </td>
+                    <td>
+                        <div class="last-chiled-flex">
+                            <div><span>ONT5</span></div>
+                            <div>
+                                <h1>Elsewhere,<br> CA 92551</h1>
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </table>
+        </div>
+    </section>
+</mat-card>
