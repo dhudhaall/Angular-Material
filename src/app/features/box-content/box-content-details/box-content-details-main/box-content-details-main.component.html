@@ -162,7 +162,7 @@
               <div class="tab-main">
                 <div class="table-mian">
 
-                  <table cdkDropList [cdkDropListData]='productList'>
+                  <table cdkDropList style="min-height: 100px;" [cdkDropListData]='productList'>
                     <tr class="row-back" cdkDrag [cdkDragData]='product' *ngFor='let product of productList'>
                       <td>
                         <div class="table-check">
@@ -324,7 +324,7 @@
                         </td>
                       </tr>
                     </ng-container>
-                    <ng-container *ngIf="activeindex-1">
+                    <ng-container *ngIf="activeindex<-1">
                       <tr class="row-back" *ngFor='let product of productList'>
                         <td>
                           <div class="table-check">
@@ -404,7 +404,7 @@
         </div>
       </div>
       <div class="right-flex">
-        <div class="right-boxes-back">
+        <div *ngIf='!!chosenProducts.length' class="right-boxes-back">
           <h1>Boxes</h1>
           <div class="boxes-over-flow">
             <div class="boxes-min-hight">
@@ -515,16 +515,94 @@
             </div>
 
           </div>
+          <div *ngIf='activeindex==-1'class="box-add-btns">
+            <button mat-button color="primary" class=" Print-box">Print Box
+              (s)</button>
+            <button mat-button color="primary" class="blue-btn add-box" (click)="emptyboxpopup()">Add
+              BOX</button>
+          </div>
+          <div *ngIf='activeindex>-1' class="box-add-btns">
+            <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
+            <button mat-button color="primary" class="blue-btn add-box">Delete Box</button>
+        </div>
+
+          <!-- <div class="box-add-btns">
+                        <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
+                        <button mat-button color="primary" class="blue-btn add-box">Delete Box</button>
+                    </div> -->
+
+
+          <!-- <table class="chosenProductsTable">
+
+                      <tr cdkDrag [cdkDragData]="product" *ngFor='let product of chosenProducts'>
+                          <td>
+                              <img src="/assets/images/watch.png">
+                          </td>
+                          <td>
+                              <h3>ASIN:</h3>
+                              <p>{{product.asin}}</p>
+                          </td>
+                          <td>
+                              <h3>SKU:</h3>
+                              <p>{{product.sku}}</p>
+                          </td>
+                          <td>
+                              <h3>FNSKU:</h3>
+                              <p>{{product.fnsku}}</p>
+                          </td>
+                          <td>
+                              <h3>Quantity:</h3>
+                              <p>{{product.quanity}}</p>
+                          </td>
+                          <td>
+                              <h3>Remaining Quantity:</h3>
+                              <p>{{product.remaining_quantity}}</p>
+                          </td>
+                          <td>
+                              <h3>Labeling Requaired:</h3>
+                              <p>{{product.required_labeling? 'Yes': 'No'}}</p>
+                          </td>
+                          <td>
+                              <button mat-button color="primary" (click)="saplitpopup()"
+                                  class="orange-badge split">Split
+                                  Me</button>
+                          </td>
+                          <td>
+                              <button mat-button color="primary" class="dark-gray-bdg Print">Print
+                                  Item
+                                  Lable
+                                  ALL</button>
+                          </td>
+                          <td>
+                              <mat-icon><span class="material-icons" (click)="warningpopup()">
+                                      delete
+                                  </span></mat-icon>
+                          </td>
+                      </tr>
+
+                      <tr *ngIf='!chosenProducts.length'>No Products</tr>
+                  </table> -->
+        </div>
+        <div *ngIf='!chosenProducts.length' cdkDropList
+          (cdkDropListDropped)='chosenProducts.length==0?emptyboxpopup():""' class="right-boxes-back">
+          <h1>Boxes</h1>
+          <div class="boxes-over-flow">
+            <div class="boxes-min-hight">
+
+            </div>
+
+          </div>
           <div class="box-add-btns">
             <button mat-button color="primary" class=" Print-box">Print Box
               (s)</button>
             <button mat-button color="primary" class="blue-btn add-box" (click)="emptyboxpopup()">Add
               BOX</button>
           </div>
-          <!-- <div class="box-add-btns">
+
+          <div *ngIf='activeindex>-1' class="box-add-btns">
                         <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
                         <button mat-button color="primary" class="blue-btn add-box">Delete Box</button>
-                    </div> -->
+                    </div>
 
 
           <!-- <table class="chosenProductsTable">

@@ -17,9 +17,9 @@ import { WarningPopupComponent } from '../warning-popup/warning-popup.component'
   styleUrls: ['./box-content-details-main.component.scss'],
 })
 export class BoxContentDetailsMainComponent implements OnInit {
-  constructor(public dialog: MatDialog) { }
-  activeindex=-1
-  ngOnInit(): void { }
+  constructor(public dialog: MatDialog) {}
+  activeindex = -1;
+  ngOnInit(): void {}
   productList: any[] = [
     {
       id: 1,
@@ -75,18 +75,18 @@ export class BoxContentDetailsMainComponent implements OnInit {
       // for (let i = 0; i < numberOfBoxes; i++) {
       //   this.chosenProducts.push({});
       // }
-      this.chosenProducts.push({name});
+      if (name) this.chosenProducts.push({ name });
     });
   }
-  addboxgpopup() {
-    const dialogRef = this.dialog.open(BoxAddpopupComponent);
-    dialogRef.afterClosed().subscribe((name) => {
-      // for (let i = 0; i < numberOfBoxes; i++) {
-      //   this.chosenProducts.push({});
-      // }
-      this.chosenProducts.push({name});
-    });
-  }
+  // addboxgpopup() {
+  //   const dialogRef = this.dialog.open(BoxAddpopupComponent);
+  //   dialogRef.afterClosed().subscribe((name) => {
+  //     // for (let i = 0; i < numberOfBoxes; i++) {
+  //     //   this.chosenProducts.push({});
+  //     // }
+  //     if (name) this.chosenProducts.push({ name });
+  //   });
+  // }
 
   drop(event: any) {
     console.log(event);
