@@ -17,12 +17,14 @@ import { WarningPopupComponent } from '../warning-popup/warning-popup.component'
   styleUrls: ['./box-content-details-main.component.scss'],
 })
 export class BoxContentDetailsMainComponent implements OnInit {
-  constructor(public dialog: MatDialog) { }
-  activeindex=-1
-  ngOnInit(): void { }
+  constructor(public dialog: MatDialog) {}
+  // activeindex = -1;
+  activeBox: any;
+  ngOnInit(): void {}
   productList: any[] = [
     {
       id: 1,
+      name: 'item 1',
       asin: '0516882239',
       sku: '0516882239-Useditem-FBA',
       fnsku: 'B00RN08585',
@@ -35,6 +37,7 @@ export class BoxContentDetailsMainComponent implements OnInit {
     },
     {
       id: 2,
+      name: 'item 2',
       asin: '0516882239',
       sku: '0516882239-Useditem-FBA',
       fnsku: 'B00RN08585',
@@ -47,6 +50,7 @@ export class BoxContentDetailsMainComponent implements OnInit {
     },
     {
       id: 3,
+      name: 'item 3',
       asin: '0516882239',
       sku: '0516882239-Useditem-FBA',
       fnsku: 'B00RN08585',
@@ -75,18 +79,19 @@ export class BoxContentDetailsMainComponent implements OnInit {
       // for (let i = 0; i < numberOfBoxes; i++) {
       //   this.chosenProducts.push({});
       // }
-      this.chosenProducts.push({name});
+      const id = this.chosenProducts.length;
+      if (name) this.chosenProducts.push({ name, id });
     });
   }
-  addboxgpopup() {
-    const dialogRef = this.dialog.open(BoxAddpopupComponent);
-    dialogRef.afterClosed().subscribe((name) => {
-      // for (let i = 0; i < numberOfBoxes; i++) {
-      //   this.chosenProducts.push({});
-      // }
-      this.chosenProducts.push({name});
-    });
-  }
+  // addboxgpopup() {
+  //   const dialogRef = this.dialog.open(BoxAddpopupComponent);
+  //   dialogRef.afterClosed().subscribe((name) => {
+  //     // for (let i = 0; i < numberOfBoxes; i++) {
+  //     //   this.chosenProducts.push({});
+  //     // }
+  //     if (name) this.chosenProducts.push({ name });
+  //   });
+  // }
 
   drop(event: any) {
     console.log(event);
@@ -119,13 +124,23 @@ export class BoxContentDetailsMainComponent implements OnInit {
     chosenBox = {
       ...chosenBox,
       ...newItem,
+      id: chosenBox.id,
       weight_kg: (chosenBox.weight_kg || 0) + newItem.weight_kg,
       weight_lb: (chosenBox.weight_lb || 0) + newItem.weight_lb,
     };
     this.chosenProducts[index] = chosenBox;
+
     // } else {
     //   this.chosenProducts[index] = $event.item.data;
     // }
     console.log(this.chosenProducts[index]);
+  }
+
+  chooseBox(product: any) {
+    if (this.activeBox && this.activeBox.id === product.id) {
+      this.activeBox = null;
+    } else {
+      this.activeBox = product;
+    }
   }
 }

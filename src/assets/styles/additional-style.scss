@@ -379,7 +379,6 @@
   .popup-btn {
     text-align: right;
     margin-top: 20px;
-    background-color: #88d3dbad;
 
     padding: 10px 8px 10px 6px;
     a {
@@ -404,6 +403,9 @@
 .add-empty-popup {
   width: 550px;
   .tamplet-name {
+    label {
+      margin-top: 10px;
+    }
     .input {
       width: 100%;
       border: 1px solid #e7ebea;
@@ -414,6 +416,7 @@
       font-size: 15px;
       margin-top: 10px;
       margin-bottom: 10px;
+      position: relative;
     }
     .input:focus {
       outline: none;
@@ -443,6 +446,7 @@
   .dimensions {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
     .input {
       width: 100px;
       border: 1px solid #e7ebea;
@@ -461,7 +465,6 @@
   .emty-value-btn {
     text-align: right;
     margin-top: 20px;
-    background-color: #88d3dbad;
 
     padding: 10px 8px 10px 6px;
     a {
@@ -518,7 +521,7 @@
   .manifest-btn {
     text-align: right;
     margin-top: 20px;
-    background-color: #88d3dbad;
+
     padding: 10px 8px 10px 6px;
     a {
       margin-right: 10px;
@@ -661,6 +664,13 @@
             // border-left: 1px solid #b7bfbe;
             // border-bottom: 1px solid #b7bfbe;
           }
+          .mat-tab-label-active {
+            .mat-tab-label-content {
+              h2 {
+                color: #f04926;
+              }
+            }
+          }
           .mat-ink-bar {
             background-color: #ffff;
           }
@@ -670,9 +680,6 @@
               color: #616161;
             }
             h2:hover {
-              color: #f04926;
-            }
-            h2.active {
               color: #f04926;
             }
           }
@@ -694,6 +701,27 @@
             border-radius: 3px;
             padding: 3px 4px;
             margin-bottom: 15px;
+            .pagination-top {
+              .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+                padding-bottom: 0px;
+              }
+              .mat-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-form-field-flex {
+                cursor: pointer;
+                border: 1px solid #61616150 !important;
+                border-radius: 4px;
+              }
+              .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+                transform: unset;
+              }
+              .mat-form-field-underline {
+                width: auto;
+              }
+              .mat-form-field-infix {
+                width: 250px;
+                padding: 10px 0px 10px 8px;
+                border: 0;
+              }
+            }
             .check-paginator {
               display: flex;
               .check-main {
@@ -858,11 +886,13 @@
                       font-weight: 500;
                     }
                   }
+
                   .Print {
                     line-height: 30px;
                     color: #fff;
                     font-size: 10px;
                   }
+
                   .split {
                     line-height: 30px;
                     color: #fff;
@@ -877,6 +907,7 @@
                     font-size: 10px;
                     font-weight: 500;
                   }
+
                   .boxes-main {
                     display: flex;
                     align-items: center;
@@ -1192,7 +1223,7 @@
   .split-btn-main {
     text-align: right;
     margin-top: 20px;
-    background-color: #88d3db85;
+
     padding: 10px 8px 10px 6px;
 
     .split {
@@ -1232,7 +1263,7 @@
   .proceed-btns {
     text-align: right;
     margin-top: 20px;
-    background-color: #88d3db85;
+
     padding: 10px 8px 10px 6px;
 
     .Proceed {
