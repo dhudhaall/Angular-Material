@@ -2,71 +2,72 @@
 // }
 .cdk-drag-placeholder {
   td {
-    padding: 0px 10px;
-    .table-check {
-      display: none;
-    }
-    img {
-      width: 70px;
-      display: none;
-    }
-    h3 {
-      font-size: 13px;
-      margin-bottom: 5px;
-      font-weight: 600;
-      line-height: 1;
-      display: none;
-    }
-    p {
-      font-size: 12px;
-      margin-bottom: 5px;
-      line-height: 1;
-      display: none;
-    }
-    .split {
-      color: #fff;
-      font-size: 11px;
-      line-height: 30px;
-      display: none;
-    }
-    .Print {
-      color: #fff;
-      font-size: 11px;
-      line-height: 30px;
-      display: none;
-    }
-    .remove {
-      color: #d32d23;
-      background: transparent;
-      border: 1px solid;
-      padding: 4px 4px;
-      line-height: 1;
-      margin-top: 10px;
-      display: none;
-    }
-    .mat-icon {
-      color: #d32d23;
-      display: none;
-    }
-    .overweight-inputs {
-      display: none;
-    }
-    .overweight-main {
-      display: none;
-    }
-    .boxes-main {
-      display: none;
-    }
+    // display: none;
+    // padding: 0px 10px;
+    // .table-check {
+    //   display: none;
+    // }
+    // img {
+    //   width: 70px;
+    //   display: none;
+    // }
+    // h3 {
+    //   font-size: 13px;
+    //   margin-bottom: 5px;
+    //   font-weight: 600;
+    //   line-height: 1;
+    //   display: none;
+    // }
+    // p {
+    //   font-size: 12px;
+    //   margin-bottom: 5px;
+    //   line-height: 1;
+    //   display: none;
+    // }
+    // .split {
+    //   color: #fff;
+    //   font-size: 11px;
+    //   line-height: 30px;
+    //   display: none;
+    // }
+    // .Print {
+    //   color: #fff;
+    //   font-size: 11px;
+    //   line-height: 30px;
+    //   display: none;
+    // }
+    // .remove {
+    //   color: #d32d23;
+    //   background: transparent;
+    //   border: 1px solid;
+    //   padding: 4px 4px;
+    //   line-height: 1;
+    //   margin-top: 10px;
+    //   display: none;
+    // }
+    // .mat-icon {
+    //   color: #d32d23;
+    //   display: none;
+    // }
+    // .overweight-inputs {
+    //   display: none;
+    // }
+    // .overweight-main {
+    //   display: none;
+    // }
+    // .boxes-main {
+    //   display: none;
+    // }
   }
 }
 .cdk-drag.cdk-drag-placeholder {
-  td {
-    display: none;
-  }
+  display: block;
 }
-// {
-//
-// }
+
+.cdk-drop-list tr.cdk-drag-placeholder {
+  display: none !important;
+}
+
 .cdk-drop-list-receiving.box-recive {
   border: 1px dotted #7ac943 !important;
 }
