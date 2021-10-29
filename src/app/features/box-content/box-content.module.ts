@@ -20,7 +20,10 @@ import { BoxTemplatesMainComponent } from './box-templates-main/box-templates-ma
 import { BoxTemplatesComponent } from './box-templates-main/box-templates/box-templates.component';
 import { TemplatsFilterComponent } from './box-templates-main/templats-filter/templats-filter.component';
 import { BoxSetupComponent } from './box-content-details/box-setup/box-setup.component';
-import { AddEmptyPopupComponent } from './box-content-details/add-empty-popup/add-empty-popup.component'
+import { AddEmptyPopupComponent } from './box-content-details/add-empty-popup/add-empty-popup.component';
+import { SingleBoxViewMainComponent } from './single-box-view-main/single-box-view-main.component';
+import { SingleBoxViewComponent } from './single-box-view-main/single-box-view/single-box-view.component';
+import { SingleBoxFiltersComponent } from './single-box-view-main/single-box-filters/single-box-filters.component'
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { AddEmptyPopupComponent } from './box-content-details/add-empty-popup/ad
     BoxTemplatesMainComponent,
     BoxTemplatesComponent,
     BoxSetupComponent,
-    AddEmptyPopupComponent
+    AddEmptyPopupComponent,
+    SingleBoxViewMainComponent,
+    SingleBoxViewComponent,
+    SingleBoxFiltersComponent
   ],
   imports: [
     CommonModule,

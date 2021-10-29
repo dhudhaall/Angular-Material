@@ -4,6 +4,8 @@ import { BoxContentDetailsComponent } from './box-content-details/box-content-de
 
 import { BoxTemplatesMainComponent } from './box-templates-main/box-templates-main.component';
 import { DashboardMainComponent } from './dashboard-main/dashboard-main.component';
+import { SingleBoxViewMainComponent } from './single-box-view-main/single-box-view-main.component';
+import { SingleBoxViewComponent } from './single-box-view-main/single-box-view/single-box-view.component';
 
 const routes: Routes = [
   {
@@ -19,6 +21,10 @@ const routes: Routes = [
   {
     path: 'templates',
     component: BoxTemplatesMainComponent
+  },
+  {
+    path: 'contentdetail/:id',
+    component: SingleBoxViewMainComponent
   }
 ];
 
