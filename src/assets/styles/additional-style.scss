@@ -641,6 +641,46 @@
         }
       }
     }
+    ////////////////// box-manifest --STYLE///////////////
+    .box-manifest-table {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #b7bfbe;
+      .box-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        .flex1 {
+          display: flex;
+          align-items: center;
+          flex-basis: 33%;
+
+          .heading {
+            margin-right: 20px;
+            label {
+              font-size: 15px;
+              color: #f04926;
+            }
+          }
+          .content {
+            .box-select {
+              background-color: #fff;
+              width: 230px;
+              padding: 5px 5px;
+            }
+            P {
+              font-size: 13px;
+              color: #000;
+              font-weight: 400;
+              margin-bottom: 0px;
+              line-height: 1;
+            }
+          }
+        }
+      }
+    }
+
     ////////////////// boxes-tabs-section --STYLE///////////////
     .boxes-tabs-section {
       display: flex;

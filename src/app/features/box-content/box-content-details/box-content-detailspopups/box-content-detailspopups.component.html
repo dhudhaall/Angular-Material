@@ -82,8 +82,8 @@
     </div>
 
 </div> -->
-<!-- ///////////////////////////////////////////////BOX CONTENT POPUP 2//////////////////// -->
-<div class="split-popup-section">
+<!-- ///////////////////////////////////////////////BOX CONTENT split POPUP 2//////////////////// -->
+<!-- <div class="split-popup-section">
     <h1>Add Box Manifest
         <mat-icon (click)='skipModal()'>close</mat-icon>
     </h1>
@@ -190,5 +190,278 @@
         <button mat-button color="primary" (click)='skipModal()' class=" dark-gray-bdg split cancel">CANCEL</button>
     </div>
 
-</div>
-<!-- ///////////////////////////////////////////////BOX CONTENT POPUP 3//////////////////// -->
+</div> -->
+<!-- ///////////////////////////////////////////////BOX detail page //////////////////// -->
+<section class="content-details-section">
+  <div class="content-details-main">
+    <!-- ////////////////// BOX CONTENT HEADING HTML/////////////// -->
+    <div class="page-heading">
+      <div class="heading-txt">
+        <div>
+          <mat-icon>inventory_2</mat-icon>
+        </div>
+        <div class="heading-flex">
+          <h1>Box Content Details</h1>
+        </div>
+      </div>
+      <div class="box-content-button">
+        <div class="button">
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ////////////////// BOX CONTENT FIELDS HTML/////////////// -->
+    <div class="field-flex">
+      <div class="fields-main">
+        <div class="input-main">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <input matInput placeholder="Sear For SKU ASIN,...">
+          </mat-form-field>
+        </div>
+        <div class="search-btn">
+          <button mat-button color="primary">SEARCH</button>
+        </div>
+        <div class="select-field-main">
+          <select class="custom-inputs select-field">
+            <option>SCAN TO BOX</option>
+            <option>SCAN TO BOX</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-right">
+        <button mat-button color="primary" class="box-setup full-dark-gary">
+          Box Setup
+        </button>
+      </div>
+    </div>
+    <!-- ////////////////// BOX CONTENT select main HTML/////////////// -->
+    <div class="box-manifest-table">
+      <div class="box-flex">
+        <div class="flex1">
+          <div class="heading">
+            <label>Box Manifest</label>
+          </div>
+          <div class="content">
+            <select class="custom-inputs box-select">
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex1">
+          <div class="heading">
+            <label>Box Manifest</label>
+          </div>
+          <div class="content">
+            <p>FBA1684FV4DW</p>
+          </div>
+        </div>
+        <div class="flex1">
+          <div class="heading">
+            <label>Box Manifest</label>
+          </div>
+          <div class="content">
+            <p>ABE8-SELLER-LABEL 11/09/2021,02:30</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="box-flex">
+        <div class="flex1">
+          <div class="heading">
+            <label>Box</label>
+          </div>
+          <div class="content">
+            <select class="custom-inputs box-select">
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex1">
+          <div class="heading">
+            <label>Last Updated</label>
+          </div>
+          <div class="content">
+            <p>FBA1684FV4DW</p>
+          </div>
+        </div>
+        <div class="flex1">
+          <div class="heading">
+            <label>Last Updated By</label>
+          </div>
+          <div class="content">
+            <p>ABE8-SELLER-LABEL 11/09/2021,02:30</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ////////////////// BOX CONTENT -- DESTAIL --- TABS/////////////// -->
+    <div cdkDropListGroup class="boxes-tabs-section">
+
+      <div class="left-flex">
+        <div class="boxes-tabs">
+          <div class="paginator">
+            <div class="check-paginator">
+              <div class="check-main">
+                <mat-checkbox class="example-margin">SELECTED ITEM</mat-checkbox>
+              </div>
+              <div class="check-txt">
+                <P><span class="yellow-light">0</span> of 5</P>
+              </div>
+
+            </div>
+            <div class="pagination-top">
+              <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+                aria-label="Select page">
+              </mat-paginator>
+            </div>
+          </div>
+          <div class="tab-main">
+            <div class="table-mian">
+              <table>
+                <tr class="row-back">
+                  <td>
+                    <div class="table-check">
+                      <mat-checkbox class="example-margin"></mat-checkbox>
+                      <mat-icon>delete</mat-icon>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-main">
+                      <div class="product-img">
+                        <img src="/assets/images/watch.png">
+                      </div>
+                      <div class="image-text">
+                        <h3></h3>
+                        <p><span>ASIN:</span></p>
+                        <p><span>SKU:</span></p>
+                        <p><span>FNSKU:</span></p>
+                        <p><span>labling Requaired:</span>
+                        </p>
+
+                      </div>
+
+                    </div>
+                  </td>
+                  <td>
+                    <div class="overweight-main">
+                      <h3>
+                        <mat-icon>warning</mat-icon> OVERWEIGHT <span>REQUIRES
+                          SPLIT</span>
+                      </h3>
+                    </div>
+                    <div class="overweight-inputs">
+                      <div class="flex1">
+                        <div class="inputs-mian">
+
+                          <label>Total Unit</label>
+                          <div class="custom-inputs box-input">
+                          </div>
+                        </div>
+                        <div class="inputs-mian">
+                          <label>Total Weight</label>
+                          <div class="custom-inputs box-input">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex1">
+                        <div class="inputs-mian">
+                          <label>Boxed</label>
+                          <div class="custom-inputs box-input">
+                          </div>
+                        </div>
+                        <div class="inputs-mian">
+                          <label>Un-boxed</label>
+                          <div class="custom-inputs box-input">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tex-align">
+                    <button mat-button color="primary" class="light-green Print">Print
+                      Item
+                      Lable
+                    </button>
+                    <div class="boxes-main">
+                      <button mat-button color="primary" class="box">
+                        box#1 Quantity 2
+                      </button>
+                      <button mat-button color="primary" class="box margin">
+                        box#2 Quantity 1
+                      </button>
+                    </div>
+                    <button mat-button color="primary" class="dark-purpel split">
+                      Split Me
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-flex">
+        <div class="right-boxes-back">
+          <h1>Boxes</h1>
+          <div class="boxes-over-flow">
+            <div class="boxes-min-hight">
+              <div class="box-mian box-recive">
+                <div class="box-mian-padding">
+                  <div class="box-btns  spacing">
+                    <button mat-button color="primary" class="light-green box1">Box
+                    </button>
+
+                    <button mat-button color="primary" class="orange-badge box1">Genrate
+                      Barcode</button>
+
+                    <mat-icon class="deleteBox">delete</mat-icon>
+                  </div>
+                  <div class="box-btns spacing">
+                    <span class="list-text">Item:0</span>
+
+                  </div>
+                  <div class="box-btns spacing">
+                    <span class="list-text">Weight:lb</span>
+                    <!-- <button mat-button color="primary" class="light-green box1">Box1</button> -->
+                  </div>
+                  <div class="box-btns spacing">
+                    <!-- <span class="list-text">Weight:kg</span> -->
+                    <!-- <button mat-button color="primary" class="light-green box1">Box1</button> -->
+                  </div>
+                </div>
+
+                <div class="drop-here">
+                  <p>Drop Here In Box</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="box-add-btns">
+            <button mat-button color="primary" class=" Print-box">Print Box
+              (s)</button>
+            <button mat-button color="primary" class="blue-btn add-box">Add
+              Box</button>
+          </div>
+          <!-- <div class="box-add-btns">
+            <button mat-button color="primary" class=" Print-box">Add Box Dimensions</button>
+            <button mat-button color="primary" class="light-red add-box" (click)="removeBox() ">Delete Box</button>
+          </div> -->
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
