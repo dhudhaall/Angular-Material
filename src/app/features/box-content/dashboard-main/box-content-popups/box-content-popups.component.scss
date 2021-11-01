@@ -1,3 +1,191 @@
 .mat-dialog-container {
-    padding: 0 !important;
+  padding: 0 !important;
+}
+.mat-ink-bar {
+  background-color: #39b54a !important;
+}
+////////////////////////////////////////////////BOX -----CONTENT-----POPUPS//////////////////////
+.boxed-popup {
+  width: 500px;
+  .heading {
+    position: relative;
+    margin-top: 10px;
+
+    h1 {
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .mat-icon {
+      color: #000;
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+    p {
+      margin-bottom: 0px;
+      line-height: 1;
+    }
+  }
+  .popup-btn {
+    text-align: right;
+    margin-top: 20px;
+
+    padding: 10px 8px 10px 6px;
+    a {
+      margin-right: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .add {
+      line-height: 33px;
+      color: #fff;
+      font-size: 13px;
+    }
+    .skip {
+      line-height: 33px;
+      color: #fff;
+      font-size: 13px;
+      margin: 0px 10px;
+    }
+  }
+}
+////////////////////////////////////////////////BOX -----EMPTY-----POPUP//////////////////////
+.add-empty-popup {
+  width: 550px;
+  .tamplet-name {
+    label {
+      margin-top: 10px;
+    }
+    .input {
+      width: 100%;
+      border: 1px solid #e7ebea;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 10px 10px;
+      color: #000;
+      font-size: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .input:focus {
+      outline: none;
+    }
+  }
+  .add-empty-heading {
+    position: relative;
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+    .mat-icon {
+      color: #000;
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+  h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .dimensions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .input {
+      width: 100px;
+      border: 1px solid #e7ebea;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 10px 10px;
+      color: #000;
+      font-size: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .input:focus {
+      outline: none;
+    }
+  }
+  .emty-value-btn {
+    text-align: right;
+    margin-top: 20px;
+
+    padding: 10px 8px 10px 6px;
+    a {
+      margin-right: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .add {
+      line-height: 33px;
+      color: #fff;
+      font-size: 13px;
+    }
+    .skip {
+      margin-right: 10px;
+    }
+  }
+}
+//////////////////////////////////////////////BOX------MANIFEST------ POPUP////////////////////
+.box-manifest-popup {
+  width: 500px;
+  position: relative;
+  h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-weight: 500;
+    .mat-icon {
+      color: #000;
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+  .manifest-details {
+    label {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .input {
+      width: 100%;
+      border: 1px solid #e7ebea;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 10px 10px;
+      color: #000;
+      font-size: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .input:focus {
+      outline: none;
+    }
+  }
+  .manifest-btn {
+    text-align: right;
+    margin-top: 20px;
+
+    padding: 10px 8px 10px 6px;
+    a {
+      margin-right: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .create {
+      line-height: 33px;
+      color: #fff;
+      font-size: 13px;
+      margin-right: 10px;
+    }
+    .cancel {
+      color: #ffff;
+    }
+  }
 }

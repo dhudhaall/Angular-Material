@@ -1,0 +1,183 @@
+//////////////////////////////////////ADD--APP--HEADINGS//////////////////////////////
+.add-app-section-main {
+  padding: 10px 20px;
+
+  .add-app-heading {
+    display: flex;
+    align-items: center;
+    .heading-flex {
+      flex-basis: 50%;
+      padding-left: 10px;
+      h2 {
+        font-size: 19px;
+        margin-bottom: 2px;
+        line-height: 1;
+        span {
+          color: #3eadf2;
+        }
+      }
+      p {
+        font-size: 13px;
+        margin-bottom: 0px;
+        line-height: 1;
+        color: #666666;
+      }
+    }
+    .heading-flex2 {
+      flex-basis: 50%;
+      text-align: right;
+      padding-right: 10px;
+      .Continue {
+        color: #ffffff;
+      }
+    }
+  }
+  .app-add-main {
+    margin-top: 20px;
+    .display-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      .flex {
+        flex-basis: 32%;
+        margin-top: 10px;
+        .add-app-border {
+          border: 1px solid #6666667e;
+          border-radius: 7px;
+          padding: 10px;
+
+          .scan-ship-main {
+            display: flex;
+            justify-content: space-between;
+            .heading {
+              h2 {
+                margin-bottom: 8px;
+                line-height: 1;
+                font-size: 19px;
+                color: #666666;
+                font-weight: 400;
+              }
+              p {
+                font-size: 13px;
+                margin-bottom: 10px;
+                line-height: 1;
+                color: #666666;
+              }
+            }
+            .image {
+              width: 52px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .plan {
+            padding-top: 10px;
+            h4 {
+              color: #ff0000;
+              font-size: 12px;
+              line-height: 1;
+              margin-bottom: 8px;
+            }
+            h3 {
+              font-size: 17px;
+              line-height: 1;
+              margin-bottom: 0px;
+              color: #666666;
+            }
+          }
+          .Package-main {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .list-Package {
+              p {
+                margin-bottom: -5px;
+                line-height: 1;
+                color: #666666;
+              }
+              ul {
+                padding-left: 16px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                li {
+                  font-size: 12px;
+                  color: #666666;
+                  margin-bottom: 3px;
+                  line-height: 1.5;
+                }
+              }
+            }
+            .Package-btn {
+              input.add-app-input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+                margin: 0;
+                visibility: hidden;
+              }
+              .added-app-btn {
+                background-color: transparent;
+                border: 1px solid #ff0000;
+                color: #000;
+                border-radius: 5px !important;
+                padding: 15px 31px;
+                display: block;
+                cursor: pointer;
+              }
+              .added-app-btn:hover {
+                background-color: #ff0000 !important;
+                color: #fff;
+              }
+
+              input.add-app-input[type="checkbox"]:checked + label {
+                background-color: #ff0000 !important;
+                color: #fff;
+                content: "App Added";
+              }
+            }
+          }
+          a {
+            color: #00aeef;
+            margin-bottom: 0px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.header-app-suite {
+  background-image: url(/assets/images/appsuite-top.png);
+  background-size: cover;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-apsuite {
+  .footer-image {
+    background-image: url(/assets/images/appsuite-bottom.png);
+    background-size: cover;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .footer-text {
+    background-color: #45bbd7;
+    padding: 10px;
+    width: 100%;
+    p {
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+}
