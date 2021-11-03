@@ -4,7 +4,7 @@
 .bulk-upload-history {
   padding: 0px 20px 0px 20px;
 }
-.history-top-heading {
+::ng-deep .history-top-heading {
   margin-top: 10px;
   .history-page-heading {
     display: flex;
@@ -67,11 +67,28 @@
           color: #97a2a0;
           margin-bottom: 5px;
         }
+        .mat-form-field-appearance-fill .mat-form-field-flex {
+          border-radius: 2px 2px 2px 2px;
+          padding: 0px 0px 0px 0px;
+          background-color: #f9fafa;
+          border: 1px solid #97a0a0;
+        }
+        .mat-form-field-infix {
+          width: 250px;
+          padding: 10px 0px 10px 8px;
+          border: 0;
+        }
+        .mat-form-field-underline {
+          width: auto;
+        }
+        .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+          transform: unset;
+        }
       }
     }
   }
 }
-.history-table {
+::ng-deep .history-table {
   overflow-y: auto;
   .table-main {
     border-top: 2px solid #b7bfbe;
@@ -117,21 +134,4 @@
       }
     }
   }
-}
-.mat-form-field-appearance-fill .mat-form-field-flex {
-  border-radius: 2px 2px 2px 2px !important;
-  padding: 0px 0px 0px 0px !important;
-  background-color: #f9fafa !important;
-  border: 1px solid #97a0a0 !important;
-}
-.mat-form-field-infix {
-  width: 250px !important;
-  padding: 10px 0px 10px 8px !important;
-  border: 0 !important;
-}
-.mat-form-field-underline {
-  width: auto !important;
-}
-.mat-form-field-appearance-fill .mat-select-arrow-wrapper {
-  transform: unset !important;
 }

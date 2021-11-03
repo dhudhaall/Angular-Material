@@ -1,46 +1,46 @@
 <div class="submit-popup">
-    <div class="popup-main">
-        <div class="popup-main-text">
-            <h1>PROCESSING....</h1>
-            <p>Your Bulk Upload is being processed.</p>
-            <p>We will notify you once your upload is complete or if it has resulted in any errors that need to be
-                corrected.
-            </p>
-            <p>A notification will be sent to your System Notifications Inbox and will an email will be sent to email
-                address:
-            </p>
-            <h3><b><a href="#">USER @SELLERCHAIN.COM</a></b></h3>
-        </div>
-        <div class="popup-input">
-            <div class="input-label">
-                <label>
-                    EMAIL SOMEONE ELSE:
-                </label>
-                <div>
-                    <mat-checkbox class="example-margin">Don’t Email Me</mat-checkbox>
-                </div>
-            </div>
-            <div class="input-main">
-                <input type="text" class="custom-inputs email-input " [matMenuTriggerFor]="submitinputMenu">
-                <mat-menu class="popupMenu" #submitinputMenu="matMenu" yPosition="above" xPosition="before">
-                    <div class="tooltip-main">
-                        <h4 class="submit-tooltip">Use a semicolon (;)
-                            to separate multiple
-                            email addresses.</h4>
-                    </div>
-                </mat-menu>
-            </div>
-            <div class="input-lower-text">
-                <p>You can always check the Bulk Upload History page to view the status of the upload.</p>
-            </div>
-        </div>
-        <div class="button-text">
-            <h2>LET’S GO BACK TO THE APP DASHBOARD.</h2>
-            <div>
-                <button mat-raised-button color="primary" class="dark-gray-bdg another">UPLOAD ANOTHER </button>
-                <button mat-raised-button color="primary" class="dark-green thanks">OK,THANKS</button>
-            </div>
-        </div>
-
+  <div class="popup-main">
+    <div class="popup-main-text">
+      <h1>PROCESSING....</h1>
+      <p>Your Bulk Upload is being processed.</p>
+      <p>We will notify you once your upload is complete or if it has resulted in any errors that need to be
+        corrected.
+      </p>
+      <p>A notification will be sent to your System Notifications Inbox and will an email will be sent to email
+        address:
+      </p>
+      <h3><b><a href="#">USER @SELLERCHAIN.COM</a></b></h3>
     </div>
+    <div class="popup-input">
+      <div class="input-label">
+        <label>
+          EMAIL SOMEONE ELSE:
+        </label>
+        <div>
+          <mat-checkbox class="example-margin">Don’t Email Me</mat-checkbox>
+        </div>
+      </div>
+      <div class="input-main">
+        <input type="text" class="custom-inputs email-input " [matMenuTriggerFor]="submitinputMenu">
+        <mat-menu class="popupMenu" #submitinputMenu="matMenu" yPosition="above" xPosition="before">
+          <div class="tooltip-main">
+            <h4 class="submit-tooltip">Use a semicolon (;)
+              to separate multiple
+              email addresses.</h4>
+          </div>
+        </mat-menu>
+      </div>
+      <div class="input-lower-text">
+        <p>You can always check the Bulk Upload History page to view the status of the upload.</p>
+      </div>
+    </div>
+    <div class="button-text">
+      <h2>LET’S GO BACK TO THE APP DASHBOARD.</h2>
+      <div>
+        <button mat-raised-button color="primary" class="dark-gray-bdg another">UPLOAD ANOTHER </button>
+        <button mat-raised-button color="primary" class="dark-green thanks">OK,THANKS</button>
+      </div>
+    </div>
+
+  </div>
 </div>

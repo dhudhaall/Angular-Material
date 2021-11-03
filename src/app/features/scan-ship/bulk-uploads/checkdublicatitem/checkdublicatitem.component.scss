@@ -1,6 +1,6 @@
 @import "/src/assets/styles/variables.scss";
 @import "/src/assets/styles/responsive-styles.scss";
-.dublicat-item-popup {
+::ng-deep .dublicat-item-popup {
   max-width: 1000px;
   max-height: 90vh;
   .popup-mian {

@@ -1,6 +1,6 @@
 @import "/src/assets/styles/variables.scss";
 @import "/src/assets/styles/responsive-styles.scss";
-.bulk-item-detail-section {
+::ng-deep .bulk-item-detail-section {
   padding: 10px 20px;
   .bulk-item-detail-main {
     .page-heading {
@@ -646,6 +646,7 @@
               th:nth-last-child(10) {
                 border-right: none;
               }
+
               th {
                 padding: 10px;
                 border-bottom: 1px solid #e7e8e8;
@@ -653,6 +654,7 @@
                 color: #929d9b;
                 font-weight: 500;
               }
+
               td {
                 border-right: 1px solid #e7e8e8;
                 padding: 10px;
@@ -783,7 +785,7 @@
     }
   }
 }
-.tab-table {
+::ng-deep .tab-table {
   .tab-row {
     td {
       width: 12.5%;
