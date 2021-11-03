@@ -1,0 +1,147 @@
+@import "/src/assets/styles/variables.scss";
+@import "/src/assets/styles/responsive-styles.scss";
+.submit-popup {
+  padding: 20px 50px 20px 50px;
+  .popup-main {
+    max-width: 400px;
+    text-align: center;
+    .popup-main-text {
+      h1 {
+        font-size: 27px;
+        font-weight: 500;
+        color: $light-green;
+      }
+      p {
+        font-size: 15px;
+      }
+      h3 {
+        font-size: 15px;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+    .popup-input {
+      width: 300px;
+      margin: auto;
+      .input-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        label {
+          color: #000;
+        }
+      }
+      .input-main {
+        .email-input {
+          width: 100%;
+        }
+      }
+      .input-lower-text {
+        margin-top: 20px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .button-text {
+      h2 {
+        font-size: 14px;
+      }
+      .another {
+        margin-right: 20px;
+        border-radius: 0px;
+        box-shadow: none;
+      }
+      .thanks {
+        border-radius: 0px;
+        box-shadow: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 530px) {
+  .submit-popup {
+    padding: 10px;
+  }
+  .submit-popup {
+    .popup-main {
+      .popup-input {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 530px) {
+  .submit-popup {
+    .popup-main {
+      .popup-main-text {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .submit-popup {
+    .popup-main {
+      .popup-input {
+        .input-label {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .submit-popup {
+    .popup-main {
+      .popup-input {
+        .input-main .email-input {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .submit-popup {
+    .popup-main {
+      .popup-input {
+        .input-label {
+          label {
+            line-height: 29px;
+          }
+        }
+      }
+    }
+  }
+  .submit-popup {
+    .popup-main {
+      .button-text {
+        h2 {
+          line-height: 1;
+        }
+      }
+    }
+  }
+  .submit-popup {
+    .popup-main {
+      .popup-input {
+        .input-lower-text {
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .submit-popup {
+    .popup-main {
+      .button-text {
+        .another {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

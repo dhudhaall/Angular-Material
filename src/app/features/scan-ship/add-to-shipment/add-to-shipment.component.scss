@@ -440,3 +440,77 @@
     }
   }
 }
+@media only screen and (max-width: 1780px) {
+  .add-ship-section {
+    .add-ship-main {
+      .pils-table {
+        .item-Head {
+          .item-name {
+            h3 {
+              font-size: 20px;
+              margin-bottom: 4px;
+            }
+            p {
+              span {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 994px) {
+  .add-ship-section {
+    .add-ship-main {
+      .pils-table {
+        .item-Head {
+          .item-name {
+            p {
+              span {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .add-ship-section {
+    .add-ship-main {
+      .tbale-heading {
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .add-ship-section {
+    .add-ship-main {
+      .table-text {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .add-ship-section {
+    .add-ship-main {
+      .shipment-btn {
+        text-align: center;
+      }
+    }
+  }
+  .add-ship-section {
+    .add-ship-main {
+      .shipment-btn {
+        .shipment {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
