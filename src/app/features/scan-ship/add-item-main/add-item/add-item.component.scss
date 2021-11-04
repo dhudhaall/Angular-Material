@@ -1,6 +1,7 @@
 @import "/src/assets/styles/variables.scss";
 @import "/src/assets/styles/responsive-styles.scss";
 ////////////////////////////////////////////ADD ITEM PAGE//////////////////////
+
 .overly-image {
   display: flex;
   height: 355px;
@@ -20,7 +21,7 @@
     flex: 1;
   }
 }
-.add-item-sec {
+::ng-deep .add-item-sec {
   background-color: $primaryColor;
   .add-item-main {
     padding: 40px 0px 40px 0px;
