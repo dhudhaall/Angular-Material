@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////BOX CONTENT DASHBOARD///////////////////
-.box-content-section {
+::ng-deep .box-content-section {
   .box-content-main {
     ////////////////// BOX CONTENT HEADING STYLE///////////////
     .page-heading {
@@ -343,6 +343,121 @@
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .box-content-section {
+    .box-content-main {
+      .box-conten-table-main {
+        .left-table {
+          margin-right: 0px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .box-content-section .box-content-main .page-heading .heading-txt .mat-icon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .box-content-section {
+    .box-content-main {
+      .page-heading {
+        .heading-txt {
+          .heading-flex {
+            h1 {
+              font-size: 22px;
+            }
+          }
+          .mat-icon {
+            font-size: 50px;
+            margin-right: 6px;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      .field-flex {
+        justify-content: center;
+        .box-content-field {
+          .fields-main {
+            flex-direction: column;
+            .radio-text {
+              .radio-btn .mat-radio-group {
+                flex-direction: row;
+              }
+              h4 {
+                width: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 530px) {
+  .box-content-section {
+    .box-content-main {
+      .box-conten-table-main {
+        .left-table,
+        .right-table {
+          .table-heading {
+            flex-direction: column;
+          }
+        }
+      }
+      .page-heading {
+        flex-direction: column;
+        padding-bottom: 10px;
+      }
+      .field-flex {
+        .box-content-field {
+          .fields-main {
+            .radio-text {
+              .radio-btn {
+                margin-left: 0px;
+                margin-top: 10px;
+              }
+            }
+            .input-btn {
+              flex-direction: column;
+              .input-main {
+                margin-left: 0px;
+              }
+              .search-btn {
+                .mat-button {
+                  margin-left: 0px;
+                  margin-top: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  .box-content-section {
+    .box-content-main {
+      .page-heading .heading-txt {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      .field-flex {
+        .box-content-field {
+          .fields-main {
+            .radio-text {
+              flex-direction: column;
             }
           }
         }
