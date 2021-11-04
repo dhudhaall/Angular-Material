@@ -434,3 +434,85 @@
     }
   }
 }
+@media only screen and (max-width: 1400px) {
+  .slect-package-section .right-section {
+    flex-basis: 324px;
+  }
+  .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-main .text h1 {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .slect-package-section .right-section {
+    flex-basis: 289px;
+  }
+}
+@media only screen and (max-width: 994px) {
+  .slect-package-section .left-section .marketplace-main .flex-1 .flex-boder p {
+    font-size: 13px;
+  }
+  .slect-package-section .right-section .package-right-side-bar h1 {
+    font-size: 15px;
+  }
+  .slect-package-section .right-section .package-right-side-bar .pakages-plan-table .table-main table td {
+    font-size: 13px;
+  }
+  section .right-section .package-right-side-bar .package-side-bar-buttons .select1 label {
+    padding: 9px 20px;
+  }
+  .slect-package-section .right-section .package-right-side-bar h1 {
+    font-size: 15px;
+    padding-left: 8px;
+  }
+  .slect-package-section .left-section .plans-select-main {
+    flex-wrap: wrap;
+  }
+  .slect-package-section .left-section .plans-select-main .flex1 {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 994px) {
+  .slect-package-section .left-section .marketplace-main {
+    align-items: normal;
+    flex-direction: column;
+  }
+  .slect-package-section .left-section .marketplace-main .flex-1 {
+    flex-basis: 100%;
+    padding: 0px 0px 10px 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slect-package-section {
+    flex-direction: column;
+  }
+  .slect-package-section .right-section .package-right-side-bar .pay-now button {
+    padding: 13px 0px;
+    font-size: 13px;
+  }
+  .slect-package-section .right-section .package-right-side-bar .total-payment h3 {
+    font-size: 13px;
+  }
+  .slect-package-section .right-section .package-right-side-bar .total-payment {
+    padding: 10px 10px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-main .text h1 {
+    font-size: 15px;
+  }
+  .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-main .text p {
+    font-size: 10px;
+  }
+  .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-list-main .plan-list p {
+    font-size: 11px;
+  }
+  .slect-package-section .right-section .package-right-side-bar h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .slect-package-section .right-section .package-right-side-bar .pakages-plan-table .table-headings {
+    text-align: center;
+  }
+}
