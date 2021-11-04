@@ -532,10 +532,6 @@
       }
     }
   }
-
-  .shipping-listing-search .search-form input {
-    width: 450px;
-  }
 }
 
 @media only screen and (max-width: 994px) {
@@ -543,13 +539,6 @@
     width: unset;
   }
 
-  .shipping-listing-search {
-    .title {
-      h1 {
-        font-size: 20px;
-      }
-    }
-  }
   .shipment-table-main {
     table {
       .mat-header-cell {
@@ -568,15 +557,6 @@
           width: auto;
           margin: auto;
         }
-      }
-    }
-  }
-  .shipping-listing-search {
-    .title {
-      .mat-icon {
-        font-size: 40px;
-        width: 40px;
-        height: 47px;
       }
     }
   }
@@ -979,10 +959,6 @@
       }
     }
   }
-
-  .shipping-listing-search .search-form input {
-    width: 350px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1152,21 +1128,6 @@
         }
       }
     }
-  }
-
-  .shipping-listing-search {
-    flex-direction: column;
-    .search-form {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  .shipping-listing-search .search-form input {
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-  .shipping-listing-search .search-form input {
-    width: 250px;
   }
 
   //////////////////////////////////////////////////BOX---CONTENT-DASHBOARD////////////////////////
