@@ -1,6 +1,6 @@
 @import "/src/assets/styles/variables.scss";
 @import "/src/assets/styles/responsive-styles.scss";
-.addnew-item-main {
+::ng-deep .addnew-item-main {
   margin-top: 20px;
   .addnew-content-section {
     .new-item-heading-sec {

@@ -1,6 +1,6 @@
 @import "/src/assets/styles/variables.scss";
 @import "/src/assets/styles/responsive-styles.scss";
-.pop-up-section {
+::ng-deep .pop-up-section {
   max-width: 800px;
   position: relative;
   height: calc(100vh - 100px);

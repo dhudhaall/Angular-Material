@@ -1,7 +1,7 @@
 @import "/src/assets/styles/variables.scss";
 @import "/src/assets/styles/responsive-styles.scss";
 //////////////////////////////////bulk-section//////////////////////////////////
-.bulk-section {
+::ng-deep .bulk-section {
   padding: 20px;
   .bulk-section-main {
     .page-heading {
