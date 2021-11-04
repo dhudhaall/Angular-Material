@@ -181,3 +181,51 @@
     }
   }
 }
+@media only screen and (max-width: 1200px) {
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .Package-main .Package-btn .added-app-btn {
+    padding: 7px 13px;
+  }
+}
+@media only screen and (max-width: 994px) {
+  .add-app-section-main .app-add-main .display-main .flex {
+    flex-basis: 48%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .add-app-section-main {
+    .add-app-heading {
+      .heading-flex {
+        h2 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .add-app-section-main .app-add-main .display-main .flex {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main .heading h2 {
+    font-size: 16px;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main .heading p {
+    font-size: 11px;
+    margin-bottom: 3px;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .plan {
+    padding-top: 3px;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main .image {
+    width: 45px;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border a {
+    text-align: center;
+    display: block;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .footer-apsuite .footer-text p {
+    font-size: 11px;
+  }
+}

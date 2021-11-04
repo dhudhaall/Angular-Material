@@ -383,12 +383,7 @@
     width: 40px;
     height: 40px;
   }
-  .slect-package-section .right-section {
-    flex-basis: 324px;
-  }
-  .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-main .text h1 {
-    font-size: 17px;
-  }
+
   .content-details-section
     .content-details-main
     .boxes-tabs-section
@@ -540,12 +535,6 @@
 
   .shipping-listing-search .search-form input {
     width: 450px;
-  }
-  .add-app-section-main .app-add-main .display-main .flex .add-app-border .Package-main .Package-btn .added-app-btn {
-    padding: 7px 13px;
-  }
-  .slect-package-section .right-section {
-    flex-basis: 289px;
   }
 }
 
@@ -745,33 +734,6 @@
   .content-details-section .content-details-main .boxes-tabs-section .left-flex {
     flex-basis: 100%;
     margin-right: 0px;
-  }
-  .add-app-section-main .app-add-main .display-main .flex {
-    flex-basis: 48%;
-  }
-
-  .slect-package-section .left-section .marketplace-main .flex-1 .flex-boder p {
-    font-size: 13px;
-  }
-  .slect-package-section .right-section .package-right-side-bar h1 {
-    font-size: 15px;
-  }
-  .slect-package-section .right-section .package-right-side-bar .pakages-plan-table .table-main table td {
-    font-size: 13px;
-  }
-  section .right-section .package-right-side-bar .package-side-bar-buttons .select1 label {
-    padding: 9px 20px;
-  }
-  .slect-package-section .right-section .package-right-side-bar h1 {
-    font-size: 15px;
-    padding-left: 8px;
-  }
-  .slect-package-section .left-section .plans-select-main {
-    flex-wrap: wrap;
-  }
-  .slect-package-section .left-section .plans-select-main .flex1 {
-    flex-basis: 100%;
-    margin-top: 10px;
   }
 }
 
@@ -1021,14 +983,6 @@
   .shipping-listing-search .search-form input {
     width: 350px;
   }
-  .slect-package-section .left-section .marketplace-main {
-    align-items: normal;
-    flex-direction: column;
-  }
-  .slect-package-section .left-section .marketplace-main .flex-1 {
-    flex-basis: 100%;
-    padding: 0px 0px 10px 0px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1255,31 +1209,6 @@
     justify-content: center;
   }
   /////////////////////////////////app-suite///////////////////////////////////////
-  .add-app-section-main {
-    .add-app-heading {
-      .heading-flex {
-        h2 {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-  .add-app-section-main .app-add-main .display-main .flex {
-    flex-basis: 100%;
-  }
-  .slect-package-section {
-    flex-direction: column;
-  }
-  .slect-package-section .right-section .package-right-side-bar .pay-now button {
-    padding: 13px 0px;
-    font-size: 13px;
-  }
-  .slect-package-section .right-section .package-right-side-bar .total-payment h3 {
-    font-size: 13px;
-  }
-  .slect-package-section .right-section .package-right-side-bar .total-payment {
-    padding: 10px 10px;
-  }
 }
 
 @media only screen and (max-width: 530px) {
@@ -1425,35 +1354,6 @@
       }
     }
   }
-  .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main .heading h2 {
-    font-size: 16px;
-  }
-  .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main .heading p {
-    font-size: 11px;
-    margin-bottom: 3px;
-  }
-  .add-app-section-main .app-add-main .display-main .flex .add-app-border .plan {
-    padding-top: 3px;
-  }
-  .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main .image {
-    width: 45px;
-  }
-  .add-app-section-main .app-add-main .display-main .flex .add-app-border a {
-    text-align: center;
-    display: block;
-  }
-  .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-main .text h1 {
-    font-size: 15px;
-  }
-  .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-main .text p {
-    font-size: 10px;
-  }
-  .slect-package-section .left-section .plans-select-main .flex1 .plan-border .plan-list-main .plan-list p {
-    font-size: 11px;
-  }
-  .slect-package-section .right-section .package-right-side-bar h1 {
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -1534,11 +1434,5 @@
   .add-app-section-main .add-app-heading .heading-flex {
     padding-left: 0;
     text-align: center;
-  }
-  .slect-package-section .right-section .package-right-side-bar .pakages-plan-table .table-headings {
-    text-align: center;
-  }
-  .footer-apsuite .footer-text p {
-    font-size: 11px;
   }
 }
