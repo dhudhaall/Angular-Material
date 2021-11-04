@@ -153,7 +153,7 @@
 .deleteBox {
   color: #d32d23;
 }
-.content-details-section {
+::ng-deep .content-details-section {
   margin-left: 10px;
   .content-details-main {
     ////////////////// BOX CONTENT HEADING STYLE///////////////

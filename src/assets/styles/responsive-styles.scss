@@ -337,16 +337,7 @@
   }
 
   /////////////////////////////////////BOX-CONTENT--DASHBOARD////////////////////////////
-  .box-content-section {
-    .box-content-main {
-      .box-conten-table-main {
-        .left-table {
-          margin-right: 0px;
-          margin-bottom: 20px;
-        }
-      }
-    }
-  }
+
   .content-details-section
     .content-details-main
     .boxes-tabs-section
@@ -377,11 +368,6 @@
     td
     .overweight-main {
     padding: 8px 3px;
-  }
-  .box-content-section .box-content-main .page-heading .heading-txt .mat-icon {
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
   }
 
   .content-details-section
@@ -1131,41 +1117,7 @@
   }
 
   //////////////////////////////////////////////////BOX---CONTENT-DASHBOARD////////////////////////
-  .box-content-section {
-    .box-content-main {
-      .page-heading {
-        .heading-txt {
-          .heading-flex {
-            h1 {
-              font-size: 22px;
-            }
-          }
-          .mat-icon {
-            font-size: 50px;
-            margin-right: 6px;
-            width: 50px;
-            height: 50px;
-          }
-        }
-      }
-      .field-flex {
-        justify-content: center;
-        .box-content-field {
-          .fields-main {
-            flex-direction: column;
-            .radio-text {
-              .radio-btn .mat-radio-group {
-                flex-direction: row;
-              }
-              h4 {
-                width: unset;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+
   .content-details-section .content-details-main .page-heading {
     justify-content: center;
   }
@@ -1275,46 +1227,6 @@
     flex-direction: column;
   }
   ////////////////////////////////////BOX -- CONTENT --DASHBOARD////////////////////////////////
-  .box-content-section {
-    .box-content-main {
-      .box-conten-table-main {
-        .left-table,
-        .right-table {
-          .table-heading {
-            flex-direction: column;
-          }
-        }
-      }
-      .page-heading {
-        flex-direction: column;
-        padding-bottom: 10px;
-      }
-      .field-flex {
-        .box-content-field {
-          .fields-main {
-            .radio-text {
-              .radio-btn {
-                margin-left: 0px;
-                margin-top: 10px;
-              }
-            }
-            .input-btn {
-              flex-direction: column;
-              .input-main {
-                margin-left: 0px;
-              }
-              .search-btn {
-                .mat-button {
-                  margin-left: 0px;
-                  margin-top: 10px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -1346,23 +1258,7 @@
   }
 
   ////////////////////////////////////////BOX----CONTENT --- DASHBOARD//////////////////////////
-  .box-content-section {
-    .box-content-main {
-      .page-heading .heading-txt {
-        flex-direction: column;
-        margin-bottom: 10px;
-      }
-      .field-flex {
-        .box-content-field {
-          .fields-main {
-            .radio-text {
-              flex-direction: column;
-            }
-          }
-        }
-      }
-    }
-  }
+
   .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main {
     flex-direction: column-reverse;
 
