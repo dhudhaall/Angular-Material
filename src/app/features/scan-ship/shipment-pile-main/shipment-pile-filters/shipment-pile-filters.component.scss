@@ -1,0 +1,79 @@
+@import "/src/assets/styles/variables.scss";
+@import "/src/assets/styles/responsive-styles.scss";
+::ng-deep .add-items-right-bar {
+  .add-items-plan {
+    background-color: #fff;
+    border: 1px solid #616161 !important;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .ship-from {
+    display: flex;
+    margin-top: 20px;
+    .text {
+      flex: 1;
+      p {
+        font-size: 11px;
+        line-height: 1;
+        margin: 0;
+        color: #000;
+        max-width: 100px;
+      }
+    }
+    .btn-side {
+      button {
+        background-color: #00aeef;
+      }
+    }
+  }
+  .selected-items {
+    position: relative;
+    .circleBig {
+      color: #ffffff;
+      border-radius: 50%;
+      padding: 3px 7px;
+      font-size: 13px;
+      margin-right: 10px;
+    }
+    .qty-print {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .qty {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        label {
+          color: #908e8e;
+          padding-right: 5px;
+        }
+        input {
+          border: 2px solid #d8d8d8;
+          padding: 6px;
+          max-width: 40px;
+          border-radius: 3px;
+        }
+      }
+      .print-select {
+        select {
+          background-color: $light-green;
+          padding: 10px;
+          border-radius: 5px;
+          color: #fff;
+          border: 0;
+          width: 100%;
+        }
+      }
+    }
+    .revert-all {
+      position: absolute;
+      width: 30px;
+      right: 0;
+    }
+  }
+  .mat-raised-button.nextBtn {
+    width: 150px;
+    color: #fff;
+    margin-top: 50px;
+  }
+}

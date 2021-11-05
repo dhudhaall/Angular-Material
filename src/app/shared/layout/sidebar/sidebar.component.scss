@@ -1,3 +1,5 @@
+@import "/src/assets/styles/variables.scss";
+@import "/src/assets/styles/responsive-styles.scss";
 .sidenav {
   width: 250px;
   transition: all 0.3s ease-in-out;
@@ -67,4 +69,45 @@ mwlResizable {
   border: solid 1px #121621;
   color: #121621;
   margin: auto;
+}
+/////////////////////////////side bar////////////////
+::ng-deep .sidebar {
+  .nav {
+    .active-link {
+      background-color: #fafafa;
+      border-left: solid 3px $primaryColor;
+    }
+    .hover {
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-property: transform, border, background-color;
+    }
+    mat-list-item,
+    a {
+      border: none;
+      box-sizing: border-box;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        background-color: #fafafa;
+        border-left: solid 3px $primaryColor;
+      }
+    }
+    .mat-icon {
+      color: $primaryColor;
+    }
+  }
+  .mat-list-base {
+    border-bottom: 1px solid #e1dede;
+    padding-top: 0;
+  }
+  .mat-list-base .mat-list-item.mat-list-item-with-avatar,
+  .mat-list-base .mat-list-option.mat-list-item-with-avatar {
+    height: 45px;
+  }
+  .sublist {
+    .mat-list-base {
+      border-bottom: 0;
+    }
+  }
 }

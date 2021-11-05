@@ -1,0 +1,36 @@
+@import "/src/assets/styles/variables.scss";
+@import "/src/assets/styles/responsive-styles.scss";
+/*//////Breadcrumbs Styles ///////*/
+::ng-deep .breadcrumbs-main {
+  background-color: $primaryColor;
+  color: #fff;
+  padding: 5px 10px;
+  .breadcrumbs-inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    .inner-main {
+      display: flex;
+      align-items: center;
+    }
+    .slide-text {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 15px;
+        margin-bottom: 0;
+        color: #ffffff;
+        margin-right: 10px;
+      }
+      .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+        background-color: rgba(0, 0, 0, 0.38);
+      }
+      .mat-slide-toggle {
+        min-width: 70px;
+      }
+      .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
