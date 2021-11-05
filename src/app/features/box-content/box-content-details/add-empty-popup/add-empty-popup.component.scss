@@ -155,44 +155,6 @@
   }
 }
 
-.box-content-filter {
-  background-color: #afb0b342;
-  padding: 20px 10px;
-  border-radius: 2px;
-  .box-content-filter-main {
-    h3 {
-      font-size: 20px;
-      margin-bottom: 15px;
-      line-height: 1;
-      font-weight: 500;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      td {
-        font-size: 15px;
-        border-bottom: 1px solid #929d9b;
-        padding: 6px 0px;
-        .type-red {
-          color: #d32d23;
-        }
-        .size {
-          font-weight: 500;
-        }
-      }
-      .right {
-        text-align: right;
-      }
-    }
-    .sku-btns {
-      text-align: right;
-      margin-top: 10px;
-      .sku {
-        color: #ffffff;
-      }
-    }
-  }
-}
 ////////////////////////////////////////////////BOX -----CONTENT-----POPUPS//////////////////////
 .boxed-popup {
   width: 500px;
