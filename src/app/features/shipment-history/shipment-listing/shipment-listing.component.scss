@@ -183,6 +183,27 @@
       }
     }
   }
+  .shipment-table-main {
+    table {
+      .mat-header-cell {
+        font-size: 13px;
+        padding: 3px;
+        font-weight: 500;
+      }
+    }
+  }
+  .shipment-table-main {
+    table {
+      .mat-cell {
+        .badgeCustom-label {
+          padding: 1px 3px;
+          font-size: 10px;
+          width: auto;
+          margin: auto;
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 860px) {
   .shipping-listing-search .search-form input {

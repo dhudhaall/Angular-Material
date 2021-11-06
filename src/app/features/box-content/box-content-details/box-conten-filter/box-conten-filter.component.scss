@@ -173,3 +173,27 @@
     }
   }
 }
+@media only screen and (max-width: 1400px) {
+  .side-bar {
+    .side-bar-main {
+      .plan-sec {
+        h3 {
+          font-size: 12px;
+        }
+        .plan-main {
+          .plan .flex {
+            h4 {
+              font-size: 11px;
+            }
+          }
+        }
+        h1 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

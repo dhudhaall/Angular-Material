@@ -228,4 +228,37 @@
   .footer-apsuite .footer-text p {
     font-size: 11px;
   }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main {
+    flex-direction: column-reverse;
+
+    text-align: center;
+  }
+  .add-app-section-main .add-app-heading {
+    align-items: center;
+    flex-direction: column;
+  }
+  .add-app-section-main .add-app-heading .heading-flex2 {
+    margin-top: 10px;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .scan-ship-main .image {
+    margin: auto;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .plan {
+    text-align: center;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .Package-main {
+    align-items: center;
+    flex-direction: column;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border .Package-main .list-Package p {
+    text-align: center;
+  }
+  .add-app-section-main .app-add-main .display-main .flex .add-app-border a {
+    text-align: center;
+    display: block;
+  }
+  .add-app-section-main .add-app-heading .heading-flex {
+    padding-left: 0;
+    text-align: center;
+  }
 }
