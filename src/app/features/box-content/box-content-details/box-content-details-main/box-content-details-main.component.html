@@ -534,11 +534,11 @@
                 class="box-mian box-recive">
                 <div class="box-mian-padding">
                   <div class="box-btns  spacing">
-                    <button mat-button color="primary" class="light-green box1" (click)="chooseBox(product)">Box
+                    <button mat-button color="primary" (click)="chooseBox(product)" class="light-green box1"
+                      routerLink="/boxcontent/contentbox">Box
                       {{index+1}}</button>
 
-                    <button mat-button color="primary" class="orange-badge box1"
-                      routerLink="/boxcontent/contentbox">Genrate
+                    <button mat-button color="primary" class="orange-badge box1">Genrate
                       Barcode</button>
 
                     <mat-icon class="deleteBox" (click)="removeBox()">delete</mat-icon>
