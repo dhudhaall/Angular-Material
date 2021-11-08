@@ -23,7 +23,11 @@ import { BoxSetupComponent } from './box-content-details/box-setup/box-setup.com
 import { AddEmptyPopupComponent } from './box-content-details/add-empty-popup/add-empty-popup.component';
 import { SingleBoxViewMainComponent } from './single-box-view-main/single-box-view-main.component';
 import { SingleBoxViewComponent } from './single-box-view-main/single-box-view/single-box-view.component';
-import { SingleBoxFiltersComponent } from './single-box-view-main/single-box-filters/single-box-filters.component'
+import { SingleBoxFiltersComponent } from './single-box-view-main/single-box-filters/single-box-filters.component';
+import { BoxContentDetailComponent } from './box-content-detail/box-content-detail.component';
+import { FiltersComponent } from './box-content-detail/filters/filters.component';
+import { ContentMainComponent } from './box-content-detail/content-main/content-main.component';
+;
 
 @NgModule({
   declarations: [
@@ -47,7 +51,11 @@ import { SingleBoxFiltersComponent } from './single-box-view-main/single-box-fil
     AddEmptyPopupComponent,
     SingleBoxViewMainComponent,
     SingleBoxViewComponent,
-    SingleBoxFiltersComponent
+    SingleBoxFiltersComponent,
+    BoxContentDetailComponent,
+    FiltersComponent,
+    ContentMainComponent
+
   ],
   imports: [
     CommonModule,

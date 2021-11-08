@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BoxContentDetailComponent } from './box-content-detail/box-content-detail.component';
 import { BoxContentDetailsComponent } from './box-content-details/box-content-details.component';
 
 import { BoxTemplatesMainComponent } from './box-templates-main/box-templates-main.component';
@@ -22,9 +23,15 @@ const routes: Routes = [
     path: 'templates',
     component: BoxTemplatesMainComponent
   },
+
   {
     path: 'contentdetail/:id',
     component: SingleBoxViewMainComponent
+  }
+  ,
+  {
+    path: 'contentbox',
+    component: BoxContentDetailComponent
   }
 ];
 

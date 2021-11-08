@@ -36,6 +36,8 @@ export class SidebarComponent implements OnInit {
       children: [
         { link: "boxcontent/contentdetail", name: "Box Content Detail", icon: "price_change" },
         { link: "boxcontent/templates", name: "Box Templates", icon: "price_change" },
+        { link: "boxcontent/contentbox", name: "Box Templates", icon: "price_change" },
+
       ]
     },
     { link: "", name: "Settings", icon: "settings" },

@@ -1,0 +1,133 @@
+<section class="content-details-section">
+  <div class="content-details-main">
+    <!-- ////////////////// BOX CONTENT HEADING HTML/////////////// -->
+    <div class="page-heading">
+      <div class="heading-txt">
+        <div>
+          <mat-icon>inventory_2</mat-icon>
+        </div>
+        <div class="heading-flex">
+          <h1>Box Content Details</h1>
+        </div>
+      </div>
+      <div class="box-content-text ">
+        <p>Box Manifest <span>KZZQMB47U7RTBQ4M</span></p>
+        <p>Box Manifest <span>FBA1684FV4DW</span></p>
+
+      </div>
+    </div>
+
+    <!-- ////////////////// BOX CONTENT FIELDS HTML/////////////// -->
+    <div class="field-flex">
+      <div class="fields-main">
+        <div class="input-main">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <input matInput placeholder="Sear For SKU ASIN,...">
+          </mat-form-field>
+        </div>
+        <div class="search-btn">
+          <button mat-button color="primary">SEARCH</button>
+        </div>
+        <div class="select-field-main">
+          <select class="custom-inputs select-field">
+            <option>SCAN TO BOX</option>
+            <option>SCAN TO BOX</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="field-right">
+        <button mat-button color="primary" (click)="boxsetuppopup()" class="box-setup full-dark-gary">
+          Box Setup
+        </button>
+      </div>
+    </div>
+    <!-- ////////////////// BOX CONTENT FIELDS HTML/////////////// -->
+    <div class="field-flex">
+      <div class="fields-main">
+        <label>Box</label>
+        <div class="input-main select-margin">
+          <select class="custom-inputs select-field">
+            <option>SCAN TO BOX</option>
+            <option>SCAN TO BOX</option>
+          </select>
+        </div>
+        <div class="search-btn">
+          <button mat-button color="primary" class="clean ">Print & Clean Box</button>
+          <button mat-button color="primary" class="clean orange-badge">Print & Clean Box</button>
+        </div>
+        <div class="select-field-main">
+
+        </div>
+
+      </div>
+
+      <div class="field-right">
+        <button mat-button color="primary" (click)="boxsetuppopup()" class="box-setup red-badge-shine">
+          Delete Box
+        </button>
+      </div>
+    </div>
+    <!-- ////////////////// BOX CONTENT -- DESTAIL --- Table/////////////// -->
+    <div class="table-main">
+      <table>
+        <tr>
+          <th>Image</th>
+          <th>ASIN</th>
+          <th>Title</th>
+          <th>Splite Qty</th>
+          <th>SKU</th>
+          <th>FSKU</th>
+          <th>Weight <br> <span>(ibs)</span> </th>
+          <th>Heigth <br><span>(in)</span> </th>
+          <th>Weight <br><span>(in)</span> </th>
+          <th>Heigth <br><span>(in)</span> </th>
+          <th>Expration Date</th>
+          <th></th>
+          <th>action</th>
+        </tr>
+        <tr>
+          <td>
+            <img src="/assets/images/watch.png">
+          </td>
+          <td>
+            <h3>B00NIO9YSI</h3>
+          </td>
+          <td>
+            <p>
+              Misfit Wearables Flash<br>
+              Fitness and Sleep Monitor
+            </p>
+
+          </td>
+          <td>
+            1
+          </td>
+          <td>
+            <p>GOH-MYS-4ZNUM4IKMJ0DBD</p>
+
+          </td>
+          <td>
+            X002XZK6KF
+          </td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>10</td>
+          <td>10/22/2021</td>
+          <td>
+            <button mat-button color="primary" class="green print">Print Item Label</button>
+          </td>
+          <td>
+            <div>
+              <button mat-button color="primary" class="pink split">Split me</button>
+              <button mat-button color="primary" class="red-badge remove">Remove</button>
+            </div>
+
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
