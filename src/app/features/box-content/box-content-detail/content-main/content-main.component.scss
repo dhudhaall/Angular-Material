@@ -36,7 +36,7 @@
       .box-content-text {
         flex-basis: 50%;
         display: flex;
-
+        justify-content: flex-end;
         align-items: center;
         p {
           line-height: 1;
@@ -141,19 +141,19 @@
       table {
         border-collapse: collapse;
         width: 100%;
-        border: 1px solid #afb0b3;
+        border: 1px solid #b7bfbe7a;
         th {
-          color: #afb0b3;
+          color: #b7bfbe;
           font-size: 11px;
-          border-bottom: 1px solid #afb0b3;
-          padding: 0px 5px;
+          border-bottom: 1px solid #b7bfbe7a;
+          padding: 10px 5px;
           text-align: center;
           line-height: 1;
         }
         td {
           font-size: 12px;
           padding: 0px 5px;
-          border-bottom: 1px solid #afb0b3;
+          border-bottom: 1px solid #b7bfbe7a;
           text-align: center;
           img {
             width: 70px;
@@ -175,6 +175,7 @@
           .print {
             line-height: 30px;
             color: #ffffff;
+            font-size: 12px;
           }
           div {
             display: flex;
@@ -183,10 +184,12 @@
               line-height: 30px;
               color: #ffffff;
               margin-bottom: 10px;
+              font-size: 12px;
             }
             .remove {
               line-height: 30px;
               color: #ffffff;
+              font-size: 12px;
             }
           }
         }
