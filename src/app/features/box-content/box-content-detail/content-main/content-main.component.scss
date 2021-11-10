@@ -139,7 +139,9 @@
     ////////////////// box-manifest --STYLE///////////////
     .table-main {
       margin-top: 50px;
+      overflow-y: auto;
       table {
+        min-width: 1000px;
         border-collapse: collapse;
         width: 100%;
         border: 1px solid #b7bfbe7a;
@@ -269,6 +271,22 @@
     flex-basis: 100%;
     margin-right: 0px;
   }
+  .content-details-section .content-details-main .page-heading {
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
+  .content-details-section .content-details-main .page-heading .box-content-text {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .content-details-section .content-details-main .field-flex {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .content-details-section .content-details-main .field-flex .field-right {
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .content-details-section .content-details-main .field-flex .fields-main .input-main {
@@ -278,10 +296,7 @@
   .content-details-section .content-details-main .page-heading .heading-txt .heading-flex h1 {
     font-size: 20px;
   }
-  .content-details-section .content-details-main .field-flex {
-    justify-content: center;
-    flex-direction: column;
-  }
+
   .content-details-section .content-details-main .field-flex .fields-main {
     flex-direction: column;
   }
@@ -296,6 +311,10 @@
   .content-details-section .content-details-main .page-heading {
     justify-content: center;
   }
+  .content-details-section .content-details-main .field-flex .fields-main .search-btn {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 530px) {
   .content-details-section .content-details-main .page-heading {
@@ -304,4 +323,12 @@
   .content-details-section .content-details-main .page-heading .heading-txt {
     flex-direction: column;
   }
+  .content-details-section .content-details-main .page-heading .box-content-text {
+    flex-direction: column;
+  }
+  .content-details-section .content-details-main .page-heading .box-content-text p {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 430px) {
 }

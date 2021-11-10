@@ -1,6 +1,6 @@
-@import "src/assets/styles/variables.scss";
-
-.shipment-detail-main {
+@import "/src/assets/styles/variables.scss";
+@import "/src/assets/styles/responsive-styles.scss";
+::ng-deep .shipment-detail-main {
   padding: 20px;
   .shipment-heading-button {
     display: flex;
