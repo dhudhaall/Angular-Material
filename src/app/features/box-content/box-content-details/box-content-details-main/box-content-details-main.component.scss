@@ -761,43 +761,19 @@
     .table-mian
     table
     td
-    .overweight-inputs
-    .flex1
-    .inputs-mian {
+    .overweight-main {
+    padding: 8px 3px;
+  }
+  .overweight-inputs .flex1 .inputs-mian {
     flex-direction: column;
     width: 100px;
     margin-left: 0px;
     .box-input {
       margin-left: 0px;
     }
-  }
-  .content-details-section
-    .content-details-main
-    .boxes-tabs-section
-    .left-flex
-    .boxes-tabs
-    .tab-main
-    .table-mian
-    table
-    td
-    .overweight-main {
-    padding: 8px 3px;
-  }
-
-  .content-details-section
-    .content-details-main
-    .boxes-tabs-section
-    .left-flex
-    .boxes-tabs
-    .tab-main
-    .table-mian
-    table
-    td
-    .overweight-inputs
-    .flex1
-    .inputs-mian
     .quanity-border {
-    margin-left: 0px;
+      margin-left: 0px;
+    }
   }
 }
 @media only screen and (max-width: 1200px) {
